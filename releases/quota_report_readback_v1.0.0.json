@@ -1,0 +1,22 @@
+{
+  "schema": "joat.quota_owner_report.v1",
+  "file_version": "1.0.1",
+  "report_id": "b7bb359cf54b4560bb5787f489a577f1",
+  "owner": "Dezz-9-10",
+  "confirmed_at": "2026-10-18T17:42:17+00:00",
+  "remaining_seconds": 2400,
+  "total_seconds": 2400,
+  "source": "owner_chat_report",
+  "owner_statement": "Owner reports credits $3.68, ZeroGPU zero out of 40 minutes, and inference usage 0.05%. This observation does not authorize credit spending.",
+  "dashboard_display": {
+    "mode": "used",
+    "minutes": 0,
+    "total_minutes": 40
+  },
+  "credits_balance_usd": 3.68,
+  "inference_usage_display": "0.05%",
+  "credits_spending_authorized_usd": 0,
+  "provider_live_balance": false,
+  "gpu_called": false,
+  "record_fingerprint": "35533416e3bde3e1a977f160d5823c1971e64b5925005f6ad256f4fe0b73d1be"
+}

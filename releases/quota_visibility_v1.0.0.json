@@ -1,0 +1,29 @@
+{
+  "schema": "joat.quota_visibility_release.v1",
+  "file_version": "1.0.0",
+  "main_app_version": "2.1.101",
+  "module_version": "1.0.1",
+  "revision": "c92bb906cd71ba2e9b945a977669e6be09c73988",
+  "parent_revision": "5770373ad14e7269b38097afe34db3a0e93c59f5",
+  "owner_report": {
+    "schema": "joat.quota_dashboard_report.v1",
+    "file_version": "1.0.0",
+    "report_id": "b7bb359cf54b4560bb5787f489a577f1",
+    "owner": "Dezz-9-10",
+    "confirmed_at": "2026-10-18T17:42:17+00:00",
+    "display_mode": "used",
+    "displayed_minutes": 0,
+    "total_minutes": 40,
+    "credits_balance_usd": 3.68,
+    "inference_usage_display": "0.05%",
+    "owner_statement": "Owner reports credits $3.68, ZeroGPU zero out of 40 minutes, and inference usage 0.05%. This observation does not authorize credit spending."
+  },
+  "provider_live_balance": false,
+  "browser_reader_connected": false,
+  "billing_page_token_probe_http_status": 302,
+  "billing_page_token_redirects_to_login": true,
+  "gpu_called": false,
+  "credits_spending_authorized_usd": 0,
+  "test_count": 74,
+  "status": "source_verified_owner_report_staged"
+}
