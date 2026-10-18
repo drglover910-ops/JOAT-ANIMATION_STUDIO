@@ -1,0 +1,29 @@
+{
+  "schema": "joat.cpu_completion_release.v1",
+  "file_version": "1.0.0",
+  "components": {
+    "main": {
+      "repo": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "revision": "5770373ad14e7269b38097afe34db3a0e93c59f5",
+      "private": true,
+      "runtime": "RUNNING",
+      "hardware": "cpu-basic"
+    },
+    "control": {
+      "repo": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "revision": "1161eb36496532dcc64d21c56c1e7c8d2a3d7364",
+      "private": true,
+      "runtime": "RUNNING",
+      "hardware": "cpu-basic"
+    }
+  },
+  "main_app_version": "2.1.100",
+  "control_app_version": "1.2.22",
+  "source_backup_branch": "joat/source-and-knowledge-v1",
+  "gpu_hold": true,
+  "gpu_called": false,
+  "paid_hardware_changed": false,
+  "credits_spent_by_new_inference": 0,
+  "film_complete": false,
+  "next_required_owner_input": "Fresh ZeroGPU allowance; included quota only. Existing credit spending not authorized by this CPU release."
+}

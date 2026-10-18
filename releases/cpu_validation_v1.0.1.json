@@ -1,0 +1,23 @@
+{
+  "schema": "joat.cpu_release_validation.v1",
+  "file_version": "1.0.1",
+  "unit_tests_passed": 66,
+  "unit_tests_failed": 0,
+  "native_department_descriptions_passed": 20,
+  "main_ui_build_passed": true,
+  "control_ui_build_passed": true,
+  "existing_control_endpoint_schemas_and_ids_preserved": true,
+  "original_native_department_app_sources_preserved": 20,
+  "private_media_and_conversations_excluded_from_git": true,
+  "multi_character_positive_tests_are_fixtures_not_new_generated_scenes": true,
+  "main_app_version": "2.1.100",
+  "control_app_version": "1.2.22",
+  "worker_render_bridge_version": "1.0.22",
+  "gpu_calls": 0,
+  "provider_inference_calls": 0,
+  "hardware_changes": 0,
+  "live_main_acceptance_checks_passed": 100,
+  "live_native_department_guidance_handshake_passed": true,
+  "live_main_to_control_passed": true,
+  "main_routing_uses_revision_pinned_control_metadata": true
+}

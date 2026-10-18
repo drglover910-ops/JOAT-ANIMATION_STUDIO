@@ -1,0 +1,11 @@
+{
+  "schema": "joat.pinned_routing_release.v1",
+  "file_version": "1.0.0",
+  "repo": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+  "revision": "5770373ad14e7269b38097afe34db3a0e93c59f5",
+  "parent_revision": "2ab2e05fc62fed84412405383f7c2f2f994940b4",
+  "source_readback_verified": true,
+  "gpu_called": false,
+  "check_id": "d7a69af6d49b4a77992057471144aa26",
+  "receipt_path": "joat-studio/migrations/capabilities/d7a69af6d49b4a77992057471144aa26/receipt.json"
+}

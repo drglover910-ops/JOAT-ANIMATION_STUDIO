@@ -1,0 +1,30 @@
+{
+  "schema": "joat.native_capability_check.v1",
+  "file_version": "1.0.2",
+  "check_id": "cbbef22213c74e56a2e289ea894194e5",
+  "expected_registry_fingerprint": "47e165cfa2865402418da8031f8720ddc37ff86b93ad7ca21fc54a66a6843aa3",
+  "steps": [
+    {
+      "step": "native_owner_verified"
+    },
+    {
+      "step": "main_actual_system_prompt_verified"
+    }
+  ],
+  "gpu_called": false,
+  "provider_inference_called": false,
+  "creative_approval_granted": false,
+  "automatic_retry": false,
+  "controller_config_probe": {
+    "http_status": 429,
+    "content_type": "text/html",
+    "retry_after": null,
+    "rate_limit": null,
+    "rate_limit_policy": null,
+    "owner_auth_headers_present": true
+  },
+  "status": "failed_or_unknown",
+  "failed_stage": "controller_config_probe",
+  "error_type": "ValueError",
+  "receipt_fingerprint": "60b48331e63aeed363647e5c071b5768a0780d62628459f9a461af5848390df7"
+}

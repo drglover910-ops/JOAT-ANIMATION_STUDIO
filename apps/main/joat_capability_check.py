@@ -1,7 +1,7 @@
-"""Native CPU-only shared knowledge qualification. Embedded file version1.0.2.
+"""Native CPU-only shared knowledge qualification. Embedded file version1.0.3.
 Existing owner bindings only; no generation, purchases or creative approval.
 """
-FILE_VERSION='1.0.2'
+FILE_VERSION='1.0.3'
 import os,json,hashlib,re,sys,threading
 from pathlib import Path
 
@@ -31,13 +31,10 @@ def run(identifier,expected,root):
   if expected not in prompt or 'motion_control' not in prompt:raise ValueError('Actual Main system prompt lacks capability knowledge.')
   step('main_actual_system_prompt_verified')
   from joat_runtime_client import NativeClient,RemoteDepartmentClient,HOST
-  stage='controller_config_probe'
-  import httpx
-  response=httpx.get(HOST+'/config',headers={'Authorization':'Bearer '+token,'x-hf-authorization':'Bearer '+token},timeout=30)
-  receipt['controller_config_probe']=dict(http_status=response.status_code,content_type=response.headers.get('content-type'),retry_after=response.headers.get('retry-after'),rate_limit=response.headers.get('ratelimit'),rate_limit_policy=response.headers.get('ratelimit-policy'),owner_auth_headers_present=True)
-  if response.status_code!=200:raise ValueError('Controller configuration is unavailable; no inference submitted.')
-  step('authenticated_controller_config_probe')
-  controller=NativeClient(HOST,token=token,oauth_token=token,headers={'Authorization':'Bearer '+token},verbose=False,httpx_kwargs={'params':{'all_endpoints':'true'}})
+  stage='controller_pinned_contract'
+  from joat_control_contract import create
+  controller=create(HOST,token,{'Authorization':'Bearer '+token},False)
+  step('authenticated_revision_pinned_controller_contract')
   try:
    stage='controller_knowledge';status=controller.predict(api_name='/cpu_consolidation_status');catalogue=controller.predict('',api_name='/studio_capability_catalogue')
    if status.get('gpu_hold') is not True or status.get('studio_capability_registry_fingerprint')!=expected or catalogue.get('registry_fingerprint')!=expected or len(catalogue.get('features',[]))!=30:raise ValueError('Controller registry/hold mismatch.')
@@ -60,6 +57,8 @@ def run(identifier,expected,root):
    try:
     desc=client.view_api()
     if desc.get('studio_capability_registry_fingerprint')!=expected:raise ValueError('Department registry handshake failed.')
+    knowledge=desc.get('production_knowledge',{})
+    if knowledge.get('role')!=role or knowledge.get('execution_authorized') is not False or not any(r.get('id')=='role-'+role for r in knowledge.get('lessons',[])):raise ValueError('Department reviewed knowledge handshake failed.')
    finally:client.close()
   step('native_department_registry_handshakes')
   stage='main_acceptance'

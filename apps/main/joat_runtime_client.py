@@ -1,7 +1,7 @@
-"""Logical department clients routed through one owner-gated CPU host. File version1.0.1.
+"""Logical department clients routed through one owner-gated CPU host. File version1.0.2.
 Logical repo IDs and packet fields stay unchanged. GPU model services stay remote.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.2'
 import json,os
 from pathlib import Path
 import gradio_client
@@ -24,7 +24,11 @@ class RoutedJob:
   return [restore(v) for v in result] if isinstance(result,list) else restore(result)
 class RemoteDepartmentClient:
  def __init__(self,role,*args,**kwargs):
-  self.role=role;self.description=None;kwargs=dict(kwargs);kwargs.setdefault('oauth_token',kwargs.get('token'));params=dict(kwargs.get('httpx_kwargs') or {});query=dict(params.get('params') or {});query.update(all_endpoints='true',_joat_cpu_contract=FILE_VERSION);params['params']=query;kwargs['httpx_kwargs']=params;kwargs.setdefault('verbose',False);self.native=NativeClient(HOST,**kwargs)
+  self.role=role;self.description=None;kwargs=dict(kwargs);kwargs.setdefault('oauth_token',kwargs.get('token'));params=dict(kwargs.get('httpx_kwargs') or {});query=dict(params.get('params') or {});query.update(all_endpoints='true',_joat_cpu_contract=FILE_VERSION);params['params']=query;kwargs['httpx_kwargs']=params;kwargs.setdefault('verbose',False);
+  # Main already ships reviewed endpoint metadata. Verify its exact Control revision
+  # and use it instead of repeatedly fetching /config for each logical department.
+  from joat_control_contract import create
+  self.native=create(HOST,kwargs.get('token'),kwargs.get('headers') or {},kwargs.get('download_files',True))
  @property
  def download_files(self):return self.native.download_files
  @download_files.setter
