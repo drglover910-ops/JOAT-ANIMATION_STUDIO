@@ -1,0 +1,16 @@
+{
+  "schema": "joat.live_quota_scene_preparation_release.v1",
+  "file_version": "1.0.0",
+  "main_app_version": "2.1.103",
+  "revision": "72328a27cfc8a64f8173111f3e3a5faf79756d83",
+  "parent_revision": "686583711f91632d75086847435864cd6cebc726",
+  "check_id": "46f75b889f4e4fa9b5e91cd3bbbd6655",
+  "receipt_path": "joat-studio/gpu-quota/provider-observations/46f75b889f4e4fa9b5e91cd3bbbd6655/receipt.json",
+  "source_readback_verified": true,
+  "cpu_tests_passed": 84,
+  "gpu_called": false,
+  "included_only": true,
+  "paid_credit_authority_usd": 0,
+  "original_mission_changed": false,
+  "next_blocker": "existing account credential denied documented quota endpoint"
+}

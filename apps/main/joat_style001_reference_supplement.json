@@ -1,0 +1,353 @@
+{
+  "schema": "joat.exact_reference_supplement.v1",
+  "file_version": "1.0.0",
+  "project_id": "PROJECT-OTU-STYLE001-90S-001",
+  "mission_fingerprint": "2a881aa9651cd9058fd3f9ddaf199f1c2cbfc849b82caf511b1bcd661921868d",
+  "source_prompt_sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b",
+  "owner": "Dezz-9-10",
+  "authorization_basis": "Owner requested finish on 2026-10-18, continuing the approved original story and delegated scene-still review. Only necessary missing scene candidates; included quota only; no paid credit, canonical or final QC authority.",
+  "original_mission_changed": false,
+  "maximum_requests_per_task": 1,
+  "requests": [
+    {
+      "asset_key": "CRISTU-KIANA-CUSTOMER-DAY",
+      "request_file": "CRISTU-KIANA-CUSTOMER-DAY_request_v1.0.0.json",
+      "request_fingerprint": "915c278cba506f7584a3f115726612551ff0fa1140a82f049698736c88acc0fc",
+      "shot_ids": [
+        "SHOT-003",
+        "SHOT-004",
+        "SHOT-014"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004",
+        "CHAR-002"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "CHAR-002": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "bf043272e8884bfeb4c809926a0b9330",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "CRISTU-KIANA-CUSTOMER-DAY",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A07.jpeg",
+            "source_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "prepared_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-004 only. Image2 is CHAR-002 only. Image3 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. Cristu, in his approved navy suit, greets Kiana as a customer with a warm attentive expression. Both are clearly recognizable in a natural medium two-person composition in the same executive business interior in golden daylight. Their hands are natural and separate. Leave space for a customer greeting; no screens or dialogue text. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": true
+    },
+    {
+      "asset_key": "FOUNDER-CRISTU-OFFICE-ENTRANCE",
+      "request_file": "FOUNDER-CRISTU-OFFICE-ENTRANCE_request_v1.0.0.json",
+      "request_fingerprint": "705e5eda6883f2639a7469e01cc82a1e63eed5b763c3361cca2042670cdb0cce",
+      "shot_ids": [
+        "SHOT-009"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-001",
+        "CHAR-004"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-001": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "7184dcfd74b94371b435395b8474cfaf",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "FOUNDER-CRISTU-OFFICE-ENTRANCE",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+            "source_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "prepared_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-001 only. Image2 is CHAR-004 only. Image3 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. The Founder, wearing the approved black outfit, has physically entered through the existing office door and is near it, facing Cristu. Cristu, in his approved navy suit, remains by the same desk. Medium-wide two-person composition, both faces visible, warm hopeful interior light. A face-to-face meeting, with no video-call display or additional people. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": true
+    },
+    {
+      "asset_key": "FOUNDER-CRISTU-TABLET",
+      "request_file": "FOUNDER-CRISTU-TABLET_request_v1.0.0.json",
+      "request_fingerprint": "a870d3a4a9b508ac7dff5585e96eafa4fdc169e03c6d7d5ba25efd66fe21fcf6",
+      "shot_ids": [
+        "SHOT-011"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-001",
+        "CHAR-004"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-001": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "8a6781b26e0a47e4b933a624b93d31c0",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "FOUNDER-CRISTU-TABLET",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+            "source_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "prepared_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-001 only. Image2 is CHAR-004 only. Image3 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. The Founder, wearing the approved black outfit, sits beside Cristu and holds one dark tablet naturally for a booking demonstration. Cristu wears the approved navy suit and pays attention. Over-the-shoulder composition with a clear simple tablet screen plane and enough of both faces visible to preserve identity. Preserve the office. Premium soft commercial light. The tablet screen is blank; exact interface graphics are composited in post. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": true
+    },
+    {
+      "asset_key": "CRISTU-OFFICE-MORNING",
+      "request_file": "CRISTU-OFFICE-MORNING_request_v1.0.0.json",
+      "request_fingerprint": "71313d57f9b99980b23ba71610146576cc03a671b950be7b025e5caa12d72414",
+      "shot_ids": [
+        "SHOT-013",
+        "SHOT-018"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "07fcd55af30a426ab8b6a46ac1b4cf9c",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "CRISTU-OFFICE-MORNING",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-004 only. Image2 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. Cristu, in the same approved navy suit, sits calmly at the established office desk in warm golden morning daylight. One ordinary coffee cup rests within easy reach, hands relaxed and anatomically natural. A warm composed medium shot with space for a slow pullback, no invented room redesign or generated branded text. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": false
+    },
+    {
+      "asset_key": "CRISTU-WALKING-BUSINESS",
+      "request_file": "CRISTU-WALKING-BUSINESS_request_v1.0.0.json",
+      "request_fingerprint": "e0d44419dbdbec38b1cd7c9e7c5e79615f7fc5292be74dc033c77aacbdd25b0d",
+      "shot_ids": [
+        "SHOT-015"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "52f38a01cd9c4713bd89e75cf8e4ce7d",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "CRISTU-WALKING-BUSINESS",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-004 only. Image2 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. Cristu, in his approved complete navy suit, white shirt and pale gold striped tie, is standing on the existing office floor beside the desk, with a physically clear walking path. Natural upright full-body or three-quarter composition with grounded feet, relaxed empty hands, warm commercial daylight, matching the same office geometry. No floating dashboard; interface graphics are added in post. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": false
+    },
+    {
+      "asset_key": "FOUNDER-CRISTU-RELIEF",
+      "request_file": "FOUNDER-CRISTU-RELIEF_request_v1.0.0.json",
+      "request_fingerprint": "4c8e30267f366941ac22bda190373a93ca453196db3255ecf092f03ace47c6b2",
+      "shot_ids": [
+        "SHOT-016",
+        "SHOT-017"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004",
+        "CHAR-001"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "CHAR-001": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "045e2873a40c4742ae0afcf565d6efa7",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "FOUNDER-CRISTU-RELIEF",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+            "source_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "prepared_sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE proposed production scene frame, portrait576x1024,9:16. Image1 is CHAR-004 only. Image2 is CHAR-001 only. Image3 is the approved office environment. Each source card may contain multiple views of the SAME person; do not create a person per view. Preserve each named character identity separately: face, skin tone, eyes, hair, beard and approved outfit. Cristu in the approved navy suit sits across from the Founder in his approved black outfit in the established office. Both faces are clearly visible and distinct. Cristu shows restrained relief; the Founder has a calm confident expression. A natural seated conversational two-shot with space for alternating close-up edits, warm elegant light, and no merged hands or faces. Match the supplied premium stylized3D reference style. Preserve office doors, windows, desk, shelves and spatial layout. No labels, captions, readable generated text, contact sheets, collages, insets, duplicates, extra people, merged identities, deformed anatomy, or reflections containing additional faces.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": true
+    }
+  ]
+}

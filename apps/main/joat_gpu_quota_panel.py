@@ -1,7 +1,7 @@
-"""Owner-confirmed quota and conservative local reservations. File version1.0.1.
-Does not read Hugging Face billing or claim a live provider balance. No GPU calls.
+"""Owner reports plus separately verified live quota. File version1.0.2.
+Documented quota GET only; no GPU scheduling or credit-spending authorization.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.2'
 import json,hashlib,uuid,math
 from pathlib import Path
 from datetime import datetime,timezone
@@ -100,6 +100,19 @@ def add_quota_ui():
   credit=f"${v['credits_balance_usd']:.2f}" if v['credits_balance_usd'] is not None else 'not reported'
   text=f"Owner-reported: **{last['remaining_seconds']/60:g} of {last['total_seconds']/60:g} minutes remaining** ({last['confirmed_at']}).\n\nReported credits: **{credit}**. Paid spending authorized: **$0**.\n\nTracked reference reservations: **{v['local_reserved_seconds']/60:g} minutes**. Planning allowance: **{allowance}**.\n\nThis is recorded evidence, not a live account balance. Other Spaces and untracked video calls can consume quota. Refresh does not read the Hugging Face screen."
   return text,v
+ def live(profile:Optional[gr.OAuthProfile],oauth:Optional[gr.OAuthToken],request:gr.Request):
+  browser_token=m.owner_token(profile,oauth,request)
+  m.mount_check('main')
+  from joat_provider_quota import read_quota
+  import os
+  token=os.environ.get('JOAT_SPECIALIST_TOKEN') or browser_token
+  try:result=read_quota(token)
+  except Exception:raise gr.Error('Live quota could not be verified. No generation was requested; saved reports were not refreshed.') from None
+  write_once(Path(ROOT)/'provider-observations'/result['observation_id']/'observation.json',seal(result))
+  if result['provider_live_balance']:
+   text=f"**Live ZeroGPU quota: {result['remaining_seconds']/60:g} of {result['total_seconds']/60:g} minutes remaining.**\n\nChecked: {result['observed_at']}. Reset: {result['reset_at'] or 'not started'}. Paid spending authorized: **$0**. Credit balance remains separately owner-reported."
+  else:text=f"**Live quota unavailable (HTTP {result['http_status']}).** Existing credentials are not authorized or the provider is unavailable. The saved owner report remains a separate observation. No quota is assumed and no generation was requested."
+  return text,result
  def update(remaining:float,total:float,profile:Optional[gr.OAuthProfile],oauth:Optional[gr.OAuthToken],request:gr.Request):
   m.owner_token(profile,oauth,request)
   if any(isinstance(v,bool) or not isinstance(v,(int,float)) or not math.isfinite(v) for v in (remaining,total)) or not 0<=remaining<=total<=1440 or total<=0:raise gr.Error('Enter the actual remaining and total included GPU minutes.')
@@ -111,3 +124,4 @@ def add_quota_ui():
   remaining=gr.Number(label='Remaining included minutes shown by Hugging Face',value=None);total=gr.Number(label='Total daily included minutes',value=40)
   gr.Button('Save my confirmed quota — no GPU').click(update,[remaining,total],[summary,detail],api_name=False)
   gr.Button('Refresh recorded balance — no GPU').click(refresh,[],[summary,detail],api_name=False)
+  gr.Button('Read live Hugging Face quota — no GPU').click(live,[],[summary,detail],api_name=False)

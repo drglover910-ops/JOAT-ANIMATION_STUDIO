@@ -1,0 +1,49 @@
+{
+  "schema": "joat.provider_quota_access_check.v1",
+  "file_version": "1.0.0",
+  "check_id": "bfdfae15a3b74bd297da5fba3054fe20",
+  "probes": [
+    {
+      "binding": "JOAT_SPECIALIST_TOKEN",
+      "observation": {
+        "schema": "joat.provider_quota_observation.v1",
+        "file_version": "1.0.0",
+        "observation_id": "79ba340039ab4250b7a3d8a1a3d98357",
+        "owner": "Dezz-9-10",
+        "observed_at": "2026-10-18T22:00:44.233339+00:00",
+        "endpoint": "https://huggingface.co/api/spaces/zero-gpu/quota",
+        "provider_live_balance": false,
+        "gpu_called": false,
+        "credits_spending_authorized_usd": 0,
+        "http_status": 403,
+        "status": "account_quota_access_denied",
+        "remaining_seconds": null,
+        "total_seconds": null,
+        "reset_at": null
+      }
+    },
+    {
+      "binding": "HF_TOKEN",
+      "observation": {
+        "schema": "joat.provider_quota_observation.v1",
+        "file_version": "1.0.0",
+        "observation_id": "1df51f17ac2f40a8b4a4f852dec3cc0b",
+        "owner": "Dezz-9-10",
+        "observed_at": "2026-10-18T22:00:44.259124+00:00",
+        "endpoint": "https://huggingface.co/api/spaces/zero-gpu/quota",
+        "provider_live_balance": false,
+        "gpu_called": false,
+        "credits_spending_authorized_usd": 0,
+        "http_status": 403,
+        "status": "account_quota_access_denied",
+        "remaining_seconds": null,
+        "total_seconds": null,
+        "reset_at": null
+      }
+    }
+  ],
+  "gpu_called": false,
+  "automatic_retry": false,
+  "status": "existing_credentials_cannot_read_quota",
+  "record_fingerprint": "0ec15251b7d50cba2ffb2c2d08d2e33cb28521e205887906d926210f50dbf0f0"
+}

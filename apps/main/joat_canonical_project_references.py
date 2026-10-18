@@ -1,11 +1,14 @@
-"""Exact owner-staged canonical-source reference requests. File version1.0.1.
+"""Exact owner-staged canonical-source reference requests. File version1.0.2.
 Only prepares new candidate images. Never registers canonical identities or approves unseen stills.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.2'
 import hashlib,json,re
 
 def digest(v):return hashlib.sha256(json.dumps(v,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
 def authorize(mission,payload):
+ if isinstance(payload,dict) and 'additional_reference_scope' in payload:
+  from joat_reference_supplement import authorize as authorize_supplement
+  return authorize_supplement(mission,payload)
  if not isinstance(mission,dict) or not isinstance(payload,dict) or set(payload)!={'requests','spending_approval'}:raise ValueError('Exact canonical reference task and spending scope required.')
  auth=mission.get('reference_preparation',{})
  if auth.get('schema')!='joat.canonical_project_reference_preparation.v1' or auth.get('mode')!='existing_canonical_sources' or auth.get('owner')!='Dezz-9-10' or auth.get('maximum_candidate_requests')!=1 or not mission.get('owner_supplied_source_prompt'):raise ValueError('No exact owner-supplied canonical reference mission.')

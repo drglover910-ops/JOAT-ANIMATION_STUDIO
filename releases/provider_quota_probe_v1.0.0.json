@@ -1,0 +1,10 @@
+{
+  "schema": "joat.provider_quota_probe_release.v1",
+  "file_version": "1.0.0",
+  "main_app_version": "2.1.102",
+  "revision": "686583711f91632d75086847435864cd6cebc726",
+  "parent_revision": "c92bb906cd71ba2e9b945a977669e6be09c73988",
+  "check_id": "bfdfae15a3b74bd297da5fba3054fe20",
+  "receipt_path": "joat-studio/gpu-quota/provider-observations/bfdfae15a3b74bd297da5fba3054fe20/receipt.json",
+  "gpu_called": false
+}

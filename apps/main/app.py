@@ -1,5 +1,5 @@
 """
-J.O.A.T. Main Assistant Bot v2.1.101
+J.O.A.T. Main Assistant Bot v2.1.103
 
 LIVE SPECIALIST EXECUTION
 
@@ -73,7 +73,7 @@ from huggingface_hub import InferenceClient
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "2.1.101"
+APP_VERSION = "2.1.103"
 ACCEPTANCE_TEST_VERSION = "2.1.0"
 
 BOT_NAME = os.environ.get(
@@ -4515,8 +4515,8 @@ def tests_ui():
 
     try:
         add(
-            "1. App version is 2.1.101",
-            APP_VERSION == "2.1.101",
+            "1. App version is 2.1.103",
+            APP_VERSION == "2.1.103",
         )
 
         add(
@@ -6308,6 +6308,8 @@ J.O.A.T. Main Assistant Bot
 demo = build_app()
 
 if __name__ == "__main__":
+    from joat_provider_quota import start_provider_checks
+    start_provider_checks()
     from joat_gpu_quota_panel import start_dashboard_reports
     start_dashboard_reports()
     from joat_capability_check import start_capability_checks

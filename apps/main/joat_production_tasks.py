@@ -1,7 +1,7 @@
-"""Private owner-staged production preflight, assets and voice. File version1.0.20.
+"""Private owner-staged production preflight, assets and voice. File version1.0.21.
 No canonical/creative QC approval is invented. Candidate generation is separate from registration.
 """
-FILE_VERSION='1.0.20'
+FILE_VERSION='1.0.21'
 import base64,hashlib,json,os,re,tempfile,threading,time,uuid,wave,zlib
 from pathlib import Path
 from gradio_client import Client
@@ -178,13 +178,19 @@ def run(name,raw):
     if mission.get('reference_preparation',{}).get('mode')=='existing_canonical_sources':
      from joat_canonical_project_references import authorize
      authorize(mission,v['payload'])
-     if v['payload']['spending_approval'].get('schema')=='joat.included_quota_confirmation.v1':
+     if 'additional_reference_scope' in v['payload']:
+      from joat_reference_supplement import reserve
+      reserve(payload,v['payload'])
+     elif v['payload']['spending_approval'].get('schema')=='joat.included_quota_confirmation.v1':
       from joat_gpu_quota_panel import reserve
       reserve(payload,v['payload']['spending_approval'])
     stage='frame_'+payload['asset_key'];review,image,report_file=c.submit(m.stable(payload),api_name='/project_reference_candidate').result(timeout=1200)
     image=local_file(image);report_file=local_file(report_file)
     if review.get('project_id')!=project or review.get('request_id')!=payload['request_id'] or review.get('plan_fingerprint')!=fp(payload) or review.get('source_request')!=payload or review.get('owner_visual_approved') is not False or review.get('canonical_registration') is not False or m.file_hash(image)!=review.get('sha256') or json.loads(report_file.read_text())!=review:raise ValueError('Opening frame result integrity failed.')
     dest=directory/'frames'/payload['asset_key'];m.store_media(image,dest/'candidate.png');m.write_once(dest/'candidate_review.json',review)
+    if 'additional_reference_scope' in v['payload']:
+     from joat_reference_supplement import settle
+     settle(payload,review)
     files.append(dict(asset_key=payload['asset_key'],sha256=review['sha256'],image_bucket_path=str((dest/'candidate.png').relative_to(m.ROOT.parent)),review_bucket_path=str((dest/'candidate_review.json').relative_to(m.ROOT.parent)),owner_visual_approved=False))
     report(dict(schema='joat.production_frames_progress.v1',file_version=FILE_VERSION,request_id=identifier,completed=len(files),planned=len(requests),asset_key=payload['asset_key']))
    m.write_once(directory/'frame_manifest.json',dict(file_version=FILE_VERSION,project_id=project,mission_fingerprint=v['mission_fingerprint'],files=files,production_qc_approved=False))
