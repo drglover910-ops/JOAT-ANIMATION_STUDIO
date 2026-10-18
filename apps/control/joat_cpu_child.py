@@ -1,5 +1,5 @@
-"""Isolated native department loader and callback IPC. File version1.0.2."""
-FILE_VERSION='1.0.2'
+"""Isolated native department loader and callback IPC. File version1.0.3."""
+FILE_VERSION='1.0.3'
 import contextlib,importlib,inspect,io,json,os,re,resource,sys,time,typing
 from pathlib import Path
 ROOT=Path(__file__).parent;role=sys.argv[1]
@@ -71,7 +71,7 @@ def describe():
    params.append(dict(parameter_name=p.name,parameter_has_default=p.default is not inspect.Parameter.empty,parameter_default=None if p.default is inspect.Parameter.empty else p.default))
   result[name]=dict(parameters=params,file_input_indices=[i for i,c in enumerate(block.inputs) if isinstance(c,(gr.File,gr.Video,gr.Audio,gr.Image,gr.Gallery))],file_output_indices=[i for i,c in enumerate(block.outputs) if isinstance(c,(gr.File,gr.Video,gr.Audio,gr.Image,gr.Gallery))],output_count=len(block.outputs))
  from joat_studio_capabilities import registry
- return dict(named_endpoints=result,unnamed_endpoints={},studio_capability_registry_fingerprint=registry()['registry_fingerprint'],feature_selection_authority='Main Assistant and Executive; native worker contracts remain authoritative')
+ return dict(named_endpoints=result,unnamed_endpoints={},studio_capability_registry_fingerprint=registry()['registry_fingerprint'],feature_selection_authority='Director creative authority via Main/Executive routing; native worker contracts remain authoritative',production_knowledge=__import__('joat_production_knowledge').retrieve(role=role,limit=5))
 for raw in sys.stdin.buffer:
  identifier=None;started=time.monotonic()
  try:

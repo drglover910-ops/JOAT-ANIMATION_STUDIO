@@ -1,7 +1,7 @@
-"""Approved image dependencies for immutable source jobs. File version1.0.0.
+"""Approved image dependencies for immutable source jobs. File version1.0.1.
 Never changes the originating image scope, Supervisor packet or upstream decisions.
 """
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.1'
 import hashlib,json,re,os
 from datetime import datetime,timezone
 from pathlib import Path
@@ -31,6 +31,8 @@ def source(packet):
 def create_binding(packet,manifest,approved,owner):
  if approved is not True or owner!='Dezz-9-10':raise ValueError('Owner must review this exact scene frame for the selected job.')
  job,context,snap=source(packet);descriptor=bind_character(manifest,snap['character'])
+ from joat_visible_cast import validate_for_job
+ validate_for_job(descriptor,snap['director'],snap['character'])
  if descriptor['scope']['environment_id']!=snap['environment']['environment_id']:raise ValueError('Approved frame belongs to a different environment.')
  value={'schema':'joat.job_frame_binding.v1','file_version':FILE_VERSION,'project_context':context,'source_job_fingerprint':job['job_fingerprint'],'source_supervisor_fingerprint':packet['packet_fingerprint'],'source_character_sha256':digest(snap['character']),'source_environment_sha256':digest(snap['environment']),'source_director_sha256':digest(snap['director']),'approved_frame_manifest':manifest,'owner_approval':{'owner':owner,'kind':'job_reference_assignment','approved_at':datetime.now(timezone.utc).isoformat(),'image_sha256':descriptor['image_sha256'],'reviewed_for_this_job':True},'canonical_registration':False,'production_qc_approved':False,'gpu_called':False}
  return dict(value,binding_fingerprint=digest(value))
@@ -43,6 +45,8 @@ def validate_binding(value,packet):
  for role in ('character','environment','director'):
   if value.get('source_'+role+'_sha256')!=digest(snap[role]):raise ValueError('Frame assignment source changed.')
  manifest=value['approved_frame_manifest'];d=bind_character(manifest,snap['character'])
+ from joat_visible_cast import validate_for_job
+ validate_for_job(d,snap['director'],snap['character'])
  if d['scope']['environment_id']!=snap['environment']['environment_id']:raise ValueError('Frame assignment environment changed.')
  a=value.get('owner_approval',{})
  if a.get('owner')!='Dezz-9-10' or a.get('kind')!='job_reference_assignment' or not a.get('approved_at') or a.get('reviewed_for_this_job') is not True or a.get('image_sha256')!=d['image_sha256']:raise ValueError('Exact image assignment approval is missing.')

@@ -1,0 +1,7 @@
+{
+  "file_version": "1.0.1",
+  "old_endpoint_schema_differences": [],
+  "version": "1.2.21",
+  "gpu_called": false,
+  "oauth_internal_endpoints_excluded": true
+}

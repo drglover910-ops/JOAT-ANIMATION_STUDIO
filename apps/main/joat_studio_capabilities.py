@@ -1,7 +1,7 @@
-"""Shared pinned production knowledge and fail-closed feature checks. File version1.0.1.
+"""Shared pinned production knowledge and fail-closed feature checks. File version1.0.3.
 CPU planning only. Never grants creative approval, changes settings or submits inference.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.3'
 import copy,hashlib,json,math,re
 from pathlib import Path
 ROOT=Path(__file__).parent
@@ -69,7 +69,8 @@ def guard_render_parameters(parameters):
   value=p.get(field)
   if isinstance(value,bool) or not isinstance(value,(int,float)) or not math.isfinite(value):raise ValueError('Finite explicit render setting required: '+field)
  if any(type(p[k]) is not int or p[k]<=0 or p[k]%32 for k in ('max_width','max_height')):raise ValueError('Reviewed output dimensions must be positive integers on the32-pixel model grid.')
- if not 0<p['seconds']<=40 or p['gen_budget']!=600:raise ValueError('Preserve the current reviewed duration and600-second allocation ceiling; new limits need qualification.')
+ if not 0<p['seconds']<=40:raise ValueError('Reviewed duration must remain within40seconds.')
+ if p['gen_budget'] != int(p['gen_budget']) or not 45 <= p['gen_budget'] <= 600:raise ValueError('Explicit integer GPU allocation must be45–600seconds; exact plan and owner grant remain required.')
  return dict(schema='joat.capability_render_guard.v1',file_version=FILE_VERSION,registry_fingerprint=registry()['registry_fingerprint'],status='compatible_with_existing_controlled_lane',gpu_called=False,creative_approval_granted=False)
 
 def observations(root=Path('/studio/joat-studio'),limit=20):

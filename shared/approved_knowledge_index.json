@@ -1,0 +1,162 @@
+{
+  "schema": "joat.approved_knowledge_index.v1",
+  "file_version": "1.0.0",
+  "records": [
+    {
+      "id": "authority-boundaries",
+      "storage": "package",
+      "path": "knowledge/authority-boundaries.json",
+      "sha256": "1ebd95654f302495f09515c75b0ba916b26fb003aaa6ae99b70c72c843900f7e"
+    },
+    {
+      "id": "evidence-and-approval",
+      "storage": "package",
+      "path": "knowledge/evidence-and-approval.json",
+      "sha256": "9f27e0da940f7f605b386103b57b32589c9ffd3488d0b054e1da239967febe55"
+    },
+    {
+      "id": "reuse-and-budget",
+      "storage": "package",
+      "path": "knowledge/reuse-and-budget.json",
+      "sha256": "75baae7bf480a39633850b6ddccfa283927d8c3cc8f104b1284f0304f3867a9d"
+    },
+    {
+      "id": "role-main",
+      "storage": "package",
+      "path": "knowledge/role-main.json",
+      "sha256": "e40f27da2a210f018d04a290edbe9492a026133c1bc0db48460d66af62dce6ab"
+    },
+    {
+      "id": "role-executive",
+      "storage": "package",
+      "path": "knowledge/role-executive.json",
+      "sha256": "0541d1f1572f816acb771d3f9497dffcb5fb2f05f014f65d392dde1f95012a75"
+    },
+    {
+      "id": "role-character",
+      "storage": "package",
+      "path": "knowledge/role-character.json",
+      "sha256": "f27340d84eb40d6832f28a7c36df0d8e04c408d04b81c02d0450627b5275e5eb"
+    },
+    {
+      "id": "role-environment",
+      "storage": "package",
+      "path": "knowledge/role-environment.json",
+      "sha256": "0e4d301f91b4a425f9c2f27db98549887b432e8d83b1540a22489f9ae9d08e9f"
+    },
+    {
+      "id": "role-director",
+      "storage": "package",
+      "path": "knowledge/role-director.json",
+      "sha256": "491ff1c958d37d6d5af467e7ec241c26d5de33ec2f27eb135d9f3ef72c4f902b"
+    },
+    {
+      "id": "role-shot_camera",
+      "storage": "package",
+      "path": "knowledge/role-shot_camera.json",
+      "sha256": "67485f9e69781fc62864df89d0e326953d09c6565b872ebb4fc207ebbaaa36cf"
+    },
+    {
+      "id": "role-performance_action",
+      "storage": "package",
+      "path": "knowledge/role-performance_action.json",
+      "sha256": "7f4cc99d148f020fbd631f9bc7b862ceef0beac45bec154422e125fa9d55dfd0"
+    },
+    {
+      "id": "role-generation_supervisor",
+      "storage": "package",
+      "path": "knowledge/role-generation_supervisor.json",
+      "sha256": "b00da9f77074f6679f4292d03a0ac334e59bffa2fedf8e988630b8cc5713ba26"
+    },
+    {
+      "id": "role-generation_worker",
+      "storage": "package",
+      "path": "knowledge/role-generation_worker.json",
+      "sha256": "a43bc8af61b7270744948cfa5350e90b769f949d3b9beacc027b0ad98fdcccba"
+    },
+    {
+      "id": "role-quality_control",
+      "storage": "package",
+      "path": "knowledge/role-quality_control.json",
+      "sha256": "4158d76f24461de36019a422acd0e888b34a2a5c76680f1d653da734a66b9634"
+    },
+    {
+      "id": "role-post_production",
+      "storage": "package",
+      "path": "knowledge/role-post_production.json",
+      "sha256": "2f1494c2aed58d0d9dfe56f0523da624432d92e0e17a41ceab9ff0e48912aaef"
+    },
+    {
+      "id": "role-editorial",
+      "storage": "package",
+      "path": "knowledge/role-editorial.json",
+      "sha256": "65d80483e188eb5435820521c73a5430105ab9558bd264eb5189f0be992e363d"
+    },
+    {
+      "id": "role-sound",
+      "storage": "package",
+      "path": "knowledge/role-sound.json",
+      "sha256": "3949011c1c62cd325ddde1455b0cd3d8da91120d582f9ccf56bfefeca68377ea"
+    },
+    {
+      "id": "role-music",
+      "storage": "package",
+      "path": "knowledge/role-music.json",
+      "sha256": "ed2f5c2de483f4e7875a118a0a1a9991a26e3f29489b658d67b051d65cb780f6"
+    },
+    {
+      "id": "role-compositing_vfx",
+      "storage": "package",
+      "path": "knowledge/role-compositing_vfx.json",
+      "sha256": "8f77dd2f16dec1c57d5a30843964ce4930bbe0d26c15b3b4a748e2de38067106"
+    },
+    {
+      "id": "role-color_finish",
+      "storage": "package",
+      "path": "knowledge/role-color_finish.json",
+      "sha256": "853d38fe3c22db82848fd81ec630ca6ad8a25d20ffe5600d3674694ee576ba76"
+    },
+    {
+      "id": "role-titles_graphics",
+      "storage": "package",
+      "path": "knowledge/role-titles_graphics.json",
+      "sha256": "779466f61993a378467bfc8d0779dd26eabc5033dcc3c102759e206505f61137"
+    },
+    {
+      "id": "role-voice_dialogue",
+      "storage": "package",
+      "path": "knowledge/role-voice_dialogue.json",
+      "sha256": "2d73ad14d96cab010b6a014a67dc1146a8f5bc3871a19b243f39d0593b3f732c"
+    },
+    {
+      "id": "role-delivery_archive",
+      "storage": "package",
+      "path": "knowledge/role-delivery_archive.json",
+      "sha256": "464f935a5402b605b8e855d2d33ab447ca3db85295bf7aac3ac854733147715c"
+    },
+    {
+      "id": "role-narration",
+      "storage": "package",
+      "path": "knowledge/role-narration.json",
+      "sha256": "a8f858b87a55c3e11d4990d54ebcab3f0e2712285019ef1bc6e0c361d6c5126a"
+    },
+    {
+      "id": "role-browser",
+      "storage": "package",
+      "path": "knowledge/role-browser.json",
+      "sha256": "3f7857acf59742425d44325bff98e969b2be665a6e89634171b6fab3c345cb98"
+    },
+    {
+      "id": "role-hugging_face",
+      "storage": "package",
+      "path": "knowledge/role-hugging_face.json",
+      "sha256": "877555ad200bea7120f6593fa3113a5746d6fb13a8ef8bcd734f935c6b5091f5"
+    },
+    {
+      "id": "style001-locked-story",
+      "storage": "package",
+      "path": "knowledge/style001-locked-story.json",
+      "sha256": "7ca8c7b67cab128a039cd846ac75758ddae3e578b1d8ea53bf304463fe53232f"
+    }
+  ]
+}

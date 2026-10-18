@@ -1,0 +1,1908 @@
+{
+  "app_version": "1.0.3",
+  "generation_job": {
+    "continuity_policy": {
+      "preserve_character_identity": true,
+      "preserve_director_intent": true,
+      "preserve_environment_identity": true,
+      "preserve_performance_action_intent": true,
+      "preserve_shot_camera_intent": true,
+      "silent_creative_mutation_allowed": false
+    },
+    "downstream_handoff": {
+      "audio_worker_compatible": false,
+      "image_worker_compatible": false,
+      "ltx_compatible": true,
+      "ready_for_generation_worker": true,
+      "vfx_worker_compatible": false,
+      "voice_worker_compatible": false
+    },
+    "engine": "ltx",
+    "execution_policy": {
+      "automatic_engine_routing_allowed": true,
+      "fallback_engine_allowed": false,
+      "human_approval_required_for_locked_change": true,
+      "upstream_registry_mutation_allowed": false
+    },
+    "generation_specification": {
+      "aspect_ratio": "9:16",
+      "duration_seconds": 5.0
+    },
+    "immutable_upstream_snapshot": {
+      "character": {
+        "appearance_rules": {
+          "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+          "build": "athletic/muscular",
+          "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+          "eyes": "dark brown; focused; slightly hooded",
+          "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+          "signature_accessories": [
+            "black square/rectangular sunglasses",
+            "diamond stud earrings",
+            "luxury watch",
+            "gold chain when scene-appropriate"
+          ],
+          "skin_tone": "deep rich brown; realistic natural texture"
+        },
+        "approval": {
+          "live_change_allowed": false,
+          "requires_human_approval_for_registry_mutation": true
+        },
+        "character_id": "CHAR-001",
+        "character_name": "Founder",
+        "character_version": "1.0.0",
+        "continuity_rules": [
+          "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+          "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+          "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+          "Wardrobe may change by scene; biological identity features may not.",
+          "Do not infer a new permanent trait from a one-off scene/reference."
+        ],
+        "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+        "identity_locked": true,
+        "negative_rules": [
+          "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+          "Do not treat other people in interaction sheets as Founder identity references.",
+          "Do not overwrite approved assets or hashes silently."
+        ],
+        "schema": "joat.character_packet.v1",
+        "source_asset_hashes": {
+          "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+          "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+        },
+        "supporting_reference_assets": [
+          "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+        ]
+      },
+      "director": {
+        "approval": {
+          "approved_at": "2026-10-18T01:58:10.528500+00:00",
+          "approved_by": "Dezz-9-10",
+          "character_packet_sha256": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+          "creative_intent_locked": true,
+          "reviewed_draft_sha256": "5441fa83503bf68672a58cce41507f9f7e12023c308a3ee389cd0129eab676ab",
+          "source_script_review": {
+            "file_version": "1.0.0",
+            "owner": "Dezz-9-10",
+            "plan_fingerprint": "b27d820803bf4c7e6c55f1dc0da03e733e0da17d7ca6dd773f020166c523daad",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "review_statement": "Owner supplied and authorized the unchanged production script. Codex verified exact native packet mapping and canonical hashes; this does not assert personal owner review of generated drafts, still acceptance, video QC or spending authorization.",
+            "reviewer": "Codex",
+            "schema": "joat.original_script_packet_review.v1",
+            "scope": "original_owner_script_machine_verified_packet_mapping",
+            "source_prompt_sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b"
+          }
+        },
+        "audio_music_sfx": [
+          {
+            "instructions": "Native character dialogue only when dialogue is declared. Narration, music and interface SFX are separate post stems. Original music: Introduce a hopeful melody. Original SFX: Natural footsteps and room ambience.",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "camera_framing": [
+          {
+            "angle": "eye_level",
+            "framing": "medium_wide",
+            "movement": "push_in",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "caption_on_screen_text": [
+          {
+            "shot_id": "SHOT-009",
+            "text": "WHAT IF YOUR BUSINESS COULD HANDLE THE BOOKINGS FOR YOU?"
+          }
+        ],
+        "character_refs": [
+          {
+            "appearance_rules": {
+              "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+              "build": "athletic/muscular",
+              "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+              "eyes": "dark brown; focused; slightly hooded",
+              "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+              "signature_accessories": [
+                "black square/rectangular sunglasses",
+                "diamond stud earrings",
+                "luxury watch",
+                "gold chain when scene-appropriate"
+              ],
+              "skin_tone": "deep rich brown; realistic natural texture"
+            },
+            "character_id": "CHAR-001",
+            "character_name": "Founder",
+            "character_version": "1.0.0",
+            "constraints_applied": true,
+            "continuity_rules": [
+              "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+              "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+              "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+              "Wardrobe may change by scene; biological identity features may not.",
+              "Do not infer a new permanent trait from a one-off scene/reference."
+            ],
+            "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+            "identity_locked": true,
+            "negative_rules": [
+              "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+              "Do not treat other people in interaction sheets as Founder identity references.",
+              "Do not overwrite approved assets or hashes silently."
+            ],
+            "source_asset_hashes": {
+              "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+              "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+            },
+            "supporting_reference_assets": [
+              "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+            ]
+          },
+          {
+            "appearance_rules": {
+              "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+              "identity": "Preserve the approved Cristu reference identity."
+            },
+            "approval": {
+              "live_change_allowed": false,
+              "requires_human_approval_for_registry_mutation": true
+            },
+            "character_id": "CHAR-004",
+            "character_name": "Cristu",
+            "character_version": "1.0.0",
+            "continuity_rules": [
+              "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+              "Use the identity anchor for Identity Lock.",
+              "Additional approved references support identity and scene continuity without replacing the anchor.",
+              "Do not infer permanent traits not supported by approved references."
+            ],
+            "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "identity_locked": true,
+            "negative_rules": [
+              "Do not change Cristu's core identity without an explicit approved character-version change.",
+              "Do not overwrite approved assets or SHA-256 hashes silently."
+            ],
+            "source_asset_hashes": {
+              "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+            },
+            "supporting_reference_assets": []
+          }
+        ],
+        "continuity_constraints": "Preserve canonical identity, environment and reviewed wardrobe. Style: Premium stylized 3D realism matching the approved canonical references. Portrait 9:16.. Wardrobe: Preserve each visible character\u2019s approved reference-supported wardrobe; no redesign.",
+        "created_at": "2026-10-17T21:36:33.672964+00:00",
+        "creative_brief": "STYLE-001 One More Message. Preserve the owner-supplied script, all exact spoken words, physical consultant entrance and face-to-face exchange, canon identities, approved timing, and 9:16 composition. Founder CHAR-001 always presents the product, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Main accepts the request; Executive/Director coordinates department work. This is CPU draft preparation only, not a GPU grant, still approval, production QC or delivery authorization.",
+        "dialogue_narration": [
+          {
+            "dialogue": "What if your business could handle the bookings for you?",
+            "narration": "",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "downstream_handoff": {
+          "registry_mutation": "not_applicable_director_only",
+          "source_schema": "joat.director_packet.v1",
+          "source_version": "1.0.5"
+        },
+        "duration": "00:5",
+        "environment_requirements": "ENV-001",
+        "generation_instructions": "Follow owner-reviewed shot decisions exactly. No extra people, captions or effects.",
+        "packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+        "per_shot": [
+          {
+            "all_visible_character_source_hashes": {
+              "CHAR-001": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              },
+              "CHAR-004": {
+                "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+              }
+            },
+            "audio_music_sfx": {
+              "instructions": "Native character dialogue only when dialogue is declared. Narration, music and interface SFX are separate post stems. Original music: Introduce a hopeful melody. Original SFX: Natural footsteps and room ambience.",
+              "shot_id": "SHOT-009"
+            },
+            "camera_framing": {
+              "angle": "eye_level",
+              "framing": "medium_wide",
+              "movement": "push_in",
+              "shot_id": "SHOT-009"
+            },
+            "caption_on_screen_text": {
+              "shot_id": "SHOT-009",
+              "text": "WHAT IF YOUR BUSINESS COULD HANDLE THE BOOKINGS FOR YOU?"
+            },
+            "character_constraints": {
+              "appearance_rules": {
+                "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                "build": "athletic/muscular",
+                "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                "eyes": "dark brown; focused; slightly hooded",
+                "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                "signature_accessories": [
+                  "black square/rectangular sunglasses",
+                  "diamond stud earrings",
+                  "luxury watch",
+                  "gold chain when scene-appropriate"
+                ],
+                "skin_tone": "deep rich brown; realistic natural texture"
+              },
+              "continuity_rules": [
+                "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                "Wardrobe may change by scene; biological identity features may not.",
+                "Do not infer a new permanent trait from a one-off scene/reference."
+              ],
+              "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                "Do not treat other people in interaction sheets as Founder identity references.",
+                "Do not overwrite approved assets or hashes silently."
+              ],
+              "source_asset_hashes": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              }
+            },
+            "character_ids": [
+              "CHAR-001",
+              "CHAR-004"
+            ],
+            "character_packet_references": [
+              {
+                "appearance_rules": {
+                  "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                  "build": "athletic/muscular",
+                  "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                  "eyes": "dark brown; focused; slightly hooded",
+                  "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                  "signature_accessories": [
+                    "black square/rectangular sunglasses",
+                    "diamond stud earrings",
+                    "luxury watch",
+                    "gold chain when scene-appropriate"
+                  ],
+                  "skin_tone": "deep rich brown; realistic natural texture"
+                },
+                "character_id": "CHAR-001",
+                "character_name": "Founder",
+                "character_version": "1.0.0",
+                "constraints_applied": true,
+                "continuity_rules": [
+                  "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                  "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                  "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                  "Wardrobe may change by scene; biological identity features may not.",
+                  "Do not infer a new permanent trait from a one-off scene/reference."
+                ],
+                "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+                "identity_locked": true,
+                "negative_rules": [
+                  "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                  "Do not treat other people in interaction sheets as Founder identity references.",
+                  "Do not overwrite approved assets or hashes silently."
+                ],
+                "source_asset_hashes": {
+                  "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                  "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+                },
+                "supporting_reference_assets": [
+                  "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+                ]
+              },
+              {
+                "appearance_rules": {
+                  "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+                  "identity": "Preserve the approved Cristu reference identity."
+                },
+                "approval": {
+                  "live_change_allowed": false,
+                  "requires_human_approval_for_registry_mutation": true
+                },
+                "character_id": "CHAR-004",
+                "character_name": "Cristu",
+                "character_version": "1.0.0",
+                "continuity_rules": [
+                  "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+                  "Use the identity anchor for Identity Lock.",
+                  "Additional approved references support identity and scene continuity without replacing the anchor.",
+                  "Do not infer permanent traits not supported by approved references."
+                ],
+                "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+                "identity_locked": true,
+                "negative_rules": [
+                  "Do not change Cristu's core identity without an explicit approved character-version change.",
+                  "Do not overwrite approved assets or SHA-256 hashes silently."
+                ],
+                "source_asset_hashes": {
+                  "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+                },
+                "supporting_reference_assets": []
+              }
+            ],
+            "dialogue_narration": {
+              "dialogue": "What if your business could handle the bookings for you?",
+              "narration": "",
+              "shot_id": "SHOT-009"
+            },
+            "duration": "00:5",
+            "environment_requirements": "ENV-001",
+            "performance_action": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "blocking": {
+                "end_position": "Maintain original continuity and shot action.",
+                "start_position": "Follow the approved scene composition."
+              },
+              "body_language": "Natural believable body language matching the original visual direction.",
+              "emotion": "Match the exact owner-directed visual performance.",
+              "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+              "gaze": {
+                "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+                "type": "scene"
+              },
+              "interaction": {
+                "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+                "target": "CHAR-004",
+                "type": "character"
+              },
+              "shot_id": "SHOT-009",
+              "timing": {
+                "hold_seconds": 0,
+                "pacing": "Natural within the exact allocated duration; preserve all words."
+              }
+            },
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "performance_action": [
+          {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "scene"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "shot_id": "SHOT-009",
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "Natural within the exact allocated duration; preserve all words."
+            }
+          }
+        ],
+        "performance_enum_adapter": {
+          "file_version": "1.0.2",
+          "normalized_spec": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "director_defined"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "natural"
+            }
+          },
+          "scope": "Typed metadata only; no change to original dialogue, visual action or allocated shot duration.",
+          "source_spec": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "scene"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "Natural within the exact allocated duration; preserve all words."
+            }
+          }
+        },
+        "production_intent": "animation",
+        "project_assignment": {
+          "assigned_project_id": "PROJECT-OTU-STYLE001-90S-001",
+          "original_director_sha256": "067cde2ce98a3091cda20e2d263aec0b4a9e661104573f6d0abe4e876a4edf15",
+          "original_project_id": "JOAT-acabe8b65136aa7c-dir-v1.0.5",
+          "owner_review_required": true
+        },
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "qc_gates": [
+          "identity_anchor_match",
+          "source_hash_integrity",
+          "continuity_check",
+          "negative_rule_check"
+        ],
+        "scene_plan": [
+          {
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "schema": "joat.director_packet.v1",
+        "version": "1.0.5",
+        "visible_cast_supplement": {
+          "character_packets": {
+            "CHAR-001": {
+              "appearance_rules": {
+                "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                "build": "athletic/muscular",
+                "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                "eyes": "dark brown; focused; slightly hooded",
+                "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                "signature_accessories": [
+                  "black square/rectangular sunglasses",
+                  "diamond stud earrings",
+                  "luxury watch",
+                  "gold chain when scene-appropriate"
+                ],
+                "skin_tone": "deep rich brown; realistic natural texture"
+              },
+              "approval": {
+                "live_change_allowed": false,
+                "requires_human_approval_for_registry_mutation": true
+              },
+              "character_id": "CHAR-001",
+              "character_name": "Founder",
+              "character_version": "1.0.0",
+              "continuity_rules": [
+                "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                "Wardrobe may change by scene; biological identity features may not.",
+                "Do not infer a new permanent trait from a one-off scene/reference."
+              ],
+              "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                "Do not treat other people in interaction sheets as Founder identity references.",
+                "Do not overwrite approved assets or hashes silently."
+              ],
+              "schema": "joat.character_packet.v1",
+              "source_asset_hashes": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              },
+              "supporting_reference_assets": [
+                "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+              ]
+            },
+            "CHAR-004": {
+              "appearance_rules": {
+                "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+                "identity": "Preserve the approved Cristu reference identity."
+              },
+              "approval": {
+                "live_change_allowed": false,
+                "requires_human_approval_for_registry_mutation": true
+              },
+              "character_id": "CHAR-004",
+              "character_name": "Cristu",
+              "character_version": "1.0.0",
+              "continuity_rules": [
+                "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+                "Use the identity anchor for Identity Lock.",
+                "Additional approved references support identity and scene continuity without replacing the anchor.",
+                "Do not infer permanent traits not supported by approved references."
+              ],
+              "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change Cristu's core identity without an explicit approved character-version change.",
+                "Do not overwrite approved assets or SHA-256 hashes silently."
+              ],
+              "schema": "joat.character_packet.v1",
+              "source_asset_hashes": {
+                "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+              },
+              "supporting_reference_assets": []
+            }
+          },
+          "file_version": "1.0.2",
+          "lighting": "Warmer and more hopeful.",
+          "native_render_prompt": "Style001 PROJECT-OTU-STYLE001-90S-001 / SCENE-005 / SHOT-009\nApproved cast: Founder as consultant; Cristu as business owner. Use job-specific approved composed first frame and immutable canonical identity evidence; no redesign.\nPremium stylized3D realism matching approved character artwork; no style conversion.\nA confident consultant enters the office and notices the owner\u2019s frustration.\nCamera: Medium-wide composition, slowly moving toward the consultant.\nLighting: Warmer and more hopeful.\nSpeak ONLY this exact line while the assigned character is visibly speaking: \u201cWhat if your business could handle the bookings for you?\u201d. Founder: adult male, calm confident low-mid register, clear American conversational delivery, reassuring rather than sales-pitch or theatrical. Keep one timbre/accent across all three speaking shots; reject material drift. Native audio reference is not silently enabled. No off-screen narrator, second speaking voice, background speech, music or sung words.\nMaintain established office geometry, locked wardrobe, props, screen direction and eyelines. Portray only the requested action with believable restrained movement. No unintended extra people, deformed hands, facial substitutions, shot cuts, contact sheets, captions or generated interface text. Exact UI and captions are composited later.\nAccepted edited shot duration: 5 seconds. Speak naturally within the accepted slot; do not accelerate or change the exact line.",
+          "original_camera": "Medium-wide composition, slowly moving toward the consultant.",
+          "original_visual": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "source_asset_hashes": {
+            "CHAR-001": {
+              "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+              "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+            },
+            "CHAR-004": {
+              "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+            }
+          },
+          "source_director_sha256": "2222fb808b45ce5ce0d81044f775f70ab7a459828fbbac523c2b311038b08772",
+          "source_shot_id": "SHOT-009"
+        }
+      },
+      "environment": {
+        "approval": {
+          "live_change_allowed": false,
+          "requires_human_approval_for_registry_mutation": true
+        },
+        "asset_identity_lock_ready": true,
+        "continuity_rules": [
+          "Preserve Executive Office architecture, layout, permanent fixtures, spatial relationships, and distinctive visual landmarks across shots.",
+          "Use the approved environment identity anchor for continuity-linked shots.",
+          "Supporting references may provide alternate angles, lighting, or detail without replacing the locked environment identity.",
+          "Time-of-day and lighting changes must remain physically consistent with the same location.",
+          "Characters, temporary props, vehicles, products, weather, and removable decorations do not become permanent environment traits unless explicitly approved."
+        ],
+        "downstream_handoff": {
+          "director_compatible": true,
+          "ltx_compatible": true,
+          "registry_mutation_allowed": false,
+          "shot_camera_compatible": true
+        },
+        "environment_id": "ENV-001",
+        "environment_locked": true,
+        "environment_name": "Executive Office",
+        "environment_rules": {
+          "architecture": "Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.",
+          "geography": "Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.",
+          "identity": "Preserve the approved Executive Office environment identity across all shots.",
+          "lighting": "Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.",
+          "materials": "Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.",
+          "time_of_day": "Use the requested time-of-day while preserving the locked environment identity."
+        },
+        "environment_version": "1.1.0",
+        "identity_lock_asset": "environment_assets/ENV-008_office_identity_anchor.jpeg",
+        "identity_lock_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+        "negative_rules": [
+          "Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.",
+          "Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.",
+          "Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.",
+          "Do not overwrite approved environment assets, metadata, paths, or hashes silently."
+        ],
+        "packet_fingerprint": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+        "scene_context": {
+          "lighting": "director_defined",
+          "scene_id": "SCENE-005",
+          "shot_id": "SHOT-009",
+          "time_of_day": "director_defined",
+          "weather": "director_defined"
+        },
+        "schema": "joat.environment_packet.v1",
+        "source_asset_hashes": {
+          "ENV-001-A01": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a"
+        },
+        "source_asset_locations": {
+          "ENV-001-A01": "environment_assets/ENV-008_office_identity_anchor.jpeg"
+        },
+        "supporting_reference_assets": [],
+        "task": "scene"
+      },
+      "performance_action": {
+        "app_version": "1.0.0",
+        "character_id": "CHAR-001",
+        "constraints": {
+          "preserve_camera_instructions": true,
+          "preserve_character_identity": true,
+          "preserve_director_intent": true,
+          "preserve_environment_identity": true,
+          "prevent_impossible_pose_transition": true,
+          "prevent_random_action_drift": true,
+          "prevent_random_blocking_drift": true,
+          "prevent_random_emotional_drift": true,
+          "prevent_random_gaze_drift": true,
+          "prevent_unapproved_interaction_change": true
+        },
+        "continuity": {
+          "continuity_rules": [
+            "Emotional changes must follow the approved Director intent and cannot jump randomly between continuity-linked shots.",
+            "Body position, gaze, hand state, held objects, and active actions must logically continue from the previous shot.",
+            "Character interaction must preserve who is touching, holding, facing, following, approaching, or reacting to whom.",
+            "Performance continuity cannot change locked character identity, wardrobe identity, environment identity, or approved camera instructions."
+          ],
+          "previous_action_state": null,
+          "previous_body_state": null,
+          "previous_emotion": null,
+          "previous_gaze_target": null,
+          "previous_position": null,
+          "previous_shot_id": null,
+          "starting_action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "starting_blocking": {
+            "end_position": "Maintain original continuity and shot action.",
+            "start_position": "Follow the approved scene composition."
+          },
+          "starting_body_language": "Natural believable body language matching the original visual direction.",
+          "starting_emotion": "Match the exact owner-directed visual performance.",
+          "starting_gaze": {
+            "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+            "type": "director_defined"
+          }
+        },
+        "downstream_handoff": {
+          "generation_supervisor_compatible": true,
+          "ltx_compatible": true,
+          "qc_compatible": true,
+          "timeline_compatible": true,
+          "upstream_mutation_allowed": false
+        },
+        "environment_id": "ENV-001",
+        "negative_rules": [
+          "Do not alter locked character identity, face, body identity, or approved character-master constraints.",
+          "Do not alter the locked environment identity or permanent environment geometry.",
+          "Do not rewrite Director intent.",
+          "Do not replace or contradict approved Shot/Camera instructions.",
+          "Do not invent unexplained emotional changes between continuity-linked shots.",
+          "Do not teleport characters or objects between positions.",
+          "Do not switch gaze targets, held objects, interaction partners, or action states without an approved performance beat.",
+          "Do not create physically impossible body transitions unless the Director explicitly requires stylized/impossible motion."
+        ],
+        "packet_fingerprint": "94aaa6f2f813442f6eed7d01ebd5cea4abe5b777efe7a57af29b8f8e0364fa94",
+        "performance": {
+          "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "blocking": {
+            "end_position": "Maintain original continuity and shot action.",
+            "start_position": "Follow the approved scene composition."
+          },
+          "body_language": "Natural believable body language matching the original visual direction.",
+          "emotion": "Match the exact owner-directed visual performance.",
+          "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+          "gaze": {
+            "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+            "type": "director_defined"
+          },
+          "intensity": "moderate",
+          "interaction": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "target": "CHAR-004",
+            "type": "character"
+          },
+          "performance_beats": [],
+          "timing": {
+            "hold_seconds": 0,
+            "pacing": "natural"
+          }
+        },
+        "performance_locked": true,
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "scene_id": "SCENE-005",
+        "schema": "joat.performance_action_packet.v1",
+        "shot_id": "SHOT-009",
+        "upstream_locks": {
+          "character_identity_locked": true,
+          "director_intent_preserved": true,
+          "environment_identity_locked": true,
+          "shot_camera_preserved": true
+        },
+        "upstream_references": {
+          "character": {
+            "packet_fingerprint": null,
+            "project_id": null,
+            "scene_id": null,
+            "schema": "joat.character_packet.v1",
+            "shot_id": null
+          },
+          "director": {
+            "packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "scene_id": null,
+            "schema": "joat.director_packet.v1",
+            "shot_id": null
+          },
+          "environment": {
+            "packet_fingerprint": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+            "project_id": null,
+            "scene_id": "SCENE-005",
+            "schema": "joat.environment_packet.v1",
+            "shot_id": "SHOT-009"
+          },
+          "shot_camera": {
+            "packet_fingerprint": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "scene_id": "SCENE-005",
+            "schema": "joat.shot_camera_packet.v1",
+            "shot_id": "SHOT-009"
+          }
+        }
+      },
+      "shot_camera": {
+        "camera": {
+          "angle": "eye_level",
+          "composition": "director_defined",
+          "depth_guidance": "Director defined",
+          "focus_mode": "director_defined",
+          "lens_guidance": "Director defined",
+          "movement": "push_in",
+          "shot_size": "medium_wide"
+        },
+        "camera_lock_provenance": {
+          "approved_by": "Dezz-9-10",
+          "basis": "matching_owner_approved_director",
+          "character_packet_sha256": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+          "director_packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+          "reviewed_draft_sha256": "5441fa83503bf68672a58cce41507f9f7e12023c308a3ee389cd0129eab676ab"
+        },
+        "camera_locked": true,
+        "character_reference": {
+          "appearance_rules": {
+            "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+            "build": "athletic/muscular",
+            "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+            "eyes": "dark brown; focused; slightly hooded",
+            "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+            "signature_accessories": [
+              "black square/rectangular sunglasses",
+              "diamond stud earrings",
+              "luxury watch",
+              "gold chain when scene-appropriate"
+            ],
+            "skin_tone": "deep rich brown; realistic natural texture"
+          },
+          "character_id": "CHAR-001",
+          "character_name": "Founder",
+          "character_version": "1.0.0",
+          "continuity_rules": [
+            "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+            "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+            "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+            "Wardrobe may change by scene; biological identity features may not.",
+            "Do not infer a new permanent trait from a one-off scene/reference."
+          ],
+          "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+          "identity_locked": true,
+          "negative_rules": [
+            "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+            "Do not treat other people in interaction sheets as Founder identity references.",
+            "Do not overwrite approved assets or hashes silently."
+          ],
+          "schema": "joat.character_packet.v1",
+          "source_asset_hashes": {
+            "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+          },
+          "supporting_reference_assets": [
+            "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+          ]
+        },
+        "continuity": {
+          "camera_transition": {
+            "current_angle": "eye_level",
+            "current_movement": "push_in",
+            "current_shot_size": "medium_wide",
+            "previous_angle": null,
+            "previous_movement": null,
+            "previous_shot_size": null
+          },
+          "character_identity_preserved": true,
+          "continuity_rules": [
+            "Preserve locked character identity across continuity-linked shots.",
+            "Preserve locked environment identity, architecture, layout, permanent fixtures, and geography.",
+            "Camera changes must be intentional and represented by the current shot packet.",
+            "Do not silently change screen direction, subject placement, eyeline logic, or spatial relationships.",
+            "Shot duration and transitions must remain consistent with Director intent and downstream edit timing."
+          ],
+          "environment_identity_preserved": true,
+          "previous_shot_id": null,
+          "same_scene_as_previous": null,
+          "scene_id": "SCENE-005",
+          "shot_id": "SHOT-009"
+        },
+        "created_at": "2026-10-18T01:58:10.660272+00:00",
+        "director_reference": {
+          "continuity_constraints": "Preserve canonical identity, environment and reviewed wardrobe. Style: Premium stylized 3D realism matching the approved canonical references. Portrait 9:16.. Wardrobe: Preserve each visible character\u2019s approved reference-supported wardrobe; no redesign.",
+          "creative_brief": "STYLE-001 One More Message. Preserve the owner-supplied script, all exact spoken words, physical consultant entrance and face-to-face exchange, canon identities, approved timing, and 9:16 composition. Founder CHAR-001 always presents the product, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Main accepts the request; Executive/Director coordinates department work. This is CPU draft preparation only, not a GPU grant, still approval, production QC or delivery authorization.",
+          "generation_instructions": "Follow owner-reviewed shot decisions exactly. No extra people, captions or effects.",
+          "production_intent": "animation",
+          "project_id": "PROJECT-OTU-STYLE001-90S-001",
+          "qc_gates": [
+            "identity_anchor_match",
+            "source_hash_integrity",
+            "continuity_check",
+            "negative_rule_check"
+          ],
+          "schema": "joat.director_packet.v1",
+          "version": "1.0.5"
+        },
+        "downstream_handoff": {
+          "character_master_mutation_allowed": false,
+          "director_master_mutation_allowed": false,
+          "environment_master_mutation_allowed": false,
+          "format": "joat.shot_camera_packet.v1",
+          "ltx_compatible": true,
+          "target": "joat-ltx-generation-worker"
+        },
+        "environment_reference": {
+          "asset_identity_lock_ready": true,
+          "continuity_rules": [
+            "Preserve Executive Office architecture, layout, permanent fixtures, spatial relationships, and distinctive visual landmarks across shots.",
+            "Use the approved environment identity anchor for continuity-linked shots.",
+            "Supporting references may provide alternate angles, lighting, or detail without replacing the locked environment identity.",
+            "Time-of-day and lighting changes must remain physically consistent with the same location.",
+            "Characters, temporary props, vehicles, products, weather, and removable decorations do not become permanent environment traits unless explicitly approved."
+          ],
+          "environment_id": "ENV-001",
+          "environment_locked": true,
+          "environment_name": "Executive Office",
+          "environment_rules": {
+            "architecture": "Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.",
+            "geography": "Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.",
+            "identity": "Preserve the approved Executive Office environment identity across all shots.",
+            "lighting": "Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.",
+            "materials": "Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.",
+            "time_of_day": "Use the requested time-of-day while preserving the locked environment identity."
+          },
+          "environment_version": "1.1.0",
+          "identity_lock_asset": "environment_assets/ENV-008_office_identity_anchor.jpeg",
+          "negative_rules": [
+            "Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.",
+            "Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.",
+            "Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.",
+            "Do not overwrite approved environment assets, metadata, paths, or hashes silently."
+          ],
+          "scene_context": {
+            "lighting": "director_defined",
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009",
+            "time_of_day": "director_defined",
+            "weather": "director_defined"
+          },
+          "schema": "joat.environment_packet.v1",
+          "source_asset_hashes": {
+            "ENV-001-A01": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a"
+          },
+          "supporting_reference_assets": []
+        },
+        "generation_constraints": {
+          "camera_change_requires_shot_instruction": true,
+          "no_unrequested_camera_drift": true,
+          "no_unrequested_environment_drift": true,
+          "no_unrequested_identity_drift": true,
+          "preserve_character_identity": true,
+          "preserve_environment_identity": true
+        },
+        "packet_fingerprint": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302",
+        "performance_context": {
+          "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "subject": "CHAR-001"
+        },
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "qc_gates": [
+          "shot_schema_valid",
+          "character_identity_match",
+          "environment_identity_match",
+          "camera_instruction_match",
+          "composition_match",
+          "shot_to_shot_continuity",
+          "duration_valid"
+        ],
+        "scene_id": "SCENE-005",
+        "schema": "joat.shot_camera_packet.v1",
+        "shot_id": "SHOT-009",
+        "shot_purpose": "{\"original_visual\": \"A confident consultant enters the office and notices the owner\u2019s frustration.\", \"original_camera\": \"Medium-wide composition, slowly moving toward the consultant.\", \"lighting\": \"Warmer and more hopeful.\", \"visible_cast\": {\"consultant\": \"CHAR-001\", \"business_owner\": \"CHAR-004\"}, \"primary_character_id\": \"CHAR-001\", \"source_mission_fingerprint\": \"2a881aa9651cd9058fd3f9ddaf199f1c2cbfc849b82caf511b1bcd661921868d\", \"source_shot_id\": \"SHOT-009\", \"native_render_prompt\": \"Style001 PROJECT-OTU-STYLE001-90S-001 / SCENE-005 / SHOT-009\\nApproved cast: Founder as consultant; Cristu as business owner. Use job-specific approved composed first frame and immutable canonical identity evidence; no redesign.\\nPremium stylized3D realism matching approved character artwork; no style conversion.\\nA confident consultant enters the office and notices the owner\u2019s frustration.\\nCamera: Medium-wide composition, slowly moving toward the consultant.\\nLighting: Warmer and more hopeful.\\nSpeak ONLY this exact line while the assigned character is visibly speaking: \u201cWhat if your business could handle the bookings for you?\u201d. Founder: adult male, calm confident low-mid register, clear American conversational delivery, reassuring rather than sales-pitch or theatrical. Keep one timbre/accent across all three speaking shots; reject material drift. Native audio reference is not silently enabled. No off-screen narrator, second speaking voice, background speech, music or sung words.\\nMaintain established office geometry, locked wardrobe, props, screen direction and eyelines. Portray only the requested action with believable restrained movement. No unintended extra people, deformed hands, facial substitutions, shot cuts, contact sheets, captions or generated interface text. Exact UI and captions are composited later.\\nAccepted edited shot duration: 5 seconds. Speak naturally within the accepted slot; do not accelerate or change the exact line.\", \"multi_character_note\": \"All declared visible identities must be preserved; the primary character field does not authorize removing secondary characters.\"}",
+        "timing": {
+          "duration_seconds": 5.0,
+          "transition_in": "cut",
+          "transition_out": "cut"
+        },
+        "version": "1.0.1"
+      }
+    },
+    "job_fingerprint": "d376e3eefaf03d51add9ab75475bb60f2e3020fca2ea4148f893572774a59036",
+    "job_type": "video",
+    "project_context": {
+      "project_id": "PROJECT-OTU-STYLE001-90S-001",
+      "scene_id": "SCENE-005",
+      "shot_id": "SHOT-009"
+    },
+    "prompt_contract": {
+      "character_packet": {
+        "appearance_rules": {
+          "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+          "build": "athletic/muscular",
+          "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+          "eyes": "dark brown; focused; slightly hooded",
+          "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+          "signature_accessories": [
+            "black square/rectangular sunglasses",
+            "diamond stud earrings",
+            "luxury watch",
+            "gold chain when scene-appropriate"
+          ],
+          "skin_tone": "deep rich brown; realistic natural texture"
+        },
+        "approval": {
+          "live_change_allowed": false,
+          "requires_human_approval_for_registry_mutation": true
+        },
+        "character_id": "CHAR-001",
+        "character_name": "Founder",
+        "character_version": "1.0.0",
+        "continuity_rules": [
+          "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+          "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+          "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+          "Wardrobe may change by scene; biological identity features may not.",
+          "Do not infer a new permanent trait from a one-off scene/reference."
+        ],
+        "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+        "identity_locked": true,
+        "negative_rules": [
+          "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+          "Do not treat other people in interaction sheets as Founder identity references.",
+          "Do not overwrite approved assets or hashes silently."
+        ],
+        "schema": "joat.character_packet.v1",
+        "source_asset_hashes": {
+          "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+          "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+        },
+        "supporting_reference_assets": [
+          "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+        ]
+      },
+      "director_packet": {
+        "approval": {
+          "approved_at": "2026-10-18T01:58:10.528500+00:00",
+          "approved_by": "Dezz-9-10",
+          "character_packet_sha256": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+          "creative_intent_locked": true,
+          "reviewed_draft_sha256": "5441fa83503bf68672a58cce41507f9f7e12023c308a3ee389cd0129eab676ab",
+          "source_script_review": {
+            "file_version": "1.0.0",
+            "owner": "Dezz-9-10",
+            "plan_fingerprint": "b27d820803bf4c7e6c55f1dc0da03e733e0da17d7ca6dd773f020166c523daad",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "review_statement": "Owner supplied and authorized the unchanged production script. Codex verified exact native packet mapping and canonical hashes; this does not assert personal owner review of generated drafts, still acceptance, video QC or spending authorization.",
+            "reviewer": "Codex",
+            "schema": "joat.original_script_packet_review.v1",
+            "scope": "original_owner_script_machine_verified_packet_mapping",
+            "source_prompt_sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b"
+          }
+        },
+        "audio_music_sfx": [
+          {
+            "instructions": "Native character dialogue only when dialogue is declared. Narration, music and interface SFX are separate post stems. Original music: Introduce a hopeful melody. Original SFX: Natural footsteps and room ambience.",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "camera_framing": [
+          {
+            "angle": "eye_level",
+            "framing": "medium_wide",
+            "movement": "push_in",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "caption_on_screen_text": [
+          {
+            "shot_id": "SHOT-009",
+            "text": "WHAT IF YOUR BUSINESS COULD HANDLE THE BOOKINGS FOR YOU?"
+          }
+        ],
+        "character_refs": [
+          {
+            "appearance_rules": {
+              "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+              "build": "athletic/muscular",
+              "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+              "eyes": "dark brown; focused; slightly hooded",
+              "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+              "signature_accessories": [
+                "black square/rectangular sunglasses",
+                "diamond stud earrings",
+                "luxury watch",
+                "gold chain when scene-appropriate"
+              ],
+              "skin_tone": "deep rich brown; realistic natural texture"
+            },
+            "character_id": "CHAR-001",
+            "character_name": "Founder",
+            "character_version": "1.0.0",
+            "constraints_applied": true,
+            "continuity_rules": [
+              "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+              "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+              "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+              "Wardrobe may change by scene; biological identity features may not.",
+              "Do not infer a new permanent trait from a one-off scene/reference."
+            ],
+            "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+            "identity_locked": true,
+            "negative_rules": [
+              "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+              "Do not treat other people in interaction sheets as Founder identity references.",
+              "Do not overwrite approved assets or hashes silently."
+            ],
+            "source_asset_hashes": {
+              "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+              "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+            },
+            "supporting_reference_assets": [
+              "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+            ]
+          },
+          {
+            "appearance_rules": {
+              "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+              "identity": "Preserve the approved Cristu reference identity."
+            },
+            "approval": {
+              "live_change_allowed": false,
+              "requires_human_approval_for_registry_mutation": true
+            },
+            "character_id": "CHAR-004",
+            "character_name": "Cristu",
+            "character_version": "1.0.0",
+            "continuity_rules": [
+              "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+              "Use the identity anchor for Identity Lock.",
+              "Additional approved references support identity and scene continuity without replacing the anchor.",
+              "Do not infer permanent traits not supported by approved references."
+            ],
+            "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "identity_locked": true,
+            "negative_rules": [
+              "Do not change Cristu's core identity without an explicit approved character-version change.",
+              "Do not overwrite approved assets or SHA-256 hashes silently."
+            ],
+            "source_asset_hashes": {
+              "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+            },
+            "supporting_reference_assets": []
+          }
+        ],
+        "continuity_constraints": "Preserve canonical identity, environment and reviewed wardrobe. Style: Premium stylized 3D realism matching the approved canonical references. Portrait 9:16.. Wardrobe: Preserve each visible character\u2019s approved reference-supported wardrobe; no redesign.",
+        "created_at": "2026-10-17T21:36:33.672964+00:00",
+        "creative_brief": "STYLE-001 One More Message. Preserve the owner-supplied script, all exact spoken words, physical consultant entrance and face-to-face exchange, canon identities, approved timing, and 9:16 composition. Founder CHAR-001 always presents the product, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Main accepts the request; Executive/Director coordinates department work. This is CPU draft preparation only, not a GPU grant, still approval, production QC or delivery authorization.",
+        "dialogue_narration": [
+          {
+            "dialogue": "What if your business could handle the bookings for you?",
+            "narration": "",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "downstream_handoff": {
+          "registry_mutation": "not_applicable_director_only",
+          "source_schema": "joat.director_packet.v1",
+          "source_version": "1.0.5"
+        },
+        "duration": "00:5",
+        "environment_requirements": "ENV-001",
+        "generation_instructions": "Follow owner-reviewed shot decisions exactly. No extra people, captions or effects.",
+        "packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+        "per_shot": [
+          {
+            "all_visible_character_source_hashes": {
+              "CHAR-001": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              },
+              "CHAR-004": {
+                "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+              }
+            },
+            "audio_music_sfx": {
+              "instructions": "Native character dialogue only when dialogue is declared. Narration, music and interface SFX are separate post stems. Original music: Introduce a hopeful melody. Original SFX: Natural footsteps and room ambience.",
+              "shot_id": "SHOT-009"
+            },
+            "camera_framing": {
+              "angle": "eye_level",
+              "framing": "medium_wide",
+              "movement": "push_in",
+              "shot_id": "SHOT-009"
+            },
+            "caption_on_screen_text": {
+              "shot_id": "SHOT-009",
+              "text": "WHAT IF YOUR BUSINESS COULD HANDLE THE BOOKINGS FOR YOU?"
+            },
+            "character_constraints": {
+              "appearance_rules": {
+                "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                "build": "athletic/muscular",
+                "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                "eyes": "dark brown; focused; slightly hooded",
+                "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                "signature_accessories": [
+                  "black square/rectangular sunglasses",
+                  "diamond stud earrings",
+                  "luxury watch",
+                  "gold chain when scene-appropriate"
+                ],
+                "skin_tone": "deep rich brown; realistic natural texture"
+              },
+              "continuity_rules": [
+                "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                "Wardrobe may change by scene; biological identity features may not.",
+                "Do not infer a new permanent trait from a one-off scene/reference."
+              ],
+              "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                "Do not treat other people in interaction sheets as Founder identity references.",
+                "Do not overwrite approved assets or hashes silently."
+              ],
+              "source_asset_hashes": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              }
+            },
+            "character_ids": [
+              "CHAR-001",
+              "CHAR-004"
+            ],
+            "character_packet_references": [
+              {
+                "appearance_rules": {
+                  "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                  "build": "athletic/muscular",
+                  "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                  "eyes": "dark brown; focused; slightly hooded",
+                  "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                  "signature_accessories": [
+                    "black square/rectangular sunglasses",
+                    "diamond stud earrings",
+                    "luxury watch",
+                    "gold chain when scene-appropriate"
+                  ],
+                  "skin_tone": "deep rich brown; realistic natural texture"
+                },
+                "character_id": "CHAR-001",
+                "character_name": "Founder",
+                "character_version": "1.0.0",
+                "constraints_applied": true,
+                "continuity_rules": [
+                  "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                  "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                  "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                  "Wardrobe may change by scene; biological identity features may not.",
+                  "Do not infer a new permanent trait from a one-off scene/reference."
+                ],
+                "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+                "identity_locked": true,
+                "negative_rules": [
+                  "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                  "Do not treat other people in interaction sheets as Founder identity references.",
+                  "Do not overwrite approved assets or hashes silently."
+                ],
+                "source_asset_hashes": {
+                  "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                  "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+                },
+                "supporting_reference_assets": [
+                  "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+                ]
+              },
+              {
+                "appearance_rules": {
+                  "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+                  "identity": "Preserve the approved Cristu reference identity."
+                },
+                "approval": {
+                  "live_change_allowed": false,
+                  "requires_human_approval_for_registry_mutation": true
+                },
+                "character_id": "CHAR-004",
+                "character_name": "Cristu",
+                "character_version": "1.0.0",
+                "continuity_rules": [
+                  "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+                  "Use the identity anchor for Identity Lock.",
+                  "Additional approved references support identity and scene continuity without replacing the anchor.",
+                  "Do not infer permanent traits not supported by approved references."
+                ],
+                "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+                "identity_locked": true,
+                "negative_rules": [
+                  "Do not change Cristu's core identity without an explicit approved character-version change.",
+                  "Do not overwrite approved assets or SHA-256 hashes silently."
+                ],
+                "source_asset_hashes": {
+                  "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+                },
+                "supporting_reference_assets": []
+              }
+            ],
+            "dialogue_narration": {
+              "dialogue": "What if your business could handle the bookings for you?",
+              "narration": "",
+              "shot_id": "SHOT-009"
+            },
+            "duration": "00:5",
+            "environment_requirements": "ENV-001",
+            "performance_action": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "blocking": {
+                "end_position": "Maintain original continuity and shot action.",
+                "start_position": "Follow the approved scene composition."
+              },
+              "body_language": "Natural believable body language matching the original visual direction.",
+              "emotion": "Match the exact owner-directed visual performance.",
+              "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+              "gaze": {
+                "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+                "type": "scene"
+              },
+              "interaction": {
+                "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+                "target": "CHAR-004",
+                "type": "character"
+              },
+              "shot_id": "SHOT-009",
+              "timing": {
+                "hold_seconds": 0,
+                "pacing": "Natural within the exact allocated duration; preserve all words."
+              }
+            },
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "performance_action": [
+          {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "scene"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "shot_id": "SHOT-009",
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "Natural within the exact allocated duration; preserve all words."
+            }
+          }
+        ],
+        "performance_enum_adapter": {
+          "file_version": "1.0.2",
+          "normalized_spec": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "director_defined"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "natural"
+            }
+          },
+          "scope": "Typed metadata only; no change to original dialogue, visual action or allocated shot duration.",
+          "source_spec": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "body_language": "Natural believable body language matching the original visual direction.",
+            "emotion": "Match the exact owner-directed visual performance.",
+            "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+            "gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "scene"
+            },
+            "interaction": {
+              "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+              "target": "CHAR-004",
+              "type": "character"
+            },
+            "timing": {
+              "hold_seconds": 0,
+              "pacing": "Natural within the exact allocated duration; preserve all words."
+            }
+          }
+        },
+        "production_intent": "animation",
+        "project_assignment": {
+          "assigned_project_id": "PROJECT-OTU-STYLE001-90S-001",
+          "original_director_sha256": "067cde2ce98a3091cda20e2d263aec0b4a9e661104573f6d0abe4e876a4edf15",
+          "original_project_id": "JOAT-acabe8b65136aa7c-dir-v1.0.5",
+          "owner_review_required": true
+        },
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "qc_gates": [
+          "identity_anchor_match",
+          "source_hash_integrity",
+          "continuity_check",
+          "negative_rule_check"
+        ],
+        "scene_plan": [
+          {
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009"
+          }
+        ],
+        "schema": "joat.director_packet.v1",
+        "version": "1.0.5",
+        "visible_cast_supplement": {
+          "character_packets": {
+            "CHAR-001": {
+              "appearance_rules": {
+                "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+                "build": "athletic/muscular",
+                "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+                "eyes": "dark brown; focused; slightly hooded",
+                "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+                "signature_accessories": [
+                  "black square/rectangular sunglasses",
+                  "diamond stud earrings",
+                  "luxury watch",
+                  "gold chain when scene-appropriate"
+                ],
+                "skin_tone": "deep rich brown; realistic natural texture"
+              },
+              "approval": {
+                "live_change_allowed": false,
+                "requires_human_approval_for_registry_mutation": true
+              },
+              "character_id": "CHAR-001",
+              "character_name": "Founder",
+              "character_version": "1.0.0",
+              "continuity_rules": [
+                "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+                "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+                "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+                "Wardrobe may change by scene; biological identity features may not.",
+                "Do not infer a new permanent trait from a one-off scene/reference."
+              ],
+              "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+                "Do not treat other people in interaction sheets as Founder identity references.",
+                "Do not overwrite approved assets or hashes silently."
+              ],
+              "schema": "joat.character_packet.v1",
+              "source_asset_hashes": {
+                "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+                "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+              },
+              "supporting_reference_assets": [
+                "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+              ]
+            },
+            "CHAR-004": {
+              "appearance_rules": {
+                "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+                "identity": "Preserve the approved Cristu reference identity."
+              },
+              "approval": {
+                "live_change_allowed": false,
+                "requires_human_approval_for_registry_mutation": true
+              },
+              "character_id": "CHAR-004",
+              "character_name": "Cristu",
+              "character_version": "1.0.0",
+              "continuity_rules": [
+                "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+                "Use the identity anchor for Identity Lock.",
+                "Additional approved references support identity and scene continuity without replacing the anchor.",
+                "Do not infer permanent traits not supported by approved references."
+              ],
+              "identity_lock_asset": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+              "identity_locked": true,
+              "negative_rules": [
+                "Do not change Cristu's core identity without an explicit approved character-version change.",
+                "Do not overwrite approved assets or SHA-256 hashes silently."
+              ],
+              "schema": "joat.character_packet.v1",
+              "source_asset_hashes": {
+                "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+              },
+              "supporting_reference_assets": []
+            }
+          },
+          "file_version": "1.0.2",
+          "lighting": "Warmer and more hopeful.",
+          "native_render_prompt": "Style001 PROJECT-OTU-STYLE001-90S-001 / SCENE-005 / SHOT-009\nApproved cast: Founder as consultant; Cristu as business owner. Use job-specific approved composed first frame and immutable canonical identity evidence; no redesign.\nPremium stylized3D realism matching approved character artwork; no style conversion.\nA confident consultant enters the office and notices the owner\u2019s frustration.\nCamera: Medium-wide composition, slowly moving toward the consultant.\nLighting: Warmer and more hopeful.\nSpeak ONLY this exact line while the assigned character is visibly speaking: \u201cWhat if your business could handle the bookings for you?\u201d. Founder: adult male, calm confident low-mid register, clear American conversational delivery, reassuring rather than sales-pitch or theatrical. Keep one timbre/accent across all three speaking shots; reject material drift. Native audio reference is not silently enabled. No off-screen narrator, second speaking voice, background speech, music or sung words.\nMaintain established office geometry, locked wardrobe, props, screen direction and eyelines. Portray only the requested action with believable restrained movement. No unintended extra people, deformed hands, facial substitutions, shot cuts, contact sheets, captions or generated interface text. Exact UI and captions are composited later.\nAccepted edited shot duration: 5 seconds. Speak naturally within the accepted slot; do not accelerate or change the exact line.",
+          "original_camera": "Medium-wide composition, slowly moving toward the consultant.",
+          "original_visual": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "source_asset_hashes": {
+            "CHAR-001": {
+              "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+              "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+            },
+            "CHAR-004": {
+              "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+            }
+          },
+          "source_director_sha256": "2222fb808b45ce5ce0d81044f775f70ab7a459828fbbac523c2b311038b08772",
+          "source_shot_id": "SHOT-009"
+        }
+      },
+      "environment_packet": {
+        "approval": {
+          "live_change_allowed": false,
+          "requires_human_approval_for_registry_mutation": true
+        },
+        "asset_identity_lock_ready": true,
+        "continuity_rules": [
+          "Preserve Executive Office architecture, layout, permanent fixtures, spatial relationships, and distinctive visual landmarks across shots.",
+          "Use the approved environment identity anchor for continuity-linked shots.",
+          "Supporting references may provide alternate angles, lighting, or detail without replacing the locked environment identity.",
+          "Time-of-day and lighting changes must remain physically consistent with the same location.",
+          "Characters, temporary props, vehicles, products, weather, and removable decorations do not become permanent environment traits unless explicitly approved."
+        ],
+        "downstream_handoff": {
+          "director_compatible": true,
+          "ltx_compatible": true,
+          "registry_mutation_allowed": false,
+          "shot_camera_compatible": true
+        },
+        "environment_id": "ENV-001",
+        "environment_locked": true,
+        "environment_name": "Executive Office",
+        "environment_rules": {
+          "architecture": "Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.",
+          "geography": "Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.",
+          "identity": "Preserve the approved Executive Office environment identity across all shots.",
+          "lighting": "Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.",
+          "materials": "Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.",
+          "time_of_day": "Use the requested time-of-day while preserving the locked environment identity."
+        },
+        "environment_version": "1.1.0",
+        "identity_lock_asset": "environment_assets/ENV-008_office_identity_anchor.jpeg",
+        "identity_lock_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+        "negative_rules": [
+          "Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.",
+          "Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.",
+          "Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.",
+          "Do not overwrite approved environment assets, metadata, paths, or hashes silently."
+        ],
+        "packet_fingerprint": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+        "scene_context": {
+          "lighting": "director_defined",
+          "scene_id": "SCENE-005",
+          "shot_id": "SHOT-009",
+          "time_of_day": "director_defined",
+          "weather": "director_defined"
+        },
+        "schema": "joat.environment_packet.v1",
+        "source_asset_hashes": {
+          "ENV-001-A01": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a"
+        },
+        "source_asset_locations": {
+          "ENV-001-A01": "environment_assets/ENV-008_office_identity_anchor.jpeg"
+        },
+        "supporting_reference_assets": [],
+        "task": "scene"
+      },
+      "generation_notes": "Owner-reviewed creative plan b27d820803bf4c7e6c55f1dc0da03e733e0da17d7ca6dd773f020166c523daad",
+      "performance_action_packet": {
+        "app_version": "1.0.0",
+        "character_id": "CHAR-001",
+        "constraints": {
+          "preserve_camera_instructions": true,
+          "preserve_character_identity": true,
+          "preserve_director_intent": true,
+          "preserve_environment_identity": true,
+          "prevent_impossible_pose_transition": true,
+          "prevent_random_action_drift": true,
+          "prevent_random_blocking_drift": true,
+          "prevent_random_emotional_drift": true,
+          "prevent_random_gaze_drift": true,
+          "prevent_unapproved_interaction_change": true
+        },
+        "continuity": {
+          "continuity_rules": [
+            "Emotional changes must follow the approved Director intent and cannot jump randomly between continuity-linked shots.",
+            "Body position, gaze, hand state, held objects, and active actions must logically continue from the previous shot.",
+            "Character interaction must preserve who is touching, holding, facing, following, approaching, or reacting to whom.",
+            "Performance continuity cannot change locked character identity, wardrobe identity, environment identity, or approved camera instructions."
+          ],
+          "previous_action_state": null,
+          "previous_body_state": null,
+          "previous_emotion": null,
+          "previous_gaze_target": null,
+          "previous_position": null,
+          "previous_shot_id": null,
+          "starting_action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "starting_blocking": {
+            "end_position": "Maintain original continuity and shot action.",
+            "start_position": "Follow the approved scene composition."
+          },
+          "starting_body_language": "Natural believable body language matching the original visual direction.",
+          "starting_emotion": "Match the exact owner-directed visual performance.",
+          "starting_gaze": {
+            "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+            "type": "director_defined"
+          }
+        },
+        "downstream_handoff": {
+          "generation_supervisor_compatible": true,
+          "ltx_compatible": true,
+          "qc_compatible": true,
+          "timeline_compatible": true,
+          "upstream_mutation_allowed": false
+        },
+        "environment_id": "ENV-001",
+        "negative_rules": [
+          "Do not alter locked character identity, face, body identity, or approved character-master constraints.",
+          "Do not alter the locked environment identity or permanent environment geometry.",
+          "Do not rewrite Director intent.",
+          "Do not replace or contradict approved Shot/Camera instructions.",
+          "Do not invent unexplained emotional changes between continuity-linked shots.",
+          "Do not teleport characters or objects between positions.",
+          "Do not switch gaze targets, held objects, interaction partners, or action states without an approved performance beat.",
+          "Do not create physically impossible body transitions unless the Director explicitly requires stylized/impossible motion."
+        ],
+        "packet_fingerprint": "94aaa6f2f813442f6eed7d01ebd5cea4abe5b777efe7a57af29b8f8e0364fa94",
+        "performance": {
+          "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "blocking": {
+            "end_position": "Maintain original continuity and shot action.",
+            "start_position": "Follow the approved scene composition."
+          },
+          "body_language": "Natural believable body language matching the original visual direction.",
+          "emotion": "Match the exact owner-directed visual performance.",
+          "expression": "Preserve canonical facial proportions; use the expression required by the original visual direction.",
+          "gaze": {
+            "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+            "type": "director_defined"
+          },
+          "intensity": "moderate",
+          "interaction": {
+            "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+            "target": "CHAR-004",
+            "type": "character"
+          },
+          "performance_beats": [],
+          "timing": {
+            "hold_seconds": 0,
+            "pacing": "natural"
+          }
+        },
+        "performance_locked": true,
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "scene_id": "SCENE-005",
+        "schema": "joat.performance_action_packet.v1",
+        "shot_id": "SHOT-009",
+        "upstream_locks": {
+          "character_identity_locked": true,
+          "director_intent_preserved": true,
+          "environment_identity_locked": true,
+          "shot_camera_preserved": true
+        },
+        "upstream_references": {
+          "character": {
+            "packet_fingerprint": null,
+            "project_id": null,
+            "scene_id": null,
+            "schema": "joat.character_packet.v1",
+            "shot_id": null
+          },
+          "director": {
+            "packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "scene_id": null,
+            "schema": "joat.director_packet.v1",
+            "shot_id": null
+          },
+          "environment": {
+            "packet_fingerprint": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+            "project_id": null,
+            "scene_id": "SCENE-005",
+            "schema": "joat.environment_packet.v1",
+            "shot_id": "SHOT-009"
+          },
+          "shot_camera": {
+            "packet_fingerprint": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "scene_id": "SCENE-005",
+            "schema": "joat.shot_camera_packet.v1",
+            "shot_id": "SHOT-009"
+          }
+        }
+      },
+      "shot_camera_packet": {
+        "camera": {
+          "angle": "eye_level",
+          "composition": "director_defined",
+          "depth_guidance": "Director defined",
+          "focus_mode": "director_defined",
+          "lens_guidance": "Director defined",
+          "movement": "push_in",
+          "shot_size": "medium_wide"
+        },
+        "camera_lock_provenance": {
+          "approved_by": "Dezz-9-10",
+          "basis": "matching_owner_approved_director",
+          "character_packet_sha256": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+          "director_packet_fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+          "reviewed_draft_sha256": "5441fa83503bf68672a58cce41507f9f7e12023c308a3ee389cd0129eab676ab"
+        },
+        "camera_locked": true,
+        "character_reference": {
+          "appearance_rules": {
+            "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+            "build": "athletic/muscular",
+            "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported",
+            "eyes": "dark brown; focused; slightly hooded",
+            "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+            "signature_accessories": [
+              "black square/rectangular sunglasses",
+              "diamond stud earrings",
+              "luxury watch",
+              "gold chain when scene-appropriate"
+            ],
+            "skin_tone": "deep rich brown; realistic natural texture"
+          },
+          "character_id": "CHAR-001",
+          "character_name": "Founder",
+          "character_version": "1.0.0",
+          "continuity_rules": [
+            "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+            "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+            "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+            "Wardrobe may change by scene; biological identity features may not.",
+            "Do not infer a new permanent trait from a one-off scene/reference."
+          ],
+          "identity_lock_asset": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+          "identity_locked": true,
+          "negative_rules": [
+            "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+            "Do not treat other people in interaction sheets as Founder identity references.",
+            "Do not overwrite approved assets or hashes silently."
+          ],
+          "schema": "joat.character_packet.v1",
+          "source_asset_hashes": {
+            "CHAR-001-A01": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+            "CHAR-001-A08": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48"
+          },
+          "supporting_reference_assets": [
+            "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+          ]
+        },
+        "continuity": {
+          "camera_transition": {
+            "current_angle": "eye_level",
+            "current_movement": "push_in",
+            "current_shot_size": "medium_wide",
+            "previous_angle": null,
+            "previous_movement": null,
+            "previous_shot_size": null
+          },
+          "character_identity_preserved": true,
+          "continuity_rules": [
+            "Preserve locked character identity across continuity-linked shots.",
+            "Preserve locked environment identity, architecture, layout, permanent fixtures, and geography.",
+            "Camera changes must be intentional and represented by the current shot packet.",
+            "Do not silently change screen direction, subject placement, eyeline logic, or spatial relationships.",
+            "Shot duration and transitions must remain consistent with Director intent and downstream edit timing."
+          ],
+          "environment_identity_preserved": true,
+          "previous_shot_id": null,
+          "same_scene_as_previous": null,
+          "scene_id": "SCENE-005",
+          "shot_id": "SHOT-009"
+        },
+        "created_at": "2026-10-18T01:58:10.660272+00:00",
+        "director_reference": {
+          "continuity_constraints": "Preserve canonical identity, environment and reviewed wardrobe. Style: Premium stylized 3D realism matching the approved canonical references. Portrait 9:16.. Wardrobe: Preserve each visible character\u2019s approved reference-supported wardrobe; no redesign.",
+          "creative_brief": "STYLE-001 One More Message. Preserve the owner-supplied script, all exact spoken words, physical consultant entrance and face-to-face exchange, canon identities, approved timing, and 9:16 composition. Founder CHAR-001 always presents the product, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Main accepts the request; Executive/Director coordinates department work. This is CPU draft preparation only, not a GPU grant, still approval, production QC or delivery authorization.",
+          "generation_instructions": "Follow owner-reviewed shot decisions exactly. No extra people, captions or effects.",
+          "production_intent": "animation",
+          "project_id": "PROJECT-OTU-STYLE001-90S-001",
+          "qc_gates": [
+            "identity_anchor_match",
+            "source_hash_integrity",
+            "continuity_check",
+            "negative_rule_check"
+          ],
+          "schema": "joat.director_packet.v1",
+          "version": "1.0.5"
+        },
+        "downstream_handoff": {
+          "character_master_mutation_allowed": false,
+          "director_master_mutation_allowed": false,
+          "environment_master_mutation_allowed": false,
+          "format": "joat.shot_camera_packet.v1",
+          "ltx_compatible": true,
+          "target": "joat-ltx-generation-worker"
+        },
+        "environment_reference": {
+          "asset_identity_lock_ready": true,
+          "continuity_rules": [
+            "Preserve Executive Office architecture, layout, permanent fixtures, spatial relationships, and distinctive visual landmarks across shots.",
+            "Use the approved environment identity anchor for continuity-linked shots.",
+            "Supporting references may provide alternate angles, lighting, or detail without replacing the locked environment identity.",
+            "Time-of-day and lighting changes must remain physically consistent with the same location.",
+            "Characters, temporary props, vehicles, products, weather, and removable decorations do not become permanent environment traits unless explicitly approved."
+          ],
+          "environment_id": "ENV-001",
+          "environment_locked": true,
+          "environment_name": "Executive Office",
+          "environment_rules": {
+            "architecture": "Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.",
+            "geography": "Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.",
+            "identity": "Preserve the approved Executive Office environment identity across all shots.",
+            "lighting": "Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.",
+            "materials": "Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.",
+            "time_of_day": "Use the requested time-of-day while preserving the locked environment identity."
+          },
+          "environment_version": "1.1.0",
+          "identity_lock_asset": "environment_assets/ENV-008_office_identity_anchor.jpeg",
+          "negative_rules": [
+            "Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.",
+            "Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.",
+            "Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.",
+            "Do not overwrite approved environment assets, metadata, paths, or hashes silently."
+          ],
+          "scene_context": {
+            "lighting": "director_defined",
+            "scene_id": "SCENE-005",
+            "shot_id": "SHOT-009",
+            "time_of_day": "director_defined",
+            "weather": "director_defined"
+          },
+          "schema": "joat.environment_packet.v1",
+          "source_asset_hashes": {
+            "ENV-001-A01": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a"
+          },
+          "supporting_reference_assets": []
+        },
+        "generation_constraints": {
+          "camera_change_requires_shot_instruction": true,
+          "no_unrequested_camera_drift": true,
+          "no_unrequested_environment_drift": true,
+          "no_unrequested_identity_drift": true,
+          "preserve_character_identity": true,
+          "preserve_environment_identity": true
+        },
+        "packet_fingerprint": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302",
+        "performance_context": {
+          "action": "A confident consultant enters the office and notices the owner\u2019s frustration.",
+          "subject": "CHAR-001"
+        },
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "qc_gates": [
+          "shot_schema_valid",
+          "character_identity_match",
+          "environment_identity_match",
+          "camera_instruction_match",
+          "composition_match",
+          "shot_to_shot_continuity",
+          "duration_valid"
+        ],
+        "scene_id": "SCENE-005",
+        "schema": "joat.shot_camera_packet.v1",
+        "shot_id": "SHOT-009",
+        "shot_purpose": "{\"original_visual\": \"A confident consultant enters the office and notices the owner\u2019s frustration.\", \"original_camera\": \"Medium-wide composition, slowly moving toward the consultant.\", \"lighting\": \"Warmer and more hopeful.\", \"visible_cast\": {\"consultant\": \"CHAR-001\", \"business_owner\": \"CHAR-004\"}, \"primary_character_id\": \"CHAR-001\", \"source_mission_fingerprint\": \"2a881aa9651cd9058fd3f9ddaf199f1c2cbfc849b82caf511b1bcd661921868d\", \"source_shot_id\": \"SHOT-009\", \"native_render_prompt\": \"Style001 PROJECT-OTU-STYLE001-90S-001 / SCENE-005 / SHOT-009\\nApproved cast: Founder as consultant; Cristu as business owner. Use job-specific approved composed first frame and immutable canonical identity evidence; no redesign.\\nPremium stylized3D realism matching approved character artwork; no style conversion.\\nA confident consultant enters the office and notices the owner\u2019s frustration.\\nCamera: Medium-wide composition, slowly moving toward the consultant.\\nLighting: Warmer and more hopeful.\\nSpeak ONLY this exact line while the assigned character is visibly speaking: \u201cWhat if your business could handle the bookings for you?\u201d. Founder: adult male, calm confident low-mid register, clear American conversational delivery, reassuring rather than sales-pitch or theatrical. Keep one timbre/accent across all three speaking shots; reject material drift. Native audio reference is not silently enabled. No off-screen narrator, second speaking voice, background speech, music or sung words.\\nMaintain established office geometry, locked wardrobe, props, screen direction and eyelines. Portray only the requested action with believable restrained movement. No unintended extra people, deformed hands, facial substitutions, shot cuts, contact sheets, captions or generated interface text. Exact UI and captions are composited later.\\nAccepted edited shot duration: 5 seconds. Speak naturally within the accepted slot; do not accelerate or change the exact line.\", \"multi_character_note\": \"All declared visible identities must be preserved; the primary character field does not authorize removing secondary characters.\"}",
+        "timing": {
+          "duration_seconds": 5.0,
+          "transition_in": "cut",
+          "transition_out": "cut"
+        },
+        "version": "1.0.1"
+      },
+      "translation_policy": {
+        "may_change_camera_intent": false,
+        "may_change_character_identity": false,
+        "may_change_director_intent": false,
+        "may_change_environment_identity": false,
+        "may_change_performance_intent": false,
+        "may_invent_missing_locked_decisions": false,
+        "may_summarize_for_engine_limits": true,
+        "may_translate_format": true
+      }
+    },
+    "schema": "joat.generation_job.v1",
+    "source_packet_fingerprints": {
+      "character": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+      "director": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+      "environment": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+      "performance_action": "94aaa6f2f813442f6eed7d01ebd5cea4abe5b777efe7a57af29b8f8e0364fa94",
+      "shot_camera": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302"
+    },
+    "upstream_validation": {
+      "character": {
+        "fingerprint": "4e18cc8f55516633928745b833e358c8c76c49276863c28c2dc13b35d01e0088",
+        "lock_source": "identity_locked",
+        "lock_verified": true,
+        "role": "character",
+        "schema": "joat.character_packet.v1"
+      },
+      "director": {
+        "fingerprint": "236a21da7075176ee9088257e4f89ce32823de296282f7e132986c943fded3d0",
+        "lock_source": "approval.creative_intent_locked",
+        "lock_verified": true,
+        "role": "director",
+        "schema": "joat.director_packet.v1"
+      },
+      "environment": {
+        "fingerprint": "fb7f809c30b2da5206073b1871a3e2a4ad54a272883f160fdd4e744c121cae3f",
+        "lock_source": "environment_locked + asset_identity_lock_ready",
+        "lock_verified": true,
+        "role": "environment",
+        "schema": "joat.environment_packet.v1"
+      },
+      "performance_action": {
+        "fingerprint": "94aaa6f2f813442f6eed7d01ebd5cea4abe5b777efe7a57af29b8f8e0364fa94",
+        "lock_source": "performance_locked",
+        "lock_verified": true,
+        "role": "performance_action",
+        "schema": "joat.performance_action_packet.v1"
+      },
+      "shot_camera": {
+        "fingerprint": "931c78f1fdd5acf44684a8884c49d6253f22075a57be2ce7d7e62ec66aa3f302",
+        "lock_source": "camera_locked",
+        "lock_verified": true,
+        "role": "shot_camera",
+        "schema": "joat.shot_camera_packet.v1"
+      }
+    }
+  },
+  "packet_fingerprint": "b3c4934d8ef60ad3087263b1371f4a26c8cac46caff0ef8239f0449624916694",
+  "production_ready": true,
+  "schema": "joat.generation_supervisor_packet.v1"
+}

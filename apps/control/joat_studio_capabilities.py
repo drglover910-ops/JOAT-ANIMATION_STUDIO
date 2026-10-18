@@ -1,7 +1,7 @@
-"""Shared pinned production knowledge and fail-closed feature checks. File version1.0.2.
+"""Shared pinned production knowledge and fail-closed feature checks. File version1.0.3.
 CPU planning only. Never grants creative approval, changes settings or submits inference.
 """
-FILE_VERSION='1.0.2'
+FILE_VERSION='1.0.3'
 import copy,hashlib,json,math,re
 from pathlib import Path
 ROOT=Path(__file__).parent

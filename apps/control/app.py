@@ -1,5 +1,5 @@
 """
-J.O.A.T. Executive Producer Bot v1.2.20
+J.O.A.T. Executive Producer Bot v1.2.22
 Roadmap Stage #17
 
 LIVE EXECUTION + STUDIO CONNECTIVITY UPGRADE
@@ -42,8 +42,8 @@ from huggingface_hub import HfApi
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "1.2.20"
-FILE_VERSION = "1.2.20"
+APP_VERSION = "1.2.22"
+FILE_VERSION = "1.2.22"
 ACCEPTANCE_TEST_VERSION = "1.2.0"
 
 BOT_NAME = "J.O.A.T. Executive Producer Bot"
@@ -1122,6 +1122,11 @@ class ExecutiveProducerBot:
             "required_features": objective.get("required_features", [])})
         if packet["capability_advisory"]["qualification_requirements"]:
             packet["production_ready"] = False
+
+        from joat_production_knowledge import retrieve
+        packet["production_knowledge_advisory"] = retrieve(
+            objective["objective"][:2000], role="director",
+            project_id=objective["project_id"])
 
         packet["packet_fingerprint"] = (
             make_fingerprint(packet)

@@ -1,0 +1,1229 @@
+{
+  "file_version": "1.0.0",
+  "status": "local_candidate_requires_native_prepare_check_and_fresh_owner_grant",
+  "plan_fingerprint": "f6e5c397117e7b3cf5c3148f5d761e0f3695b981176abb0d6c6a4a6c7f12f6f3",
+  "plan": {
+    "execution_fingerprint": "99f61adcc100e74ff00c04d29bc3ce881acf7c1e8c653630493c148edffc06aa",
+    "gpu_reservation": {
+      "gpu_called": false,
+      "note": "One approved composed-frame I2V shot. Explicit420second allocation ceiling; no automatic retry.",
+      "policy": "controlled_single_image_explicit_ceiling",
+      "provider_permission_unverified": true,
+      "requested_seconds": 420
+    },
+    "identity_evidence": {
+      "approved_frame_identity_binding": {
+        "biometric_identity_verified": false,
+        "character_id": "CHAR-004",
+        "identity_asset_id": "CHAR-004-A01",
+        "identity_source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "status": "canonical_source_hash_matched"
+      },
+      "reference": {
+        "asset_id": "CHAR-004-A01",
+        "path": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+        "sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg"
+      },
+      "role": "canonical_identity_evidence",
+      "sent_to_renderer": false
+    },
+    "job_reference_binding": {
+      "binding_fingerprint": "0becf52b28337a1cdeed61aeb780e41f53734080704203b194be5eb6dc666247",
+      "origin_frame_asset_id": "93cb2d43f0ad67401e971b33cfe6c9b26bf2554970e819b461e967a32dd5990e",
+      "origin_frame_scope": {
+        "character_id": "CHAR-004",
+        "environment_id": "ENV-001",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "scene_id": "SCENE-001",
+        "shot_id": "SHOT-001"
+      },
+      "target_context": {
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "scene_id": "SCENE-001",
+        "shot_id": "SHOT-001"
+      }
+    },
+    "owner_approval_required": true,
+    "parameters": {
+      "anchor_similarity_threshold": 0.2,
+      "audio_ref_enabled": false,
+      "audio_ref_file": null,
+      "audio_ref_guidance_scale": 3.0,
+      "audio_ref_normalize": true,
+      "audio_ref_stem_sep": false,
+      "better_motion_audio_strength": 0.0,
+      "better_motion_lora_strength": 0.0,
+      "cache_at_step": 0,
+      "cache_warmup": 400,
+      "custom_res_enabled": true,
+      "dreamly_audio_strength": 0.0,
+      "dreamly_lora_strength": 0.0,
+      "energy_threshold": 0.3,
+      "face_bbox": "",
+      "first_frame_strength": 0.82,
+      "gen_budget": 420,
+      "hardcut_audio_strength": 0.0,
+      "hardcut_lora_strength": 0.0,
+      "identity_ref_image": null,
+      "image_path": "hf://buckets/Dezz-9-10/J.O.A.T.-Studio-storage/joat-studio/production-projects/PROJECT-OTU-STYLE001-90S-001/references/CRISTU-OFFICE-NIGHT/f6cd1365647a4697ae7f300df261e560/candidate.png",
+      "input_mode": "single image (i2v)",
+      "kf_last_image": null,
+      "kf_mid_1_image": null,
+      "kf_mid_1_pos": 50,
+      "kf_mid_2_image": null,
+      "kf_mid_2_pos": 50,
+      "kf_mid_3_image": null,
+      "kf_mid_3_pos": 50,
+      "kf_mid_4_image": null,
+      "kf_mid_4_pos": 50,
+      "kf_mid_5_image": null,
+      "kf_mid_5_pos": 50,
+      "kf_mid_enabled": false,
+      "kf_strength": 0.82,
+      "kv_enabled": false,
+      "kv_strength": 1.0,
+      "latent_anchor_strength": 0.08,
+      "likeness_anchor_strength": 0.08,
+      "likeness_strength": 0.65,
+      "max_height": 1024,
+      "max_width": 576,
+      "mode": "anchor only",
+      "motion_canny_high": 60,
+      "motion_canny_low": 20,
+      "motion_control_type": "off",
+      "motion_guide_strength": 1.0,
+      "motion_lora_strength": 0.0,
+      "motion_video": null,
+      "msr_background": null,
+      "msr_frame_count": 41,
+      "msr_guide_strength": 1.0,
+      "msr_lora_strength": 0.0,
+      "msr_ref2": null,
+      "msr_ref3": null,
+      "msr_ref4": null,
+      "negative_prompt": "hard cut, jump cut, montage, scene transition, abrupt camera change, contact sheet, collage, text overlays, captions, duplicate characters, malformed hands\nspeech, narration, dialogue, singing, vocals, music, talking mouth",
+      "omninft_audio_strength": 0.0,
+      "omninft_bf16_audio_strength": 0.0,
+      "omninft_bf16_lora_strength": 0.0,
+      "omninft_lora_strength": 0.0,
+      "physics_v2_audio_strength": 0.0,
+      "physics_v2_lora_strength": 0.0,
+      "plora_audio_strength": 0.0,
+      "plora_lora_strength": 0.0,
+      "preset": "original",
+      "profile_name": "__joat_controlled_composed_i2v_v1__",
+      "prompt": "One continuous cinematic shot in premium stylized 3D realism, matching the supplied starting frame.\nClose-up of a successful-looking business owner sitting alone in his office late at night.\n\nHis expression is exhausted. His phone lights up repeatedly with incoming customer messages.\nSlow push toward his face, emphasizing tired eyes.\nDark blue nighttime office with warm light from a desk lamp.\nThe camera movement is gradual and continuous throughout this same shot.\nThe character's lips remain at rest. Quiet location ambience only.",
+      "prompt_relay_enabled": false,
+      "prompt_segments": "",
+      "randomize_seed": false,
+      "scene_chain_enabled": false,
+      "scene_chain_frame_overlap": 8,
+      "scene_chain_max_scenes": 2,
+      "scene_chain_mid_guide": true,
+      "scene_chain_mid_guide_strength": 0.25,
+      "scene_chain_prompt": "",
+      "seconds": 5.0,
+      "seed": 21,
+      "sigma_string": "0.4824, 0.2412, 0.0",
+      "singularity_audio_strength": 0.0,
+      "singularity_lora_strength": 0.0,
+      "skip_refine": true,
+      "snap_multiple": 64,
+      "sulphur_audio_strength": 0.0,
+      "sulphur_lora_strength": 0.0,
+      "sulphur_v1_audio_strength": 0.0,
+      "sulphur_v1_lora_strength": 0.0,
+      "synth_audio_strength": 0.0,
+      "synth_lora_strength": 0.0,
+      "target_mp": 0.589824,
+      "transition_audio_strength": 0.0,
+      "transition_lora_strength": 0.0,
+      "user_loras_text": "",
+      "vbvr_audio_strength": 0.0,
+      "vbvr_lora_strength": 0.0
+    },
+    "prompt_compilation": {
+      "assets_changed": false,
+      "compiler_file_version": "1.0.5",
+      "creative_approval_granted": false,
+      "full_prompt_contract_sha256": "44782e58340d62ba2c01e94b47da991aa6575fcc44ea5073f41015ab840eef44",
+      "generation_specification_sha256": "d2bb6c0b7471372cac23cf6938d7570575f97853eadc67fcbf398554e2384776",
+      "instructions_truncated": false,
+      "negative_characters": 222,
+      "negative_prompt_sha256": "705ff745d5c2998407a50dbd3eea46c25391e70ffb82e21fd4dceeba91c2ea8c",
+      "original_script_native_routing": {
+        "administrative_text_retained_outside_generation": true,
+        "caption_text_kept_outside_generation": true,
+        "native_prompt_sha256": "b3e37ea1710de7ae6730095ba6ece69a04028b81fcf72e2be7758c575ddd3735",
+        "post_narration_kept_outside_generation": true,
+        "render_projection_version": "1.0.0",
+        "source_packets_changed": false,
+        "still_or_video_qc_approval_granted": false,
+        "visible_character_ids": [
+          "CHAR-004"
+        ]
+      },
+      "positive_characters": 536,
+      "positive_prompt_sha256": "a6dd18fb06ef1457264c63da5ee92fe75f42039cfd0e0b8134be48329ef95b24",
+      "project_context": {
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "scene_id": "SCENE-001",
+        "shot_id": "SHOT-001"
+      },
+      "project_context_sha256": "17e2bfa61fafbb4c6dc2f659604adfa8e5d81f1ec539c58df25953cfcd135c8a",
+      "retained_constraints": {
+        "character_packet": {
+          "appearance_rules": {
+            "core_style": "Use only reference-supported appearance, wardrobe and styling.",
+            "identity": "Preserve the approved Cristu reference identity."
+          },
+          "continuity_rules": [
+            "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+            "Use the identity anchor for Identity Lock.",
+            "Additional approved references support identity and scene continuity without replacing the anchor.",
+            "Do not infer permanent traits not supported by approved references."
+          ],
+          "negative_rules": [
+            "Do not change Cristu's core identity without an explicit approved character-version change.",
+            "Do not overwrite approved assets or SHA-256 hashes silently."
+          ]
+        },
+        "director_packet": {
+          "creative_brief": "STYLE-001 One More Message. Preserve the owner-supplied script, all exact spoken words, physical consultant entrance and face-to-face exchange, canon identities, approved timing, and 9:16 composition. Founder CHAR-001 always presents the product, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Main accepts the request; Executive/Director coordinates department work. This is CPU draft preparation only, not a GPU grant, still approval, production QC or delivery authorization."
+        },
+        "environment_packet": {
+          "continuity_rules": [
+            "Preserve Executive Office architecture, layout, permanent fixtures, spatial relationships, and distinctive visual landmarks across shots.",
+            "Use the approved environment identity anchor for continuity-linked shots.",
+            "Supporting references may provide alternate angles, lighting, or detail without replacing the locked environment identity.",
+            "Time-of-day and lighting changes must remain physically consistent with the same location.",
+            "Characters, temporary props, vehicles, products, weather, and removable decorations do not become permanent environment traits unless explicitly approved."
+          ],
+          "environment_rules": {
+            "architecture": "Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.",
+            "geography": "Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.",
+            "identity": "Preserve the approved Executive Office environment identity across all shots.",
+            "lighting": "Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.",
+            "materials": "Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.",
+            "time_of_day": "Use the requested time-of-day while preserving the locked environment identity."
+          },
+          "negative_rules": [
+            "Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.",
+            "Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.",
+            "Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.",
+            "Do not overwrite approved environment assets, metadata, paths, or hashes silently."
+          ]
+        },
+        "original_script_routing": {
+          "approval_basis": {
+            "file_version": "1.0.0",
+            "owner": "Dezz-9-10",
+            "plan_fingerprint": "583b9b344d7dc9df2d497c58559ad2ca428fde1e2a2e36b907b38a5f815f9b23",
+            "project_id": "PROJECT-OTU-STYLE001-90S-001",
+            "review_statement": "Owner supplied and authorized the unchanged production script. Codex verified exact native packet mapping and canonical hashes; this does not assert personal owner review of generated drafts, still acceptance, video QC or spending authorization.",
+            "reviewer": "Codex",
+            "schema": "joat.original_script_packet_review.v1",
+            "scope": "original_owner_script_machine_verified_packet_mapping",
+            "source_prompt_sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b"
+          },
+          "original_native_render_prompt": "Style001 PROJECT-OTU-STYLE001-90S-001 / SCENE-001 / SHOT-001\nApproved cast: Cristu as business owner. Use job-specific approved composed first frame and immutable canonical identity evidence; no redesign.\nPremium stylized3D realism matching approved character artwork; no style conversion.\nClose-up of a successful-looking business owner sitting alone in his office late at night.\n\nHis expression is exhausted. His phone lights up repeatedly with incoming customer messages.\nCamera: Slow push toward his face, emphasizing tired eyes.\nLighting: Dark blue nighttime office with warm light from a desk lamp.\nThis is a narrated visual scene. Characters do not speak or mime the narrator. Generate only quiet location room tone; no narration, dialogue, music or vocals. Narration, score and precise effects are separate post tracks.\nMaintain established office geometry, locked wardrobe, props, screen direction and eyelines. Portray only the requested action with believable restrained movement. No unintended extra people, deformed hands, facial substitutions, shot cuts, contact sheets, captions or generated interface text. Exact UI and captions are composited later.\nAccepted edited shot duration: 5 seconds. Narration is added only in post.",
+          "original_negative_text": "Constraint: Do not change Cristu's core identity without an explicit approved character-version change.\nConstraint: Do not overwrite approved assets or SHA-256 hashes silently.\nConstraint: Do not change the location into a different building, room, street, neighborhood, store, church, or architectural style without an approved environment-version change.\nConstraint: Do not silently move permanent doors, windows, walls, fixtures, major furniture, streets, structures, or landmarks between continuity-linked shots.\nConstraint: Do not infer permanent environment traits from temporary characters, props, vehicles, weather, or scene dressing.\nConstraint: Do not overwrite approved environment assets, metadata, paths, or hashes silently.\nConstraint: Do not alter locked character identity, face, body identity, or approved character-master constraints.\nConstraint: Do not alter the locked environment identity or permanent environment geometry.\nConstraint: Do not rewrite Director intent.\nConstraint: Do not replace or contradict approved Shot/Camera instructions.\nConstraint: Do not invent unexplained emotional changes between continuity-linked shots.\nConstraint: Do not teleport characters or objects between positions.\nConstraint: Do not switch gaze targets, held objects, interaction partners, or action states without an approved performance beat.\nConstraint: Do not create physically impossible body transitions unless the Director explicitly requires stylized/impossible motion.\ncontact sheet, collage, grid, reference labels",
+          "original_positive_text": "Scene: Animate only the selected character performance in the approved composed starting frame. One continuous shot of the approved setting; preserve the frame's identity, wardrobe and environment.\nShot duration in seconds: 5\nAspect ratio: 9:16\nCharacter: Cristu\nAppearance core style: Use only reference-supported appearance, wardrobe and styling.\nAppearance identity: Preserve the approved Cristu reference identity.\nEnvironment: Executive Office\nEnvironment requirements: ENV-001\nEnvironment identity: Preserve the approved Executive Office environment identity across all shots.\nEnvironment lighting: director_defined\nEnvironment time of day: director_defined\nEnvironment weather: director_defined\nCamera framing: close_up\nCamera angle: eye_level\nCamera movement: push_in\nCamera composition: director_defined\nCamera depth guidance: Director defined\nCamera focus mode: director_defined\nCamera lens guidance: Director defined\nAction: Close-up of a successful-looking business owner sitting alone in his office late at night.\n\nHis expression is exhausted. His phone lights up repeatedly with incoming customer messages.\nPerformance blocking: end position: Maintain original continuity and shot action.; start position: Follow the approved scene composition.\nPerformance body language: Natural believable body language matching the original visual direction.\nPerformance emotion: Match the exact owner-directed visual performance.\nPerformance expression: Preserve canonical facial proportions; use the expression required by the original visual direction.\nPerformance gaze: target: Follow the original scene action; address the other character for face-to-face dialogue.; type: director_defined\nPerformance intensity: moderate\nPerformance interaction: action: Close-up of a successful-looking business owner sitting alone in his office late at night.\n\nHis expression is exhausted. His phone lights up repeatedly with incoming customer messages.; target: ; type: environment\nPerformance timing: hold seconds: 0; pacing: natural\nNarration: Another night. Another hundred messages.\nInstructions: Native character dialogue only when dialogue is declared. Narration, music and interface SFX are separate post stems. Original music: Soft, melancholic piano with low ambient tension. Original SFX: Phone vibration, distant traffic, subtle notification sounds.\nText: ANOTHER NIGHT. ANOTHER HUNDRED MESSAGES.\nContinuity constraints: Preserve canonical identity, environment and reviewed wardrobe. Style: Premium stylized 3D realism matching the approved canonical references. Portrait 9:16.. Wardrobe: Preserve each visible character\u2019s approved reference-supported wardrobe; no redesign.\nGeneration instructions: Follow owner-reviewed shot decisions exactly. No extra people, captions or effects.\nEnvironment architecture: Preserve reference-supported architecture, room geometry, building geometry, entrances, windows, permanent fixtures, major furniture placement, and structural relationships.\nEnvironment geography: Preserve reference-supported spatial relationships and geographic layout. Do not randomly relocate permanent environment features between shots.\nEnvironment lighting: Lighting may change only when required by the approved time-of-day or scene instructions. The physical environment identity must remain stable.\nEnvironment materials: Preserve reference-supported surfaces, finishes, textures, colors, and permanent decor.\nEnvironment time of day: Use the requested time-of-day while preserving the locked environment identity.\nshot camera continuity: Preserve locked character identity across continuity-linked shots.; Preserve locked environment identity, architecture, layout, permanent fixtures, and geography.; Camera changes must be intentional and represented by the current shot packet.; Do not silently change screen direction, subject placement, eyeline logic, or spatial relationships.; Shot duration and transitions must remain consistent with Director intent and downstream edit timing.\nshot camera constraint camera change requires shot instruction: true\nshot camera constraint no unrequested camera drift: true\nshot camera constraint no unrequested environment drift: true\nshot camera constraint no unrequested identity drift: true\nshot camera constraint preserve character identity: true\nshot camera constraint preserve environment identity: true\nperformance action continuity: Emotional changes must follow the approved Director intent and cannot jump randomly between continuity-linked shots.; Body position, gaze, hand state, held objects, and active actions must logically continue from the previous shot.; Character interaction must preserve who is touching, holding, facing, following, approaching, or reacting to whom.; Performance continuity cannot change locked character identity, wardrobe identity, environment identity, or approved camera instructions.\nperformance action constraint preserve camera instructions: true\nperformance action constraint preserve character identity: true\nperformance action constraint preserve director intent: true\nperformance action constraint preserve environment identity: true\nperformance action constraint prevent impossible pose transition: true\nperformance action constraint prevent random action drift: true\nperformance action constraint prevent random blocking drift: true\nperformance action constraint prevent random emotional drift: true\nperformance action constraint prevent random gaze drift: true\nperformance action constraint prevent unapproved interaction change: true\nUse reference images for identity and setting, rather than reproducing their reference-sheet layout.",
+          "original_source_bindings": [
+            {
+              "destination": "retained_constraints",
+              "source_path": "/director_packet/creative_brief",
+              "source_value_sha256": "22b1c2df58c252217fd9b007d6c360799e042638bf5c71e32f8dbe88c8ed2b7b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/generation_specification/duration_seconds",
+              "source_value_sha256": "a19a1584344c1f3783bff51524a5a4b86f2cc09356c9dbfb6af9cd236e314362"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/generation_specification/aspect_ratio",
+              "source_value_sha256": "8e22f972a30c4a20d6d18e1215ab25af1794dbe69eb9f06eec147c036c5ceb4e"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/character_packet/character_name",
+              "source_value_sha256": "68798320502592a13eab3225c88cc3b6e44e0a4fba875cddc69801ccb6003581"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/character_packet/appearance_rules/core_style",
+              "source_value_sha256": "e1b960d713f9c19fb510151a694e8935cad21ba105acb8d501d609041aafedc9"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/character_packet/appearance_rules/identity",
+              "source_value_sha256": "5cfaea5d6ae0f5d916afb0670012c4971bc08d1d26fa280aafcc31158719ff96"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_name",
+              "source_value_sha256": "50833fe8be75550e4f95257df2394e15d90643a4c1e8eebc5fe132fa8f0f92f7"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/environment_requirements",
+              "source_value_sha256": "76817886c156278c1c1092827857982f009f9df872f9711d2430886f4927c8ae"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/identity",
+              "source_value_sha256": "6a8015d9d1ee7273486dd7066e0f4f1447f47624c348ba21fd285b0729dd5d83"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/scene_context/lighting",
+              "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/scene_context/time_of_day",
+              "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/scene_context/weather",
+              "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/camera_framing/framing",
+              "source_value_sha256": "c94d3c8245b0d737914517a2e3b0ce1eb8234e2ce7039128afea9884fc1334cb"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/camera_framing/angle",
+              "source_value_sha256": "4a01da1c694fbc5d24befbbccd17c24296e5c7027ec6410f7743b31e7deae818"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/camera_framing/movement",
+              "source_value_sha256": "15f455e25c9fa7ae47ec2c6f50e4e14bdb23265ab9cf96bd35e639ddf5ef0e32"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/camera/composition",
+              "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/camera/depth_guidance",
+              "source_value_sha256": "bbbc6bd2943e04ca65d72bc1533c87605ecd7d418b7c569875da9ee5923b4236"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/camera/focus_mode",
+              "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/camera/lens_guidance",
+              "source_value_sha256": "bbbc6bd2943e04ca65d72bc1533c87605ecd7d418b7c569875da9ee5923b4236"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/performance_action/action",
+              "source_value_sha256": "1d02035628be6f077c106533c359167051b1845c5fd645596fab296a0d2a7bcd"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/blocking",
+              "source_value_sha256": "7afe539e6eb53b64b99178656171a08387ded499687357f89a15e4e0261bf99c"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/body_language",
+              "source_value_sha256": "72e71eb8ca2b98da739fe15ff0ca472207f319f1138469e60cf031db6181249c"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/emotion",
+              "source_value_sha256": "d88b228934725200a5513f1bcc2e488c71380b1d0cdc1b3c6bd7df7ce76bae89"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/expression",
+              "source_value_sha256": "a2ec8c22319f4ca3f84e11e42d98a859ee29fb7f45f87655b9c780d426d60207"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/gaze",
+              "source_value_sha256": "066abc123d4396c469be9417d9ed8415cc52bd2021780b7ab7878c25fef12197"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/intensity",
+              "source_value_sha256": "b73a16cef6250ca76af6f85b586514c873a85add37323c829fb6d6710c9fddeb"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/interaction",
+              "source_value_sha256": "f5a2575b8ce3911021d48258ece6e1dc2ce34e308236b9ffac06dbbabe2984de"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/performance_beats",
+              "source_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/performance/timing",
+              "source_value_sha256": "40e955dc0f43cc742b5a7b1cc84d01994dcd86f869c8b771f7aadf165f8f9a7e"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/dialogue_narration/dialogue",
+              "source_value_sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/dialogue_narration/narration",
+              "source_value_sha256": "79544e7ea49abd744b775a320ea9b3c67d57479c0358169bb49f1c9fb0dd090d"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/audio_music_sfx/instructions",
+              "source_value_sha256": "0c03bb57679ecb1073efb24eaba6d3f5c4761f6eb17eb53723093cf4a5bbe0dc"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/per_shot/0/caption_on_screen_text/text",
+              "source_value_sha256": "2e821ae458c651a8dae601018548986e5682aa21a693b15b741bcc6761944567"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/continuity_constraints",
+              "source_value_sha256": "9b222c087cf3efe5f209e0ef58de7188c2b3f32cf6ed02e1c3f10c85fa2d47ac"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/director_packet/generation_instructions",
+              "source_value_sha256": "756909c475b8f0d8fcee43cd2a72aef78734ccd0430bad70caafe22e44a1e95a"
+            },
+            {
+              "destination": "retained_constraints",
+              "source_path": "/character_packet/continuity_rules",
+              "source_value_sha256": "9ebb71b6168fdf69e0378145b5849f4fdd8c78ef81c8b8ca230459e12a4ea8a2"
+            },
+            {
+              "destination": "retained_constraints",
+              "source_path": "/environment_packet/continuity_rules",
+              "source_value_sha256": "65a283375a795f58cddaa6a5527432ce086d8a0c3523bd5418e31fed284e3941"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/architecture",
+              "source_value_sha256": "4afc545d3b4f295e17d055f4a6a5d127c0f098b1143c3fa5c20d55c267d7f623"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/geography",
+              "source_value_sha256": "11d14ffa6f5ac95f68a34023f0e3d684e7ef5a453a0e3da5953749b26f6ab994"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/lighting",
+              "source_value_sha256": "65244c0c639f7545b8b9ccb7d542b3f103a97a278edce7fc225f9513eb5b4856"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/materials",
+              "source_value_sha256": "e5d7a95a19a4d75d8589059ccf968448edd00548dba8cfcfb239641d4633add8"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/environment_packet/environment_rules/time_of_day",
+              "source_value_sha256": "c68440c851b9daca050848c64795ee01971c3858a63624a2117f920d692f8cce"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/continuity/continuity_rules",
+              "source_value_sha256": "dbff6830b9f06960c60d8ff2f0e0c07693a03f02ce36aae9884941d57d45288c"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/camera_change_requires_shot_instruction",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_camera_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_environment_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_identity_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/preserve_character_identity",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/shot_camera_packet/generation_constraints/preserve_environment_identity",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/continuity/continuity_rules",
+              "source_value_sha256": "131135c1bba4950a5423b4c0ecdf03c355004bfb4576b72da6645f7c5cb2177f"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/preserve_camera_instructions",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/preserve_character_identity",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/preserve_director_intent",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/preserve_environment_identity",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_impossible_pose_transition",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_random_action_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_random_blocking_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_random_emotional_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_random_gaze_drift",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "positive_prompt",
+              "source_path": "/performance_action_packet/constraints/prevent_unapproved_interaction_change",
+              "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/character_packet/negative_rules/0",
+              "source_value_sha256": "d2922bac3976591c88368493a3a953424017af97dcba9992ac94096a57f2e81f"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/character_packet/negative_rules/1",
+              "source_value_sha256": "e2f4a62558d816c0e5583c1a5b6edcdd0b511788d1371da0fb6463923f57e8b7"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/environment_packet/negative_rules/0",
+              "source_value_sha256": "1e304aa5d20e2e4d59a24eb801b99035676cc39dc2b745d9295cdb59833fc8dc"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/environment_packet/negative_rules/1",
+              "source_value_sha256": "197e7bc69ecc0295902c8bd3f59d173d5c763064f2e119378d9605806c08155a"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/environment_packet/negative_rules/2",
+              "source_value_sha256": "4269c7c73bd1f9deb08c8de0c1e4b99d0c8b1b87c87da86411dff825313228b2"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/environment_packet/negative_rules/3",
+              "source_value_sha256": "35a0f9e929e194085013d3269690f7928640f153e8c40923cf3ae4250482262b"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/0",
+              "source_value_sha256": "33c6c36323f25497fc3eed269c96cbb38a94d8f5d28286bff7fcdd8b78253d9b"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/1",
+              "source_value_sha256": "f0fbf3e21a5c332400423b5902c4e603b478de2ce65d6b9a09b85f1b2da1be75"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/2",
+              "source_value_sha256": "94869fc8c851b3dee1fc84377294a64a84904c918bde81d57c3622a522c1fd53"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/3",
+              "source_value_sha256": "916a188f346aa1c31ab922b5fc42ae33c21ffcb0aaff7cece2ce0fcbda144952"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/4",
+              "source_value_sha256": "0923ec065bc912fe27b90121ce5549a7f13547f5c106cbf2f9cf541b6c0399bb"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/5",
+              "source_value_sha256": "5bb755522d7e04a38fd89ba8e87a6fc865a208981b8887fa0ac48ea3facea302"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/6",
+              "source_value_sha256": "ba53711614779b1e7ed78cbbdf0504ebea2a4bc3923ff32413f078cb5fe2cb4f"
+            },
+            {
+              "destination": "negative_prompt",
+              "source_path": "/performance_action_packet/negative_rules/7",
+              "source_value_sha256": "e7639858aac25689450a790dd3f50d04ab2742eef417d2b9ce0990ce5c614348"
+            }
+          ],
+          "post_caption": {
+            "shot_id": "SHOT-001",
+            "text": "ANOTHER NIGHT. ANOTHER HUNDRED MESSAGES."
+          },
+          "post_narration": "Another night. Another hundred messages.",
+          "visible_character_source_hashes": {
+            "CHAR-004": {
+              "CHAR-004-A01": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f"
+            }
+          }
+        },
+        "performance_action_packet": {
+          "constraints": {
+            "preserve_camera_instructions": true,
+            "preserve_character_identity": true,
+            "preserve_director_intent": true,
+            "preserve_environment_identity": true,
+            "prevent_impossible_pose_transition": true,
+            "prevent_random_action_drift": true,
+            "prevent_random_blocking_drift": true,
+            "prevent_random_emotional_drift": true,
+            "prevent_random_gaze_drift": true,
+            "prevent_unapproved_interaction_change": true
+          },
+          "continuity": {
+            "continuity_rules": [
+              "Emotional changes must follow the approved Director intent and cannot jump randomly between continuity-linked shots.",
+              "Body position, gaze, hand state, held objects, and active actions must logically continue from the previous shot.",
+              "Character interaction must preserve who is touching, holding, facing, following, approaching, or reacting to whom.",
+              "Performance continuity cannot change locked character identity, wardrobe identity, environment identity, or approved camera instructions."
+            ],
+            "previous_action_state": null,
+            "previous_body_state": null,
+            "previous_emotion": null,
+            "previous_gaze_target": null,
+            "previous_position": null,
+            "previous_shot_id": null,
+            "starting_action": "Close-up of a successful-looking business owner sitting alone in his office late at night.\n\nHis expression is exhausted. His phone lights up repeatedly with incoming customer messages.",
+            "starting_blocking": {
+              "end_position": "Maintain original continuity and shot action.",
+              "start_position": "Follow the approved scene composition."
+            },
+            "starting_body_language": "Natural believable body language matching the original visual direction.",
+            "starting_emotion": "Match the exact owner-directed visual performance.",
+            "starting_gaze": {
+              "target": "Follow the original scene action; address the other character for face-to-face dialogue.",
+              "type": "director_defined"
+            }
+          },
+          "negative_rules": [
+            "Do not alter locked character identity, face, body identity, or approved character-master constraints.",
+            "Do not alter the locked environment identity or permanent environment geometry.",
+            "Do not rewrite Director intent.",
+            "Do not replace or contradict approved Shot/Camera instructions.",
+            "Do not invent unexplained emotional changes between continuity-linked shots.",
+            "Do not teleport characters or objects between positions.",
+            "Do not switch gaze targets, held objects, interaction partners, or action states without an approved performance beat.",
+            "Do not create physically impossible body transitions unless the Director explicitly requires stylized/impossible motion."
+          ]
+        },
+        "shot_camera_packet": {
+          "continuity": {
+            "camera_transition": {
+              "current_angle": "eye_level",
+              "current_movement": "push_in",
+              "current_shot_size": "close_up",
+              "previous_angle": null,
+              "previous_movement": null,
+              "previous_shot_size": null
+            },
+            "character_identity_preserved": true,
+            "continuity_rules": [
+              "Preserve locked character identity across continuity-linked shots.",
+              "Preserve locked environment identity, architecture, layout, permanent fixtures, and geography.",
+              "Camera changes must be intentional and represented by the current shot packet.",
+              "Do not silently change screen direction, subject placement, eyeline logic, or spatial relationships.",
+              "Shot duration and transitions must remain consistent with Director intent and downstream edit timing."
+            ],
+            "environment_identity_preserved": true,
+            "previous_shot_id": null,
+            "same_scene_as_previous": null,
+            "scene_id": "SCENE-001",
+            "shot_id": "SHOT-001"
+          },
+          "generation_constraints": {
+            "camera_change_requires_shot_instruction": true,
+            "no_unrequested_camera_drift": true,
+            "no_unrequested_environment_drift": true,
+            "no_unrequested_identity_drift": true,
+            "preserve_character_identity": true,
+            "preserve_environment_identity": true
+          }
+        }
+      },
+      "schema": "joat.prompt_compilation.v1",
+      "selected_director_shot_index": 0,
+      "selected_director_shot_sha256": "2da718daa91475539635ee3be92ef1ac7b5144ed42e4ff3d5135b3ad01a36dba",
+      "shot_prompt_routing": {
+        "administrative_policies_retained_outside_render_text": false,
+        "approved_composed_frame": true,
+        "compact_composed_frame_prompt": false,
+        "global_brief_retained_outside_render_text": true,
+        "post_narration_retained_outside_render_text": false,
+        "source_packets_changed": false,
+        "unrequested_overlay_guard": false
+      },
+      "source_bindings": [
+        {
+          "destination": "retained_constraints",
+          "source_path": "/director_packet/creative_brief",
+          "source_value_sha256": "22b1c2df58c252217fd9b007d6c360799e042638bf5c71e32f8dbe88c8ed2b7b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/generation_specification/duration_seconds",
+          "source_value_sha256": "a19a1584344c1f3783bff51524a5a4b86f2cc09356c9dbfb6af9cd236e314362"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/generation_specification/aspect_ratio",
+          "source_value_sha256": "8e22f972a30c4a20d6d18e1215ab25af1794dbe69eb9f06eec147c036c5ceb4e"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/character_packet/character_name",
+          "source_value_sha256": "68798320502592a13eab3225c88cc3b6e44e0a4fba875cddc69801ccb6003581"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/character_packet/appearance_rules/core_style",
+          "source_value_sha256": "e1b960d713f9c19fb510151a694e8935cad21ba105acb8d501d609041aafedc9"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/character_packet/appearance_rules/identity",
+          "source_value_sha256": "5cfaea5d6ae0f5d916afb0670012c4971bc08d1d26fa280aafcc31158719ff96"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_name",
+          "source_value_sha256": "50833fe8be75550e4f95257df2394e15d90643a4c1e8eebc5fe132fa8f0f92f7"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/environment_requirements",
+          "source_value_sha256": "76817886c156278c1c1092827857982f009f9df872f9711d2430886f4927c8ae"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/identity",
+          "source_value_sha256": "6a8015d9d1ee7273486dd7066e0f4f1447f47624c348ba21fd285b0729dd5d83"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/scene_context/lighting",
+          "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/scene_context/time_of_day",
+          "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/scene_context/weather",
+          "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/camera_framing/framing",
+          "source_value_sha256": "c94d3c8245b0d737914517a2e3b0ce1eb8234e2ce7039128afea9884fc1334cb"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/camera_framing/angle",
+          "source_value_sha256": "4a01da1c694fbc5d24befbbccd17c24296e5c7027ec6410f7743b31e7deae818"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/camera_framing/movement",
+          "source_value_sha256": "15f455e25c9fa7ae47ec2c6f50e4e14bdb23265ab9cf96bd35e639ddf5ef0e32"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/camera/composition",
+          "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/camera/depth_guidance",
+          "source_value_sha256": "bbbc6bd2943e04ca65d72bc1533c87605ecd7d418b7c569875da9ee5923b4236"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/camera/focus_mode",
+          "source_value_sha256": "55a7d9f4fd346db8314d9cd1eb6c3fd2be539c4dd0f3800095bd401cce05db5f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/camera/lens_guidance",
+          "source_value_sha256": "bbbc6bd2943e04ca65d72bc1533c87605ecd7d418b7c569875da9ee5923b4236"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/performance_action/action",
+          "source_value_sha256": "1d02035628be6f077c106533c359167051b1845c5fd645596fab296a0d2a7bcd"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/blocking",
+          "source_value_sha256": "7afe539e6eb53b64b99178656171a08387ded499687357f89a15e4e0261bf99c"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/body_language",
+          "source_value_sha256": "72e71eb8ca2b98da739fe15ff0ca472207f319f1138469e60cf031db6181249c"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/emotion",
+          "source_value_sha256": "d88b228934725200a5513f1bcc2e488c71380b1d0cdc1b3c6bd7df7ce76bae89"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/expression",
+          "source_value_sha256": "a2ec8c22319f4ca3f84e11e42d98a859ee29fb7f45f87655b9c780d426d60207"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/gaze",
+          "source_value_sha256": "066abc123d4396c469be9417d9ed8415cc52bd2021780b7ab7878c25fef12197"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/intensity",
+          "source_value_sha256": "b73a16cef6250ca76af6f85b586514c873a85add37323c829fb6d6710c9fddeb"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/interaction",
+          "source_value_sha256": "f5a2575b8ce3911021d48258ece6e1dc2ce34e308236b9ffac06dbbabe2984de"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/performance_beats",
+          "source_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/performance/timing",
+          "source_value_sha256": "40e955dc0f43cc742b5a7b1cc84d01994dcd86f869c8b771f7aadf165f8f9a7e"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/dialogue_narration/dialogue",
+          "source_value_sha256": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/dialogue_narration/narration",
+          "source_value_sha256": "79544e7ea49abd744b775a320ea9b3c67d57479c0358169bb49f1c9fb0dd090d"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/audio_music_sfx/instructions",
+          "source_value_sha256": "0c03bb57679ecb1073efb24eaba6d3f5c4761f6eb17eb53723093cf4a5bbe0dc"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/per_shot/0/caption_on_screen_text/text",
+          "source_value_sha256": "2e821ae458c651a8dae601018548986e5682aa21a693b15b741bcc6761944567"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/continuity_constraints",
+          "source_value_sha256": "9b222c087cf3efe5f209e0ef58de7188c2b3f32cf6ed02e1c3f10c85fa2d47ac"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/director_packet/generation_instructions",
+          "source_value_sha256": "756909c475b8f0d8fcee43cd2a72aef78734ccd0430bad70caafe22e44a1e95a"
+        },
+        {
+          "destination": "retained_constraints",
+          "source_path": "/character_packet/continuity_rules",
+          "source_value_sha256": "9ebb71b6168fdf69e0378145b5849f4fdd8c78ef81c8b8ca230459e12a4ea8a2"
+        },
+        {
+          "destination": "retained_constraints",
+          "source_path": "/environment_packet/continuity_rules",
+          "source_value_sha256": "65a283375a795f58cddaa6a5527432ce086d8a0c3523bd5418e31fed284e3941"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/architecture",
+          "source_value_sha256": "4afc545d3b4f295e17d055f4a6a5d127c0f098b1143c3fa5c20d55c267d7f623"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/geography",
+          "source_value_sha256": "11d14ffa6f5ac95f68a34023f0e3d684e7ef5a453a0e3da5953749b26f6ab994"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/lighting",
+          "source_value_sha256": "65244c0c639f7545b8b9ccb7d542b3f103a97a278edce7fc225f9513eb5b4856"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/materials",
+          "source_value_sha256": "e5d7a95a19a4d75d8589059ccf968448edd00548dba8cfcfb239641d4633add8"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/environment_rules/time_of_day",
+          "source_value_sha256": "c68440c851b9daca050848c64795ee01971c3858a63624a2117f920d692f8cce"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/continuity/continuity_rules",
+          "source_value_sha256": "dbff6830b9f06960c60d8ff2f0e0c07693a03f02ce36aae9884941d57d45288c"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/camera_change_requires_shot_instruction",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_camera_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_environment_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/no_unrequested_identity_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/preserve_character_identity",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/shot_camera_packet/generation_constraints/preserve_environment_identity",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/continuity/continuity_rules",
+          "source_value_sha256": "131135c1bba4950a5423b4c0ecdf03c355004bfb4576b72da6645f7c5cb2177f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/preserve_camera_instructions",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/preserve_character_identity",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/preserve_director_intent",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/preserve_environment_identity",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_impossible_pose_transition",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_random_action_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_random_blocking_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_random_emotional_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_random_gaze_drift",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/constraints/prevent_unapproved_interaction_change",
+          "source_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/character_packet/negative_rules/0",
+          "source_value_sha256": "d2922bac3976591c88368493a3a953424017af97dcba9992ac94096a57f2e81f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/character_packet/negative_rules/1",
+          "source_value_sha256": "e2f4a62558d816c0e5583c1a5b6edcdd0b511788d1371da0fb6463923f57e8b7"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/negative_rules/0",
+          "source_value_sha256": "1e304aa5d20e2e4d59a24eb801b99035676cc39dc2b745d9295cdb59833fc8dc"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/negative_rules/1",
+          "source_value_sha256": "197e7bc69ecc0295902c8bd3f59d173d5c763064f2e119378d9605806c08155a"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/negative_rules/2",
+          "source_value_sha256": "4269c7c73bd1f9deb08c8de0c1e4b99d0c8b1b87c87da86411dff825313228b2"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/environment_packet/negative_rules/3",
+          "source_value_sha256": "35a0f9e929e194085013d3269690f7928640f153e8c40923cf3ae4250482262b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/0",
+          "source_value_sha256": "33c6c36323f25497fc3eed269c96cbb38a94d8f5d28286bff7fcdd8b78253d9b"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/1",
+          "source_value_sha256": "f0fbf3e21a5c332400423b5902c4e603b478de2ce65d6b9a09b85f1b2da1be75"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/2",
+          "source_value_sha256": "94869fc8c851b3dee1fc84377294a64a84904c918bde81d57c3622a522c1fd53"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/3",
+          "source_value_sha256": "916a188f346aa1c31ab922b5fc42ae33c21ffcb0aaff7cece2ce0fcbda144952"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/4",
+          "source_value_sha256": "0923ec065bc912fe27b90121ce5549a7f13547f5c106cbf2f9cf541b6c0399bb"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/5",
+          "source_value_sha256": "5bb755522d7e04a38fd89ba8e87a6fc865a208981b8887fa0ac48ea3facea302"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/6",
+          "source_value_sha256": "ba53711614779b1e7ed78cbbdf0504ebea2a4bc3923ff32413f078cb5fe2cb4f"
+        },
+        {
+          "destination": "retained_original_script_administration",
+          "source_path": "/performance_action_packet/negative_rules/7",
+          "source_value_sha256": "e7639858aac25689450a790dd3f50d04ab2742eef417d2b9ce0990ce5c614348"
+        },
+        {
+          "destination": "positive_prompt",
+          "source_path": "/director_packet/visible_cast_supplement/original_visual",
+          "source_value_sha256": "1d02035628be6f077c106533c359167051b1845c5fd645596fab296a0d2a7bcd"
+        },
+        {
+          "destination": "positive_prompt",
+          "source_path": "/director_packet/visible_cast_supplement/original_camera",
+          "source_value_sha256": "52e7fac051e994b87e5720b9c1a92aa3fc25e60f03bcbf9d3dd7f6421f89a667"
+        },
+        {
+          "destination": "positive_prompt",
+          "source_path": "/director_packet/visible_cast_supplement/lighting",
+          "source_value_sha256": "293ae7a9e1341d1b0fc143f1116478903c76f22c1d0f964d565885bf3b00c105"
+        }
+      ],
+      "source_packet_sha256": {
+        "character_packet": "09d285e2cc9ccf7fca1eff8a8dc3003fe8b57d18b074d4ad9c4c1159537fb341",
+        "director_packet": "e044f15dda4fb332800499ae6cb610af007e70cbe0e82624c66849d2d00e5684",
+        "environment_packet": "d3d723bbeef48c5bd062f9ebc99c3d1fe9aeebb6b07a7d86658cf776a863b832",
+        "performance_action_packet": "3822db5dc1ecf34637f690c896402758a9f259d7438310ddf19389d1848fd48c",
+        "shot_camera_packet": "ede1175d1e80b49cde43759ebbd8d06b30005d8f27cd71cc7942aa90368ec33f"
+      },
+      "technical_artifact_guards": {
+        "asset_selection_changed": false,
+        "basis": "selected_owner_approved_single_shot",
+        "negative": [
+          "contact sheet, collage, grid, reference labels"
+        ],
+        "positive": [
+          "Use reference images for identity and setting, rather than reproducing their reference-sheet layout."
+        ]
+      }
+    },
+    "qc_approval": false,
+    "reference_transform": {
+      "crop": false,
+      "exif_orientation_applied": true,
+      "height": 1024,
+      "method": "contain and letterbox",
+      "reason": "Renderer derives output aspect from its first reference image",
+      "stretch": false,
+      "width": 576
+    },
+    "references": {
+      "image_path": {
+        "approved_job_reference": {
+          "asset_id": "93cb2d43f0ad67401e971b33cfe6c9b26bf2554970e819b461e967a32dd5990e",
+          "canonical_registration": false,
+          "descriptor": {
+            "asset_id": "93cb2d43f0ad67401e971b33cfe6c9b26bf2554970e819b461e967a32dd5990e",
+            "canonical_identity_binding": {
+              "biometric_identity_verified": false,
+              "character_id": "CHAR-004",
+              "identity_asset_id": "CHAR-004-A01",
+              "identity_source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+              "status": "canonical_source_hash_matched"
+            },
+            "canonical_registration": false,
+            "file_version": "1.0.0",
+            "height": 1024,
+            "image_sha256": "f3d5c37935abc86f14489655b718ef0754bba88cf706b93a1e30d12211f35d28",
+            "origin": {
+              "approval_fingerprint": "d6bd65eb02a963da1ccb95addedfda6ff22d257236b8151c6805e84801afa88c",
+              "asset_key": "CRISTU-OFFICE-NIGHT",
+              "candidate_plan_fingerprint": "5cbc5d10d7de7a13d9201e7c652698f7440f1ccb523f9618a634df1892749145",
+              "candidate_review_fingerprint": "8915a6d7c2e2af7aa7d2adf129c10b2eccc909b73ac2ffeb9f537550adfc4290",
+              "request_id": "f6cd1365647a4697ae7f300df261e560"
+            },
+            "production_qc_approved": false,
+            "role": "shot_start_frame",
+            "schema": "joat.approved_project_job_reference_descriptor.v1",
+            "scope": {
+              "character_id": "CHAR-004",
+              "environment_id": "ENV-001",
+              "project_id": "PROJECT-OTU-STYLE001-90S-001",
+              "scene_id": "SCENE-001",
+              "shot_id": "SHOT-001"
+            },
+            "size_bytes": 523536,
+            "source_request": {
+              "aspect_ratio": "9:16",
+              "asset_key": "CRISTU-OFFICE-NIGHT",
+              "authorization_basis": "Owner supplied complete18-shot Style001 production prompt, authorized existing character casting with Founder as product consultant, and explicitly approved corrected shot timing while preserving every word. This authorizes preparation of the needed opening-frame candidate only; no canonical replacement or final QC. Paid execution is separately gated before submission.",
+              "canonical_registration": false,
+              "file_version": "1.0.3",
+              "generation_authorized": true,
+              "gpu_ceiling_seconds": 600,
+              "kind": "shot_start_frame",
+              "project_id": "PROJECT-OTU-STYLE001-90S-001",
+              "prompt": "Create ONE proposed production opening frame, portrait 576x1024,9:16. Image1 shows two reference views of the SAME adult Cristu, not two characters: use the large close-up for his exact facial identity and the full-body view for his approved navy suit, white shirt, pale gold striped tie and brown shoes. Preserve Cristu's face, brown eyes, warm brown skin, short beard, tied-back loc hairstyle, hairline and body proportions. Only ONE man appears. Image2 is the approved executive office: preserve its windows, desk, shelves, spatial layout and materials. Cristu sits alone behind the desk late at night. Eye-level medium-close portrait composition, with his whole face clearly visible in the upper-middle area, shoulders relaxed but tired; subtle exhausted expression, closed mouth, no smile or grimace. His hands rest naturally and separately on the desk, away from his face. A single dark smartphone lies screen-up beside one hand, and a laptop stays off to the side. Leave the phone screen plain and dark, without generated text; message notifications will be composited later. Cool dark blue nighttime window light, warm desk-lamp illumination on one side of his face, cinematic depth of field. Match approved premium stylized3D artwork. Clear face and hands; no physical redesign. No Founder or other people in this shot. No duplicated characters, insets, grids, panels, captions, logos, readable text, face in reflections, extra hands or fingers. This still begins a slow push-in; leave useful portrait framing around head and shoulders.",
+              "request_id": "f6cd1365647a4697ae7f300df261e560",
+              "schema": "joat.project_reference_request.v1",
+              "sources": [
+                {
+                  "crop_bounds_pixels": null,
+                  "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+                  "role": "identity",
+                  "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+                  "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg"
+                },
+                {
+                  "crop_bounds_pixels": [
+                    2,
+                    2,
+                    905,
+                    416
+                  ],
+                  "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65",
+                  "role": "environment",
+                  "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+                  "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg"
+                }
+              ]
+            },
+            "width": 576
+          },
+          "file_version": "1.0.0",
+          "fingerprint": "8700db15238c7e90166eb9d83b001e39d261137134529a482718689dffa8baca",
+          "image_uri": "hf://buckets/Dezz-9-10/J.O.A.T.-Studio-storage/joat-studio/production-projects/PROJECT-OTU-STYLE001-90S-001/references/CRISTU-OFFICE-NIGHT/f6cd1365647a4697ae7f300df261e560/candidate.png",
+          "owner_approval": {
+            "approved_at": "2026-10-18T01:59:02.768077+00:00",
+            "descriptor_fingerprint": "93cb2d43f0ad67401e971b33cfe6c9b26bf2554970e819b461e967a32dd5990e",
+            "kind": "visual_job_reference",
+            "owner": "Dezz-9-10"
+          },
+          "production_qc_approved": false,
+          "schema": "joat.approved_project_job_reference.v1"
+        },
+        "asset_id": "93cb2d43f0ad67401e971b33cfe6c9b26bf2554970e819b461e967a32dd5990e",
+        "path": "image.png",
+        "sha256": "f3d5c37935abc86f14489655b718ef0754bba88cf706b93a1e30d12211f35d28",
+        "url": "hf://buckets/Dezz-9-10/J.O.A.T.-Studio-storage/joat-studio/production-projects/PROJECT-OTU-STYLE001-90S-001/references/CRISTU-OFFICE-NIGHT/f6cd1365647a4697ae7f300df261e560/candidate.png"
+      }
+    },
+    "renderer_api": "/generate",
+    "renderer_revision": "be1591ad2ad05c3af51f27fd671658d1873e15af",
+    "renderer_space": "Dezz-9-10/J.O.A.T.-Animation-Studio",
+    "schema": "joat.render_plan.v1",
+    "source_job_fingerprint": "222eedbf801f0a847e0fe2f470d3c7d211e5ab08a668c8a19027d2400ce51227",
+    "source_supervisor_fingerprint": "8d0657bcdcacd16bae2eae587d05ac083e533d00ac0f089817b9bee6f411df79",
+    "worker_version": "1.0.12"
+  },
+  "source_job_changed": false,
+  "renderer_changed": false,
+  "allocation_ceiling_seconds": 420,
+  "gpu_called": false
+}

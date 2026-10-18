@@ -1,5 +1,5 @@
-"""Shared CPU-only studio capability tools. Embedded file version1.0.0."""
-FILE_VERSION='1.0.0'
+"""Shared CPU-only studio capability tools. Embedded file version1.0.1."""
+FILE_VERSION='1.0.1'
 import json
 from typing import Optional
 import gradio as gr
@@ -25,3 +25,6 @@ def add_studio_capability_ui():
 
   gr.Markdown('Technique evidence grows from existing durable generation results. Technical observations never grant creative QC or authorize a new technique.')
   count=gr.Number(value=10,minimum=1,maximum=50,precision=0,label='Maximum saved observations');saved=gr.JSON(label='Verified saved technical observations — owner access required');gr.Button('Read existing technique evidence — no regeneration').click(evidence,count,saved,api_name='studio_technique_evidence',api_visibility='undocumented',concurrency_limit=1)
+
+  from joat_production_knowledge_ui import add_knowledge_tools
+  add_knowledge_tools()

@@ -1,0 +1,10 @@
+{
+  "schema": "joat.native_knowledge_release_check.v1",
+  "file_version": "1.0.0",
+  "check_id": "d2a4a62e0b6141ebb9507d7f41bbd76e",
+  "variable_name": "JOAT_CAPABILITY_CHECK_d2a4a62e0b6141ebb9507d7f41bbd76e",
+  "receipt_path": "joat-studio/migrations/capabilities/d2a4a62e0b6141ebb9507d7f41bbd76e/receipt.json",
+  "expected_registry_fingerprint": "47e165cfa2865402418da8031f8720ddc37ff86b93ad7ca21fc54a66a6843aa3",
+  "uses_existing_cpu_diagnostic": true,
+  "gpu_called": false
+}

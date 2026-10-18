@@ -1,4 +1,4 @@
-# File version: 1.0.0
+# File version: 1.0.1
 __pycache__/
 *.py[cod]
 .venv/
@@ -9,5 +9,11 @@ __pycache__/
 *.wav
 *.mp3
 *.base64
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.safetensors
+*.gguf
 artifacts/
 test-results/

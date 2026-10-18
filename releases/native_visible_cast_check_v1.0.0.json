@@ -1,0 +1,7 @@
+{
+  "schema": "joat.native_release_check.v1",
+  "file_version": "1.0.0",
+  "check_id": "cbbef22213c74e56a2e289ea894194e5",
+  "receipt_path": "joat-studio/migrations/capabilities/cbbef22213c74e56a2e289ea894194e5/receipt.json",
+  "gpu_called": false
+}

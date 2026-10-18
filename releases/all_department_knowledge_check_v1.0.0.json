@@ -1,0 +1,127 @@
+{
+  "file_version": "1.0.0",
+  "results": [
+    {
+      "role": "browser",
+      "status": "passed",
+      "native_endpoint_count": 3,
+      "knowledge_role": "browser"
+    },
+    {
+      "role": "hugging_face",
+      "status": "passed",
+      "native_endpoint_count": 3,
+      "knowledge_role": "hugging_face"
+    },
+    {
+      "role": "narration",
+      "status": "passed",
+      "native_endpoint_count": 1,
+      "knowledge_role": "narration"
+    },
+    {
+      "role": "character",
+      "status": "passed",
+      "native_endpoint_count": 5,
+      "knowledge_role": "character"
+    },
+    {
+      "role": "environment",
+      "status": "passed",
+      "native_endpoint_count": 5,
+      "knowledge_role": "environment"
+    },
+    {
+      "role": "director",
+      "status": "passed",
+      "native_endpoint_count": 4,
+      "knowledge_role": "director"
+    },
+    {
+      "role": "shot_camera",
+      "status": "passed",
+      "native_endpoint_count": 2,
+      "knowledge_role": "shot_camera"
+    },
+    {
+      "role": "performance_action",
+      "status": "passed",
+      "native_endpoint_count": 2,
+      "knowledge_role": "performance_action"
+    },
+    {
+      "role": "generation_supervisor",
+      "status": "passed",
+      "native_endpoint_count": 7,
+      "knowledge_role": "generation_supervisor"
+    },
+    {
+      "role": "generation_worker",
+      "status": "passed",
+      "native_endpoint_count": 9,
+      "knowledge_role": "generation_worker"
+    },
+    {
+      "role": "quality_control",
+      "status": "passed",
+      "native_endpoint_count": 8,
+      "knowledge_role": "quality_control"
+    },
+    {
+      "role": "post_production",
+      "status": "passed",
+      "native_endpoint_count": 4,
+      "knowledge_role": "post_production"
+    },
+    {
+      "role": "editorial",
+      "status": "passed",
+      "native_endpoint_count": 6,
+      "knowledge_role": "editorial"
+    },
+    {
+      "role": "sound",
+      "status": "passed",
+      "native_endpoint_count": 5,
+      "knowledge_role": "sound"
+    },
+    {
+      "role": "music",
+      "status": "passed",
+      "native_endpoint_count": 5,
+      "knowledge_role": "music"
+    },
+    {
+      "role": "compositing_vfx",
+      "status": "passed",
+      "native_endpoint_count": 4,
+      "knowledge_role": "compositing_vfx"
+    },
+    {
+      "role": "color_finish",
+      "status": "passed",
+      "native_endpoint_count": 4,
+      "knowledge_role": "color_finish"
+    },
+    {
+      "role": "titles_graphics",
+      "status": "passed",
+      "native_endpoint_count": 6,
+      "knowledge_role": "titles_graphics"
+    },
+    {
+      "role": "voice_dialogue",
+      "status": "passed",
+      "native_endpoint_count": 3,
+      "knowledge_role": "voice_dialogue"
+    },
+    {
+      "role": "delivery_archive",
+      "status": "passed",
+      "native_endpoint_count": 4,
+      "knowledge_role": "delivery_archive"
+    }
+  ],
+  "gpu_called": false,
+  "operation": "local native API description only"
+}

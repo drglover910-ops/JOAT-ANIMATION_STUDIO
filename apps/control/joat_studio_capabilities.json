@@ -1,8 +1,8 @@
 {
   "schema": "joat.studio_capability_registry.v1",
-  "file_version": "1.0.0",
+  "file_version": "1.0.1",
   "renderer_space": "Dezz-9-10/J.O.A.T.-Animation-Studio",
-  "renderer_revision": "3d3daf99e2c177ae2a87fe3686e2b19f421a1370",
+  "renderer_revision": "be1591ad2ad05c3af51f27fd671658d1873e15af",
   "renderer_app_version": "1.0.14",
   "audit_sha256": "1cb63d8d02d08c1b06ce6a42cc963856c9b80693806edc0b7fe69a64a68e5ccd",
   "features": [
@@ -72,7 +72,7 @@
     {
       "id": "scene_builder",
       "name": "Scene Builder",
-      "description": "Runs **1\u201364 clips**, one generation request each, using the previous clip's last frame; joins completed results with audio.",
+      "description": "Runs **1–64 clips**, one generation request each, using the previous clip's last frame; joins completed results with audio.",
       "limits": "Implemented; whole-scene production quality not qualified for our film. A 64-clip limit is not a promise that quota, continuity or memory can complete 64 clips.",
       "status": "implemented_needs_qualification",
       "cost_class": "gpu_or_separate_inference",
@@ -208,7 +208,7 @@
       "id": "resolution",
       "name": "Resolution / aspect",
       "description": "Automatic target megapixels; custom width/height; 32/64 grid controls.",
-      "limits": "UI allows 0.1\u20134 MP target and 512\u20131536 custom limits. Our controlled aspect mappings include landscape, vertical, square, 4:3 and 21:9; current film uses 1024\u00d7576. These controls are not proof of reliable 4K output.",
+      "limits": "UI allows 0.1–4 MP target and 512–1536 custom limits. Our controlled aspect mappings include landscape, vertical, square, 4:3 and 21:9; current film uses 1024×576. These controls are not proof of reliable 4K output.",
       "status": "implemented_needs_qualification",
       "cost_class": "cpu_or_metadata",
       "automatic_activation_allowed": false
@@ -375,5 +375,5 @@
       "automatic_activation": false
     }
   ],
-  "registry_fingerprint": "ab1ae31adfd9d6cbf19d338b66dc5ae51cf359e6a9ade1bbf7dcd799c8e1b467"
+  "registry_fingerprint": "47e165cfa2865402418da8031f8720ddc37ff86b93ad7ca21fc54a66a6843aa3"
 }

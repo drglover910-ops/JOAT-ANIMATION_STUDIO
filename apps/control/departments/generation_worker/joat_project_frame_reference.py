@@ -1,7 +1,7 @@
 """Bind an already owner-approved project still without altering its evidence.
-Embedded file version 1.0.0. No generation, canonical registration or QC authority.
+Embedded file version 1.0.1. No generation, canonical registration or QC authority.
 """
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.1'
 import hashlib,json,re
 from pathlib import Path
 from datetime import datetime,timezone
@@ -43,7 +43,9 @@ def validate_manifest(v):
         if not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_-]{0,127}',scope.get(k,'')):raise ValueError('Invalid project reference context.')
     a=v.get('owner_approval',{});b=d.get('canonical_identity_binding',{});q=d.get('source_request',{})
     identities=[s.get('source_sha256') for s in q.get('sources',[]) if s.get('role')=='identity']
-    if b.get('status')!='canonical_source_hash_matched' or b.get('character_id')!=scope['character_id'] or identities!=[b.get('identity_source_sha256')] or b.get('biometric_identity_verified') is not False:raise ValueError('Project reference canonical binding differs.')
+    from joat_visible_cast import validate_descriptor
+    validate_descriptor(d)
+    if b.get('status')!='canonical_source_hash_matched' or b.get('character_id')!=scope['character_id'] or b.get('biometric_identity_verified') is not False:raise ValueError('Project reference canonical binding differs.')
     if q.get('project_id')!=scope['project_id'] or fp(q)!=o.get('candidate_plan_fingerprint') or q.get('asset_key')!=o['asset_key'] or q.get('request_id')!=o['request_id']:raise ValueError('Original project reference plan changed.')
     if a.get('owner')!='Dezz-9-10' or a.get('kind')!='visual_job_reference' or not a.get('approved_at') or a.get('descriptor_fingerprint')!=asset:raise ValueError('Owner assignment approval required.')
     expected='hf://buckets/Dezz-9-10/J.O.A.T.-Studio-storage/joat-studio/production-projects/'+scope['project_id']+'/references/'+o['asset_key']+'/'+o['request_id']+'/candidate.png'
@@ -55,13 +57,20 @@ def load_approved_frame(v,root=ROOT):
     o=d['origin'];review,approval,image=evidence(d['scope']['project_id'],o['asset_key'],o['request_id'],root)
     if review['source_request']!=d['source_request'] or fp(review)!=o['candidate_review_fingerprint'] or approval['approval_fingerprint']!=o['approval_fingerprint'] or review['sha256']!=d['image_sha256'] or review['size_bytes']!=d['size_bytes'] or (review['width'],review['height'])!=(d['width'],d['height']):raise ValueError('Project reference no longer matches original approval.')
     return image
-def register(project,key,identifier,scope,character,approved,root=ROOT):
+def register(project,key,identifier,scope,character,approved,root=ROOT,*,visible_characters=None):
     if approved is not True or scope.get('project_id')!=project or scope.get('character_id')!=character.get('character_id'):raise ValueError('Owner-approved exact project assignment required.')
     review,approval,image=evidence(project,key,identifier,root)
     identity=[s['source_sha256'] for s in review['source_request']['sources'] if s['role']=='identity']
-    matches=[k for k,v in character.get('source_asset_hashes',{}).items() if identity==[v]]
-    if len(matches)!=1:raise ValueError('Project frame canonical source is not in this character packet.')
-    d=dict(schema='joat.approved_project_job_reference_descriptor.v1',file_version=FILE_VERSION,scope=scope,role='shot_start_frame',image_sha256=review['sha256'],size_bytes=review['size_bytes'],width=review['width'],height=review['height'],source_request=review['source_request'],origin=dict(asset_key=key,request_id=identifier,candidate_plan_fingerprint=review['plan_fingerprint'],candidate_review_fingerprint=fp(review),approval_fingerprint=approval['approval_fingerprint']),canonical_identity_binding=dict(status='canonical_source_hash_matched',character_id=character['character_id'],identity_source_sha256=identity[0],identity_asset_id=matches[0],biometric_identity_verified=False),canonical_registration=False,production_qc_approved=False)
+    from joat_visible_cast import bind_sources
+    bindings=bind_sources(review['source_request']['sources'],visible_characters if visible_characters is not None else [character],character['character_id'])
+    primary=next(b for b in bindings if b['character_id']==character['character_id'])
+    if character.get('identity_locked') is not True or character.get('source_asset_hashes',{}).get(primary['identity_asset_id'])!=primary['identity_source_sha256']:raise ValueError('Primary canonical source differs.')
+    matches=[primary['identity_asset_id']]
+    d=dict(schema='joat.approved_project_job_reference_descriptor.v1',file_version=FILE_VERSION,scope=scope,role='shot_start_frame',image_sha256=review['sha256'],size_bytes=review['size_bytes'],width=review['width'],height=review['height'],source_request=review['source_request'],origin=dict(asset_key=key,request_id=identifier,candidate_plan_fingerprint=review['plan_fingerprint'],candidate_review_fingerprint=fp(review),approval_fingerprint=approval['approval_fingerprint']),canonical_identity_binding=dict(status='canonical_source_hash_matched',character_id=character['character_id'],identity_source_sha256=primary['identity_source_sha256'],identity_asset_id=matches[0],biometric_identity_verified=False),canonical_registration=False,production_qc_approved=False)
+    if len(bindings)>1:d['canonical_cast_bindings']=bindings
+    # Preserve existing single-subject descriptor bytes/asset IDs and their saved approvals.
+    # Module FILE_VERSION identifies the new code; legacy data semantics remain unchanged.
+    if len(bindings)==1:d['file_version']='1.0.0'
     asset=fp(d);d['asset_id']=asset
     target=checked(Path(root)/'approved-project-references'/asset/'manifest.json')
     if target.exists():
@@ -70,3 +79,13 @@ def register(project,key,identifier,scope,character,approved,root=ROOT):
     v['fingerprint']=fp(v);validate_manifest(v);target.parent.mkdir(parents=True,exist_ok=True)
     with target.open('x') as f:json.dump(v,f,indent=2)
     load_approved_frame(v,root);return v
+
+def register_from_source(packet,key,identifier,approved,root=ROOT):
+    """Use the exact approved source packet to declare all visible canonical subjects."""
+    from joat_job_frame_binding import source
+    job,context,snapshot=source(packet)
+    primary=snapshot['character']
+    scope=dict(context,character_id=primary['character_id'],environment_id=snapshot['environment']['environment_id'])
+    characters=snapshot['director'].get('character_refs') or [primary]
+    return register(context['project_id'],key,identifier,scope,primary,approved,
+                    root=root,visible_characters=characters)

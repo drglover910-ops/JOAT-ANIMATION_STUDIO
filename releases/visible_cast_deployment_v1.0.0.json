@@ -1,0 +1,36 @@
+{
+  "schema": "joat.visible_cast_release.v1",
+  "file_version": "1.0.0",
+  "gpu_called": false,
+  "hardware_changed": false,
+  "components": {
+    "control": {
+      "repo": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "revision": "1161eb36496532dcc64d21c56c1e7c8d2a3d7364",
+      "parent_revision": "cc46b95ad7a2b39cbe4f29dd6feb11ef653c49b1",
+      "verified_files": [
+        "app.py",
+        "consolidated_manifest.json",
+        "joat_visible_cast.py",
+        "departments/generation_worker/joat_visible_cast.py",
+        "departments/generation_worker/joat_job_frame_binding.py",
+        "departments/generation_worker/joat_project_frame_reference.py",
+        "departments/generation_worker/joat_render_bridge.py"
+      ]
+    },
+    "main": {
+      "repo": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "revision": "2ab2e05fc62fed84412405383f7c2f2f994940b4",
+      "parent_revision": "5b42be3d95baa671e4ca74569557b1a6eb073f3d",
+      "verified_files": [
+        "app.py",
+        "joat_control_contract.py",
+        "joat_frame_assignment_task.py",
+        "joat_visible_cast.py",
+        "joat_job_frame_binding.py",
+        "joat_project_frame_reference.py"
+      ]
+    }
+  },
+  "status": "source_readback_verified_runtime_pending"
+}

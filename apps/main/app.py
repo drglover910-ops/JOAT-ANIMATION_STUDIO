@@ -1,5 +1,5 @@
 """
-J.O.A.T. Main Assistant Bot v2.1.97
+J.O.A.T. Main Assistant Bot v2.1.99
 
 LIVE SPECIALIST EXECUTION
 
@@ -73,7 +73,7 @@ from huggingface_hub import InferenceClient
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "2.1.97"
+APP_VERSION = "2.1.99"
 ACCEPTANCE_TEST_VERSION = "2.1.0"
 
 BOT_NAME = os.environ.get(
@@ -2459,7 +2459,7 @@ When responding:
 - If a task requires approval, identify the gate.
 - If specialist execution has returned a verified result, summarize it
   without inventing additional actions.
-""".strip() + "\n\n" + __import__("joat_studio_capabilities").context(compact=route.get("domain") != "studio")
+""".strip() + "\n\n" + __import__("joat_studio_capabilities").context(compact=route.get("domain") != "studio") + "\n\n" + __import__("joat_production_knowledge").context(role="main")
 
 
 def get_inference_client():
@@ -4515,8 +4515,8 @@ def tests_ui():
 
     try:
         add(
-            "1. App version is 2.1.97",
-            APP_VERSION == "2.1.97",
+            "1. App version is 2.1.99",
+            APP_VERSION == "2.1.99",
         )
 
         add(

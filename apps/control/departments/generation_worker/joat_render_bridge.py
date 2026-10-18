@@ -1,5 +1,5 @@
-"""Owner-approved rendering; joat_render_bridge.py file version1.0.21."""
-FILE_VERSION = "1.0.21"
+"""Owner-approved rendering; joat_render_bridge.py file version1.0.22."""
+FILE_VERSION = "1.0.22"
 import hashlib
 import json
 import math
@@ -105,6 +105,8 @@ def prepare_plan(worker, packet):
     if selected or job_frame_binding:
         manifest = selected[0] if selected else job_frame_binding['approved_frame_manifest']
         reference = reference_entry(manifest, character, environment, job['project_context']) if selected else reference_from_binding(job_frame_binding, packet)
+        from joat_visible_cast import validate_for_job
+        validate_for_job(manifest['descriptor'], prompt_contract['director_packet'], character)
         if char_anchor['sha256'] != manifest['descriptor']['canonical_identity_binding']['identity_source_sha256']:
             raise ValueError('Catalog anchor differs from approved frame identity binding')
         load_approved_frame(manifest)

@@ -1,5 +1,5 @@
-"""Scoped private owner-approved frame assignment task; no department/GPU calls. Version1.0.0."""
-FILE_VERSION='1.0.0'
+"""Scoped private owner-approved frame assignment task; no department/GPU calls. Version1.0.1."""
+FILE_VERSION='1.0.1'
 import json,os,re
 from pathlib import Path
 from huggingface_hub import HfApi
@@ -13,8 +13,10 @@ def validate(value):
  if not isinstance(rows,list) or not 1<=len(rows)<=8:raise ValueError('Bounded scene assignments required.')
  seen=set()
  for row in rows:
-  if not isinstance(row,dict) or set(row)!={'scene_id','shot_id','job_fingerprint','supervisor_fingerprint','asset_id'}:raise ValueError('Invalid assignment scope.')
-  for key in ('job_fingerprint','supervisor_fingerprint','asset_id'):
+  common={'scene_id','shot_id','job_fingerprint','supervisor_fingerprint'}
+  if not isinstance(row,dict) or set(row) not in (common|{'asset_id'},common|{'asset_key','request_id'}):raise ValueError('Invalid assignment scope.')
+  if 'request_id' in row and (not isinstance(row['request_id'],str) or not re.fullmatch('[a-f0-9]{32}',row['request_id']) or not isinstance(row['asset_key'],str) or not re.fullmatch('[A-Z0-9-]{1,96}',row['asset_key'])):raise ValueError('Exact approved candidate identifiers required.')
+  for key in ('job_fingerprint','supervisor_fingerprint')+ (('asset_id',) if 'asset_id' in row else ()) :
    if not isinstance(row[key],str) or not re.fullmatch('[a-f0-9]{64}',row[key]):raise ValueError('Exact assignment fingerprints required.')
   if row['job_fingerprint'] in seen:raise ValueError('Duplicate source assignment.')
   seen.add(row['job_fingerprint'])
@@ -29,7 +31,11 @@ def run_frame_assignment_tasks():
    for row in value['assignments']:
     packet=read_source(value['project_id'],row['job_fingerprint']+'/'+row['supervisor_fingerprint']);ctx=packet['generation_job']['project_context']
     if ctx['scene_id']!=row['scene_id'] or ctx['shot_id']!=row['shot_id']:raise ValueError('Assignment scene/shot differs from saved source.')
-    manifest=read_frame(row['asset_id']);proposal=binding.create_binding(packet,manifest,True,'Dezz-9-10');binding.load_approved_frame(manifest);proposals.append((packet,proposal))
+    if 'asset_id' in row:manifest=read_frame(row['asset_id'])
+    else:
+     from joat_project_frame_reference import register_from_source
+     manifest=register_from_source(packet,row['asset_key'],row['request_id'],True)
+    proposal=binding.create_binding(packet,manifest,True,'Dezz-9-10');binding.load_approved_frame(manifest);proposals.append((packet,proposal))
    root=binding.safe(binding.ROOT/'frame-assignment-tasks'/value['project_id']/binding.digest(value));file=root/'result.json'
    if file.exists():
     record=json.loads(file.read_text());print('JOAT_FRAME_ASSIGNMENT '+json.dumps(record),flush=True);continue

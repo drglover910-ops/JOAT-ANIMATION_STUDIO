@@ -1,0 +1,50 @@
+{
+  "schema": "joat.native_capability_check.v1",
+  "file_version": "1.0.2",
+  "check_id": "d2a4a62e0b6141ebb9507d7f41bbd76e",
+  "expected_registry_fingerprint": "47e165cfa2865402418da8031f8720ddc37ff86b93ad7ca21fc54a66a6843aa3",
+  "steps": [
+    {
+      "step": "native_owner_verified"
+    },
+    {
+      "step": "main_actual_system_prompt_verified"
+    },
+    {
+      "step": "authenticated_controller_config_probe"
+    },
+    {
+      "step": "shared_registry_and_incompatible_feature_plan",
+      "registry_fingerprint": "47e165cfa2865402418da8031f8720ddc37ff86b93ad7ca21fc54a66a6843aa3"
+    },
+    {
+      "step": "native_executive_acceptance_and_signing_preserved"
+    },
+    {
+      "step": "owner_only_existing_evidence_library",
+      "observations": 5,
+      "records_scanned": 7
+    },
+    {
+      "step": "native_department_registry_handshakes"
+    },
+    {
+      "step": "main_knowledge_and_acceptance",
+      "tests": 100
+    }
+  ],
+  "gpu_called": false,
+  "provider_inference_called": false,
+  "creative_approval_granted": false,
+  "automatic_retry": false,
+  "controller_config_probe": {
+    "http_status": 200,
+    "content_type": "application/json",
+    "retry_after": null,
+    "rate_limit": null,
+    "rate_limit_policy": null,
+    "owner_auth_headers_present": true
+  },
+  "status": "passed",
+  "receipt_fingerprint": "cd48ccec73c399b3401b129786e8f9e582ea91d654af63a049d849623c336309"
+}
