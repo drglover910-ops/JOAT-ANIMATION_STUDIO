@@ -1,0 +1,87 @@
+{
+  "CHAR-001": {
+    "name": "The Founder",
+    "status": "production",
+    "primary": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa8af5303687f733ec215d6.png",
+    "face": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa8af539f8b31b6ab152e11.png",
+    "references": [],
+    "voice": "am_michael",
+
+    "ghl_folder_id": "6aa8718b9f5a41333a60eb67",
+    "ghl_identity_folder_id": "6aa871919f5a41333a60ebe5",
+    "ghl_appearance_folder_id": "6aa871919f8b31b6ab10a2d1",
+    "ghl_story_folder_id": "6aa871919f5a41333a60ebfd",
+    "ghl_mature_folder_id": "6aa871919f5a41333a60ebf1",
+    "ghl_performance_folder_id": "6aa871914c0f71e6c6d11fb1",
+
+    "assets": {
+      "identity": {
+        "status": "complete",
+        "url": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa8af5303687f733ec215d6.png"
+      },
+      "face": {
+        "status": "complete",
+        "url": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa8af539f8b31b6ab152e11.png"
+      },
+      "appearance": {
+        "status": "missing",
+        "url": ""
+      },
+      "story": {
+        "status": "missing",
+        "url": ""
+      },
+      "mature": {
+        "status": "missing",
+        "url": ""
+      },
+      "performance": {
+        "status": "missing",
+        "url": ""
+      }
+    }
+  },
+
+  "CHAR-002": {
+    "name": "Kiana",
+    "status": "production",
+    "primary": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa86fbd4c0f71e6c6d0f65a.png",
+    "face": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa86fbd8228b95da390c4d9.png",
+    "references": [],
+    "voice": "af_bella",
+
+    "ghl_folder_id": "6aa86be79f8b31b6ab101404",
+    "ghl_identity_folder_id": "6aa86bee8228b95da39065a7",
+    "ghl_appearance_folder_id": "6aa86bee49f830e49b283b89",
+    "ghl_story_folder_id": "6aa86bee9f8b31b6ab10152d",
+    "ghl_mature_folder_id": "6aa86bee03687f733ebcf416",
+    "ghl_performance_folder_id": "6aa86bee9f5a41333a605f5a",
+
+    "assets": {
+      "identity": {
+        "status": "complete",
+        "url": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa86fbd4c0f71e6c6d0f65a.png"
+      },
+      "face": {
+        "status": "complete",
+        "url": "https://assets.cdn.filesafe.space/HToMVzOESQwtaLswBvcz/media/6aa86fbd8228b95da390c4d9.png"
+      },
+      "appearance": {
+        "status": "missing",
+        "url": ""
+      },
+      "story": {
+        "status": "missing",
+        "url": ""
+      },
+      "mature": {
+        "status": "missing",
+        "url": ""
+      },
+      "performance": {
+        "status": "missing",
+        "url": ""
+      }
+    }
+  }
+}

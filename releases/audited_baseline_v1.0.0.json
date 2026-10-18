@@ -1,0 +1,2102 @@
+{
+  "schema": "joat.source_baseline.v1",
+  "file_version": "1.0.0",
+  "runtime_media_included": false,
+  "repositories": {
+    "main": {
+      "repo": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "revision": "36c8beb2a80b26534c096846d83209b0ce9c7eaf",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+          "size_bytes": 1519
+        },
+        {
+          "path": "README.md",
+          "sha256": "ed2f56830e950e55f77054e749c58372c6cc658748249862a1f840cc99e791ef",
+          "size_bytes": 585
+        },
+        {
+          "path": "app.py",
+          "sha256": "e74ffb06ab24bd8c98ea004d5e865f9a80c992b39f8a7eb927fee81d7f5dec8e",
+          "size_bytes": 151693
+        },
+        {
+          "path": "control_api_v1.0.0.json",
+          "sha256": "531298ede4dd591a0c0c035c125db9ac060342d2963e893878e84b07936b4ceb",
+          "size_bytes": 32676
+        },
+        {
+          "path": "control_config_v1.0.0.json",
+          "sha256": "6f2826c891eb02fcf0b9638047ab8f09509e3c6d1413bfa158cf9f6707afb419",
+          "size_bytes": 133463
+        },
+        {
+          "path": "joat_approved_reference.py",
+          "sha256": "c690062eae1994cb8bb1796772777548092191350f1e3ca80fd161bd294d01ae",
+          "size_bytes": 7275
+        },
+        {
+          "path": "joat_authored_graphics.py",
+          "sha256": "aa131dc3dc9561934fc912fb29f1593879af03f1cc28680dc2cee91f274e0ee6",
+          "size_bytes": 7654
+        },
+        {
+          "path": "joat_canonical_project_references.py",
+          "sha256": "7a52ac00e666e43eef1ccffbd9088e633eedb335e529aab7ae321dfefe5f4b58",
+          "size_bytes": 4654
+        },
+        {
+          "path": "joat_capability_check.py",
+          "sha256": "5a27ff47fe894c4c96915e5aa670efbd56c578fe1593c73f9b6146142b492647",
+          "size_bytes": 6386
+        },
+        {
+          "path": "joat_character_speech.py",
+          "sha256": "240b9f4029cb0ffdb358bec7d0e715ad43f510868c5331c4d8a4caf0686e837a",
+          "size_bytes": 5948
+        },
+        {
+          "path": "joat_character_speech_policy.py",
+          "sha256": "9d728ec518551341ab6ec6415117fe6831c2c55e710cd78a287e60232cd437a0",
+          "size_bytes": 1886
+        },
+        {
+          "path": "joat_commercial_proposal.py",
+          "sha256": "f0d01be3d852fd2087348fae44401f46c39c3e2597a757888de0861d1acc684c",
+          "size_bytes": 3577
+        },
+        {
+          "path": "joat_consolidation_check.py",
+          "sha256": "29a1d28c8dd02b11110a64473e99ec4a6ffcbf8ab8adab3e3b61f387475391be",
+          "size_bytes": 7620
+        },
+        {
+          "path": "joat_control_contract.py",
+          "sha256": "cba7d19195f708ea210ca85358d74727471e24639402ec6cce33fece29fea618",
+          "size_bytes": 2306
+        },
+        {
+          "path": "joat_cpu_qualification.py",
+          "sha256": "8225a96bb22965b79e1470ac5712d36b9f9f9801b319cdb88c9079705d2753ec",
+          "size_bytes": 7034
+        },
+        {
+          "path": "joat_creative_approval.py",
+          "sha256": "3542e5effdf47a43a1466e8f2335a478e93b8a849706a7b41c5d8788c2b52796",
+          "size_bytes": 6379
+        },
+        {
+          "path": "joat_creative_continuation.py",
+          "sha256": "503bb5500eaf4a17989b90b2f29bf637d4f5fe2a3f992886a8437b65cad85e20",
+          "size_bytes": 5286
+        },
+        {
+          "path": "joat_creative_workflow.py",
+          "sha256": "6a212c47c49dbbea42c8b1ed61f64836a9141175587a330d2e7c5a0103e66d76",
+          "size_bytes": 25074
+        },
+        {
+          "path": "joat_executive_handoff.py",
+          "sha256": "c8f2d82cf232b2180a90678d91654277b315dd3b2296f6ad5eebeea35d1c1dec",
+          "size_bytes": 23641
+        },
+        {
+          "path": "joat_film_completion.py",
+          "sha256": "6d07ed17272a2c3f79cfb134aff0a27fd3eff19fb92df3c4c845f5981e725c0a",
+          "size_bytes": 13656
+        },
+        {
+          "path": "joat_film_review.py",
+          "sha256": "519561953712675d34231ddbda65549143e0f33b7522abfbdc03cc1b1f35e0d2",
+          "size_bytes": 14073
+        },
+        {
+          "path": "joat_frame_assignment_task.py",
+          "sha256": "c356fd9ddae541ab7156bf12a9515d7d973f23b753880dc802793febcde11964",
+          "size_bytes": 3855
+        },
+        {
+          "path": "joat_frame_preflight_task.py",
+          "sha256": "56cc350fa19e7c393405fa82b15f4bec9cedf11c6994d73dc04058f1b5f92815",
+          "size_bytes": 5363
+        },
+        {
+          "path": "joat_gpu_quota_panel.py",
+          "sha256": "9a5742de8d3bb659a60fda21550f9a0e2a8c5cb8766c8a458699111b27189f07",
+          "size_bytes": 5867
+        },
+        {
+          "path": "joat_job_frame_binding.py",
+          "sha256": "3bd4a959f28eeab6532c77983a93bebeabee25da2648270b4498a43cace2890f",
+          "size_bytes": 6136
+        },
+        {
+          "path": "joat_job_frame_ui.py",
+          "sha256": "f69f562a2442d09e66ea38b906c17ecfd84c0b4a9d7c689645cd59cb8e4b9a90",
+          "size_bytes": 6185
+        },
+        {
+          "path": "joat_local_cpu.py",
+          "sha256": "3addd1f9ffc73bf8c329b623fd91f16bc8bede6db204d0f42a56c4c39ea0cc2d",
+          "size_bytes": 7599
+        },
+        {
+          "path": "joat_managed_generation.py",
+          "sha256": "36cb58889655b466b8941686bed488d6f25546cf449a5d007d33ae8c6272d7a2",
+          "size_bytes": 31569
+        },
+        {
+          "path": "joat_media_control.py",
+          "sha256": "fc8a21625b7242a90e21c577cdf50c17494910849eb8ff67881b937abbcd4f8d",
+          "size_bytes": 15502
+        },
+        {
+          "path": "joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "joat_original_source_assembly.py",
+          "sha256": "939aa27945d41472fffd54d5733548ade37c2846bb0cc7967db5e084c82ecf94",
+          "size_bytes": 10397
+        },
+        {
+          "path": "joat_post_media.py",
+          "sha256": "86387ca7116f52c8053d4451b8c8610a6a924721a5f5a97252120d87a6e83b5c",
+          "size_bytes": 17510
+        },
+        {
+          "path": "joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "joat_production_tasks.py",
+          "sha256": "b36d9a1200ec777683918a57e625ce4fffa1fcd714d375a8eb594f71cb76dbe4",
+          "size_bytes": 21566
+        },
+        {
+          "path": "joat_production_ui.py",
+          "sha256": "8a41ee11e45275ef58cba29dadb6623057aa9bc53791562cde8bc9da0667f061",
+          "size_bytes": 17613
+        },
+        {
+          "path": "joat_project_environments.py",
+          "sha256": "da8d4fad6dcc3571e806c5a6831903ef7e2d12aeb68d65e1d9b8e1e16860f83c",
+          "size_bytes": 7020
+        },
+        {
+          "path": "joat_project_frame_approval.py",
+          "sha256": "c5a14eebd5fd92cf3bb11c0219cd8b3449fb5d0941071385f888799423975c8b",
+          "size_bytes": 5170
+        },
+        {
+          "path": "joat_project_frame_reference.py",
+          "sha256": "fdfbf5e7855997a1de3a5b0ea96a1c70cfe203293f3d55e849fff68ff3372fb0",
+          "size_bytes": 8355
+        },
+        {
+          "path": "joat_project_lifecycle.py",
+          "sha256": "2dd1183f52432e371b3efada217f62093b8b4f2d0758b21db732390e02b8a161",
+          "size_bytes": 2360
+        },
+        {
+          "path": "joat_project_reference_review.py",
+          "sha256": "23434cf13019819b875726e6cf8b6f49ce8844b0c63ed7ad7e7519106eb55938",
+          "size_bytes": 6814
+        },
+        {
+          "path": "joat_reference_connection_check.py",
+          "sha256": "63a9c138844739f1259742dceb5fb75bfa1c13f2afff2eb6f2ebead689679b26",
+          "size_bytes": 5956
+        },
+        {
+          "path": "joat_remote_generation.py",
+          "sha256": "d2ab771ad100215ad4dfcfc88b7503e4561afb8025b0bf745b71696cb6057474",
+          "size_bytes": 20998
+        },
+        {
+          "path": "joat_runtime_client.py",
+          "sha256": "9bf0f9c845a16d4f5dab04e7a60056b5bf3551525002bb5edac2469500523d64",
+          "size_bytes": 4007
+        },
+        {
+          "path": "joat_salon_opening.py",
+          "sha256": "d2b53474cd5a0a1833b7bf3715410d2d5a56f3aac36e29a3c3cfa086d4429ea3",
+          "size_bytes": 4289
+        },
+        {
+          "path": "joat_saved_film_previews.py",
+          "sha256": "a5aaf3e67e32eebb89ed840335b7715c065aac9a2b047fd8127b44ef1c5020bb",
+          "size_bytes": 15049
+        },
+        {
+          "path": "joat_source_character_registry_v1.0.0.json",
+          "sha256": "0bd05cd750d7a7ce0ed5263b12ef2178380dd9f7423c0f0aa5638e2fa4a6edad",
+          "size_bytes": 31488
+        },
+        {
+          "path": "joat_source_script_authority.py",
+          "sha256": "c2f2c2b9f51ba7f3af5016a72816c05e8d03c596d110a080094296170d8cb806",
+          "size_bytes": 3257
+        },
+        {
+          "path": "joat_stage20_preview 2.py",
+          "sha256": "119ff3025fd3e0e30047aaa812aa1812d1e95bb9e3e68a019b73bdf19a602f8e",
+          "size_bytes": 3309
+        },
+        {
+          "path": "joat_story_opening.py",
+          "sha256": "d6ef3f41a923455c5a5a3cda7124399678d2f7e09c004067cfc5f1412daa4e8d",
+          "size_bytes": 5407
+        },
+        {
+          "path": "joat_studio_capabilities.json",
+          "sha256": "063b88ce289fe2a2ab44fcc011d22c25356568a62235d1986eb3bdccdf850fa4",
+          "size_bytes": 19971
+        },
+        {
+          "path": "joat_studio_capabilities.py",
+          "sha256": "a0e0c7a32f859de69bc21388b05b4078ad71a2455e6d9461255b28051b907b11",
+          "size_bytes": 12200
+        },
+        {
+          "path": "joat_studio_capability_ui.py",
+          "sha256": "c1362f904be37ec8a84a0a329aba72b101c359586645d887accf323c92c87bef",
+          "size_bytes": 2528
+        },
+        {
+          "path": "joat_style001_browser_check.py",
+          "sha256": "e45408afed5a82aba14c4f95130278630e9603e407c2198ba21e33bfb5be2ed4",
+          "size_bytes": 13765
+        },
+        {
+          "path": "joat_style001_corrected_opening.py",
+          "sha256": "e0a8de153366f76f3ba6825b2b3ef02cd10be67a99b33acf84b9decf64a84d05",
+          "size_bytes": 9798
+        },
+        {
+          "path": "joat_style001_opening.py",
+          "sha256": "0cb633e0bce999224fa71f820017c37c42e133d95de5381948465041eaf7bf42",
+          "size_bytes": 3511
+        },
+        {
+          "path": "joat_style001_opening_grant.py",
+          "sha256": "c2af0edf2275f9bbaf0b923a04764bd3e00d4d92886956a938533a373a5c9d61",
+          "size_bytes": 6966
+        },
+        {
+          "path": "joat_video_reference.py",
+          "sha256": "ec0304eb37b5b9c66164cd344c9fab39020be36bf953ea8eb385bb244d8241ec",
+          "size_bytes": 35515
+        },
+        {
+          "path": "joat_video_reference_ui.py",
+          "sha256": "de22eaf423cccabe70688dae57a70f18eca7e24ebe728c0b7b0139866aec5496",
+          "size_bytes": 29458
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "b7db9ac1863ec95535a18eefa58fbd16622eda508c98788dec58c458982c52e7",
+          "size_bytes": 290
+        }
+      ],
+      "omitted_resources": []
+    },
+    "control": {
+      "repo": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "revision": "2a9e8b4b8a7d3d963ada6491f9c66f4602be4897",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+          "size_bytes": 1519
+        },
+        {
+          "path": "README.md",
+          "sha256": "aed54e4f7b0e3a76a940a91cbc6511d6a719dede2bd60d815fc6b8f50eebae97",
+          "size_bytes": 548
+        },
+        {
+          "path": "app.py",
+          "sha256": "c030430fd0150c60e7e48bb26f3ce302a17687f2822dedd0c35da2a23c187b3e",
+          "size_bytes": 63021
+        },
+        {
+          "path": "consolidated_manifest.json",
+          "sha256": "e18b0a72864bc82f8bdbdcf5a2d72cf4cef3da3ef9a57f86508593e4532f0927",
+          "size_bytes": 53552
+        },
+        {
+          "path": "departments/browser/README.md",
+          "sha256": "3def82375491bec10c17405024bd77757e7e0959dfad8dda01a02122021fca93",
+          "size_bytes": 351
+        },
+        {
+          "path": "departments/browser/app.py",
+          "sha256": "5902be3cbab26840e68c78af7d20cfe2cab6a6b8a959c155513d63d17f8cbf06",
+          "size_bytes": 48750
+        },
+        {
+          "path": "departments/browser/requirements.txt",
+          "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+          "size_bytes": 14
+        },
+        {
+          "path": "departments/character/README.md",
+          "sha256": "182bda5e0995fe711ef2ae6af050be4fd986bb9b862e7223a4502ae3add96c5e",
+          "size_bytes": 750
+        },
+        {
+          "path": "departments/character/acceptance_result.json",
+          "sha256": "b9be52b539965bec488407e912f5e84a0f4c24aa91eba100d94d653bbea019da",
+          "size_bytes": 806
+        },
+        {
+          "path": "departments/character/app.py",
+          "sha256": "fb214bace4cd5fecec000714b291205504ea9ecd2572e379b770e120255eeb82",
+          "size_bytes": 5266
+        },
+        {
+          "path": "departments/character/build_registry_metadata.py",
+          "sha256": "0febfaeda32d7aea4f234dd12a9d3c0610549dc55382c4d6f7b51add4c9889cf",
+          "size_bytes": 2935
+        },
+        {
+          "path": "departments/character/character_master.py",
+          "sha256": "eadc8a34be0cbf3a10b8c79584b85ae40cacbdde1ff2975ee315908b6a94936d",
+          "size_bytes": 8188
+        },
+        {
+          "path": "departments/character/characters.json",
+          "sha256": "76113fd3c143c9f62a735accad901e68ab4f383b4cbe590e06f2141f773f2ab5",
+          "size_bytes": 28492
+        },
+        {
+          "path": "departments/character/generate_character_metadata.py",
+          "sha256": "0febfaeda32d7aea4f234dd12a9d3c0610549dc55382c4d6f7b51add4c9889cf",
+          "size_bytes": 2935
+        },
+        {
+          "path": "departments/character/requirements.txt",
+          "sha256": "6c243121e96a1f7b4d6eec9ac362a1e76b670be1a9cab0f884f6333748716031",
+          "size_bytes": 27
+        },
+        {
+          "path": "departments/character/test_character_master.py",
+          "sha256": "a0f5f89f581b665414bf43de53ea34ee49364efc6b3f58f35238c096c1cf7afb",
+          "size_bytes": 174
+        },
+        {
+          "path": "departments/color_finish/README.md",
+          "sha256": "8b90b6e005f34cca25dbbed809b7cb607e4ad4963e19da4eb2367ac2ec45a727",
+          "size_bytes": 322
+        },
+        {
+          "path": "departments/color_finish/app.py",
+          "sha256": "719c00813e064c02e1d1daa3e7f0ee20780d2b29e5c5f0748193516a449664ba",
+          "size_bytes": 29061
+        },
+        {
+          "path": "departments/color_finish/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/color_finish/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/color_finish/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/color_finish/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/color_finish/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/compositing_vfx/README.md",
+          "sha256": "4a2b8bd11e9987b02886923cf46f62e2466f6f2a8aa38b3811218311d8ee47d2",
+          "size_bytes": 326
+        },
+        {
+          "path": "departments/compositing_vfx/app.py",
+          "sha256": "ac57f32ffa5006e4ae5b1e2f471ebab8c76c54119835b745f69d5e6fe9ff40da",
+          "size_bytes": 29672
+        },
+        {
+          "path": "departments/compositing_vfx/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/compositing_vfx/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/compositing_vfx/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/compositing_vfx/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/compositing_vfx/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/delivery_archive/README.md",
+          "sha256": "d3f952fdf1b80859fbdca36b0f27051f763068284a7953510d3044b89a5ac899",
+          "size_bytes": 320
+        },
+        {
+          "path": "departments/delivery_archive/app.py",
+          "sha256": "82a66449e269ae717cab19c7db70bf3413eb2ad6d7db8729b3c2b45603add152",
+          "size_bytes": 28103
+        },
+        {
+          "path": "departments/delivery_archive/joat_delivery_storage.py",
+          "sha256": "80cad3f52e1d31771ba658180fbd29c25402de159725f6fba5d3d4882030ffdc",
+          "size_bytes": 5502
+        },
+        {
+          "path": "departments/delivery_archive/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/delivery_archive/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/delivery_archive/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/delivery_archive/joat_production_ui.py",
+          "sha256": "9940f7aff4eb82e9cb6f8dce5748ab9d1e5404451aafe3ff116e0af55085789d",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/delivery_archive/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/director/README.md",
+          "sha256": "a7ef6de70c311a550d5947a9bfb3bce087e3ae9732e44a5d8e8538056426378d",
+          "size_bytes": 5101
+        },
+        {
+          "path": "departments/director/app.py",
+          "sha256": "8e069d88c9e1a4e7368f097d3c57e8de34d8efa45926e95d2429d3e798660209",
+          "size_bytes": 54287
+        },
+        {
+          "path": "departments/director/characters.json",
+          "sha256": "10a9b50028d01c6f0d23d31daf9a5dbb45998dd4d88dd0cb75760b9513d2e2b4",
+          "size_bytes": 3113
+        },
+        {
+          "path": "departments/director/joat_approved_reference.py",
+          "sha256": "d2423768d5e46147f5bb4f348fede001329cb05a2c69388239d45a237b84e142",
+          "size_bytes": 7273
+        },
+        {
+          "path": "departments/director/requirements.txt",
+          "sha256": "44d0e947726450255a1d07bf5ba3c640c53deb0604dac177a50780c256839812",
+          "size_bytes": 126
+        },
+        {
+          "path": "departments/editorial/README.md",
+          "sha256": "d897752258dce3e10d9e257a7477f933fe7e996731a81870d1f95047bff55436",
+          "size_bytes": 320
+        },
+        {
+          "path": "departments/editorial/app.py",
+          "sha256": "b84b2c59f3a76e7b84aeaf3a551eb38517749cdde2b4e918c2ca23f09342744c",
+          "size_bytes": 28624
+        },
+        {
+          "path": "departments/editorial/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/editorial/joat_post_media.py",
+          "sha256": "925c582da1efe3102374d5ea883c6a1e86cb1b8991c69c26d5a6bc3f11629118",
+          "size_bytes": 18194
+        },
+        {
+          "path": "departments/editorial/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/editorial/joat_production_ui.py",
+          "sha256": "632ee80777d655a76533053a88fc9cf7db9f9fef6241a63a0ff40f8d2d80a46b",
+          "size_bytes": 17704
+        },
+        {
+          "path": "departments/editorial/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/environment/README.md",
+          "sha256": "59d4d231db5e41584fba4e94d17e7f10dbbc34178bbc39ad7d84fa4e232d1087",
+          "size_bytes": 277
+        },
+        {
+          "path": "departments/environment/app.py",
+          "sha256": "acf19641f7a64c809165b378fcc80cfe46eaa8c91cc8f16c497d24137240bd37",
+          "size_bytes": 41293
+        },
+        {
+          "path": "departments/environment/joat_project_environments.py",
+          "sha256": "da8d4fad6dcc3571e806c5a6831903ef7e2d12aeb68d65e1d9b8e1e16860f83c",
+          "size_bytes": 7020
+        },
+        {
+          "path": "departments/environment/requirements.txt",
+          "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+          "size_bytes": 14
+        },
+        {
+          "path": "departments/generation_supervisor/README.md",
+          "sha256": "7401cc33f809757a24e96eef3c9a611f4a21c8b5bf9dcca4ee8c2ff47b24282d",
+          "size_bytes": 297
+        },
+        {
+          "path": "departments/generation_supervisor/app.py",
+          "sha256": "bc810078ac2adf4c21839d50cb047d5c62c28d084fcb5cf23a2b7ee680d09724",
+          "size_bytes": 37074
+        },
+        {
+          "path": "departments/generation_supervisor/joat_managed_generation.py",
+          "sha256": "b397ca3d05be5dd8b61b87dd6a53a77b3b226c2042ef0195ff31e484105fa6a0",
+          "size_bytes": 28511
+        },
+        {
+          "path": "departments/generation_supervisor/joat_worker_dispatch.py",
+          "sha256": "350c9a604eb51a285454faee51f8cb8c2a2e8a035b6ada8ac7a6efaa99d9783f",
+          "size_bytes": 6307
+        },
+        {
+          "path": "departments/generation_supervisor/requirements.txt",
+          "sha256": "45f157e5581c27c3f5fafcd1b7afd385fcb5f229129234ebf0ec75d08380013f",
+          "size_bytes": 21
+        },
+        {
+          "path": "departments/generation_worker/README.md",
+          "sha256": "cd64f709e482528d0f6d92ff119b84c90c55fcae6f4f52b96fad74dc345db80e",
+          "size_bytes": 318
+        },
+        {
+          "path": "departments/generation_worker/app.py",
+          "sha256": "5196cf0b336823c522c03dbba851b052edc37b684f54da8cb5d77fd03d15dfa2",
+          "size_bytes": 54851
+        },
+        {
+          "path": "departments/generation_worker/asset_catalog.json",
+          "sha256": "6d8e2514f89a2701e20a1e1962988c10de6494033b64679b82b657122cb9261c",
+          "size_bytes": 17973
+        },
+        {
+          "path": "departments/generation_worker/joat_approved_reference.py",
+          "sha256": "c690062eae1994cb8bb1796772777548092191350f1e3ca80fd161bd294d01ae",
+          "size_bytes": 7275
+        },
+        {
+          "path": "departments/generation_worker/joat_character_speech_policy.py",
+          "sha256": "9d728ec518551341ab6ec6415117fe6831c2c55e710cd78a287e60232cd437a0",
+          "size_bytes": 1886
+        },
+        {
+          "path": "departments/generation_worker/joat_job_frame_binding.py",
+          "sha256": "4ab5483126d18596344ca733886a1414201575bf3672cb9b98d87bb7f0371301",
+          "size_bytes": 6723
+        },
+        {
+          "path": "departments/generation_worker/joat_managed_generation.py",
+          "sha256": "67befabaf1eda4f00473146d02e1f8a8c853c3bc9c9f1899e9080fe2fb3c0057",
+          "size_bytes": 28416
+        },
+        {
+          "path": "departments/generation_worker/joat_media_tools.py",
+          "sha256": "19646b01331197f95cc703820cd031b0af333cbe94aec5232c18cd3e03715cb1",
+          "size_bytes": 3644
+        },
+        {
+          "path": "departments/generation_worker/joat_project_environments.py",
+          "sha256": "da8d4fad6dcc3571e806c5a6831903ef7e2d12aeb68d65e1d9b8e1e16860f83c",
+          "size_bytes": 7020
+        },
+        {
+          "path": "departments/generation_worker/joat_project_frame_reference.py",
+          "sha256": "fdfbf5e7855997a1de3a5b0ea96a1c70cfe203293f3d55e849fff68ff3372fb0",
+          "size_bytes": 8355
+        },
+        {
+          "path": "departments/generation_worker/joat_project_lifecycle.py",
+          "sha256": "2dd1183f52432e371b3efada217f62093b8b4f2d0758b21db732390e02b8a161",
+          "size_bytes": 2360
+        },
+        {
+          "path": "departments/generation_worker/joat_prompt_compiler.py",
+          "sha256": "1cc361a6cd9fbc571b01ef1d568080429ce1a312d38376ac89a826d12e7fda89",
+          "size_bytes": 33290
+        },
+        {
+          "path": "departments/generation_worker/joat_reference_views.py",
+          "sha256": "7425fa5c98eb1bf8df04eb8c7673d759dbfca0a9fbf53d7dadacad74fe9c61a4",
+          "size_bytes": 6951
+        },
+        {
+          "path": "departments/generation_worker/joat_render_bridge.py",
+          "sha256": "8ea4feca5b81dacf12ae279914dfd14a45bc7d3590aeaca39c958b019d4525fd",
+          "size_bytes": 39993
+        },
+        {
+          "path": "departments/generation_worker/renderer_contract.json",
+          "sha256": "448791e859a26222f4b823c1f6128948a03de56d0d8cc912905ba4d481b3159e",
+          "size_bytes": 8922
+        },
+        {
+          "path": "departments/generation_worker/requirements.txt",
+          "sha256": "c1df9684999a4b84100a08ca7c2d3075d845c8d7463f2e8af1b578983ff12bae",
+          "size_bytes": 32
+        },
+        {
+          "path": "departments/hugging_face/README.md",
+          "sha256": "e1b5a925248a874d16a89077bb7fa33f819b68a445594ff3dfce0787c64a6ae4",
+          "size_bytes": 353
+        },
+        {
+          "path": "departments/hugging_face/app.py",
+          "sha256": "98b07436fb05ebfcfc73cc3a4b43aaac186be33b49a8745666dd49a7eae46a51",
+          "size_bytes": 46689
+        },
+        {
+          "path": "departments/hugging_face/requirements.txt",
+          "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+          "size_bytes": 14
+        },
+        {
+          "path": "departments/music/README.md",
+          "sha256": "a1a36becaf608ae5de394ef849ddcc524e38d32367b45c26c0bbc4427e747e31",
+          "size_bytes": 316
+        },
+        {
+          "path": "departments/music/app.py",
+          "sha256": "71605c9a6f9a46185ac1015cb36a1a5e17a9a3460ff4d61c5036bf81112105b1",
+          "size_bytes": 35308
+        },
+        {
+          "path": "departments/music/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/music/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/music/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/music/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/music/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/narration/app.py",
+          "sha256": "ec028422d82e6474a5e08b1d04c8210bc447b0f2cc9fb30d799ab4f7bd7d249a",
+          "size_bytes": 3112
+        },
+        {
+          "path": "departments/narration/model_manifest.json",
+          "sha256": "47315b3cb9e4216c1059adacd75a7133b5239b09e38c60fcb1fe37132b5f86be",
+          "size_bytes": 1730
+        },
+        {
+          "path": "departments/performance_action/README.md",
+          "sha256": "557a946b8d45f8ead0580b6f9b23d83cd6ce2c500dec4ce63780c1703f65b737",
+          "size_bytes": 277
+        },
+        {
+          "path": "departments/performance_action/app.py",
+          "sha256": "2f970baa44bec8ff0c168c4a745e3d6ec7af07f38e6b77c9c75e7b6a77fb02c1",
+          "size_bytes": 41536
+        },
+        {
+          "path": "departments/performance_action/requirements.txt",
+          "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+          "size_bytes": 14
+        },
+        {
+          "path": "departments/post_production/README.md",
+          "sha256": "d6372e8c4046a29de2e9d85d9881602e44d397b9ced6a396ecae61bfcdaeedf6",
+          "size_bytes": 330
+        },
+        {
+          "path": "departments/post_production/app.py",
+          "sha256": "f263afa04b023003343e48e20317d5d1fd075850b3abf2e1924600870c7aac84",
+          "size_bytes": 28806
+        },
+        {
+          "path": "departments/post_production/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/post_production/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/post_production/joat_post_pipeline.py",
+          "sha256": "014d4c08e0b7bd47522c90f992601064c53100369f5eaf879afb656bea8b6db0",
+          "size_bytes": 8780
+        },
+        {
+          "path": "departments/post_production/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/post_production/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/quality_control/README.md",
+          "sha256": "30edaa86ef73875333d026df19c853615bd664d149d4e2e1b4e2db742054248b",
+          "size_bytes": 286
+        },
+        {
+          "path": "departments/quality_control/app.py",
+          "sha256": "0611a675bc240a56cf0bf94a51b3713ece0bed992d668b53c4fcd4d790259442",
+          "size_bytes": 35805
+        },
+        {
+          "path": "departments/quality_control/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/quality_control/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/quality_control/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/quality_control/joat_production_qc.py",
+          "sha256": "1580ac8f6cbf08607bacb96ae59f9a9224790f224933843388b0ae473a333021",
+          "size_bytes": 4595
+        },
+        {
+          "path": "departments/quality_control/joat_production_ui.py",
+          "sha256": "6ec5d2b119821d9775c2cf61bae4f26f72a93d1f7fb7ff5534b5de294a6f7e19",
+          "size_bytes": 17646
+        },
+        {
+          "path": "departments/quality_control/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/shot_camera/README.md",
+          "sha256": "1493996a20bfe81e2687ba5522b50944c2f799a7b3f69aa6abcdcf01e2c54a5c",
+          "size_bytes": 268
+        },
+        {
+          "path": "departments/shot_camera/app.py",
+          "sha256": "3c789d3c31437adf9616ff25bb9c050472443a71d8afb8982b914a20eefb1be6",
+          "size_bytes": 46961
+        },
+        {
+          "path": "departments/shot_camera/requirements.txt",
+          "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+          "size_bytes": 14
+        },
+        {
+          "path": "departments/sound/README.md",
+          "sha256": "5148949c8850346963a985d19a47cffd85ffe2c8ece744b0f434a71093d30397",
+          "size_bytes": 318
+        },
+        {
+          "path": "departments/sound/app.py",
+          "sha256": "8d7e417cbfcff6ca2e10d3b3bd5d1a37b3261ddb7ecb64b31174d15fcd809401",
+          "size_bytes": 36857
+        },
+        {
+          "path": "departments/sound/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/sound/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/sound/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/sound/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/sound/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/titles_graphics/README.md",
+          "sha256": "d7c717e75ef4de770577d5f27be6128d7a16dc1bf991313b513944a85dba08d2",
+          "size_bytes": 326
+        },
+        {
+          "path": "departments/titles_graphics/app.py",
+          "sha256": "86300d6aa5f6177737c7507248a939373eabf381f9d77c6098e4852a786c0544",
+          "size_bytes": 36211
+        },
+        {
+          "path": "departments/titles_graphics/joat_authored_graphics.py",
+          "sha256": "aa131dc3dc9561934fc912fb29f1593879af03f1cc28680dc2cee91f274e0ee6",
+          "size_bytes": 7654
+        },
+        {
+          "path": "departments/titles_graphics/joat_authored_graphics_ui.py",
+          "sha256": "4eac28e1291670c9ba1476ff3168ff2edf127af51276367aae4e89d9ce747491",
+          "size_bytes": 2403
+        },
+        {
+          "path": "departments/titles_graphics/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/titles_graphics/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/titles_graphics/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/titles_graphics/joat_production_ui.py",
+          "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+          "size_bytes": 17666
+        },
+        {
+          "path": "departments/titles_graphics/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "departments/voice_dialogue/README.md",
+          "sha256": "266b2ce04cd90bf063ebca41606a16f14dd9cd220aa57fee5301cbbe9cd9fb66",
+          "size_bytes": 323
+        },
+        {
+          "path": "departments/voice_dialogue/app.py",
+          "sha256": "2688219d229ed0953799ec31452291b29384fc46cf460192642d7d05548718e6",
+          "size_bytes": 39169
+        },
+        {
+          "path": "departments/voice_dialogue/joat_media_tools.py",
+          "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+          "size_bytes": 2753
+        },
+        {
+          "path": "departments/voice_dialogue/joat_post_media.py",
+          "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+          "size_bytes": 17699
+        },
+        {
+          "path": "departments/voice_dialogue/joat_post_pipeline.py",
+          "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+          "size_bytes": 8695
+        },
+        {
+          "path": "departments/voice_dialogue/joat_production_ui.py",
+          "sha256": "bc686f705e4da4067f9c72f22771c96be247911ad158b30af04288de3a0ccf98",
+          "size_bytes": 17452
+        },
+        {
+          "path": "departments/voice_dialogue/requirements.txt",
+          "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+          "size_bytes": 70
+        },
+        {
+          "path": "joat_authored_graphics_qc.py",
+          "sha256": "415fb186eb49e63b4d38b18e4041d06cf4ea4f563b8ccaa958aa67f4369cf7a8",
+          "size_bytes": 3634
+        },
+        {
+          "path": "joat_authored_qc_ui.py",
+          "sha256": "7235a79a6fde3fc2d57345ff30decd4bef2805b2944053ac0f9bacbcddefaca2",
+          "size_bytes": 1972
+        },
+        {
+          "path": "joat_cpu_child.py",
+          "sha256": "8a9600d68aa72ffaff600d78ec29a63200bc3f7bd1fcd9a492c5bdac1ad80eee",
+          "size_bytes": 6513
+        },
+        {
+          "path": "joat_cpu_control_ui.py",
+          "sha256": "310ae633859d2c2d6c624efd254db5684bf913ea7f1082675bfdc8b01d22077f",
+          "size_bytes": 6914
+        },
+        {
+          "path": "joat_cpu_department_client.py",
+          "sha256": "8430ffec693b6c3610a3c792b29a7f5f7eaf9920cf438c934722145f3c806934",
+          "size_bytes": 3235
+        },
+        {
+          "path": "joat_local_context.py",
+          "sha256": "6c676984b6e521da8aba2dd4f2e6ee8cbc4bd52d0d62a464b0a0bc595e562028",
+          "size_bytes": 1454
+        },
+        {
+          "path": "joat_local_cpu.py",
+          "sha256": "3addd1f9ffc73bf8c329b623fd91f16bc8bede6db204d0f42a56c4c39ea0cc2d",
+          "size_bytes": 7599
+        },
+        {
+          "path": "joat_managed_generation.py",
+          "sha256": "ef71f29b5de5810e7f6d2684cc79cf0a047544867a2f0aa8b24a8032c69740be",
+          "size_bytes": 28090
+        },
+        {
+          "path": "joat_runtime_client.py",
+          "sha256": "9bf0f9c845a16d4f5dab04e7a60056b5bf3551525002bb5edac2469500523d64",
+          "size_bytes": 4007
+        },
+        {
+          "path": "joat_stage20_preview.py",
+          "sha256": "80ce5891e6076e879eca98e8129b3e5ed66a65c00c5930b06894aa5f5d3044c6",
+          "size_bytes": 2056
+        },
+        {
+          "path": "joat_studio_capabilities.json",
+          "sha256": "063b88ce289fe2a2ab44fcc011d22c25356568a62235d1986eb3bdccdf850fa4",
+          "size_bytes": 19971
+        },
+        {
+          "path": "joat_studio_capabilities.py",
+          "sha256": "a81685defdd5d594843a6cc4126e9cbf8f6a869a031b67fe50a69735d6effcbb",
+          "size_bytes": 12319
+        },
+        {
+          "path": "joat_studio_capability_ui.py",
+          "sha256": "c1362f904be37ec8a84a0a329aba72b101c359586645d887accf323c92c87bef",
+          "size_bytes": 2528
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "563f660e0103f16375417f629c03baa3df19be29b54f8b8b6161e8f3f18df3f1",
+          "size_bytes": 574
+        }
+      ],
+      "omitted_resources": [
+        {
+          "path": "departments/character/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg.base64",
+          "size_bytes": 663648
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg.base64",
+          "size_bytes": 665920
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg.base64",
+          "size_bytes": 747936
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg.base64",
+          "size_bytes": 628020
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg.base64",
+          "size_bytes": 859732
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg.base64",
+          "size_bytes": 809540
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg.base64",
+          "size_bytes": 909064
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg.base64",
+          "size_bytes": 812708
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg.base64",
+          "size_bytes": 816304
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg.base64",
+          "size_bytes": 629700
+        },
+        {
+          "path": "departments/character/assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg.base64",
+          "size_bytes": 584692
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A01.jpeg.base64",
+          "size_bytes": 1000304
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A02.jpeg.base64",
+          "size_bytes": 906568
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A03.jpeg.base64",
+          "size_bytes": 416612
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A04.jpeg.base64",
+          "size_bytes": 990484
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A05.jpeg.base64",
+          "size_bytes": 1043920
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A06.jpeg.base64",
+          "size_bytes": 919460
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A07.jpeg.base64",
+          "size_bytes": 643828
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A08.jpeg.base64",
+          "size_bytes": 642036
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A09.jpeg.base64",
+          "size_bytes": 421136
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A10.jpeg.base64",
+          "size_bytes": 1082456
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A11.jpeg.base64",
+          "size_bytes": 862928
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A12.jpeg.base64",
+          "size_bytes": 913104
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A13.jpeg.base64",
+          "size_bytes": 573796
+        },
+        {
+          "path": "departments/character/assets/CHAR-002/CHAR-002-A14.jpeg.base64",
+          "size_bytes": 720104
+        },
+        {
+          "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-01.jpeg.base64",
+          "size_bytes": 580896
+        },
+        {
+          "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-02.jpeg.base64",
+          "size_bytes": 709960
+        },
+        {
+          "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-03.jpeg.base64",
+          "size_bytes": 682424
+        },
+        {
+          "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-01.jpeg.base64",
+          "size_bytes": 585156
+        },
+        {
+          "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-02.jpeg.base64",
+          "size_bytes": 711888
+        },
+        {
+          "path": "departments/character/assets/CHAR-005/CHAR-005-Jen-01.jpeg.base64",
+          "size_bytes": 711876
+        },
+        {
+          "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-01.jpeg.base64",
+          "size_bytes": 492832
+        },
+        {
+          "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-02.jpeg.base64",
+          "size_bytes": 753340
+        },
+        {
+          "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg.base64",
+          "size_bytes": 516252
+        },
+        {
+          "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg.base64",
+          "size_bytes": 795316
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-001_church_identity_anchor.jpeg.base64",
+          "size_bytes": 855728
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-002_grocery_store_identity_anchor.jpeg.base64",
+          "size_bytes": 1132216
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-003_neighborhood_identity_anchor.jpeg.base64",
+          "size_bytes": 1118428
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-004_apartment_identity_anchor.jpeg.base64",
+          "size_bytes": 820228
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-005_gated_community_identity_anchor.jpeg.base64",
+          "size_bytes": 1261944
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-006_loft_identity_anchor.jpeg.base64",
+          "size_bytes": 868560
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-007_cafe_identity_anchor.jpeg.base64",
+          "size_bytes": 936988
+        },
+        {
+          "path": "departments/environment/environment_assets/ENV-008_office_identity_anchor.jpeg.base64",
+          "size_bytes": 709548
+        }
+      ]
+    },
+    "renderer": {
+      "repo": "Dezz-9-10/J.O.A.T.-Animation-Studio",
+      "revision": "be1591ad2ad05c3af51f27fd671658d1873e15af",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "sha256": "2f4b36fcb773595dde959b7459ae3be1c413d212c7a97c5dd05924d8cd067de5",
+          "size_bytes": 1607
+        },
+        {
+          "path": "README.md",
+          "sha256": "624bd811edc81ccde5e61451766ed19872269e1a3d1950e348b4535ebbed6758",
+          "size_bytes": 22599
+        },
+        {
+          "path": "app.py",
+          "sha256": "9e89a540e14eee12bc78d17f68a3372e39e6c3003d4a31fcc73fd68829903adb",
+          "size_bytes": 561724
+        },
+        {
+          "path": "joat_gpu_contract.py",
+          "sha256": "7e4f5057059832209721de2d85091709a79fc4269ab4cccb173c4c48553cc3b8",
+          "size_bytes": 12248
+        },
+        {
+          "path": "joat_graph_contract.py",
+          "sha256": "5ab8d1bf6a8c03bb93f37315d6b27dbcc6fac6df96304e60bb24e244e4c6a8a2",
+          "size_bytes": 14241
+        },
+        {
+          "path": "joat_i2v_preflight.py",
+          "sha256": "47cd64193b92f0f79f3c2faba4388885d7cc9df27d4ee65f2405f5bd69e5b772",
+          "size_bytes": 8027
+        },
+        {
+          "path": "joat_msr_runtime.py",
+          "sha256": "f7a1a81da1eb997850cc7b48197a7be30aee3abd51ef2773e202c7f34e2010b3",
+          "size_bytes": 1809
+        },
+        {
+          "path": "lora_library.py",
+          "sha256": "c5620b177114c2518eb94b567240a8c68d21b9999504cbb47f2ee0f37f65af99",
+          "size_bytes": 45275
+        },
+        {
+          "path": "patch.py",
+          "sha256": "db4a3c1b8cf34fcbd65b5ad7d9daae0395c1c3f684a809d9320450e0d84054ba",
+          "size_bytes": 2307
+        },
+        {
+          "path": "prompt_assistant.py",
+          "sha256": "47dfcffaae18777c4172e3499b4dfa1beb10ca1179e57832f0a3301e5b233de8",
+          "size_bytes": 4804
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "56adff15f27063f11fb8c390ca8f12b45017753300c3fc1909a0e01b635c1cd4",
+          "size_bytes": 456
+        },
+        {
+          "path": "runexx_msr_workflow.json",
+          "sha256": "4d3d8ab94bf3ca30f731e7669638b263a27bfa6bfafac0c56d0723f2fc66b28d",
+          "size_bytes": 169156
+        }
+      ],
+      "omitted_resources": []
+    },
+    "reference": {
+      "repo": "Dezz-9-10/joat-reference-lab",
+      "revision": "8ce0f763e9c9db18950dc35726e3ee851ebf5412",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+          "size_bytes": 1519
+        },
+        {
+          "path": "README.md",
+          "sha256": "2c4719b2cd0517e204fcde46c1dec13b2d67d25ff5c257f6dec6593371905ef1",
+          "size_bytes": 4897
+        },
+        {
+          "path": "app.py",
+          "sha256": "932063819c88f1bbe791d3f7cbfe1f608277c779a2df6a50c46987095bf62d91",
+          "size_bytes": 97366
+        },
+        {
+          "path": "characters.json",
+          "sha256": "7e88049260ec62bbdcbc9f13b05a7cbb850b87538353a65d860839fa49a253be",
+          "size_bytes": 2659
+        },
+        {
+          "path": "joat_job_assets.py",
+          "sha256": "8cc441082db6f79f26a33e0e57bc4dc071056c81166fce326d59f4f8d8b556b7",
+          "size_bytes": 27771
+        },
+        {
+          "path": "joat_mission_reference.py",
+          "sha256": "ff081ad7a0989ef450fdb83452803599c0add6ac61024d1d8610a494d417b423",
+          "size_bytes": 11502
+        },
+        {
+          "path": "joat_private_frame_transfer.py",
+          "sha256": "74fa31b2f7435f9053bc3666f884f0c16f095726e3493f053640312209cc663b",
+          "size_bytes": 7510
+        },
+        {
+          "path": "joat_project_environments.py",
+          "sha256": "d7a24568e2bf85efb64ea0f1b1ce3b4e9a40f65615b02b93c52bef93ab79c00d",
+          "size_bytes": 5386
+        },
+        {
+          "path": "joat_project_lifecycle.py",
+          "sha256": "2dd1183f52432e371b3efada217f62093b8b4f2d0758b21db732390e02b8a161",
+          "size_bytes": 2360
+        },
+        {
+          "path": "joat_project_reference.py",
+          "sha256": "0998cd0f5a647fafed527951e1332e31b9fa4aeb79871c44ef2eb0eb5af5a225",
+          "size_bytes": 8226
+        },
+        {
+          "path": "joat_saved_reference_plan.py",
+          "sha256": "9982a6fa1ae874484d461afe654ace1480dc180c57b7d532eb16e732b36a4fa3",
+          "size_bytes": 6164
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "c91673a6e60c42497149a565cd6da2b108378f70d237fe27c01320e0ed18deed",
+          "size_bytes": 210
+        }
+      ],
+      "omitted_resources": []
+    },
+    "music": {
+      "repo": "Dezz-9-10/joat-music-ace-lab",
+      "revision": "74cf2714b50c1ce5b5b3c8d46c3bf9c78147f335",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "sha256": "c0c7ac7d9e989388203f112e685e7a1b45268c5350e5edd6e4d901bbbe1a436e",
+          "size_bytes": 1646
+        },
+        {
+          "path": "Dockerfile",
+          "sha256": "20b1f8ede07c8719aec2ae940f89f57a0737e8be549e9147410f3e6ef0cf077f",
+          "size_bytes": 1942
+        },
+        {
+          "path": "README.md",
+          "sha256": "455d1715b07ba1fa60ed6784a79572130948619c5a7ee4ee399d7dbff1061b73",
+          "size_bytes": 11505
+        },
+        {
+          "path": "acestep/__init__.py",
+          "sha256": "4ff1234e810a6577d9036402df388eafb0fdf92f77329a5269f65d57289f162b",
+          "size_bytes": 24
+        },
+        {
+          "path": "acestep/acestep_v15_pipeline.py",
+          "sha256": "fcc9094648aeaa968b10be78655ba5b3bf37aab5fdbd0bf83dcc3c6d689a14cc",
+          "size_bytes": 14290
+        },
+        {
+          "path": "acestep/api_server.py",
+          "sha256": "3dcd37ab34e25c94b4a4e060d899f75c6b02519166a2c4dcef3dcf8ae3271a8e",
+          "size_bytes": 71864
+        },
+        {
+          "path": "acestep/audio_utils.py",
+          "sha256": "526a5a85793277e964e3cabc1cd53a0d302c5e29b459ac49f620b7844938cc81",
+          "size_bytes": 12820
+        },
+        {
+          "path": "acestep/constants.py",
+          "sha256": "80f27b9023145ee445a7427e628ec11ea28a1095cf74f08604de7a630ac64ded",
+          "size_bytes": 4153
+        },
+        {
+          "path": "acestep/constrained_logits_processor.py",
+          "sha256": "bf438f66ea0dc664112bf02f7d2dfa0640d3876e222ec175030c79f947992d21",
+          "size_bytes": 111464
+        },
+        {
+          "path": "acestep/dataset_handler.py",
+          "sha256": "66b77395ea8c6fb2c2813f63736fcc4708f4dad178d568f8233b20d817e6ce7d",
+          "size_bytes": 1146
+        },
+        {
+          "path": "acestep/dit_alignment_score.py",
+          "sha256": "7a2b95a7149bca48afdc81758b20cb274e10b16ae40fde071be063791dbfe740",
+          "size_bytes": 30385
+        },
+        {
+          "path": "acestep/gradio_ui/__init__.py",
+          "sha256": "e1ea96bd6ca1b5681a601e70bc57691aea2c83d2e5b121c3fa5ba73effd89b28",
+          "size_bytes": 64
+        },
+        {
+          "path": "acestep/gradio_ui/events/__init__.py",
+          "sha256": "95ff00c525932e9ed2c2d3511c34ff2c69b405a8f7403e3d0c2847c0c51f5d8a",
+          "size_bytes": 58298
+        },
+        {
+          "path": "acestep/gradio_ui/events/generation_handlers.py",
+          "sha256": "aac1e5dba54effc4932b51affbb1a2d76a82e641d37fb5e0abf7480c113546bf",
+          "size_bytes": 42878
+        },
+        {
+          "path": "acestep/gradio_ui/events/results_handlers.py",
+          "sha256": "09f09d14af1e0d477716950fb54cb3f43cb140c7e341f7ae40bc06481ccfbe6b",
+          "size_bytes": 101200
+        },
+        {
+          "path": "acestep/gradio_ui/events/training_handlers.py",
+          "sha256": "6696fe8890ea162c0b029760ed7f9253f610914720122432c4ce639de6aa8f8a",
+          "size_bytes": 21204
+        },
+        {
+          "path": "acestep/gradio_ui/i18n.py",
+          "sha256": "74666b48dd293733ad5067426ef31113655785f427e1d26227a1d27374bf71da",
+          "size_bytes": 4426
+        },
+        {
+          "path": "acestep/gradio_ui/i18n/en.json",
+          "sha256": "59588c0fececc254fe295cb8b6cdabd296630272619b47d4a5c056f915786757",
+          "size_bytes": 13698
+        },
+        {
+          "path": "acestep/gradio_ui/i18n/ja.json",
+          "sha256": "9cff9585b4bf01d89c4f04759567e184226e2f8aea49c2cc52796a223ac0cff9",
+          "size_bytes": 16860
+        },
+        {
+          "path": "acestep/gradio_ui/i18n/zh.json",
+          "sha256": "ce3b19456c5f00f57e2baaf35b32c10f14461d2b761260fdd8ffb8bef86b5d9e",
+          "size_bytes": 13073
+        },
+        {
+          "path": "acestep/gradio_ui/interfaces/__init__.py",
+          "sha256": "44e30b87dfa82b34fa081b3d48ec17e1a6848d6813e108f6b60caf0277a5bc41",
+          "size_bytes": 4421
+        },
+        {
+          "path": "acestep/gradio_ui/interfaces/dataset.py",
+          "sha256": "662f2e9379ef89c452af370e6c990038961a1ba6c04e2d9f4286953ba3a6eeff",
+          "size_bytes": 3503
+        },
+        {
+          "path": "acestep/gradio_ui/interfaces/generation.py",
+          "sha256": "72c56380d899a79bae649c465c6c262b570718cec6410a9d843430f80ea43915",
+          "size_bytes": 30291
+        },
+        {
+          "path": "acestep/gradio_ui/interfaces/result.py",
+          "sha256": "7fc7472d45c7446ec97f84f8d26b4a01b77b20977a80362571606c553a18b34b",
+          "size_bytes": 26363
+        },
+        {
+          "path": "acestep/gradio_ui/interfaces/training.py",
+          "sha256": "63863a6f629f48b7cc473e816f376654823fbc9faf34694e2edf224ad5d23f8a",
+          "size_bytes": 24305
+        },
+        {
+          "path": "acestep/handler.py",
+          "sha256": "bf85f50a2757ced601568e004fb75ae6124d5df92038f8a6b1f678482f697ba4",
+          "size_bytes": 159665
+        },
+        {
+          "path": "acestep/inference.py",
+          "sha256": "c602e1994cd03677815076b0c22994f996c27b9e8f092e532cd295ab9bba3c9c",
+          "size_bytes": 49494
+        },
+        {
+          "path": "acestep/llm_inference.py",
+          "sha256": "e428df0188570d9991895a3a652bada64acb19dedec71f54f280f970569de1e4",
+          "size_bytes": 112229
+        },
+        {
+          "path": "acestep/local_cache.py",
+          "sha256": "02089f46cf0d2774dc79e676cbae73ac4ba426f0abcee8580da9ffadee238d7f",
+          "size_bytes": 3680
+        },
+        {
+          "path": "acestep/test_time_scaling.py",
+          "sha256": "2460fa047b81535318cb612c088930bd8de606dc8a92f91d3e59cdd3a9d9366c",
+          "size_bytes": 16305
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/README.md",
+          "sha256": "b6c5181482d451580c71688f5d8b48a50c05341d81695ed8a01962abd09ba486",
+          "size_bytes": 2185
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/bench.py",
+          "sha256": "42da1e51128ad0746a55be3ac3121268a343dd88d95687d9c2242e9dd3f85af6",
+          "size_bytes": 1121
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/example.py",
+          "sha256": "5c0dca3d548a6cb28cc2168e8d79522f2c49f0f3716735461cdd01354c07cce0",
+          "size_bytes": 916
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/__init__.py",
+          "sha256": "42996c92a5c18d1e333eb57c7d670b2eac53b132df81d53cc6286a89125c9d77",
+          "size_bytes": 81
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/config.py",
+          "sha256": "897971672a09e173185834c88e49c6022a868c651286d4d55d79923a7fa5d4e4",
+          "size_bytes": 845
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/engine/block_manager.py",
+          "sha256": "1b0bdc426d8854ab0cbcb6253771a9871b74d363f380c8772aee59b4e95e761d",
+          "size_bytes": 4426
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/engine/llm_engine.py",
+          "sha256": "c7e40191bfd5c607bf3155d3c5934ec8f2f758f89d695b4554b9a4d7aeef5ef7",
+          "size_bytes": 8486
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/engine/model_runner.py",
+          "sha256": "1448b6dfdfab7cc76b0956e93355e6aa3a1c44837ba49e12bd16d6c3c80e3355",
+          "size_bytes": 29051
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/engine/scheduler.py",
+          "sha256": "0a69fb2f395dd1a0dd3ad96708dbafe496a1e45ffb8ce9ec7a3d425121d95c48",
+          "size_bytes": 11369
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/engine/sequence.py",
+          "sha256": "9a1a7c452520ec56415f46d97c2009f5f533ad07a6ae873a26cac68310b8789f",
+          "size_bytes": 3507
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/activation.py",
+          "sha256": "13d88b460e7610df28c6a7c719dd8bf21c5c59ae0f85c94d505d499215618a82",
+          "size_bytes": 284
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/attention.py",
+          "sha256": "00c2f52cd428bc2f82ff90ef8cbc96b0959a225daaeb035e9e0eaf63a85bfbba",
+          "size_bytes": 2818
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/embed_head.py",
+          "sha256": "e823fbd0a1eb9d64a90e93ade7d32f32235f0039bafc97d367d92a8ee06b3d0f",
+          "size_bytes": 2338
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/layernorm.py",
+          "sha256": "a661fc4eeef736f29308c736da7d91cbc9d896d662c990a3f887dc6f6c8d7169",
+          "size_bytes": 1320
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/linear.py",
+          "sha256": "aacc4796efda1ababd94aad87888c364a92f2926a7a8fdf533b8b642e2f28483",
+          "size_bytes": 5186
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/rotary_embedding.py",
+          "sha256": "5d9c3abee56f7587e694ef8f6e69f1128e655005d81978e40116f8066dbb57bd",
+          "size_bytes": 1710
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/layers/sampler.py",
+          "sha256": "a5b1ab4ca082a9a5a4aec3f22852bb06c7a126d208378deb1c20ff29d80f45b7",
+          "size_bytes": 3904
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/llm.py",
+          "sha256": "ffe74fe7f64ba5169471a17596757b8d8f309e75f4db7040ac41b84db2e38179",
+          "size_bytes": 82
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/models/qwen3.py",
+          "sha256": "c1d6e0a482eff4a7345d6ee7774c20cc7723d41db786af688a798d2d1c9c6d74",
+          "size_bytes": 7495
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/sampling_params.py",
+          "sha256": "d999bc542a62adeeb804c28e48c36032f6757dc86f0d3421706371036f9ea3af",
+          "size_bytes": 1513
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/utils/context.py",
+          "sha256": "8fa41f0cb4366d0809e65b986ef31bd6ce99895670797a42211a3bd697f91e70",
+          "size_bytes": 1830
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/nanovllm/utils/loader.py",
+          "sha256": "396e0509530faf064666aaba130d4a95941969ea754373b8a6d99daf89d6cf7d",
+          "size_bytes": 2856
+        },
+        {
+          "path": "acestep/training/__init__.py",
+          "sha256": "d93d6838012b5a0e59f992256d3d7bfe7497c03283ac65529261981b21767894",
+          "size_bytes": 1676
+        },
+        {
+          "path": "acestep/training/configs.py",
+          "sha256": "75bb5bf97efd247b8faa0d72176d8229838f38bf8aff12f6d076e0fca6f8c74a",
+          "size_bytes": 3765
+        },
+        {
+          "path": "acestep/training/data_module.py",
+          "sha256": "7f124fcd6a106a2018a1f3663ef9b42b50891ac891db2f98aa5a4979ffd96a4f",
+          "size_bytes": 16839
+        },
+        {
+          "path": "acestep/training/dataset_builder.py",
+          "sha256": "d2d1054c0f89fe27b1021a785892609bf52cdf3d091fa6bbf393905a29aa55c6",
+          "size_bytes": 29346
+        },
+        {
+          "path": "acestep/training/lora_utils.py",
+          "sha256": "3706bcf48016b638db6d9b811113919b18dcf7023c69d74db7fc49904ece3c80",
+          "size_bytes": 9552
+        },
+        {
+          "path": "acestep/training/trainer.py",
+          "sha256": "a2c924aae3d34e629f9ce574cc57c793c53b008524ee87ec91edeec686e18059",
+          "size_bytes": 20104
+        },
+        {
+          "path": "app.py",
+          "sha256": "a05df3fa6cf74cbd02aecec11c802f19c4262ee45e2ae5adbe9483b488420ed7",
+          "size_bytes": 15686
+        },
+        {
+          "path": "close_api_server.sh",
+          "sha256": "ed0eb36254577ada6d70ab97943a1ccb2114ee8ac4865b8ba663be5f4e28d412",
+          "size_bytes": 3109
+        },
+        {
+          "path": "docs/en/API.md",
+          "sha256": "4fd598f5695c3faa663f39f19beae924d7d205ec44bc7ac3c59c3ed5e239b93f",
+          "size_bytes": 18138
+        },
+        {
+          "path": "docs/en/GRADIO_GUIDE.md",
+          "sha256": "2fed3c0f858a44b37b48557b114d79e22d1426adb153adb604d3d437323ea6b6",
+          "size_bytes": 17144
+        },
+        {
+          "path": "docs/en/INFERENCE.md",
+          "sha256": "c83bcefa7c175c992156aaaf904feaebd029e3047879124a88e3d529f4ac10de",
+          "size_bytes": 37031
+        },
+        {
+          "path": "docs/ja/API.md",
+          "sha256": "f7b2c3ed7ef4b056d637f3689d1ebe50953bcbe03d75ca8fe8da86e359193b52",
+          "size_bytes": 21458
+        },
+        {
+          "path": "docs/ja/GRADIO_GUIDE.md",
+          "sha256": "5e7b0ee04b9185241ad29c1363faa7e0aafb7ee720b4ec92b36a5d77377eb22e",
+          "size_bytes": 22667
+        },
+        {
+          "path": "docs/ja/INFERENCE.md",
+          "sha256": "33bb425f50245feaa0a3ff3f2620c3eabb4974826e0bfc71dc3a3df649a34447",
+          "size_bytes": 27263
+        },
+        {
+          "path": "docs/zh/API.md",
+          "sha256": "9cc22a142acd805c98df3a8fe1cb172b6998785a7e0b79dad84b55d7f50d2db4",
+          "size_bytes": 17601
+        },
+        {
+          "path": "docs/zh/GRADIO_GUIDE.md",
+          "sha256": "d84b8f1b300d9abd82d3799ed24e5aa22c0b3d4a5afe122ab73871b975ced330",
+          "size_bytes": 15783
+        },
+        {
+          "path": "docs/zh/INFERENCE.md",
+          "sha256": "4772a63795232fc8ebed8a2514cc832a084d13154e84609a37136d27eb9e87a8",
+          "size_bytes": 31660
+        },
+        {
+          "path": "examples/simple_mode/example_01.json",
+          "sha256": "80b91acf317718f587a73743f7d658c12fe6936edd2e584c43534e5040a6cf20",
+          "size_bytes": 125
+        },
+        {
+          "path": "examples/simple_mode/example_02.json",
+          "sha256": "dd24132e5ff40b64796bc620ed56d98aa1b9d1a12f5afacb065a9083b46afa0d",
+          "size_bytes": 124
+        },
+        {
+          "path": "examples/simple_mode/example_03.json",
+          "sha256": "0a2a330b44d7797eb66bf41e4b3a853ce2fce190805ac23da038f09ae6255012",
+          "size_bytes": 136
+        },
+        {
+          "path": "examples/simple_mode/example_04.json",
+          "sha256": "5015e7603f3734088545dd71f970ff13441cdc362df39186f87a9fbe7cd9b398",
+          "size_bytes": 141
+        },
+        {
+          "path": "examples/simple_mode/example_05.json",
+          "sha256": "1d2cab23df799770da2dd83626aa4f432909f7a39196408c48a21c38070ccec1",
+          "size_bytes": 123
+        },
+        {
+          "path": "examples/simple_mode/example_06.json",
+          "sha256": "0456e985ac34b2c4383b71832cbf30d5b372f8de96db3ac1c2786a6ab34a2b5c",
+          "size_bytes": 130
+        },
+        {
+          "path": "examples/simple_mode/example_07.json",
+          "sha256": "52ee0807fafccf79ad90db9c5bf184ff5bc22e74e408ccbe9a775c2c759a3a04",
+          "size_bytes": 129
+        },
+        {
+          "path": "examples/simple_mode/example_08.json",
+          "sha256": "38e49e00280eebc8d41a23a4d0396ad2872d38011a0dd53c4a38568d46571abd",
+          "size_bytes": 133
+        },
+        {
+          "path": "examples/simple_mode/example_09.json",
+          "sha256": "23042f6a280083de87ee725ee1e1d28d60550660a3fc039f92c696af673cff11",
+          "size_bytes": 138
+        },
+        {
+          "path": "examples/simple_mode/example_10.json",
+          "sha256": "087b9f049a54273d55ed8226cf07470b59e5852e8ec3cff95200c00befc0979e",
+          "size_bytes": 136
+        },
+        {
+          "path": "examples/text2music/example_01.json",
+          "sha256": "b26724f64245bb67d2a14c14b53acc508c88d6245907299d46c3e9865032527d",
+          "size_bytes": 1665
+        },
+        {
+          "path": "examples/text2music/example_02.json",
+          "sha256": "42ae98c09a38bce64b20396370c79166906eaea0815508f90019816ffb9e5873",
+          "size_bytes": 2304
+        },
+        {
+          "path": "examples/text2music/example_03.json",
+          "sha256": "e1d895612f7626ffdc47ca95759bdab1d1b766eecc4622bb409567ec9c59e97d",
+          "size_bytes": 3599
+        },
+        {
+          "path": "examples/text2music/example_04.json",
+          "sha256": "8423f827e66a23fca5770e09b1969b0dc16a0d6dadab81f0d771391f6dac6301",
+          "size_bytes": 2458
+        },
+        {
+          "path": "examples/text2music/example_05.json",
+          "sha256": "d69b025fa50cb0df140685705f6d51d2f64208803e446002e72d5bf4c4b82e77",
+          "size_bytes": 2409
+        },
+        {
+          "path": "examples/text2music/example_06.json",
+          "sha256": "7f7d3c70da201f0f30b715eed1b917878ed0bca97259d23186c52ae385c59263",
+          "size_bytes": 2259
+        },
+        {
+          "path": "examples/text2music/example_07.json",
+          "sha256": "a4a48a3a0bc32766b28ba1e8919de4b9478bc309097d6fa5152440e712959b12",
+          "size_bytes": 3090
+        },
+        {
+          "path": "examples/text2music/example_08.json",
+          "sha256": "ed0ca32d8e19bfaff43c7cdd1b490a17fa54216863730b9766982d150e5a0479",
+          "size_bytes": 1800
+        },
+        {
+          "path": "examples/text2music/example_09.json",
+          "sha256": "49dc1f4f2915b714c817bf6436a0d94bd5e816a03586e42eed9edf72dd031e88",
+          "size_bytes": 1770
+        },
+        {
+          "path": "examples/text2music/example_10.json",
+          "sha256": "a26bd706447e178a523a938a5fcb7ac9b7a4a5b939e26e1189b455e61911d6a1",
+          "size_bytes": 2019
+        },
+        {
+          "path": "examples/text2music/example_11.json",
+          "sha256": "c47c0c77c46ee7253e1ef8d9848640379e5c62f974946caa0fb8bc2556f9aa51",
+          "size_bytes": 2073
+        },
+        {
+          "path": "examples/text2music/example_12.json",
+          "sha256": "57c4618699fd208d7d9c59aa9b4c96963228fe2322c7068dc36503ae1e87e89a",
+          "size_bytes": 1803
+        },
+        {
+          "path": "examples/text2music/example_13.json",
+          "sha256": "f16c759c84a54e3f45879f9da0e226a3676aa8889742c30a8f29f9af7dc9e329",
+          "size_bytes": 3242
+        },
+        {
+          "path": "examples/text2music/example_14.json",
+          "sha256": "02797c5c27e2776fb72c49b68f7aeb3d4178de2971905837e9be82f1b00a7c48",
+          "size_bytes": 1785
+        },
+        {
+          "path": "examples/text2music/example_15.json",
+          "sha256": "fd6e7aebded4072f2f9b56235127301a708a507cc1c8bb40f6ca3a24d3612bf2",
+          "size_bytes": 1711
+        },
+        {
+          "path": "examples/text2music/example_16.json",
+          "sha256": "68ccb02c1caa49272f03b428f973a837b266a79f41fb0b76c8646555d32740c8",
+          "size_bytes": 1686
+        },
+        {
+          "path": "examples/text2music/example_17.json",
+          "sha256": "1b3ca22f09089bfb57ef9b75d52470a19586b82cd0aa1dc3440084ec6f3655d8",
+          "size_bytes": 1685
+        },
+        {
+          "path": "examples/text2music/example_18.json",
+          "sha256": "48c5dade7b323f754a664a0cf887c82aae4a8dc4b6118a1bba3c4e0800791599",
+          "size_bytes": 1757
+        },
+        {
+          "path": "examples/text2music/example_19.json",
+          "sha256": "401290b8864aac7e57b0a734e16d6751e6b2b736cb0b349b23ba9e611587fbc5",
+          "size_bytes": 3790
+        },
+        {
+          "path": "examples/text2music/example_20.json",
+          "sha256": "5b2538f380d1aa5a6d1ac22951ecd086cc5a97bbcc211d56ff617f10ae99fa20",
+          "size_bytes": 2063
+        },
+        {
+          "path": "examples/text2music/example_21.json",
+          "sha256": "4102386f727fe1bbf3efa065a00dbce41fefda6118b249444a76610f24edbff2",
+          "size_bytes": 2474
+        },
+        {
+          "path": "examples/text2music/example_22.json",
+          "sha256": "37b9caeb4a281eb7a70fd8b69ae1c8e8d7a57d3b9dbb3619454972b472ec9259",
+          "size_bytes": 2246
+        },
+        {
+          "path": "examples/text2music/example_23.json",
+          "sha256": "8c1a9f297b29779110d881b4d9e90cd6ddc870ef4e7e2e2162e041e1e1005516",
+          "size_bytes": 2410
+        },
+        {
+          "path": "examples/text2music/example_24.json",
+          "sha256": "f11eb2745cae10340c5071c422e1812d68f400a62400606122e3ffa737112348",
+          "size_bytes": 2034
+        },
+        {
+          "path": "examples/text2music/example_25.json",
+          "sha256": "3e268d27712aecc10cc7d9b64ebe8cb08d7cb6794a89798f24a077fa944386d3",
+          "size_bytes": 2140
+        },
+        {
+          "path": "examples/text2music/example_26.json",
+          "sha256": "bcfefefc6eabab91f7949e91a85129658bab64a3c7eb4b1abb617d9a58012490",
+          "size_bytes": 2351
+        },
+        {
+          "path": "examples/text2music/example_27.json",
+          "sha256": "a7a4d056e52c9d0593067712e6cf25f5a6cfe0ef2fddbeb3e891273e41c50682",
+          "size_bytes": 2063
+        },
+        {
+          "path": "examples/text2music/example_28.json",
+          "sha256": "f18d675034e31a50d726a9b3c1f4d9c4deca699b9f2501a47da95bb3e00215c3",
+          "size_bytes": 1934
+        },
+        {
+          "path": "examples/text2music/example_29.json",
+          "sha256": "e619494aafd49491b04f83ade1a723c8bd8ef21cdb2bd50849818bd6a1c589ce",
+          "size_bytes": 1600
+        },
+        {
+          "path": "examples/text2music/example_30.json",
+          "sha256": "775cbb27fe05f2db879771e889d48b7392a2318e68cfe1f4812b78bc538dfcb4",
+          "size_bytes": 2857
+        },
+        {
+          "path": "examples/text2music/example_31.json",
+          "sha256": "c79278f0769f48ebc09a1000f80afe68fcb8c31b74bf65eb7249354620def3fd",
+          "size_bytes": 1768
+        },
+        {
+          "path": "examples/text2music/example_32.json",
+          "sha256": "c8239de5e3e00199fe1738a41152cfe0a1fb46d8d639f39eb54f898e93195799",
+          "size_bytes": 2090
+        },
+        {
+          "path": "examples/text2music/example_33.json",
+          "sha256": "a37511fe6253606d17090f59b03db53444605bf6e520b21bb3dd70ee2806529b",
+          "size_bytes": 2011
+        },
+        {
+          "path": "examples/text2music/example_34.json",
+          "sha256": "0d88605a20371082dfac5daea56751cc252d661a295f19ac429361a05a97924a",
+          "size_bytes": 1763
+        },
+        {
+          "path": "examples/text2music/example_35.json",
+          "sha256": "3db97aba7478288aadde0000ea61c64eb5e38e2c5aa0eb877bb2d82d01ea16b0",
+          "size_bytes": 2350
+        },
+        {
+          "path": "examples/text2music/example_36.json",
+          "sha256": "34d489f27c81bfde2fe4cc68bbd5e5829916941ea1f29e110dae46d9dca39387",
+          "size_bytes": 2815
+        },
+        {
+          "path": "examples/text2music/example_37.json",
+          "sha256": "dbb490fd44a30f00630c4b67f67e5bd9785f648781f12cfd20c2bb31ea97d0dd",
+          "size_bytes": 1824
+        },
+        {
+          "path": "examples/text2music/example_38.json",
+          "sha256": "8eec41c13781e58e572c128e11d435c23d6008e5ebcfb1b83cf3b6f7550e25d7",
+          "size_bytes": 1626
+        },
+        {
+          "path": "examples/text2music/example_39.json",
+          "sha256": "737ef2161a709abb0b66885a29e548677207593b4ef76fa9a7dfc0eba1e24517",
+          "size_bytes": 2550
+        },
+        {
+          "path": "examples/text2music/example_40.json",
+          "sha256": "2bbe94f2d7a195682db138d5dac0572957a51ea0be714f036e0acbdbe452e87d",
+          "size_bytes": 1487
+        },
+        {
+          "path": "examples/text2music/example_41.json",
+          "sha256": "cd1470b994f149d7b7cdf4e165a5c26dc913c5d21bd03d11a3b5c0e3162340f5",
+          "size_bytes": 2147
+        },
+        {
+          "path": "examples/text2music/example_42.json",
+          "sha256": "acdcbad5f6d34981e64a76714be620bd0780840031664f275e892b65f32b2c83",
+          "size_bytes": 1435
+        },
+        {
+          "path": "examples/text2music/example_43.json",
+          "sha256": "427c0d80757260383d28ffb58d6bd95e648816cb74162cdab0563414bcdfd9da",
+          "size_bytes": 2215
+        },
+        {
+          "path": "examples/text2music/example_44.json",
+          "sha256": "9a7a99781becee1ffffb01d3c5c0be368240cda5bf008a6981a96a101bf488b7",
+          "size_bytes": 3277
+        },
+        {
+          "path": "examples/text2music/example_45.json",
+          "sha256": "847302c4e678d7594ddbb2224e6ea99e46b98c35d5ae87dd70eae4a7ad4319c5",
+          "size_bytes": 2703
+        },
+        {
+          "path": "examples/text2music/example_46.json",
+          "sha256": "c024966a085749f93b2b91ce384067357757bc7a753d22ba02d8b0061556a554",
+          "size_bytes": 1758
+        },
+        {
+          "path": "examples/text2music/example_47.json",
+          "sha256": "b3e735b0404d5feedafd8ce9b871ebca87e98a37c2707b210eb3d015aad6297a",
+          "size_bytes": 1452
+        },
+        {
+          "path": "examples/text2music/example_48.json",
+          "sha256": "4722f3e40c8b1d888502e88eaa799cfe71ad6252f7b444904d53fcdae6e7b62e",
+          "size_bytes": 2273
+        },
+        {
+          "path": "examples/text2music/example_49.json",
+          "sha256": "6770fb273cf35bba4af1628178a2f4c4610ccbf2231755dfdc9d78edee1ee7cc",
+          "size_bytes": 4033
+        },
+        {
+          "path": "examples/text2music/example_50.json",
+          "sha256": "2ce3a94efff37daf5ff0c74f277dcd4330300a8e01e03884b2bf96435c729e96",
+          "size_bytes": 1847
+        },
+        {
+          "path": "generate_examples.py",
+          "sha256": "ed91f6d8cc456790f27e14f1c3ffcfb7f6e3d2fae109da5e6c35ba8478cdcb95",
+          "size_bytes": 6133
+        },
+        {
+          "path": "packages.txt",
+          "sha256": "cfadbc1b87f5aa6d688a2d97920127e67ae6f4fa3c2dce69108a9ef7a7a87659",
+          "size_bytes": 7
+        },
+        {
+          "path": "profile_inference.py",
+          "sha256": "3afdeee95d8ef8fd5ed2a32d403761c08c6659fa425be8bfcfd944becd110f36",
+          "size_bytes": 27918
+        },
+        {
+          "path": "requirements.txt",
+          "sha256": "be8e4a69b778f8a7c60144ca068b54501f6449b5e0026c4cfa93ded3b5e369d4",
+          "size_bytes": 1281
+        },
+        {
+          "path": "run_api_server.sh",
+          "sha256": "46f641c15758ec8614622243aae13eb1a9efd838d8b1108b110a541f482dee95",
+          "size_bytes": 832
+        },
+        {
+          "path": "scripts/prepare_vae_calibration_data.py",
+          "sha256": "8f2ee9b5adf5da6ee082ba7b21c06f61c1ae8e015edf7524adfcf6aad87c1128",
+          "size_bytes": 4331
+        },
+        {
+          "path": "skills/acemusic/SKILL.md",
+          "sha256": "7efa3bc32cd1cd31b292b70fce8dc64d915a96ab3929b15e7d871aaf25f8ff06",
+          "size_bytes": 7965
+        },
+        {
+          "path": "skills/acemusic/scripts/acemusic.sh",
+          "sha256": "488dd61f27ed5dcb42e0181c46386eecd4efda7a341bacb920fccf61ce10821d",
+          "size_bytes": 19534
+        },
+        {
+          "path": "skills/acemusic/scripts/config.json",
+          "sha256": "f36fce12cbdc7c34cc60c6b016389a3c2235e1d24d4f0d1159bb4c01cdb51a14",
+          "size_bytes": 223
+        }
+      ],
+      "omitted_resources": [
+        {
+          "path": ".env.example",
+          "size_bytes": 123
+        },
+        {
+          "path": ".gitignore",
+          "size_bytes": 4939
+        },
+        {
+          "path": "LICENSE",
+          "size_bytes": 1064
+        },
+        {
+          "path": "acestep/genres_vocab.txt",
+          "size_bytes": 4800434
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/LICENSE",
+          "size_bytes": 1067
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/assets/logo.png",
+          "size_bytes": 396548
+        },
+        {
+          "path": "acestep/third_parts/nano-vllm/pyproject.toml",
+          "size_bytes": 956
+        },
+        {
+          "path": "assets/ACE-Step_framework.png",
+          "size_bytes": 646985
+        },
+        {
+          "path": "assets/Logo_StepFun.png",
+          "size_bytes": 29515
+        },
+        {
+          "path": "assets/acestudio_logo.png",
+          "size_bytes": 128469
+        },
+        {
+          "path": "assets/application_map.png",
+          "size_bytes": 284707
+        },
+        {
+          "path": "assets/model_zoo.png",
+          "size_bytes": 347340
+        },
+        {
+          "path": "assets/orgnization_logos.png",
+          "size_bytes": 309270
+        },
+        {
+          "path": "pyproject.toml",
+          "size_bytes": 1534
+        }
+      ]
+    }
+  }
+}

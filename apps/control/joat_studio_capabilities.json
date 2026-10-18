@@ -1,0 +1,379 @@
+{
+  "schema": "joat.studio_capability_registry.v1",
+  "file_version": "1.0.0",
+  "renderer_space": "Dezz-9-10/J.O.A.T.-Animation-Studio",
+  "renderer_revision": "3d3daf99e2c177ae2a87fe3686e2b19f421a1370",
+  "renderer_app_version": "1.0.14",
+  "audit_sha256": "1cb63d8d02d08c1b06ce6a42cc963856c9b80693806edc0b7fe69a64a68e5ccd",
+  "features": [
+    {
+      "id": "ui_modes",
+      "name": "Simple / Pro modes",
+      "description": "Simple creation screen; Pro exposes LoRA, keyframe, identity, motion, audio, experimental and budget tools.",
+      "limits": "Presentation changes; Pro is not a separate model or a quality guarantee.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "image_to_video",
+      "name": "Image-to-video",
+      "description": "Starting image + positive/negative prompts produce motion and native audio.",
+      "limits": "**Real MP4 generation proved.** Normal UI and approved composed-frame route use single-image I2V.",
+      "status": "proved_in_existing_pipeline",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": true
+    },
+    {
+      "id": "text_only",
+      "name": "Text-only generation",
+      "description": "Official LTX supports broader text/video/audio tasks.",
+      "limits": "This app's ordinary Generate callback **requires a starting image**. J.O.A.T. can obtain a missing image through Reference Lab; do not advertise a direct text-only mode in this UI.",
+      "status": "not_exposed_in_this_app",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "camera_prompting",
+      "name": "Scene prompts and camera tags",
+      "description": "Describe action, camera, setting and sound; append camera/motion wording through tags.",
+      "limits": "Camera tags guide a generative model, not a deterministic 3-D camera rig. Controlled jobs compile approved camera/performance packets.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "local_enhancer",
+      "name": "Local prompt enhancement",
+      "description": "Local image-aware sulphur enhancer expands a concept into a detailed prompt.",
+      "limits": "Separate GPU-decorated enhancement request; extra model/runtime cost. Optional, not required for our already-approved prompts.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "remote_writer",
+      "name": "Remote prompt assistance",
+      "description": "Selected writing Space proposes a richer prompt plus suggested LoRAs/strengths.",
+      "limits": "Sends idea/image to an external writing Space and can consume separate GPU allowance. Preserve the approved script instead of repeatedly rewriting it.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "scene_planner",
+      "name": "AI Scene Planner",
+      "description": "Proposes clip count, separate action prompts and per-clip durations, with editable review sheet.",
+      "limits": "Implemented; no video until generation starts. Default Qwen writer uses batches of up to two clips; other configured writers up to six. Long plans require multiple writer calls. Not our approved Director or QC system.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "scene_builder",
+      "name": "Scene Builder",
+      "description": "Runs **1\u201364 clips**, one generation request each, using the previous clip's last frame; joins completed results with audio.",
+      "limits": "Implemented; whole-scene production quality not qualified for our film. A 64-clip limit is not a promise that quota, continuity or memory can complete 64 clips.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "resume",
+      "name": "Stop / resume / progress",
+      "description": "Shows current clip and completed count; retains queue on stop/error; resumes at a chosen unfinished clip.",
+      "limits": "Native state/files must still exist. Browser/session recovery is weaker than our durable private production checkpoints. Progress is completed clips, not measured denoising percentage.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "continuation",
+      "name": "Extend existing video",
+      "description": "Upload a clip or continue the current result from its actual last frame, then stitch original + extension.",
+      "limits": "Implemented; creates new footage using GPU. It is continuation from an end frame, not arbitrary temporal editing of every uploaded frame. Resets incompatible guides for a fresh uploaded continuation.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "identity_portrait",
+      "name": "Identity Lock",
+      "description": "Optional portrait; guarded face correction on CPU; gentle face attention anchor; manual bbox/automatic targeting controls.",
+      "limits": "Helps likeness, not a guarantee. Occlusion, unsuitable angle or uncertain alignment can skip correction. One prominent face; no qualified multi-person identity tracking. Our approved composed-frame route does **not** send an extra portrait; it relies on approved scene-frame provenance and subsequent QC.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "msr",
+      "name": "Multi-reference / MSR",
+      "description": "Backend retains subject/background slots, guide-frame count and guide/LoRA strength controls; separate original path.",
+      "limits": "Normal input selector and extra reference uploads are **hidden**, fixed to I2V in the UI. Earlier MSR work had duration/graph problems; do not treat the hidden path as newly qualified.",
+      "status": "hidden_or_experimental",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "end_keyframe",
+      "name": "End-frame guidance",
+      "description": "Supply a desired last image with strength.",
+      "limits": "Implemented; promising next qualification for a shot needing a clear final pose. Does not guarantee the exact physical action.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "mid_keyframes",
+      "name": "Intermediate keyframes",
+      "description": "Up to **five** extra images at percentage positions; sorted into temporal order, alongside starting/ending images.",
+      "limits": "Implemented; additional approved stills may be needed. Keyframe injection is skipped in MSR. Exact action timing/identity between keys still require QC.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "motion_control",
+      "name": "Motion Control",
+      "description": "Driving video converted to **pose**, **depth** or **canny edges**, with guide and LoRA strengths and control preview.",
+      "limits": "Implemented, not live-qualified for our actors. Potentially useful for salon gestures or product/camera movement. This path rejects a simultaneous separate identity portrait. Track preparation may use CPU/models; generating the guided video still uses GPU.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "custom_loras",
+      "name": "LoRA Studio",
+      "description": "Custom Hugging Face/file/CivitAI links and uploads; separate video/audio strengths; pre-download/check; trigger words.",
+      "limits": "Implemented, optional. First 13 custom lines have sliders; more can specify strengths in text. The legacy slider parameter names do not mean those named adapters are bundled/active. Our controlled route neutralizes unrelated adapters.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "lora_discovery",
+      "name": "LoRA discovery / Refresh",
+      "description": "Relevant rotating suggestions, selected entries retained, trigger ownership tracking, up to two guided selections; shared catalogue.",
+      "limits": "Refresh itself makes no AI generation request, though it performs catalogue/network checks. Suggested or pinned entries are not automatically loaded or quality-approved. Manual Pro stacking can exceed the guided two-choice limit.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "art_styles",
+      "name": "Art-style flexibility",
+      "description": "Starting image, wording and compatible LoRAs can steer stylized or realistic output.",
+      "limits": "No qualified one-click library of every animation style. Lock style per project and compare actual outputs; a LoRA cannot guarantee identity. The current 10Eros fine-tune is not automatically optimal for every clean commercial style.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "native_audio",
+      "name": "Native audio",
+      "description": "Joint audio-video generation: prompt can ask for room tone, effects, music or spoken lines.",
+      "limits": "**Audio-bearing MP4s proved.** Exact spoken wording, stable character voices, singing and precise lip sync are not qualified capabilities. Keep our existing CPU narration for controlled copy.",
+      "status": "proved_in_existing_pipeline",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": true
+    },
+    {
+      "id": "audio_reference",
+      "name": "Audio Studio",
+      "description": "Reference audio guidance, normalization, optional voice/stem separation, per-adapter audio strengths.",
+      "limits": "Implemented voice-transfer guidance, not a certified voice-cloning/lip-sync product. Source disables audio reference in the MSR/internal scene-chain paths.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "soundtrack_mixer",
+      "name": "Soundtrack Mixer",
+      "description": "Upload audio, trim/loop or silence-pad to video length, fade, replace or mix with generated audio; adjust levels.",
+      "limits": "Runs on **CPU**. This is supplied-audio fitting, not a dedicated music-composition or exact-lyrics system. This audit did not call the native mixer; J.O.A.T. post already has independently tested CPU audio processing.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "cpu_join",
+      "name": "Final Cut / queue joining",
+      "description": "Add existing clips, clear queue, join/retry, keep audio, normalize media and provide downloadable video.",
+      "limits": "**CPU** joining, not a full multitrack NLE. Our approved timeline/post/delivery services remain responsible for complete commercial assembly and final QC. Native join handler was inspected, not exercised here.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "resolution",
+      "name": "Resolution / aspect",
+      "description": "Automatic target megapixels; custom width/height; 32/64 grid controls.",
+      "limits": "UI allows 0.1\u20134 MP target and 512\u20131536 custom limits. Our controlled aspect mappings include landscape, vertical, square, 4:3 and 21:9; current film uses 1024\u00d7576. These controls are not proof of reliable 4K output.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "speed_refinement",
+      "name": "Speed / refinement",
+      "description": "**Economy, Fast, Economy+, Balanced, Quality**; sampling/refinement settings.",
+      "limits": "Actual default is **Economy+ (0.65 MP, two refine steps)**. README's claim that Economy is the default is stale. Approved composed-I2V instead fixes resolution and skips refinement. Do not silently swap that setting from a UI preset.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "upscaling",
+      "name": "Spatial upscaling",
+      "description": "An LTX spatial-upscaler/refinement stage exists in the loaded workflow.",
+      "limits": "It is part of the generative pipeline, not a separately qualified general-purpose restoration/export-resolution service. Our skip-refine path bypasses refinement. Official temporal upscalers/newer pipelines should not be advertised as active controls here.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "seed",
+      "name": "Seeds / repeatability",
+      "description": "Fixed or randomized seed, positive/negative prompts and tunable anchors/cache/sigma schedules.",
+      "limits": "Useful for controlled comparisons; same seed is not a universal identity or byte-identical-output guarantee.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "profiles",
+      "name": "JSON and named profiles",
+      "description": "Save settings, prompts, scene plans/timings, writer choice and adapter selections; import/export compatible older schemas.",
+      "limits": "Uploaded image/audio/video bytes are not embedded. The UI label saying prompts are omitted conflicts with source: positive/negative prompts and scene prompts **are included**. Named profiles are shared and use `/data` if writable, otherwise temp storage; durability is not established simply by saving a name.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "experiments",
+      "name": "Experimental controls",
+      "description": "Prompt relay/timed segments, K/V conditioning and internal scene chaining.",
+      "limits": "Explicitly experimental; not the same as ordinary Scene Builder. Various paths suppress incompatible combinations. Keep these off in the approved film lane until a concrete need is qualified.",
+      "status": "hidden_or_experimental",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "diagnostics",
+      "name": "Diagnostics / budget",
+      "description": "Download process/memory events; CPU-only I2V/MSR graph/runtime checks; reservation estimates and optional overrides.",
+      "limits": "No-GPU readiness checks do not prove GPU admission or video quality. Reservation is a ceiling/request, not usage, price or entitlement. Controlled jobs currently use a fixed 600-second ceiling.",
+      "status": "implemented_needs_qualification",
+      "cost_class": "cpu_or_metadata",
+      "automatic_activation_allowed": false
+    },
+    {
+      "id": "export",
+      "name": "Export",
+      "description": "Produces downloadable MP4, aims for 24fps H.264/yuv420p/AAC and avoids unnecessary re-encode when compatible.",
+      "limits": "Export can fall back to original result after an encoding error. Independent full decode/hash/codec/duration/audio checks remain essential before approval.",
+      "status": "proved_in_existing_pipeline",
+      "cost_class": "gpu_or_separate_inference",
+      "automatic_activation_allowed": true
+    }
+  ],
+  "content_formats": [
+    "product_commercial",
+    "brand_story",
+    "short_drama",
+    "long_drama"
+  ],
+  "private_deployment": {
+    "status": "portable_design_only_not_deployed",
+    "required_external_services": [
+      "GPU runtime with sufficient memory",
+      "durable private object storage",
+      "FFmpeg/codec tooling",
+      "owner authentication and signing",
+      "model and adapter license compatibility"
+    ],
+    "hardware_purchase_authorized": false
+  },
+  "techniques": [
+    {
+      "id": "controlled_composed_i2v",
+      "status": "proved_existing_path",
+      "conditions": [
+        "owner-approved composed first frame",
+        "locked Director/character/environment packets",
+        "independent full media and creative QC",
+        "pinned renderer and dependency contract"
+      ],
+      "source": "existing Worker renderer_contract.json version1.0.8",
+      "automatic_approval": false
+    },
+    {
+      "id": "cpu_narration",
+      "status": "native_candidate_generation_proved",
+      "model": "hexgrad/Kokoro-82M",
+      "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+      "speed": 0.82,
+      "sample_rate": 24000,
+      "proof_receipt_fingerprint": "0521925a6a676221f59bd391fe98aa8c8d1e164d34d0173615d031bcc84287cc",
+      "auditory_qc_automatic": false
+    },
+    {
+      "id": "cpu_authored_graphics",
+      "status": "native_candidate_generation_proved",
+      "proof_receipt_fingerprint": "0521925a6a676221f59bd391fe98aa8c8d1e164d34d0173615d031bcc84287cc",
+      "unchecked_review_decision": "REWORK",
+      "creative_qc_automatic": false
+    }
+  ],
+  "production_policy": {
+    "gpu_hold_not_changed_by_registry": true,
+    "unknown_features_fail_closed": true,
+    "planning_never_authorizes_execution": true,
+    "existing_artifacts_reused": true,
+    "canonical_assets_not_mutated": true,
+    "completed_work_not_regenerated": true,
+    "identity_not_guaranteed": true,
+    "independent_final_qc_required": true
+  },
+  "project_templates": [
+    {
+      "id": "reference_matched_stylized_3d",
+      "status": "planning_template_only",
+      "art_style": "Match the project-approved stylized 3D references",
+      "required_locks": [
+        "character identity",
+        "wardrobe",
+        "location",
+        "camera/performance",
+        "positive and negative prompts"
+      ],
+      "automatic_activation": false
+    },
+    {
+      "id": "cinematic_realism",
+      "status": "planning_template_only",
+      "art_style": "Realism requires its own approved reference set and visual qualification",
+      "required_locks": [
+        "identity",
+        "wardrobe",
+        "lighting continuity",
+        "lens/framing",
+        "script"
+      ],
+      "automatic_activation": false
+    },
+    {
+      "id": "product_commercial",
+      "status": "planning_template_only",
+      "art_style": "Use project-approved art direction",
+      "required_locks": [
+        "verified product geometry and branding",
+        "truthful claims",
+        "exact CTA text/destination",
+        "voice script"
+      ],
+      "automatic_activation": false
+    }
+  ],
+  "registry_fingerprint": "ab1ae31adfd9d6cbf19d338b66dc5ae51cf359e6a9ade1bbf7dcd799c8e1b467"
+}

@@ -1,0 +1,18 @@
+# Studio Control requirements file version: 1.0.1
+gradio[oauth]==6.29.1
+gradio_client==2.7.2
+huggingface_hub==1.33.0
+av==16.0.1
+Pillow==11.3.0
+imageio-ffmpeg==0.6.0
+httpx==0.28.1
+
+# Original82M voice model, explicitly CPU-only Torch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+kokoro==0.9.4
+misaki[en]==0.9.4
+transformers==5.0.0
+soundfile==0.13.1
+# English G2P model installed at build time; no runtime pip/download fallback.
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

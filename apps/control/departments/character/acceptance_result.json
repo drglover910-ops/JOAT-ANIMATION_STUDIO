@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "registry loads",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "CHAR-001 resolves",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "Founder alias resolves",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "11 approved Founder assets",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "all Founder files + hashes verify",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "identity anchor selected",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "LTX packet locks identity",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "test": "registry mutation approval gate",
+      "pass": true,
+      "detail": true
+    }
+  ]
+}

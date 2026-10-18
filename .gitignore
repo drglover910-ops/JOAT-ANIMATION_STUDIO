@@ -1,0 +1,13 @@
+# File version: 1.0.0
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.sqlite*
+*.mp4
+*.wav
+*.mp3
+*.base64
+artifacts/
+test-results/

@@ -1,0 +1,274 @@
+---
+title: ACE-Step v1.5
+emoji: 🎵
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 6.2.0
+python_version: 3.11
+pinned: false
+models:
+  - ACE-Step/Ace-Step1.5
+  - ACE-Step/acestep-v15-xl-turbo
+license: mit
+app_file: app.py
+short_description: Music Generation Foundation Model v1.5
+---
+
+# J.O.A.T. Music Engine -- ACE-Step v1.5
+
+**Part of the J.O.A.T. (Jack of All Trades) Animation Studio pipeline.**
+
+Background score generation for J.O.A.T. production.
+Called by joat-content-engine via Gradio client API during scene assembly.
+
+---
+
+## JOAT Pipeline Role
+
+- Accepts a mood/style prompt and duration from the content engine
+- Returns a WAV audio file for use as background score
+- Called as: `api_name="generate_music"` via `gradio_client`
+
+## JOAT API Contract
+
+**Input:**
+
+- `prompt` (string): Mood/style description. Example: `cinematic motivational score, warm brass, no lyrics`
+- `duration` (integer): Target length in seconds. Range: 5-60.
+
+**Output:**
+
+- WAV audio file (filepath)
+
+## Qualified Status
+
+- Qualified and frozen at SHA `191401c0`
+- Hardware: ZeroGPU (`zero-a10g`)
+- Models: `ACE-Step/Ace-Step1.5` + `ACE-Step/acestep-v15-xl-turbo`
+- License: MIT
+
+## Required Secrets
+
+None. This Space does not use OTU+ or external API credentials.
+
+---
+
+<h1 align="center">ACE-Step 1.5</h1>
+<h1 align="center">Pushing the Boundaries of Open-Source Music Generation</h1>
+
+<p align="center">
+    <a href="https://ace-step.github.io/ace-step-v1.5.github.io/">Project</a> |
+    <a href="https://huggingface.co/collections/ACE-Step/ace-step-15">Hugging Face</a> |
+    <a href="https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5">ModelScope</a> |
+    <a href="https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5">Space Demo</a> |
+    <a href="https://discord.gg/PeWDxrkdj7">Discord</a> |
+    <a href="https://arxiv.org/abs/2602.00744">Technical Report</a>
+</p>
+
+<p align="center">
+    <img src="./assets/orgnization_logos.png" width="100%" alt="StepFun Logo">
+</p>
+
+## Table of Contents
+
+- [✨ Features](#-features)
+- [📦 Installation](#-installation)
+- [🚀 Usage](#-usage)
+- [🔨 Train](#-train)
+- [🏗️ Architecture](#️-architecture)
+- [🦁 Model Zoo](#-model-zoo)
+
+## 📝 Abstract
+
+We present ACE-Step v1.5, a highly efficient foundation model that democratizes commercial-grade music production on consumer hardware. Optimized for local deployment (<4GB VRAM), the model accelerates generation by over 100× compared to traditional pure LM architectures, producing superior high-fidelity audio in seconds characterized by coherent semantics and exceptional melodies. At its core lies a novel hybrid architecture where the Language Model (LM) functions as an omni-capable planner: it transforms simple user queries into comprehensive song blueprints—scaling from short loops to 10-minute compositions—while synthesizing metadata, lyrics, and captions via Chain-of-Thought to guide the Diffusion Transformer (DiT). Uniquely, this alignment is achieved through intrinsic reinforcement learning relying solely on the model’s internal mechanisms, thereby eliminating the biases inherent in external reward models or human preferences. Beyond standard synthesis, ACE-Step v1.5 unifies precise stylistic control with versatile editing capabilities—such as cover generation, repainting, and vocal-to-BGM conversion—while maintaining strict adherence to prompts across 50+ languages.
+
+## ✨ Features
+
+<p align="center">
+    <img src="./assets/application_map.png" width="100%" alt="ACE-Step Framework">
+</p>
+
+### ⚡ Performance
+
+- ✅ **Ultra-Fast Generation** — 0.5s to 10s generation time on A100 (depending on think mode & diffusion steps)
+- ✅ **Flexible Duration** — Supports 10 seconds to 10 minutes (600s) audio generation
+- ✅ **Batch Generation** — Generate up to 8 songs simultaneously
+
+### 🎵 Generation Quality
+
+- ✅ **Commercial-Grade Output** — Quality between Suno v4.5 and Suno v5
+- ✅ **Rich Style Support** — 1000+ instruments and styles with fine-grained timbre description
+- ✅ **Multi-Language Lyrics** — Supports 50+ languages with lyrics prompt for structure & style control
+
+### 🎛️ Versatility & Control
+
+| Feature | Description |
+|---------|-------------|
+| ✅ Reference Audio Input | Use reference audio to guide generation style |
+| ✅ Cover Generation | Create covers from existing audio |
+| ✅ Repaint & Edit | Selective local audio editing and regeneration |
+| ✅ Track Separation | Separate audio into individual stems |
+| ✅ Multi-Track Generation | Add layers like Suno Studio's "Add Layer" feature |
+| ✅ Vocal2BGM | Auto-generate accompaniment for vocal tracks |
+| ✅ Metadata Control | Control duration, BPM, key/scale, time signature |
+| ✅ Simple Mode | Generate full songs from simple descriptions |
+| ✅ Query Rewriting | Auto LM expansion of tags and lyrics |
+| ✅ Audio Understanding | Extract BPM, key/scale, time signature & caption from audio |
+| ✅ LRC Generation | Auto-generate lyric timestamps for generated music |
+| ✅ LoRA Training | One-click annotation & training in Gradio. 8 songs, 1 hour on 3090 (12GB VRAM) |
+| ✅ Quality Scoring | Automatic quality assessment for generated audio |
+
+## 📦 Installation
+
+> **Requirements:** Python 3.11, CUDA GPU recommended (works on CPU/MPS but slower)
+
+### 1. Install uv (Package Manager)
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+### 2. Clone & Install
+
+```bash
+git clone https://github.com/ACE-Step/ACE-Step-1.5.git
+cd ACE-Step-1.5
+uv sync
+```
+
+### 3. Launch
+
+#### 🖥️ Gradio Web UI (Recommended)
+
+```bash
+uv run acestep
+```
+
+Open http://localhost:7860 in your browser. Models will be downloaded automatically on first run.
+
+#### 🌐 REST API Server
+
+```bash
+uv run acestep-api
+```
+
+API runs at http://localhost:8001. See [API Documentation](./docs/en/API.md) for endpoints.
+
+### Command Line Options
+
+**Gradio UI (`acestep`):**
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `--port` | 7860 | Server port |
+| `--server-name` | 127.0.0.1 | Server address (use `0.0.0.0` for network access) |
+| `--share` | false | Create public Gradio link |
+| `--language` | en | UI language: `en`, `zh`, `ja` |
+| `--init_service` | false | Auto-initialize models on startup |
+| `--config_path` | auto | DiT model (e.g., `acestep-v15-turbo`, `acestep-v15-turbo-shift3`) |
+| `--lm_model_path` | auto | LM model (e.g., `acestep-5Hz-lm-0.6B`, `acestep-5Hz-lm-1.7B`) |
+| `--offload_to_cpu` | auto | CPU offload (auto-enabled if VRAM < 16GB) |
+
+**Examples:**
+
+```bash
+# Public access with Chinese UI
+uv run acestep --server-name 0.0.0.0 --share --language zh
+
+# Pre-initialize models on startup
+uv run acestep --init_service true --config_path acestep-v15-turbo
+```
+
+### Development
+
+```bash
+# Add dependencies
+uv add package-name
+uv add --dev package-name
+
+# Update all dependencies
+uv sync --upgrade
+```
+
+## 🚀 Usage
+
+We provide multiple ways to use ACE-Step:
+
+| Method | Description | Documentation |
+|--------|-------------|---------------|
+| 🖥️ **Gradio Web UI** | Interactive web interface for music generation | [Gradio Guide](./docs/en/GRADIO_GUIDE.md) |
+| 🐍 **Python API** | Programmatic access for integration | [Inference API](./docs/en/INFERENCE.md) |
+| 🌐 **REST API** | HTTP-based async API for services | [REST API](./docs/en/API.md) |
+
+**📚 Documentation available in:** [English](./docs/en/) | [中文](./docs/zh/) | [日本語](./docs/ja/)
+
+## 🔨 Train
+
+See the **LoRA Training** tab in Gradio UI for one-click training, or check [Gradio Guide - LoRA Training](./docs/en/GRADIO_GUIDE.md#lora-training) for details.
+
+## 🏗️ Architecture
+
+<p align="center">
+    <img src="./assets/ACE-Step_framework.png" width="100%" alt="ACE-Step Framework">
+</p>
+
+## 🦁 Model Zoo
+
+<p align="center">
+    <img src="./assets/model_zoo.png" width="100%" alt="Model Zoo">
+</p>
+
+### DiT Models
+
+| DiT Model | Pre-Training | SFT | RL | CFG | Step | Refer audio | Text2Music | Cover | Repaint | Extract | Lego | Complete | Quality | Diversity | Fine-Tunability | Hugging Face |
+|-----------|:------------:|:---:|:--:|:---:|:----:|:-----------:|:----------:|:-----:|:-------:|:-------:|:----:|:--------:|:-------:|:---------:|:---------------:|--------------|
+| `acestep-v15-base` | ✅ | ❌ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Medium | High | Easy | [Link](https://huggingface.co/ACE-Step/acestep-v15-base) |
+| `acestep-v15-sft` | ✅ | ✅ | ❌ | ✅ | 50 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | High | Medium | Easy | [Link](https://huggingface.co/ACE-Step/acestep-v15-sft) |
+| `acestep-v15-turbo` | ✅ | ✅ | ❌ | ❌ | 8 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | Very High | Medium | Medium | [Link](https://huggingface.co/ACE-Step/Ace-Step1.5) |
+| `acestep-v15-turbo-rl` | ✅ | ✅ | ✅ | ❌ | 8 | ✅ | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | Very High | Medium | Medium | To be released |
+
+### LM Models
+
+| LM Model | Pretrain from | Pre-Training | SFT | RL | CoT metas | Query rewrite | Audio Understanding | Composition Capability | Copy Melody | Hugging Face |
+|----------|---------------|:------------:|:---:|:--:|:---------:|:-------------:|:-------------------:|:----------------------:|:-----------:|--------------|
+| `acestep-5Hz-lm-0.6B` | Qwen3-0.6B | ✅ | ✅ | ✅ | ✅ | ✅ | Medium | Medium | Weak | ✅ |
+| `acestep-5Hz-lm-1.7B` | Qwen3-1.7B | ✅ | ✅ | ✅ | ✅ | ✅ | Medium | Medium | Medium | ✅ |
+| `acestep-5Hz-lm-4B` | Qwen3-4B | ✅ | ✅ | ✅ | ✅ | ✅ | Strong | Strong | Strong | To be released |
+
+## 📜 License & Disclaimer
+
+This project is licensed under [MIT](./LICENSE)
+
+ACE-Step enables original music generation across diverse genres, with applications in creative production, education, and entertainment. While designed to support positive and artistic use cases, we acknowledge potential risks such as unintentional copyright infringement due to stylistic similarity, inappropriate blending of cultural elements, and misuse for generating harmful content. To ensure responsible use, we encourage users to verify the originality of generated works, clearly disclose AI involvement, and obtain appropriate permissions when adapting protected styles or materials. By using ACE-Step, you agree to uphold these principles and respect artistic integrity, cultural diversity, and legal compliance. The authors are not responsible for any misuse of the model, including but not limited to copyright violations, cultural insensitivity, or the generation of harmful content.
+
+🔔 Important Notice  
+The only official website for the ACE-Step project is our GitHub Pages site.  
+We do not operate any other websites.
+
+🚫 Fake domains include but are not limited to:  
+ac\*\*p.com, a\*\*p.org, a\*\*\*c.org
+
+⚠️ Please be cautious. Do not visit, trust, or make payments on any of those sites.
+
+## 🙏 Acknowledgements
+
+This project is co-led by ACE Studio and StepFun.
+
+## 📖 Citation
+
+If you find this project useful for your research, please consider citing:
+
+```BibTeX
+@misc{gong2026acestep,
+    title={ACE-Step 1.5: Pushing the Boundaries of Open-Source Music Generation},
+    author={Junmin Gong, Song Yulin, Wenxiao Zhao, Sen Wang, Shengyuan Xu, Jing Guo},
+    howpublished={\url{https://github.com/ace-step/ACE-Step-1.5}},
+    year={2026},
+    note={GitHub repository}
+}
+```

@@ -1,0 +1,10 @@
+# requirements.txt file version: 1.0.1
+# Main Assistant video-reference dependencies; delegated production transport; other runtime pins preserved.
+gradio[oauth]==6.29.1
+av==16.0.1
+imageio-ffmpeg==0.6.0
+Pillow==11.3.0
+huggingface-hub==1.33.0
+yt-dlp==2026.8.19
+yt-dlp-ejs==0.8.0
+deno==2.9.5

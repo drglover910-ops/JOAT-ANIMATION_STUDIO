@@ -1,0 +1,432 @@
+{
+  "file_version": "1.0.9",
+  "space": "Dezz-9-10/J.O.A.T.-Animation-Studio",
+  "revision": "be1591ad2ad05c3af51f27fd671658d1873e15af",
+  "api_name": "/generate",
+  "parameters": [
+    {
+      "name": "image_path",
+      "default": null
+    },
+    {
+      "name": "prompt",
+      "default": null
+    },
+    {
+      "name": "negative_prompt",
+      "default": "captions, music, transition, VR, bad quality, subtitles, text, watermark, overlay effects, cartoon, childish, ugly, text, blur, logo, static, low quality, noise, mutant, horror, film grain"
+    },
+    {
+      "name": "preset",
+      "default": "tuned"
+    },
+    {
+      "name": "seconds",
+      "default": 4.0
+    },
+    {
+      "name": "max_width",
+      "default": 1120
+    },
+    {
+      "name": "max_height",
+      "default": 1344
+    },
+    {
+      "name": "mode",
+      "default": "anchor only"
+    },
+    {
+      "name": "face_bbox",
+      "default": null
+    },
+    {
+      "name": "likeness_strength",
+      "default": 0.65
+    },
+    {
+      "name": "likeness_anchor_strength",
+      "default": 0.08
+    },
+    {
+      "name": "latent_anchor_strength",
+      "default": 0.08
+    },
+    {
+      "name": "first_frame_strength",
+      "default": 0.82
+    },
+    {
+      "name": "seed",
+      "default": -1
+    },
+    {
+      "name": "randomize_seed",
+      "default": true
+    },
+    {
+      "name": "gen_budget",
+      "default": 0
+    },
+    {
+      "name": "target_mp",
+      "default": 0.65
+    },
+    {
+      "name": "snap_multiple",
+      "default": 64
+    },
+    {
+      "name": "custom_res_enabled",
+      "default": false
+    },
+    {
+      "name": "sulphur_lora_strength",
+      "default": 1.0
+    },
+    {
+      "name": "sulphur_v1_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "vbvr_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "dreamly_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "synth_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "plora_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "singularity_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "omninft_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "omninft_bf16_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "better_motion_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "physics_v2_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "hardcut_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "transition_lora_strength",
+      "default": 0.0
+    },
+    {
+      "name": "sulphur_audio_strength",
+      "default": 1.0
+    },
+    {
+      "name": "sulphur_v1_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "vbvr_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "dreamly_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "synth_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "plora_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "singularity_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "omninft_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "omninft_bf16_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "better_motion_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "physics_v2_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "hardcut_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "transition_audio_strength",
+      "default": 0.0
+    },
+    {
+      "name": "cache_at_step",
+      "default": 0
+    },
+    {
+      "name": "cache_warmup",
+      "default": 400
+    },
+    {
+      "name": "energy_threshold",
+      "default": 0.3
+    },
+    {
+      "name": "anchor_similarity_threshold",
+      "default": 0.2
+    },
+    {
+      "name": "sigma_string",
+      "default": "0.4824, 0.2412, 0.0"
+    },
+    {
+      "name": "input_mode",
+      "default": "single image (i2v)"
+    },
+    {
+      "name": "msr_ref2",
+      "default": null
+    },
+    {
+      "name": "msr_ref3",
+      "default": null
+    },
+    {
+      "name": "msr_ref4",
+      "default": null
+    },
+    {
+      "name": "msr_background",
+      "default": null
+    },
+    {
+      "name": "msr_frame_count",
+      "default": 41
+    },
+    {
+      "name": "msr_guide_strength",
+      "default": 1.0
+    },
+    {
+      "name": "msr_lora_strength",
+      "default": 0.7
+    },
+    {
+      "name": "prompt_relay_enabled",
+      "default": false
+    },
+    {
+      "name": "prompt_segments",
+      "default": null
+    },
+    {
+      "name": "scene_chain_enabled",
+      "default": false
+    },
+    {
+      "name": "scene_chain_prompt",
+      "default": null
+    },
+    {
+      "name": "scene_chain_max_scenes",
+      "default": 2
+    },
+    {
+      "name": "scene_chain_frame_overlap",
+      "default": 8
+    },
+    {
+      "name": "scene_chain_mid_guide",
+      "default": true
+    },
+    {
+      "name": "scene_chain_mid_guide_strength",
+      "default": 0.25
+    },
+    {
+      "name": "kv_enabled",
+      "default": false
+    },
+    {
+      "name": "kv_strength",
+      "default": 1.0
+    },
+    {
+      "name": "audio_ref_enabled",
+      "default": false
+    },
+    {
+      "name": "audio_ref_file",
+      "default": null
+    },
+    {
+      "name": "audio_ref_guidance_scale",
+      "default": 3.0
+    },
+    {
+      "name": "audio_ref_stem_sep",
+      "default": false
+    },
+    {
+      "name": "audio_ref_normalize",
+      "default": true
+    },
+    {
+      "name": "kf_last_image",
+      "default": null
+    },
+    {
+      "name": "kf_strength",
+      "default": 0.82
+    },
+    {
+      "name": "kf_mid_enabled",
+      "default": false
+    },
+    {
+      "name": "kf_mid_1_image",
+      "default": null
+    },
+    {
+      "name": "kf_mid_1_pos",
+      "default": 50
+    },
+    {
+      "name": "kf_mid_2_image",
+      "default": null
+    },
+    {
+      "name": "kf_mid_2_pos",
+      "default": 50
+    },
+    {
+      "name": "kf_mid_3_image",
+      "default": null
+    },
+    {
+      "name": "kf_mid_3_pos",
+      "default": 50
+    },
+    {
+      "name": "kf_mid_4_image",
+      "default": null
+    },
+    {
+      "name": "kf_mid_4_pos",
+      "default": 50
+    },
+    {
+      "name": "kf_mid_5_image",
+      "default": null
+    },
+    {
+      "name": "kf_mid_5_pos",
+      "default": 50
+    },
+    {
+      "name": "profile_name",
+      "default": null
+    },
+    {
+      "name": "skip_refine",
+      "default": false
+    },
+    {
+      "name": "user_loras_text",
+      "default": null
+    },
+    {
+      "name": "identity_ref_image",
+      "default": null
+    },
+    {
+      "name": "motion_control_type",
+      "default": "off"
+    },
+    {
+      "name": "motion_video",
+      "default": null
+    },
+    {
+      "name": "motion_guide_strength",
+      "default": 1.0
+    },
+    {
+      "name": "motion_lora_strength",
+      "default": 1.0
+    },
+    {
+      "name": "motion_canny_low",
+      "default": 20
+    },
+    {
+      "name": "motion_canny_high",
+      "default": 60
+    }
+  ],
+  "runtime_check": {
+    "api_name": "/joat_runtime_check",
+    "schema": "joat.renderer_runtime_check.v1",
+    "required_versions": {
+      "app": "1.0.14",
+      "msr_runtime": "1.0.7",
+      "gpu_contract": "1.0.0",
+      "graph_contract": "1.0.2"
+    },
+    "required_dependencies": {
+      "ComfyUI": "4e1f7cb1db1c26bb9ee61cf1875776517e2abae8",
+      "ComfyUI-GGUF": "6ea2651e7df66d7585f6ffee804b20e92fb38b8a",
+      "ComfyUI-LTXVideo": "3bf3ca62595f1764c47d01c35c8e5dfe47e1a88f",
+      "10S-Comfy-nodes": "c231acaaf66dff9153fc190a9a8e67a8198005a6",
+      "ComfyUI-KJNodes": "d3cfe21625e5170126ce06fbfcfe1d88108688c3",
+      "rgthree-comfy": "d7297b42f0fa78bec1c0411478f887423c249502",
+      "ComfyUI-VideoHelperSuite": "4d907bee61e92c2e65af3bd6383a4e4d356126d1",
+      "RES4LYF": "56e44755d866c87ff9cb4b6608c8e42155db6ecc",
+      "ComfyUI-Easy-Use": "67afdc8204683e32549e63b7b02dc006d20441fa",
+      "ComfyUI-mxToolkit": "7f7a0e584f12078a1c589645d866ae96bad0cc35",
+      "ComfyMath": "c01177221c31b8e5fbc062778fc8254aeb541638",
+      "ComfyUI-Licon-MSR": "94a52bfec735ff6f802c480f7fe8fdac1d279a7f",
+      "ComfyUI-RMBG": "229529e0ea63fb7085848225d74f91f6dc164956",
+      "ComfyUI-PromptRelay": "ca5d4e3edb6abd9c2a4c68a3a6798eec1980f450",
+      "ComfyUI-FunPack": "deeb4c0b746c580af84ae1a8de20585ea05936c5",
+      "ComfyUI-MelBandRoFormer": "92c86854e6654f4aacc97484471af95c98ea16d4",
+      "ComfyUI-MultiLoRALoader": "d025000e2c807953e20af04fe045203bb12209bd",
+      "package:torch": "2.8.0",
+      "package:gradio": "5.44.1",
+      "package:spaces": "0.51.3",
+      "package:huggingface-hub": "0.36.2"
+    },
+    "reservation_ceiling_seconds": 600
+  },
+  "i2v_runtime_check": {
+    "api_name": "/joat_i2v_runtime_check",
+    "schema": "joat.i2v_runtime_check.v1",
+    "preflight_file_version": "1.0.4",
+    "graph_schema": "joat.i2v_graph_preflight.v1"
+  }
+}

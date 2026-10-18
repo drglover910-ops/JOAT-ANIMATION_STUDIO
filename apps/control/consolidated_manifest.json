@@ -1,0 +1,1379 @@
+{
+  "schema": "joat.consolidated_cpu_manifest.v1",
+  "file_version": "1.0.16",
+  "source_revisions": {
+    "character": {
+      "repo": "Dezz-9-10/J.O.A.T.-Character-Asset-Master",
+      "revision": "0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2"
+    },
+    "environment": {
+      "repo": "Dezz-9-10/J.O.A.T.-Scene-Environment-Master",
+      "revision": "d81f844624a03def67bdacdfbb022741c7217b78"
+    },
+    "director": {
+      "repo": "Dezz-9-10/J.O.A.T.-Director-Creative-Intelligence",
+      "revision": "945695443903ebe3d738f8139ec8fa2ea3065a99"
+    },
+    "shot_camera": {
+      "repo": "Dezz-9-10/J.O.A.T.-Shot-Camera-Master",
+      "revision": "a61433677ad404b40fc2336787eefc474b84d6e9"
+    },
+    "performance_action": {
+      "repo": "Dezz-9-10/J.O.A.T.-Performance-Action-Master",
+      "revision": "26adaf875bb9f51edfbd7dc839b4b88b9d3214b3"
+    },
+    "generation_supervisor": {
+      "repo": "Dezz-9-10/J.O.A.T.-Generation-Supervisor-Master",
+      "revision": "f0f3fdbea94e5c828b2c6ec033c163bddd5269b3"
+    },
+    "generation_worker": {
+      "repo": "Dezz-9-10/J.O.A.T.-Generation-Worker-Bot",
+      "revision": "a9e7f3e9bb9a74f065c9ff9a43d2a365b125c4ea"
+    },
+    "quality_control": {
+      "repo": "Dezz-9-10/J.O.A.T.-Quality-Control-Bot",
+      "revision": "06833ec0a8d93f91e47dfb66d26b4b44e604c551"
+    },
+    "post_production": {
+      "repo": "Dezz-9-10/J.O.A.T.-Post-Production-Supervisor-Bot",
+      "revision": "c8aee671544823f32e7eb7201c510066a58c6feb"
+    },
+    "editorial": {
+      "repo": "Dezz-9-10/J.O.A.T.-Editorial-Worker-Bot",
+      "revision": "aecba1372888626116ef3174b0ccb33f5ab7bdc1"
+    },
+    "sound": {
+      "repo": "Dezz-9-10/J.O.A.T.-Sound-Worker-Bot",
+      "revision": "21f07e6583592a5ffa59d4bd48ecaa21bf511916"
+    },
+    "music": {
+      "repo": "Dezz-9-10/J.O.A.T.-Music-Worker-Bot",
+      "revision": "c646a39246aaf481e46bd0a8c7719184c286cc66"
+    },
+    "compositing_vfx": {
+      "repo": "Dezz-9-10/J.O.A.T.-Compositing-VFX-Worker-Bot",
+      "revision": "3c3b6681505c3cb8af432ed5d05b5221f1f7fae1"
+    },
+    "color_finish": {
+      "repo": "Dezz-9-10/J.O.A.T.-Color-Finish-Worker-Bot",
+      "revision": "cb6cf34f842c3d2b88500a401b0c8e54b047f15f"
+    },
+    "titles_graphics": {
+      "repo": "Dezz-9-10/J.O.A.T.-Titles-Graphics-Worker-Bot",
+      "revision": "c3be792fb00cc147f00e7987667dc58716c7c0ab"
+    },
+    "voice_dialogue": {
+      "repo": "Dezz-9-10/J.O.A.T.-Voice-Dialogue-Worker-Bot",
+      "revision": "bd06a76c3e3edf79ceb916ab539503d87971b090"
+    },
+    "delivery_archive": {
+      "repo": "Dezz-9-10/J.O.A.T.-Delivery-Archive-Bot",
+      "revision": "a42856750214d98d58251dfebb69527a3f8d13b1"
+    },
+    "browser": {
+      "repo": "Dezz-9-10/J.O.A.T.-Browser-Worker-Bot",
+      "revision": "06531971b8b0aa73e8dd5bab38dbdfe05fe97050"
+    },
+    "hugging_face": {
+      "repo": "Dezz-9-10/J.O.A.T.-Hugging-Face-Master-Bot",
+      "revision": "42513c3cbbeb92e2914d3f031ba2dce5fb2e180d"
+    }
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "aed54e4f7b0e3a76a940a91cbc6511d6a719dede2bd60d815fc6b8f50eebae97",
+      "size_bytes": 548
+    },
+    {
+      "path": "app.py",
+      "sha256": "c030430fd0150c60e7e48bb26f3ce302a17687f2822dedd0c35da2a23c187b3e",
+      "size_bytes": 63021
+    },
+    {
+      "path": "departments/browser/README.md",
+      "sha256": "3def82375491bec10c17405024bd77757e7e0959dfad8dda01a02122021fca93",
+      "size_bytes": 351
+    },
+    {
+      "path": "departments/browser/app.py",
+      "sha256": "5902be3cbab26840e68c78af7d20cfe2cab6a6b8a959c155513d63d17f8cbf06",
+      "size_bytes": 48750
+    },
+    {
+      "path": "departments/browser/requirements.txt",
+      "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+      "size_bytes": 14
+    },
+    {
+      "path": "departments/character/README.md",
+      "sha256": "182bda5e0995fe711ef2ae6af050be4fd986bb9b862e7223a4502ae3add96c5e",
+      "size_bytes": 750
+    },
+    {
+      "path": "departments/character/acceptance_result.json",
+      "sha256": "b9be52b539965bec488407e912f5e84a0f4c24aa91eba100d94d653bbea019da",
+      "size_bytes": 806
+    },
+    {
+      "path": "departments/character/app.py",
+      "sha256": "fb214bace4cd5fecec000714b291205504ea9ecd2572e379b770e120255eeb82",
+      "size_bytes": 5266
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+      "sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+      "size_bytes": 497734
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg.base64",
+      "sha256": "d97687fc3de835b3dd65ce927d0a688791e5ed0acf4654e2750ca6f4df318b6a",
+      "size_bytes": 663648
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg",
+      "sha256": "e9d8799c14bf94473604b1f70507be40803afa65f2c6515e92b433e39dfd1587",
+      "size_bytes": 499440
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg.base64",
+      "sha256": "d1dc2eff8e2f2ccf1be7a74d5dfff849fc83e59a9e7a28149e469f547b129946",
+      "size_bytes": 665920
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg",
+      "sha256": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48",
+      "size_bytes": 560952
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg.base64",
+      "sha256": "455b8f8221be82dafb3d99e88db072419f8282a0c5708245447df89f56a91e27",
+      "size_bytes": 747936
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg",
+      "sha256": "31b44d9cab6163335d31aa4141b8bd3c15c991239ae8dd3394a32b2def9f6f94",
+      "size_bytes": 471015
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg.base64",
+      "sha256": "9627d914d619aba6c0ea869dc87638d7904ebd513291fea9309590ea6e483d16",
+      "size_bytes": 628020
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg",
+      "sha256": "2a38bacdce774c0a319b4a318462b05d1fe67b7e26fd1ae878e1d50d5df09a5e",
+      "size_bytes": 644799
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg.base64",
+      "sha256": "10f61d3cf2d20f0da25d83d110887d974965b16d1b99df03af4b18f280ee9989",
+      "size_bytes": 859732
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg",
+      "sha256": "d66cb2b467a2594e1000bd4c5247ec561c8c937d8dcd5b5131a71542b4498af5",
+      "size_bytes": 607155
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg.base64",
+      "sha256": "99a91220511ae1cb09bb1d71279b08318eb95cf33c3f4626fde7a81d3843732c",
+      "size_bytes": 809540
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg",
+      "sha256": "d1f7fb65c398941ce92dfee497c69b829b332fb338717665ceb48b55d4c2086c",
+      "size_bytes": 681796
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg.base64",
+      "sha256": "78cc946537aba1da9a2f25668b7ad0486aeb0e520f286ea53abf86af342a9c25",
+      "size_bytes": 909064
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg",
+      "sha256": "1866d8666207cb53a5ed4a5f32a31a75369d30801ca6eed9066d9b28834b081a",
+      "size_bytes": 609531
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg.base64",
+      "sha256": "574e90f7ac601d64f4d615454e55ea68a9d27d1e690487a2db6e5dd27c89d817",
+      "size_bytes": 812708
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg",
+      "sha256": "b91f1ab7f5a4aa10aa531e1b6832cdcaaf59665a6e86be15a1a871e74ff8f863",
+      "size_bytes": 612227
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg.base64",
+      "sha256": "c521f0c5dbae407416f79c3cec4d945bc5a952c3d3c49790edee3db6b6f8ae52",
+      "size_bytes": 816304
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg",
+      "sha256": "850e92a0954afb89155be9ba84eef064e47c87fde27940f068e705fe2e3a929f",
+      "size_bytes": 472274
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg.base64",
+      "sha256": "585752c1912211103ee216a11612be03b58703667abef2e6afdf061f27003d41",
+      "size_bytes": 629700
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg",
+      "sha256": "bdde53c12025d575f7ef0cf1d49beda706b382577e5026b7aaa5ce568387e043",
+      "size_bytes": 438517
+    },
+    {
+      "path": "departments/character/assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg.base64",
+      "sha256": "44da80619f79d5c774f1dfc5c652a00c59f1bc632e2712ab4da1c896ecbb9053",
+      "size_bytes": 584692
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A01.jpeg",
+      "sha256": "b7ee352be89dca4b5cd11ba54d279cfce854bedd192c1992f4e8940d7b189000",
+      "size_bytes": 750226
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A01.jpeg.base64",
+      "sha256": "9dc2cac1e1bbdda44b4ea298b39eacb79cfb0206846a5b922cfaa331515965c9",
+      "size_bytes": 1000304
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A02.jpeg",
+      "sha256": "bc101bc5fb20348c329b5e94138d34c650ea22f0cf22cae5b2a8a36c5754345f",
+      "size_bytes": 679926
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A02.jpeg.base64",
+      "sha256": "ee49150808a96146a95922d68eebf9598a52852caae41a3390311f27379567b4",
+      "size_bytes": 906568
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A03.jpeg",
+      "sha256": "7bae4e3269a52c8ad189f3d98a86ebecbf150c54093ded3c216ec58c1abca8a1",
+      "size_bytes": 312459
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A03.jpeg.base64",
+      "sha256": "96efc2c379521f72ab28d62fb49f6e83b7b194932b0902d8ca9aee60844480f4",
+      "size_bytes": 416612
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A04.jpeg",
+      "sha256": "4457ec2246547a28b4a8ce85ddb06f2b3678f9977cb35012b3a22d09196f2fd7",
+      "size_bytes": 742862
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A04.jpeg.base64",
+      "sha256": "3efde44f06f7ea9445582075572b7c85c44271f78cb478c8e4938538e389da02",
+      "size_bytes": 990484
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A05.jpeg",
+      "sha256": "aedc273a3dab9ba838641d6dad3f0fa040be3e2fc98da315b8f6e171d4a40698",
+      "size_bytes": 782940
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A05.jpeg.base64",
+      "sha256": "44df46d827aa6052031bfd4d8d73495e469b5245676167122afaa1b112696952",
+      "size_bytes": 1043920
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A06.jpeg",
+      "sha256": "836b7ce25007566b01018af7d3541aaabc751c0a88834ae4aca25589a2a6e99b",
+      "size_bytes": 689594
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A06.jpeg.base64",
+      "sha256": "a5ca30c8e2494b3bae3c3df9e152da9243663a3a22bee4d50a596d172965ef90",
+      "size_bytes": 919460
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A07.jpeg",
+      "sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+      "size_bytes": 482871
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A07.jpeg.base64",
+      "sha256": "e9e762036f3b9acfbfd214d1dd7e2f85e0d1d4acaef0e8852b1a22efcc2cd38e",
+      "size_bytes": 643828
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A08.jpeg",
+      "sha256": "f60981360987a2c39c7e8b35a8f45ef0e2da427e8dd27a445adc3beb6e6b4245",
+      "size_bytes": 481527
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A08.jpeg.base64",
+      "sha256": "b7ea05f855ce8ac3956585eca57e5678d2836dff0986769730218dac8cc2bab6",
+      "size_bytes": 642036
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A09.jpeg",
+      "sha256": "e33e79814e381d6624a27d6cfee8a06bd8330750ede8c7066067c90d0edb3e7e",
+      "size_bytes": 315850
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A09.jpeg.base64",
+      "sha256": "3b3fe4779e8758f943625572fbda39965b923cf3814b6b050813d0ce4c96469c",
+      "size_bytes": 421136
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A10.jpeg",
+      "sha256": "35dcd492be8377afcfeb24df784bb80174f931f395e31b06912e34c74af1172f",
+      "size_bytes": 811841
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A10.jpeg.base64",
+      "sha256": "067a125f5830d6cc30db54c90ba5be553a929ac7893bdaefb2cc3c27fc15c049",
+      "size_bytes": 1082456
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A11.jpeg",
+      "sha256": "fa850d793000b464cde1deb757004c0e2a4c2fb91651d98d8351bf5818edd8f1",
+      "size_bytes": 647196
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A11.jpeg.base64",
+      "sha256": "c9deed9cbc9acf99c6a757915f471ce09cefde52b4280de2699277519fa6a4c5",
+      "size_bytes": 862928
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A12.jpeg",
+      "sha256": "1cd74430122d19077725ba2b3288ce36bf41b91da3baa1883a241b1489cc3096",
+      "size_bytes": 684828
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A12.jpeg.base64",
+      "sha256": "7dc17896b74843d1aeedbb874e1415e86e7bdafa817988ab9e67221c99ad1e8b",
+      "size_bytes": 913104
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A13.jpeg",
+      "sha256": "f8e5a98c4d92965ffd31c44a3a5a50621f8fdc60a6a23bd07717fc3e12048168",
+      "size_bytes": 430347
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A13.jpeg.base64",
+      "sha256": "410da8cd1f339e98a4331766d314c5f675d513aab78e6518378dd5e86b81b0d6",
+      "size_bytes": 573796
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A14.jpeg",
+      "sha256": "59ee9c30b70ca3862e803d9f9e3df60bc2fdd7dfeafd2f6036007d656089a2aa",
+      "size_bytes": 540077
+    },
+    {
+      "path": "departments/character/assets/CHAR-002/CHAR-002-A14.jpeg.base64",
+      "sha256": "850b079e76076e3bf9defdffdd1ce84a8db0aaa09a412f9120c59f608202f793",
+      "size_bytes": 720104
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-01.jpeg",
+      "sha256": "aa3ee4e2fe77113d9a6d4adcd497340b822049e6124c8e9c3145759e0de703ad",
+      "size_bytes": 435670
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-01.jpeg.base64",
+      "sha256": "ff5772a8d7773c2df29e32a8b7bfa696d7303189e423d8bda5bb82e151e1cf0c",
+      "size_bytes": 580896
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-02.jpeg",
+      "sha256": "d3f3fdb83b3e742249c7512afeafba7dbf92e126c44e5c788778c0bfdbedbc80",
+      "size_bytes": 532469
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-02.jpeg.base64",
+      "sha256": "1f976e194601ccab7d76b1e0d10531cd8353b32ca66e067c6dd62266790e7027",
+      "size_bytes": 709960
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-03.jpeg",
+      "sha256": "5424e70f026714801f3c892c2bc6e2c523c17802abaf84ad7b0889abed89b6d9",
+      "size_bytes": 511816
+    },
+    {
+      "path": "departments/character/assets/CHAR-003/CHAR-003-Densin-03.jpeg.base64",
+      "sha256": "a23844e8c58949a1b16a56a3947c88793e0f810950e01c2c017b73495be7af97",
+      "size_bytes": 682424
+    },
+    {
+      "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+      "sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+      "size_bytes": 438865
+    },
+    {
+      "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-01.jpeg.base64",
+      "sha256": "a0f9a45309170c1f012f4c5ba2659eae3b2b34d5225b52a586ff0e76aca6ce6f",
+      "size_bytes": 585156
+    },
+    {
+      "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-02.jpeg",
+      "sha256": "c5023674b8aa0f25c60f1cca5a1b1f4acca8a45fd769718917b6c48ae6f27871",
+      "size_bytes": 533916
+    },
+    {
+      "path": "departments/character/assets/CHAR-004/CHAR-004-Cristu-02.jpeg.base64",
+      "sha256": "15c45957f927ef74c5c76c353ef25c5df931286da0265ef3102c235381dc6a6c",
+      "size_bytes": 711888
+    },
+    {
+      "path": "departments/character/assets/CHAR-005/CHAR-005-Jen-01.jpeg",
+      "sha256": "585c25734d94ce418dc84d5dd527ace6a16c52d26a61543e03f138bcbf9a37fa",
+      "size_bytes": 533907
+    },
+    {
+      "path": "departments/character/assets/CHAR-005/CHAR-005-Jen-01.jpeg.base64",
+      "sha256": "13265dad2c6fac0eed7550b0ce4850cd0007d622a8c5b010b6ae687f531013f7",
+      "size_bytes": 711876
+    },
+    {
+      "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-01.jpeg",
+      "sha256": "d1e92e82dc163892801c42a0a3cb7a4cc13fd56858a8174e7fea59cffa564982",
+      "size_bytes": 369623
+    },
+    {
+      "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-01.jpeg.base64",
+      "sha256": "707824b1b268bc8e19e085e2a70567f3931216869dd79d7175c65fe1e8f7ad7c",
+      "size_bytes": 492832
+    },
+    {
+      "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-02.jpeg",
+      "sha256": "c50f431c0a4dede9c8aed0ebde654a8972c12337922202eb0bd4cda2249464f6",
+      "size_bytes": 565005
+    },
+    {
+      "path": "departments/character/assets/CHAR-006/CHAR-006-Hasley-02.jpeg.base64",
+      "sha256": "da5789be8553c310f21ea41feda1b8e6a6140d3f30f8d31def49f51d14e5ddc5",
+      "size_bytes": 753340
+    },
+    {
+      "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg",
+      "sha256": "88785e88a014c76e51c096a51e7b450e7812114d22d27e21d75f783845f8e2ab",
+      "size_bytes": 387187
+    },
+    {
+      "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg.base64",
+      "sha256": "85ca712384ce1c276fc90f9ea9e19d45adfe8a3ddae64343bf0346ebec189012",
+      "size_bytes": 516252
+    },
+    {
+      "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg",
+      "sha256": "f6ee16d55146d2ec435dfc2b3260c0445e7c9a6c99368115c33e080cdb738fb9",
+      "size_bytes": 596486
+    },
+    {
+      "path": "departments/character/assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg.base64",
+      "sha256": "2af0bc9f6b29d098ad050cb1bf244dccb2c4678e099c29a48af13634faf8f9a9",
+      "size_bytes": 795316
+    },
+    {
+      "path": "departments/character/build_registry_metadata.py",
+      "sha256": "0febfaeda32d7aea4f234dd12a9d3c0610549dc55382c4d6f7b51add4c9889cf",
+      "size_bytes": 2935
+    },
+    {
+      "path": "departments/character/character_master.py",
+      "sha256": "eadc8a34be0cbf3a10b8c79584b85ae40cacbdde1ff2975ee315908b6a94936d",
+      "size_bytes": 8188
+    },
+    {
+      "path": "departments/character/characters.json",
+      "sha256": "76113fd3c143c9f62a735accad901e68ab4f383b4cbe590e06f2141f773f2ab5",
+      "size_bytes": 28492
+    },
+    {
+      "path": "departments/character/generate_character_metadata.py",
+      "sha256": "0febfaeda32d7aea4f234dd12a9d3c0610549dc55382c4d6f7b51add4c9889cf",
+      "size_bytes": 2935
+    },
+    {
+      "path": "departments/character/requirements.txt",
+      "sha256": "6c243121e96a1f7b4d6eec9ac362a1e76b670be1a9cab0f884f6333748716031",
+      "size_bytes": 27
+    },
+    {
+      "path": "departments/character/test_character_master.py",
+      "sha256": "a0f5f89f581b665414bf43de53ea34ee49364efc6b3f58f35238c096c1cf7afb",
+      "size_bytes": 174
+    },
+    {
+      "path": "departments/color_finish/README.md",
+      "sha256": "8b90b6e005f34cca25dbbed809b7cb607e4ad4963e19da4eb2367ac2ec45a727",
+      "size_bytes": 322
+    },
+    {
+      "path": "departments/color_finish/app.py",
+      "sha256": "719c00813e064c02e1d1daa3e7f0ee20780d2b29e5c5f0748193516a449664ba",
+      "size_bytes": 29061
+    },
+    {
+      "path": "departments/color_finish/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/color_finish/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/color_finish/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/color_finish/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/color_finish/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/compositing_vfx/README.md",
+      "sha256": "4a2b8bd11e9987b02886923cf46f62e2466f6f2a8aa38b3811218311d8ee47d2",
+      "size_bytes": 326
+    },
+    {
+      "path": "departments/compositing_vfx/app.py",
+      "sha256": "ac57f32ffa5006e4ae5b1e2f471ebab8c76c54119835b745f69d5e6fe9ff40da",
+      "size_bytes": 29672
+    },
+    {
+      "path": "departments/compositing_vfx/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/compositing_vfx/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/compositing_vfx/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/compositing_vfx/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/compositing_vfx/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/delivery_archive/README.md",
+      "sha256": "d3f952fdf1b80859fbdca36b0f27051f763068284a7953510d3044b89a5ac899",
+      "size_bytes": 320
+    },
+    {
+      "path": "departments/delivery_archive/app.py",
+      "sha256": "82a66449e269ae717cab19c7db70bf3413eb2ad6d7db8729b3c2b45603add152",
+      "size_bytes": 28103
+    },
+    {
+      "path": "departments/delivery_archive/joat_delivery_storage.py",
+      "sha256": "80cad3f52e1d31771ba658180fbd29c25402de159725f6fba5d3d4882030ffdc",
+      "size_bytes": 5502
+    },
+    {
+      "path": "departments/delivery_archive/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/delivery_archive/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/delivery_archive/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/delivery_archive/joat_production_ui.py",
+      "sha256": "9940f7aff4eb82e9cb6f8dce5748ab9d1e5404451aafe3ff116e0af55085789d",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/delivery_archive/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/director/README.md",
+      "sha256": "a7ef6de70c311a550d5947a9bfb3bce087e3ae9732e44a5d8e8538056426378d",
+      "size_bytes": 5101
+    },
+    {
+      "path": "departments/director/app.py",
+      "sha256": "8e069d88c9e1a4e7368f097d3c57e8de34d8efa45926e95d2429d3e798660209",
+      "size_bytes": 54287
+    },
+    {
+      "path": "departments/director/characters.json",
+      "sha256": "10a9b50028d01c6f0d23d31daf9a5dbb45998dd4d88dd0cb75760b9513d2e2b4",
+      "size_bytes": 3113
+    },
+    {
+      "path": "departments/director/joat_approved_reference.py",
+      "sha256": "d2423768d5e46147f5bb4f348fede001329cb05a2c69388239d45a237b84e142",
+      "size_bytes": 7273
+    },
+    {
+      "path": "departments/director/requirements.txt",
+      "sha256": "44d0e947726450255a1d07bf5ba3c640c53deb0604dac177a50780c256839812",
+      "size_bytes": 126
+    },
+    {
+      "path": "departments/editorial/README.md",
+      "sha256": "d897752258dce3e10d9e257a7477f933fe7e996731a81870d1f95047bff55436",
+      "size_bytes": 320
+    },
+    {
+      "path": "departments/editorial/app.py",
+      "sha256": "b84b2c59f3a76e7b84aeaf3a551eb38517749cdde2b4e918c2ca23f09342744c",
+      "size_bytes": 28624
+    },
+    {
+      "path": "departments/editorial/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/editorial/joat_post_media.py",
+      "sha256": "925c582da1efe3102374d5ea883c6a1e86cb1b8991c69c26d5a6bc3f11629118",
+      "size_bytes": 18194
+    },
+    {
+      "path": "departments/editorial/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/editorial/joat_production_ui.py",
+      "sha256": "632ee80777d655a76533053a88fc9cf7db9f9fef6241a63a0ff40f8d2d80a46b",
+      "size_bytes": 17704
+    },
+    {
+      "path": "departments/editorial/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/environment/README.md",
+      "sha256": "59d4d231db5e41584fba4e94d17e7f10dbbc34178bbc39ad7d84fa4e232d1087",
+      "size_bytes": 277
+    },
+    {
+      "path": "departments/environment/app.py",
+      "sha256": "acf19641f7a64c809165b378fcc80cfe46eaa8c91cc8f16c497d24137240bd37",
+      "size_bytes": 41293
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-001_church_identity_anchor.jpeg",
+      "sha256": "c287196402244835c6e3996fcd4ff8790c8c8945673ca12347e6a9d1e72c5a88",
+      "size_bytes": 641794
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-001_church_identity_anchor.jpeg.base64",
+      "sha256": "fa55a6e1496d97b5cf9772728b6e46db67b9e97191db406bd692506da82fd232",
+      "size_bytes": 855728
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-002_grocery_store_identity_anchor.jpeg",
+      "sha256": "5b998f1314dd803d988760c5f0f115b3a045e5b032456c7160152bc7e7429273",
+      "size_bytes": 849160
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-002_grocery_store_identity_anchor.jpeg.base64",
+      "sha256": "534d08b43d305daeb39b91a5cdab9312e5121fb2eae3ff290410f365d3fc949b",
+      "size_bytes": 1132216
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-003_neighborhood_identity_anchor.jpeg",
+      "sha256": "66fb95fb08063e5cd454576eab10d43f8698e649372d4f25de3065f05d8f27b1",
+      "size_bytes": 838821
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-003_neighborhood_identity_anchor.jpeg.base64",
+      "sha256": "e7aa58648beb6536ece4300811e32b614549440fa24bcbde5b3cc48d4522ac1c",
+      "size_bytes": 1118428
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-004_apartment_identity_anchor.jpeg",
+      "sha256": "6b864a45cb21618e801a3f64a37de60137d68ed0e2bf486365b387cb58f1fac7",
+      "size_bytes": 615171
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-004_apartment_identity_anchor.jpeg.base64",
+      "sha256": "cf176debc40557ef2266a581d766307e1537f0aa5f05e4cce9e2b532f6b0d210",
+      "size_bytes": 820228
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-005_gated_community_identity_anchor.jpeg",
+      "sha256": "21b9140057bda54fa6ab62a5cdc5252e5edc8aa50fa85f6922ced60fcf2a3ba5",
+      "size_bytes": 946456
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-005_gated_community_identity_anchor.jpeg.base64",
+      "sha256": "7683fd5a6fd7a02357101076788948d1a40ddb23b97797c9e088c1b219534b8b",
+      "size_bytes": 1261944
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-006_loft_identity_anchor.jpeg",
+      "sha256": "5cdac7f84123bb464f437772fb3c69097ee8d95d5ffa292d1db792560ccb036c",
+      "size_bytes": 651420
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-006_loft_identity_anchor.jpeg.base64",
+      "sha256": "19adb972b418aeef0abad0acf5ef767d3d17123c127736bb098cd6d95e14828f",
+      "size_bytes": 868560
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-007_cafe_identity_anchor.jpeg",
+      "sha256": "784a7b082c03b6f28f5128bf962aa9967bfc73ff6461a1849bacae54788a7629",
+      "size_bytes": 702741
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-007_cafe_identity_anchor.jpeg.base64",
+      "sha256": "87e84c3380bb533311080bf13f886f32762b814281480d7b558df27ee613cef5",
+      "size_bytes": 936988
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-008_office_identity_anchor.jpeg",
+      "sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+      "size_bytes": 532160
+    },
+    {
+      "path": "departments/environment/environment_assets/ENV-008_office_identity_anchor.jpeg.base64",
+      "sha256": "0245b1c93e0cd62c7a29bb66809964b783570b591e46ab8c86c7f6031ced46f4",
+      "size_bytes": 709548
+    },
+    {
+      "path": "departments/environment/joat_project_environments.py",
+      "sha256": "da8d4fad6dcc3571e806c5a6831903ef7e2d12aeb68d65e1d9b8e1e16860f83c",
+      "size_bytes": 7020
+    },
+    {
+      "path": "departments/environment/requirements.txt",
+      "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+      "size_bytes": 14
+    },
+    {
+      "path": "departments/generation_supervisor/README.md",
+      "sha256": "7401cc33f809757a24e96eef3c9a611f4a21c8b5bf9dcca4ee8c2ff47b24282d",
+      "size_bytes": 297
+    },
+    {
+      "path": "departments/generation_supervisor/app.py",
+      "sha256": "bc810078ac2adf4c21839d50cb047d5c62c28d084fcb5cf23a2b7ee680d09724",
+      "size_bytes": 37074
+    },
+    {
+      "path": "departments/generation_supervisor/joat_managed_generation.py",
+      "sha256": "b397ca3d05be5dd8b61b87dd6a53a77b3b226c2042ef0195ff31e484105fa6a0",
+      "size_bytes": 28511
+    },
+    {
+      "path": "departments/generation_supervisor/joat_worker_dispatch.py",
+      "sha256": "350c9a604eb51a285454faee51f8cb8c2a2e8a035b6ada8ac7a6efaa99d9783f",
+      "size_bytes": 6307
+    },
+    {
+      "path": "departments/generation_supervisor/requirements.txt",
+      "sha256": "45f157e5581c27c3f5fafcd1b7afd385fcb5f229129234ebf0ec75d08380013f",
+      "size_bytes": 21
+    },
+    {
+      "path": "departments/generation_worker/README.md",
+      "sha256": "cd64f709e482528d0f6d92ff119b84c90c55fcae6f4f52b96fad74dc345db80e",
+      "size_bytes": 318
+    },
+    {
+      "path": "departments/generation_worker/app.py",
+      "sha256": "5196cf0b336823c522c03dbba851b052edc37b684f54da8cb5d77fd03d15dfa2",
+      "size_bytes": 54851
+    },
+    {
+      "path": "departments/generation_worker/asset_catalog.json",
+      "sha256": "6d8e2514f89a2701e20a1e1962988c10de6494033b64679b82b657122cb9261c",
+      "size_bytes": 17973
+    },
+    {
+      "path": "departments/generation_worker/joat_approved_reference.py",
+      "sha256": "c690062eae1994cb8bb1796772777548092191350f1e3ca80fd161bd294d01ae",
+      "size_bytes": 7275
+    },
+    {
+      "path": "departments/generation_worker/joat_job_frame_binding.py",
+      "sha256": "4ab5483126d18596344ca733886a1414201575bf3672cb9b98d87bb7f0371301",
+      "size_bytes": 6723
+    },
+    {
+      "path": "departments/generation_worker/joat_managed_generation.py",
+      "sha256": "67befabaf1eda4f00473146d02e1f8a8c853c3bc9c9f1899e9080fe2fb3c0057",
+      "size_bytes": 28416
+    },
+    {
+      "path": "departments/generation_worker/joat_media_tools.py",
+      "sha256": "19646b01331197f95cc703820cd031b0af333cbe94aec5232c18cd3e03715cb1",
+      "size_bytes": 3644
+    },
+    {
+      "path": "departments/generation_worker/joat_project_environments.py",
+      "sha256": "da8d4fad6dcc3571e806c5a6831903ef7e2d12aeb68d65e1d9b8e1e16860f83c",
+      "size_bytes": 7020
+    },
+    {
+      "path": "departments/generation_worker/joat_project_frame_reference.py",
+      "sha256": "fdfbf5e7855997a1de3a5b0ea96a1c70cfe203293f3d55e849fff68ff3372fb0",
+      "size_bytes": 8355
+    },
+    {
+      "path": "departments/generation_worker/joat_project_lifecycle.py",
+      "sha256": "2dd1183f52432e371b3efada217f62093b8b4f2d0758b21db732390e02b8a161",
+      "size_bytes": 2360
+    },
+    {
+      "path": "departments/generation_worker/joat_prompt_compiler.py",
+      "sha256": "1cc361a6cd9fbc571b01ef1d568080429ce1a312d38376ac89a826d12e7fda89",
+      "size_bytes": 33290
+    },
+    {
+      "path": "departments/generation_worker/joat_reference_views.py",
+      "sha256": "7425fa5c98eb1bf8df04eb8c7673d759dbfca0a9fbf53d7dadacad74fe9c61a4",
+      "size_bytes": 6951
+    },
+    {
+      "path": "departments/generation_worker/joat_render_bridge.py",
+      "sha256": "8ea4feca5b81dacf12ae279914dfd14a45bc7d3590aeaca39c958b019d4525fd",
+      "size_bytes": 39993
+    },
+    {
+      "path": "departments/generation_worker/renderer_contract.json",
+      "sha256": "448791e859a26222f4b823c1f6128948a03de56d0d8cc912905ba4d481b3159e",
+      "size_bytes": 8922
+    },
+    {
+      "path": "departments/generation_worker/requirements.txt",
+      "sha256": "c1df9684999a4b84100a08ca7c2d3075d845c8d7463f2e8af1b578983ff12bae",
+      "size_bytes": 32
+    },
+    {
+      "path": "departments/hugging_face/README.md",
+      "sha256": "e1b5a925248a874d16a89077bb7fa33f819b68a445594ff3dfce0787c64a6ae4",
+      "size_bytes": 353
+    },
+    {
+      "path": "departments/hugging_face/app.py",
+      "sha256": "98b07436fb05ebfcfc73cc3a4b43aaac186be33b49a8745666dd49a7eae46a51",
+      "size_bytes": 46689
+    },
+    {
+      "path": "departments/hugging_face/requirements.txt",
+      "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+      "size_bytes": 14
+    },
+    {
+      "path": "departments/music/README.md",
+      "sha256": "a1a36becaf608ae5de394ef849ddcc524e38d32367b45c26c0bbc4427e747e31",
+      "size_bytes": 316
+    },
+    {
+      "path": "departments/music/app.py",
+      "sha256": "71605c9a6f9a46185ac1015cb36a1a5e17a9a3460ff4d61c5036bf81112105b1",
+      "size_bytes": 35308
+    },
+    {
+      "path": "departments/music/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/music/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/music/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/music/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/music/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/narration/app.py",
+      "sha256": "ec028422d82e6474a5e08b1d04c8210bc447b0f2cc9fb30d799ab4f7bd7d249a",
+      "size_bytes": 3112
+    },
+    {
+      "path": "departments/narration/model_manifest.json",
+      "sha256": "47315b3cb9e4216c1059adacd75a7133b5239b09e38c60fcb1fe37132b5f86be",
+      "size_bytes": 1730
+    },
+    {
+      "path": "departments/performance_action/README.md",
+      "sha256": "557a946b8d45f8ead0580b6f9b23d83cd6ce2c500dec4ce63780c1703f65b737",
+      "size_bytes": 277
+    },
+    {
+      "path": "departments/performance_action/app.py",
+      "sha256": "2f970baa44bec8ff0c168c4a745e3d6ec7af07f38e6b77c9c75e7b6a77fb02c1",
+      "size_bytes": 41536
+    },
+    {
+      "path": "departments/performance_action/requirements.txt",
+      "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+      "size_bytes": 14
+    },
+    {
+      "path": "departments/post_production/README.md",
+      "sha256": "d6372e8c4046a29de2e9d85d9881602e44d397b9ced6a396ecae61bfcdaeedf6",
+      "size_bytes": 330
+    },
+    {
+      "path": "departments/post_production/app.py",
+      "sha256": "f263afa04b023003343e48e20317d5d1fd075850b3abf2e1924600870c7aac84",
+      "size_bytes": 28806
+    },
+    {
+      "path": "departments/post_production/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/post_production/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/post_production/joat_post_pipeline.py",
+      "sha256": "014d4c08e0b7bd47522c90f992601064c53100369f5eaf879afb656bea8b6db0",
+      "size_bytes": 8780
+    },
+    {
+      "path": "departments/post_production/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/post_production/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/quality_control/README.md",
+      "sha256": "30edaa86ef73875333d026df19c853615bd664d149d4e2e1b4e2db742054248b",
+      "size_bytes": 286
+    },
+    {
+      "path": "departments/quality_control/app.py",
+      "sha256": "0611a675bc240a56cf0bf94a51b3713ece0bed992d668b53c4fcd4d790259442",
+      "size_bytes": 35805
+    },
+    {
+      "path": "departments/quality_control/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/quality_control/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/quality_control/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/quality_control/joat_production_qc.py",
+      "sha256": "1580ac8f6cbf08607bacb96ae59f9a9224790f224933843388b0ae473a333021",
+      "size_bytes": 4595
+    },
+    {
+      "path": "departments/quality_control/joat_production_ui.py",
+      "sha256": "6ec5d2b119821d9775c2cf61bae4f26f72a93d1f7fb7ff5534b5de294a6f7e19",
+      "size_bytes": 17646
+    },
+    {
+      "path": "departments/quality_control/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/shot_camera/README.md",
+      "sha256": "1493996a20bfe81e2687ba5522b50944c2f799a7b3f69aa6abcdcf01e2c54a5c",
+      "size_bytes": 268
+    },
+    {
+      "path": "departments/shot_camera/app.py",
+      "sha256": "3c789d3c31437adf9616ff25bb9c050472443a71d8afb8982b914a20eefb1be6",
+      "size_bytes": 46961
+    },
+    {
+      "path": "departments/shot_camera/requirements.txt",
+      "sha256": "6bf50f9b1cf4db4fed6b55ee3dda87bd0a6d50e7ebdb8778b0bc34f7bd75763b",
+      "size_bytes": 14
+    },
+    {
+      "path": "departments/sound/README.md",
+      "sha256": "5148949c8850346963a985d19a47cffd85ffe2c8ece744b0f434a71093d30397",
+      "size_bytes": 318
+    },
+    {
+      "path": "departments/sound/app.py",
+      "sha256": "8d7e417cbfcff6ca2e10d3b3bd5d1a37b3261ddb7ecb64b31174d15fcd809401",
+      "size_bytes": 36857
+    },
+    {
+      "path": "departments/sound/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/sound/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/sound/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/sound/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/sound/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/titles_graphics/README.md",
+      "sha256": "d7c717e75ef4de770577d5f27be6128d7a16dc1bf991313b513944a85dba08d2",
+      "size_bytes": 326
+    },
+    {
+      "path": "departments/titles_graphics/app.py",
+      "sha256": "86300d6aa5f6177737c7507248a939373eabf381f9d77c6098e4852a786c0544",
+      "size_bytes": 36211
+    },
+    {
+      "path": "departments/titles_graphics/joat_authored_graphics.py",
+      "sha256": "aa131dc3dc9561934fc912fb29f1593879af03f1cc28680dc2cee91f274e0ee6",
+      "size_bytes": 7654
+    },
+    {
+      "path": "departments/titles_graphics/joat_authored_graphics_ui.py",
+      "sha256": "4eac28e1291670c9ba1476ff3168ff2edf127af51276367aae4e89d9ce747491",
+      "size_bytes": 2403
+    },
+    {
+      "path": "departments/titles_graphics/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/titles_graphics/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/titles_graphics/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/titles_graphics/joat_production_ui.py",
+      "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
+      "size_bytes": 17666
+    },
+    {
+      "path": "departments/titles_graphics/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "departments/voice_dialogue/README.md",
+      "sha256": "266b2ce04cd90bf063ebca41606a16f14dd9cd220aa57fee5301cbbe9cd9fb66",
+      "size_bytes": 323
+    },
+    {
+      "path": "departments/voice_dialogue/app.py",
+      "sha256": "2688219d229ed0953799ec31452291b29384fc46cf460192642d7d05548718e6",
+      "size_bytes": 39169
+    },
+    {
+      "path": "departments/voice_dialogue/joat_media_tools.py",
+      "sha256": "409a19d272b07a9e3567bdc22f10cb038bace90fd6b8380efb4253ad211278cb",
+      "size_bytes": 2753
+    },
+    {
+      "path": "departments/voice_dialogue/joat_post_media.py",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "size_bytes": 17699
+    },
+    {
+      "path": "departments/voice_dialogue/joat_post_pipeline.py",
+      "sha256": "9a85cbc549875dc6d1dcffd451488738453c3dadaba558bb5b86a13176929231",
+      "size_bytes": 8695
+    },
+    {
+      "path": "departments/voice_dialogue/joat_production_ui.py",
+      "sha256": "bc686f705e4da4067f9c72f22771c96be247911ad158b30af04288de3a0ccf98",
+      "size_bytes": 17452
+    },
+    {
+      "path": "departments/voice_dialogue/requirements.txt",
+      "sha256": "56781158501a605fd249f58f1c4529f49a3fd14a58db2984629d654b38c4ec36",
+      "size_bytes": 70
+    },
+    {
+      "path": "joat_authored_graphics_qc.py",
+      "sha256": "415fb186eb49e63b4d38b18e4041d06cf4ea4f563b8ccaa958aa67f4369cf7a8",
+      "size_bytes": 3634
+    },
+    {
+      "path": "joat_authored_qc_ui.py",
+      "sha256": "7235a79a6fde3fc2d57345ff30decd4bef2805b2944053ac0f9bacbcddefaca2",
+      "size_bytes": 1972
+    },
+    {
+      "path": "joat_cpu_child.py",
+      "sha256": "8a9600d68aa72ffaff600d78ec29a63200bc3f7bd1fcd9a492c5bdac1ad80eee",
+      "size_bytes": 6513
+    },
+    {
+      "path": "joat_cpu_control_ui.py",
+      "sha256": "310ae633859d2c2d6c624efd254db5684bf913ea7f1082675bfdc8b01d22077f",
+      "size_bytes": 6914
+    },
+    {
+      "path": "joat_cpu_department_client.py",
+      "sha256": "8430ffec693b6c3610a3c792b29a7f5f7eaf9920cf438c934722145f3c806934",
+      "size_bytes": 3235
+    },
+    {
+      "path": "joat_local_context.py",
+      "sha256": "6c676984b6e521da8aba2dd4f2e6ee8cbc4bd52d0d62a464b0a0bc595e562028",
+      "size_bytes": 1454
+    },
+    {
+      "path": "joat_local_cpu.py",
+      "sha256": "3addd1f9ffc73bf8c329b623fd91f16bc8bede6db204d0f42a56c4c39ea0cc2d",
+      "size_bytes": 7599
+    },
+    {
+      "path": "joat_managed_generation.py",
+      "sha256": "ef71f29b5de5810e7f6d2684cc79cf0a047544867a2f0aa8b24a8032c69740be",
+      "size_bytes": 28090
+    },
+    {
+      "path": "joat_runtime_client.py",
+      "sha256": "9bf0f9c845a16d4f5dab04e7a60056b5bf3551525002bb5edac2469500523d64",
+      "size_bytes": 4007
+    },
+    {
+      "path": "joat_stage20_preview.py",
+      "sha256": "80ce5891e6076e879eca98e8129b3e5ed66a65c00c5930b06894aa5f5d3044c6",
+      "size_bytes": 2056
+    },
+    {
+      "path": "joat_studio_capabilities.json",
+      "sha256": "063b88ce289fe2a2ab44fcc011d22c25356568a62235d1986eb3bdccdf850fa4",
+      "size_bytes": 19971
+    },
+    {
+      "path": "joat_studio_capabilities.py",
+      "sha256": "a81685defdd5d594843a6cc4126e9cbf8f6a869a031b67fe50a69735d6effcbb",
+      "size_bytes": 12319
+    },
+    {
+      "path": "joat_studio_capability_ui.py",
+      "sha256": "c1362f904be37ec8a84a0a329aba72b101c359586645d887accf323c92c87bef",
+      "size_bytes": 2528
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "563f660e0103f16375417f629c03baa3df19be29b54f8b8b6161e8f3f18df3f1",
+      "size_bytes": 574
+    },
+    {
+      "path": "departments/generation_worker/joat_character_speech_policy.py",
+      "sha256": "9d728ec518551341ab6ec6415117fe6831c2c55e710cd78a287e60232cd437a0",
+      "size_bytes": 1886
+    }
+  ],
+  "adapters": [
+    {
+      "role": "generation_supervisor",
+      "file": "joat_managed_generation.py",
+      "from_version": "1.0.7",
+      "to_version": "1.0.8",
+      "sha256": "7b2433523ba158516d800e2b981932b0c853050788c4bc607d48c17c0d525956",
+      "reason": "Verify physical consolidated host and bucket while preserving logical department identity."
+    },
+    {
+      "role": "generation_worker",
+      "file": "joat_managed_generation.py",
+      "from_version": "1.0.5",
+      "to_version": "1.0.6",
+      "sha256": "2cb98e9cc8e54aaec95d695715bd492d9bdf7234b2acf30ea38d234c461aa3ad",
+      "reason": "Verify physical consolidated host and bucket while preserving logical department identity."
+    },
+    {
+      "role": "delivery_archive",
+      "file": "joat_delivery_storage.py",
+      "from_version": "1.0.0",
+      "to_version": "1.0.1",
+      "sha256": "80cad3f52e1d31771ba658180fbd29c25402de159725f6fba5d3d4882030ffdc",
+      "reason": "Validate actual consolidated read/write mount for existing durable archive implementation."
+    },
+    {
+      "role": "voice_dialogue",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "color_finish",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "music",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "editorial",
+      "file": "joat_post_media.py",
+      "from_version": "1.0.3",
+      "to_version": "1.0.4",
+      "sha256": "925c582da1efe3102374d5ea883c6a1e86cb1b8991c69c26d5a6bc3f11629118",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "quality_control",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "titles_graphics",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "sound",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "delivery_archive",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "post_production",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "compositing_vfx",
+      "file": "joat_post_media.py",
+      "from_version": "unembedded_legacy",
+      "to_version": "1.0.4",
+      "sha256": "aeb1acb2b0a14c1bf5fe87d07f1eb747d865708ccef32652456e35685aaf8237",
+      "reason": "Add independently owner-reviewed authored source QC; preserve original actor QC validation."
+    },
+    {
+      "role": "quality_control",
+      "file": "app.py",
+      "from_version": "1.0.2",
+      "to_version": "1.0.3",
+      "sha256": "0611a675bc240a56cf0bf94a51b3713ece0bed992d668b53c4fcd4d790259442",
+      "reason": "Add separate authored-graphics QC tab; original actor QC callbacks unchanged."
+    },
+    {
+      "role": "narration",
+      "file": "app.py",
+      "from_repo": "Dezz-9-10/joat-narration",
+      "from_revision": "d25fc45d5ca224e06ff3caef0da339d3a5acbe06",
+      "to_version": "1.0.0",
+      "sha256": "ec028422d82e6474a5e08b1d04c8210bc447b0f2cc9fb30d799ab4f7bd7d249a",
+      "reason": "Same pinned official Kokoro model, VoiceBible and pacing on CPU; no GPU fallback or automatic auditory approval."
+    },
+    {
+      "role": "generation_worker",
+      "file": "joat_render_bridge.py",
+      "from_version": "1.0.15",
+      "to_version": "1.0.16",
+      "sha256": "7b9f66286f3c004a20821e5b71b909151150bd24a8a9ec1fc27c71fe4ccfafa3",
+      "reason": "Fail-closed shared capability guard before renderer connection/inference; existing packets and delivery artifacts untouched."
+    },
+    {
+      "role": "generation_worker",
+      "file": "joat_render_bridge.py",
+      "from_version": "1.0.18",
+      "to_version": "1.0.19",
+      "sha256": "d782df20ef65b5c74de66253ffeaf03d0c1c20205e9b485eca257002df365b3f",
+      "reason": "Use existing authenticated owner credential for private renderer revision metadata; retain exact renderer revision, plan, creative and GPU contracts."
+    },
+    {
+      "role": "generation_worker",
+      "file": "joat_render_bridge.py",
+      "from_version": "1.0.19",
+      "to_version": "1.0.20",
+      "reason": "Explicit owner-configured45\u2013600second composed-I2V allocation; fresh exact plan and grant remain mandatory; no inference quality or source changes.",
+      "sha256": "df6c4080cc32f8a86a9cb3daa6d8e6e46437b8e6d288800fecba646366910d99"
+    }
+  ],
+  "gpu_workers_moved": false,
+  "existing_approvals_preserved": true,
+  "manifest_fingerprint": "2972870319c9b88b7d8a572a2c66378abef5b83ecd76c03e0d0a00a74f3283cf"
+}

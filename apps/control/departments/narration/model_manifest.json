@@ -1,0 +1,57 @@
+{
+  "file_version": "1.0.0",
+  "repo": "hexgrad/Kokoro-82M",
+  "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "5abb01e2403b072bf03d04fde160443e209d7a0dad49a423be15196b9b43c17f",
+      "size_bytes": 2351
+    },
+    {
+      "path": "kokoro-v1_0.pth",
+      "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+      "size_bytes": 327212226
+    },
+    {
+      "path": "voices/af_bella.pt",
+      "sha256": "8cb64e02fcc8de0327a8e13817e49c76c945ecf0052ceac97d3081480e8e48d6",
+      "size_bytes": 523425
+    },
+    {
+      "path": "voices/af_heart.pt",
+      "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff",
+      "size_bytes": 523425
+    },
+    {
+      "path": "voices/af_nicole.pt",
+      "sha256": "c5561808bcf5250fe8c5f5de32caf2d94f27e57e95befdb098c5c85991d4c5da",
+      "size_bytes": 523430
+    },
+    {
+      "path": "voices/am_fenrir.pt",
+      "sha256": "98e507eca1db08230ae3b6232d59c10aec9630022d19accac4f5d12fcec3c37a",
+      "size_bytes": 523430
+    },
+    {
+      "path": "voices/am_michael.pt",
+      "sha256": "9a443b79a4b22489a5b0ab7c651a0bcd1a30bef675c28333f06971abbd47bd37",
+      "size_bytes": 523435
+    },
+    {
+      "path": "voices/am_onyx.pt",
+      "sha256": "e8452be16cd0f6da7b4579eaf7b1e4506e92524882053d86d72b96b9a7fed584",
+      "size_bytes": 523420
+    },
+    {
+      "path": "voices/am_puck.pt",
+      "sha256": "dd1d8973f4ce4b7d8ae407c77a435f485dabc052081b80ea75c4f30b84f36223",
+      "size_bytes": 523420
+    },
+    {
+      "path": "voices/bm_george.pt",
+      "sha256": "f1bc812213dc59774769e5c80004b13eeb79bd78130b11b2d7f934542dab811b",
+      "size_bytes": 523430
+    }
+  ]
+}

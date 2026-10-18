@@ -1,0 +1,617 @@
+{
+  "schema": "joat.character_registry.v1",
+  "registry_version": "1.2.0",
+  "locked_baseline": true,
+  "characters": [
+    {
+      "id": "CHAR-001",
+      "name": "Founder",
+      "aliases": ["Founder", "The Founder"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 11,
+      "appearance_rules": {
+        "skin_tone": "deep rich brown; realistic natural texture",
+        "eyes": "dark brown; focused; slightly hooded",
+        "hair": "tight natural curls; clean sharp lineup; low-to-mid fade",
+        "beard": "full groomed beard; clean cheek line; defined neckline; connected mustache",
+        "build": "athletic/muscular",
+        "signature_accessories": [
+          "black square/rectangular sunglasses",
+          "diamond stud earrings",
+          "luxury watch",
+          "gold chain when scene-appropriate"
+        ],
+        "core_style": "polished black/neutral wardrobe; tailored, athletic, streetwear, travel, lounge and lifestyle variants as reference-supported"
+      },
+      "continuity_rules": [
+        "Preserve facial proportions, hairline, curl pattern, beard geometry, skin tone and athletic build across shots.",
+        "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+        "Use profile/back/full-body references as supporting geometry, not as replacement identity.",
+        "Wardrobe may change by scene; biological identity features may not.",
+        "Do not infer a new permanent trait from a one-off scene/reference."
+      ],
+      "negative_rules": [
+        "Do not change age presentation, skin tone, face shape, beard geometry, hair texture or body type without explicit approved character-version change.",
+        "Do not treat other people in interaction sheets as Founder identity references.",
+        "Do not overwrite approved assets or hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-001-A01",
+          "filename": "1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+          "path": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+          "sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+          "width": 1122,
+          "height": 1402,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A02",
+          "filename": "1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg",
+          "path": "assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg",
+          "sha256": "e9d8799c14bf94473604b1f70507be40803afa65f2c6515e92b433e39dfd1587",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "front_view", "business_formal"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A03",
+          "filename": "F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg",
+          "path": "assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg",
+          "sha256": "bdde53c12025d575f7ef0cf1d49beda706b382577e5026b7aaa5ce568387e043",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "three_quarter_view", "business_formal"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A04",
+          "filename": "E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg",
+          "path": "assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg",
+          "sha256": "850e92a0954afb89155be9ba84eef064e47c87fde27940f068e705fe2e3a929f",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "profile_view", "profile_details"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A05",
+          "filename": "8A5DD005-7C30-405C-904C-75874225A52E.jpeg",
+          "path": "assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg",
+          "sha256": "31b44d9cab6163335d31aa4141b8bd3c15c991239ae8dd3394a32b2def9f6f94",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "back_view", "back_details"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A06",
+          "filename": "B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg",
+          "path": "assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg",
+          "sha256": "d1f7fb65c398941ce92dfee497c69b829b332fb338717665ceb48b55d4c2086c",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["wardrobe_reference", "multi_outfit"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A07",
+          "filename": "C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg",
+          "path": "assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg",
+          "sha256": "1866d8666207cb53a5ed4a5f32a31a75369d30801ca6eed9066d9b28834b081a",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["detail_reference", "face_features", "accessories"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A08",
+          "filename": "4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg",
+          "path": "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg",
+          "sha256": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["scene_reference", "multi_scene"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A09",
+          "filename": "94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg",
+          "path": "assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg",
+          "sha256": "2a38bacdce774c0a319b4a318462b05d1fe67b7e26fd1ae878e1d50d5df09a5e",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["interaction_reference", "relationships", "multi_person"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A10",
+          "filename": "D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg",
+          "path": "assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg",
+          "sha256": "b91f1ab7f5a4aa10aa531e1b6832cdcaaf59665a6e86be15a1a871e74ff8f863",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["interaction_reference", "adult_flirty", "multi_person"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-001-A11",
+          "filename": "A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg",
+          "path": "assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg",
+          "sha256": "d66cb2b467a2594e1000bd4c5247ec561c8c937d8dcd5b5131a71542b4498af5",
+          "width": 1215,
+          "height": 1295,
+          "roles": ["pose_reference", "modeling_poses", "multi_pose"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-002",
+      "name": "Kiana",
+      "aliases": ["Kiana"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 14,
+      "appearance_rules": {
+        "skin_tone": "warm medium-brown complexion; realistic natural skin texture",
+        "eyes": "dark brown; expressive; preserve shape and spacing from identity references",
+        "hair": "long dark hair; preserve reference-supported length, texture, hairline and styling",
+        "build": "curvy/athletic feminine build; preserve reference-supported proportions",
+        "signature_accessories": [
+          "reference-supported earrings and jewelry",
+          "reference-supported fashion accessories"
+        ],
+        "core_style": "polished feminine wardrobe with casual, fitted, dress, lifestyle, modeling and scene-specific variants as supported by approved references"
+      },
+      "continuity_rules": [
+        "Preserve Kiana's facial proportions, eye shape, nose, lips, skin tone, hairline and reference-supported body proportions across shots.",
+        "Use the identity anchor for Identity Lock unless a validated task-specific anchor supersedes it.",
+        "Use profile, back, full-body, expression, pose, wardrobe and scene references as supporting geometry and context, not as replacement identity.",
+        "Wardrobe, hairstyle presentation and accessories may change when supported by the requested scene; core biological identity features may not.",
+        "Interaction or multi-person references must preserve Kiana as the target identity and must not transfer another person's facial or body characteristics to her.",
+        "Do not infer a permanent character trait from a single wardrobe, pose, environment or interaction reference."
+      ],
+      "negative_rules": [
+        "Do not change Kiana's age presentation, skin tone, facial structure, eye shape, hair identity or body proportions without an explicit approved character-version change.",
+        "Do not treat other people appearing in interaction or relationship references as Kiana identity references.",
+        "Do not use scene, wardrobe or pose sheets as stronger facial identity evidence than the approved identity anchor.",
+        "Do not overwrite approved Kiana assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-002-A01",
+          "filename": "CHAR-002-A01.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A01.jpeg",
+          "sha256": "b7ee352be89dca4b5cd11ba54d279cfce854bedd192c1992f4e8940d7b189000",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["interaction_reference", "relationships", "multi_person"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A02",
+          "filename": "CHAR-002-A02.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A02.jpeg",
+          "sha256": "bc101bc5fb20348c329b5e94138d34c650ea22f0cf22cae5b2a8a36c5754345f",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["detail_reference", "face_features", "expression_reference"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A03",
+          "filename": "CHAR-002-A03.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A03.jpeg",
+          "sha256": "7bae4e3269a52c8ad189f3d98a86ebecbf150c54093ded3c216ec58c1abca8a1",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "profile_view", "profile_details"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A04",
+          "filename": "CHAR-002-A04.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A04.jpeg",
+          "sha256": "4457ec2246547a28b4a8ce85ddb06f2b3678f9977cb35012b3a22d09196f2fd7",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["wardrobe_reference", "multi_outfit"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A05",
+          "filename": "CHAR-002-A05.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A05.jpeg",
+          "sha256": "aedc273a3dab9ba838641d6dad3f0fa040be3e2fc98da315b8f6e171d4a40698",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["scene_reference", "multi_scene", "lifestyle_reference"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A06",
+          "filename": "CHAR-002-A06.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A06.jpeg",
+          "sha256": "836b7ce25007566b01018af7d3541aaabc751c0a88834ae4aca25589a2a6e99b",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["detail_reference", "expression_reference", "face_features"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A07",
+          "filename": "CHAR-002-A07.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A07.jpeg",
+          "sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+          "width": 1122,
+          "height": 1402,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A08",
+          "filename": "CHAR-002-A08.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A08.jpeg",
+          "sha256": "f60981360987a2c39c7e8b35a8f45ef0e2da427e8dd27a445adc3beb6e6b4245",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "three_quarter_view", "fashion_reference"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A09",
+          "filename": "CHAR-002-A09.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A09.jpeg",
+          "sha256": "e33e79814e381d6624a27d6cfee8a06bd8330750ede8c7066067c90d0edb3e7e",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "back_view", "back_details"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A10",
+          "filename": "CHAR-002-A10.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A10.jpeg",
+          "sha256": "35dcd492be8377afcfeb24df784bb80174f931f395e31b06912e34c74af1172f",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["scene_reference", "multi_scene", "performance_reference"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A11",
+          "filename": "CHAR-002-A11.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A11.jpeg",
+          "sha256": "fa850d793000b464cde1deb757004c0e2a4c2fb91651d98d8351bf5818edd8f1",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["scene_reference", "interaction_reference", "relationships"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A12",
+          "filename": "CHAR-002-A12.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A12.jpeg",
+          "sha256": "1cd74430122d19077725ba2b3288ce36bf41b91da3baa1883a241b1489cc3096",
+          "width": 1312,
+          "height": 1199,
+          "roles": ["interaction_reference", "adult_flirty", "multi_person"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A13",
+          "filename": "CHAR-002-A13.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A13.jpeg",
+          "sha256": "f8e5a98c4d92965ffd31c44a3a5a50621f8fdc60a6a23bd07717fc3e12048168",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "front_view", "fashion_reference"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-002-A14",
+          "filename": "CHAR-002-A14.jpeg",
+          "path": "assets/CHAR-002/CHAR-002-A14.jpeg",
+          "sha256": "59ee9c30b70ca3862e803d9f9e3df60bc2fdd7dfeafd2f6036007d656089a2aa",
+          "width": 1122,
+          "height": 1402,
+          "roles": ["pose_reference", "modeling_poses", "multi_pose"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-003",
+      "name": "Densín",
+      "aliases": ["Densín", "Densin"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 3,
+      "appearance_rules": {
+        "identity": "Preserve the approved Densín reference identity.",
+        "core_style": "Use only reference-supported appearance, wardrobe and styling."
+      },
+      "continuity_rules": [
+        "Preserve Densín's facial identity and reference-supported biological features across shots.",
+        "Use the identity anchor for Identity Lock.",
+        "Additional approved references support identity and scene continuity without replacing the anchor.",
+        "Do not infer permanent traits not supported by approved references."
+      ],
+      "negative_rules": [
+        "Do not change Densín's core identity without an explicit approved character-version change.",
+        "Do not overwrite approved assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-003-A01",
+          "filename": "CHAR-003-Densin-01.jpeg",
+          "path": "assets/CHAR-003/CHAR-003-Densin-01.jpeg",
+          "sha256": "aa3ee4e2fe77113d9a6d4adcd497340b822049e6124c8e9c3145759e0de703ad",
+          "width": 1103,
+          "height": 1426,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-003-A02",
+          "filename": "CHAR-003-Densin-02.jpeg",
+          "path": "assets/CHAR-003/CHAR-003-Densin-02.jpeg",
+          "sha256": "d3f3fdb83b3e742249c7512afeafba7dbf92e126c44e5c788778c0bfdbedbc80",
+          "width": 1024,
+          "height": 1536,
+          "roles": ["full_body", "reference_support"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-003-A03",
+          "filename": "CHAR-003-Densin-03.jpeg",
+          "path": "assets/CHAR-003/CHAR-003-Densin-03.jpeg",
+          "sha256": "5424e70f026714801f3c892c2bc6e2c523c17802abaf84ad7b0889abed89b6d9",
+          "width": 1103,
+          "height": 1426,
+          "roles": ["detail_reference", "reference_support"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-004",
+      "name": "Cristu",
+      "aliases": ["Cristu"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 2,
+      "appearance_rules": {
+        "identity": "Preserve the approved Cristu reference identity.",
+        "core_style": "Use only reference-supported appearance, wardrobe and styling."
+      },
+      "continuity_rules": [
+        "Preserve Cristu's facial identity and reference-supported biological features across shots.",
+        "Use the identity anchor for Identity Lock.",
+        "Additional approved references support identity and scene continuity without replacing the anchor.",
+        "Do not infer permanent traits not supported by approved references."
+      ],
+      "negative_rules": [
+        "Do not change Cristu's core identity without an explicit approved character-version change.",
+        "Do not overwrite approved assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-004-A01",
+          "filename": "CHAR-004-Cristu-01.jpeg",
+          "path": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+          "sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+          "width": 1402,
+          "height": 1122,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-004-A02",
+          "filename": "CHAR-004-Cristu-02.jpeg",
+          "path": "assets/CHAR-004/CHAR-004-Cristu-02.jpeg",
+          "sha256": "c5023674b8aa0f25c60f1cca5a1b1f4acca8a45fd769718917b6c48ae6f27871",
+          "width": 1145,
+          "height": 1374,
+          "roles": ["detail_reference", "reference_support"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-005",
+      "name": "Guenièvre / Jen",
+      "aliases": ["Guenièvre", "Jen", "Genevieve", "Guinevere"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 1,
+      "appearance_rules": {
+        "identity": "Preserve the approved Guenièvre / Jen reference identity.",
+        "core_style": "Use only reference-supported appearance, wardrobe and styling."
+      },
+      "continuity_rules": [
+        "Preserve Guenièvre / Jen's facial identity and reference-supported biological features across shots.",
+        "Use the identity anchor for Identity Lock.",
+        "Do not infer permanent traits not supported by the approved reference."
+      ],
+      "negative_rules": [
+        "Do not change Guenièvre / Jen's core identity without an explicit approved character-version change.",
+        "Do not overwrite approved assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-005-A01",
+          "filename": "CHAR-005-Jen-01.jpeg",
+          "path": "assets/CHAR-005/CHAR-005-Jen-01.jpeg", 
+          "sha256": "585c25734d94ce418dc84d5dd527ace6a16c52d26a61543e03f138bcbf9a37fa",
+          "width": 1374,
+          "height": 1145,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-006",
+      "name": "Hasley",
+      "aliases": ["Hasley"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 2,
+      "appearance_rules": {
+        "identity": "Preserve the approved Hasley reference identity.",
+        "core_style": "Use only reference-supported appearance, wardrobe and styling."
+      },
+      "continuity_rules": [
+        "Preserve Hasley's facial identity and reference-supported biological features across shots.",
+        "Use the identity anchor for Identity Lock.",
+        "Additional approved references support identity and scene continuity without replacing the anchor.",
+        "Do not infer permanent traits not supported by approved references."
+      ],
+      "negative_rules": [
+        "Do not change Hasley's core identity without an explicit approved character-version change.",
+        "Do not overwrite approved assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-006-A01",
+          "filename": "CHAR-006-Hasley-01.jpeg",
+          "path": "assets/CHAR-006/CHAR-006-Hasley-01.jpeg",
+          "sha256": "d1e92e82dc163892801c42a0a3cb7a4cc13fd56858a8174e7fea59cffa564982",
+          "width": 864,
+          "height": 1536,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-006-A02",
+          "filename": "CHAR-006-Hasley-02.jpeg",
+          "path": "assets/CHAR-006/CHAR-006-Hasley-02.jpeg",
+          "sha256": "c50f431c0a4dede9c8aed0ebde654a8972c12337922202eb0bd4cda2249464f6",
+          "width": 1103,
+          "height": 1426,
+          "roles": ["detail_reference", "reference_support"],
+          "status": "approved"
+        }
+      ]
+    },
+    {
+      "id": "CHAR-007",
+      "name": "Ms. LaveRen",
+      "aliases": ["Ms. LaveRen", "LaveRen", "Lave Ren"],
+      "version": "1.0.0",
+      "status": "approved_locked",
+      "asset_count": 2,
+      "appearance_rules": {
+        "identity": "Preserve the approved Ms. LaveRen reference identity.",
+        "core_style": "Use only reference-supported appearance, wardrobe and styling."
+      },
+      "continuity_rules": [
+        "Preserve Ms. LaveRen's facial identity and reference-supported biological features across shots.",
+        "Use the identity anchor for Identity Lock.",
+        "Additional approved references support identity and scene continuity without replacing the anchor.",
+        "Do not infer permanent traits not supported by approved references."
+      ],
+      "negative_rules": [
+        "Do not change Ms. LaveRen's core identity without an explicit approved character-version change.",
+        "Do not overwrite approved assets or SHA-256 hashes silently."
+      ],
+      "selection_policy": {
+        "identity": ["identity_anchor", "face_closeup", "front_face", "detail_reference"],
+        "full_body": ["identity_anchor", "full_body", "front_view", "three_quarter_view"],
+        "profile": ["identity_anchor", "profile_view", "profile_details"],
+        "back": ["identity_anchor", "back_view", "back_details"],
+        "wardrobe": ["identity_anchor", "wardrobe_reference", "multi_outfit"],
+        "interaction": ["identity_anchor", "interaction_reference", "relationships"],
+        "pose": ["identity_anchor", "pose_reference", "modeling_poses"],
+        "scene": ["identity_anchor", "scene_reference", "multi_scene"]
+      },
+      "assets": [
+        {
+          "asset_id": "CHAR-007-A01",
+          "filename": "CHAR-007-Ms-LaveRen-01.jpeg",
+          "path": "assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg",
+          "sha256": "88785e88a014c76e51c096a51e7b450e7812114d22d27e21d75f783845f8e2ab",
+          "width": 1231,
+          "height": 1277,
+          "roles": ["identity_anchor", "face_closeup", "front_face"],
+          "status": "approved"
+        },
+        {
+          "asset_id": "CHAR-007-A02",
+          "filename": "CHAR-007-Ms-LaveRen-02.jpeg",
+          "path": "assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg",
+          "sha256": "f6ee16d55146d2ec435dfc2b3260c0445e7c9a6c99368115c33e080cdb738fb9",
+          "width": 1145,
+          "height": 1374,
+          "roles": ["detail_reference", "reference_support"],
+          "status": "approved"
+        }
+      ]
+    }
+  ]
+}

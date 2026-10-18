@@ -1,0 +1,13 @@
+gradio>=4.0.0
+fastapi
+uvicorn
+requests
+Pillow
+numpy
+spaces
+git+https://github.com/huggingface/diffusers.git@973a077c6a4e7e7a7ea61a84bedd29ac24fb609a
+transformers
+accelerate
+safetensors
+sentencepiece
+torchvision

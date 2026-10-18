@@ -1,0 +1,252 @@
+{
+  "character:assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg": {
+    "asset_id": "CHAR-001-A01",
+    "sha256": "9e8fac01377701dba761f1e50aff81e6ec954e33c59fbd93894d48d17e9ad3c7",
+    "path": "assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/1AFA568E-6872-4453-A76C-633D6B4E577F.jpeg"
+  },
+  "character:assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg": {
+    "asset_id": "CHAR-001-A02",
+    "sha256": "e9d8799c14bf94473604b1f70507be40803afa65f2c6515e92b433e39dfd1587",
+    "path": "assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/1E32758D-FD5B-4A16-9EC4-1E2F66000912.jpeg"
+  },
+  "character:assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg": {
+    "asset_id": "CHAR-001-A03",
+    "sha256": "bdde53c12025d575f7ef0cf1d49beda706b382577e5026b7aaa5ce568387e043",
+    "path": "assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/F7B09330-3E40-4097-AC44-84D97BA9D073.jpeg"
+  },
+  "character:assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg": {
+    "asset_id": "CHAR-001-A04",
+    "sha256": "850e92a0954afb89155be9ba84eef064e47c87fde27940f068e705fe2e3a929f",
+    "path": "assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/E0E3AFA9-9298-47FA-BF8A-20558CC72D54.jpeg"
+  },
+  "character:assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg": {
+    "asset_id": "CHAR-001-A05",
+    "sha256": "31b44d9cab6163335d31aa4141b8bd3c15c991239ae8dd3394a32b2def9f6f94",
+    "path": "assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/8A5DD005-7C30-405C-904C-75874225A52E.jpeg"
+  },
+  "character:assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg": {
+    "asset_id": "CHAR-001-A06",
+    "sha256": "d1f7fb65c398941ce92dfee497c69b829b332fb338717665ceb48b55d4c2086c",
+    "path": "assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/B83556F7-B40B-4FF2-B5E7-2A6C88886BEF.jpeg"
+  },
+  "character:assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg": {
+    "asset_id": "CHAR-001-A07",
+    "sha256": "1866d8666207cb53a5ed4a5f32a31a75369d30801ca6eed9066d9b28834b081a",
+    "path": "assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/C892DF25-EB01-4628-9F7C-84BCA14F435E.jpeg"
+  },
+  "character:assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg": {
+    "asset_id": "CHAR-001-A08",
+    "sha256": "cf3f040cf4c7a8448d17d39f5517d4553200251ab7dae7598e9852222c87ad48",
+    "path": "assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/4F168803-BC4E-4B8E-B5BE-5CA9547A042B.jpeg"
+  },
+  "character:assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg": {
+    "asset_id": "CHAR-001-A09",
+    "sha256": "2a38bacdce774c0a319b4a318462b05d1fe67b7e26fd1ae878e1d50d5df09a5e",
+    "path": "assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/94744C3F-0EF2-4CF3-BA3F-3078DA5B01C1.jpeg"
+  },
+  "character:assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg": {
+    "asset_id": "CHAR-001-A10",
+    "sha256": "b91f1ab7f5a4aa10aa531e1b6832cdcaaf59665a6e86be15a1a871e74ff8f863",
+    "path": "assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/D8B86699-89E7-4C10-AFB7-086F9CCBC18C.jpeg"
+  },
+  "character:assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg": {
+    "asset_id": "CHAR-001-A11",
+    "sha256": "d66cb2b467a2594e1000bd4c5247ec561c8c937d8dcd5b5131a71542b4498af5",
+    "path": "assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-001/A07F179E-2DD1-49CC-B674-123B830BC11C.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A01.jpeg": {
+    "asset_id": "CHAR-002-A01",
+    "sha256": "b7ee352be89dca4b5cd11ba54d279cfce854bedd192c1992f4e8940d7b189000",
+    "path": "assets/CHAR-002/CHAR-002-A01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A01.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A02.jpeg": {
+    "asset_id": "CHAR-002-A02",
+    "sha256": "bc101bc5fb20348c329b5e94138d34c650ea22f0cf22cae5b2a8a36c5754345f",
+    "path": "assets/CHAR-002/CHAR-002-A02.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A02.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A03.jpeg": {
+    "asset_id": "CHAR-002-A03",
+    "sha256": "7bae4e3269a52c8ad189f3d98a86ebecbf150c54093ded3c216ec58c1abca8a1",
+    "path": "assets/CHAR-002/CHAR-002-A03.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A03.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A04.jpeg": {
+    "asset_id": "CHAR-002-A04",
+    "sha256": "4457ec2246547a28b4a8ce85ddb06f2b3678f9977cb35012b3a22d09196f2fd7",
+    "path": "assets/CHAR-002/CHAR-002-A04.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A04.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A05.jpeg": {
+    "asset_id": "CHAR-002-A05",
+    "sha256": "aedc273a3dab9ba838641d6dad3f0fa040be3e2fc98da315b8f6e171d4a40698",
+    "path": "assets/CHAR-002/CHAR-002-A05.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A05.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A06.jpeg": {
+    "asset_id": "CHAR-002-A06",
+    "sha256": "836b7ce25007566b01018af7d3541aaabc751c0a88834ae4aca25589a2a6e99b",
+    "path": "assets/CHAR-002/CHAR-002-A06.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A06.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A07.jpeg": {
+    "asset_id": "CHAR-002-A07",
+    "sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+    "path": "assets/CHAR-002/CHAR-002-A07.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A07.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A08.jpeg": {
+    "asset_id": "CHAR-002-A08",
+    "sha256": "f60981360987a2c39c7e8b35a8f45ef0e2da427e8dd27a445adc3beb6e6b4245",
+    "path": "assets/CHAR-002/CHAR-002-A08.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A08.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A09.jpeg": {
+    "asset_id": "CHAR-002-A09",
+    "sha256": "e33e79814e381d6624a27d6cfee8a06bd8330750ede8c7066067c90d0edb3e7e",
+    "path": "assets/CHAR-002/CHAR-002-A09.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A09.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A10.jpeg": {
+    "asset_id": "CHAR-002-A10",
+    "sha256": "35dcd492be8377afcfeb24df784bb80174f931f395e31b06912e34c74af1172f",
+    "path": "assets/CHAR-002/CHAR-002-A10.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A10.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A11.jpeg": {
+    "asset_id": "CHAR-002-A11",
+    "sha256": "fa850d793000b464cde1deb757004c0e2a4c2fb91651d98d8351bf5818edd8f1",
+    "path": "assets/CHAR-002/CHAR-002-A11.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A11.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A12.jpeg": {
+    "asset_id": "CHAR-002-A12",
+    "sha256": "1cd74430122d19077725ba2b3288ce36bf41b91da3baa1883a241b1489cc3096",
+    "path": "assets/CHAR-002/CHAR-002-A12.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A12.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A13.jpeg": {
+    "asset_id": "CHAR-002-A13",
+    "sha256": "f8e5a98c4d92965ffd31c44a3a5a50621f8fdc60a6a23bd07717fc3e12048168",
+    "path": "assets/CHAR-002/CHAR-002-A13.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A13.jpeg"
+  },
+  "character:assets/CHAR-002/CHAR-002-A14.jpeg": {
+    "asset_id": "CHAR-002-A14",
+    "sha256": "59ee9c30b70ca3862e803d9f9e3df60bc2fdd7dfeafd2f6036007d656089a2aa",
+    "path": "assets/CHAR-002/CHAR-002-A14.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A14.jpeg"
+  },
+  "character:assets/CHAR-003/CHAR-003-Densin-01.jpeg": {
+    "asset_id": "CHAR-003-A01",
+    "sha256": "aa3ee4e2fe77113d9a6d4adcd497340b822049e6124c8e9c3145759e0de703ad",
+    "path": "assets/CHAR-003/CHAR-003-Densin-01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-003/CHAR-003-Densin-01.jpeg"
+  },
+  "character:assets/CHAR-003/CHAR-003-Densin-02.jpeg": {
+    "asset_id": "CHAR-003-A02",
+    "sha256": "d3f3fdb83b3e742249c7512afeafba7dbf92e126c44e5c788778c0bfdbedbc80",
+    "path": "assets/CHAR-003/CHAR-003-Densin-02.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-003/CHAR-003-Densin-02.jpeg"
+  },
+  "character:assets/CHAR-003/CHAR-003-Densin-03.jpeg": {
+    "asset_id": "CHAR-003-A03",
+    "sha256": "5424e70f026714801f3c892c2bc6e2c523c17802abaf84ad7b0889abed89b6d9",
+    "path": "assets/CHAR-003/CHAR-003-Densin-03.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-003/CHAR-003-Densin-03.jpeg"
+  },
+  "character:assets/CHAR-004/CHAR-004-Cristu-01.jpeg": {
+    "asset_id": "CHAR-004-A01",
+    "sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+    "path": "assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg"
+  },
+  "character:assets/CHAR-004/CHAR-004-Cristu-02.jpeg": {
+    "asset_id": "CHAR-004-A02",
+    "sha256": "c5023674b8aa0f25c60f1cca5a1b1f4acca8a45fd769718917b6c48ae6f27871",
+    "path": "assets/CHAR-004/CHAR-004-Cristu-02.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-02.jpeg"
+  },
+  "character:assets/CHAR-005/CHAR-005-Jen-01.jpeg": {
+    "asset_id": "CHAR-005-A01",
+    "sha256": "585c25734d94ce418dc84d5dd527ace6a16c52d26a61543e03f138bcbf9a37fa",
+    "path": "assets/CHAR-005/CHAR-005-Jen-01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-005/CHAR-005-Jen-01.jpeg"
+  },
+  "character:assets/CHAR-006/CHAR-006-Hasley-01.jpeg": {
+    "asset_id": "CHAR-006-A01",
+    "sha256": "d1e92e82dc163892801c42a0a3cb7a4cc13fd56858a8174e7fea59cffa564982",
+    "path": "assets/CHAR-006/CHAR-006-Hasley-01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-006/CHAR-006-Hasley-01.jpeg"
+  },
+  "character:assets/CHAR-006/CHAR-006-Hasley-02.jpeg": {
+    "asset_id": "CHAR-006-A02",
+    "sha256": "c50f431c0a4dede9c8aed0ebde654a8972c12337922202eb0bd4cda2249464f6",
+    "path": "assets/CHAR-006/CHAR-006-Hasley-02.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-006/CHAR-006-Hasley-02.jpeg"
+  },
+  "character:assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg": {
+    "asset_id": "CHAR-007-A01",
+    "sha256": "88785e88a014c76e51c096a51e7b450e7812114d22d27e21d75f783845f8e2ab",
+    "path": "assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-007/CHAR-007-Ms-LaveRen-01.jpeg"
+  },
+  "character:assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg": {
+    "asset_id": "CHAR-007-A02",
+    "sha256": "f6ee16d55146d2ec435dfc2b3260c0445e7c9a6c99368115c33e080cdb738fb9",
+    "path": "assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-007/CHAR-007-Ms-LaveRen-02.jpeg"
+  },
+  "environment:environment_assets/ENV-001_church_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-001_church_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-001_church_identity_anchor.jpeg",
+    "sha256": "c287196402244835c6e3996fcd4ff8790c8c8945673ca12347e6a9d1e72c5a88"
+  },
+  "environment:environment_assets/ENV-002_grocery_store_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-002_grocery_store_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-002_grocery_store_identity_anchor.jpeg",
+    "sha256": "5b998f1314dd803d988760c5f0f115b3a045e5b032456c7160152bc7e7429273"
+  },
+  "environment:environment_assets/ENV-003_neighborhood_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-003_neighborhood_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-003_neighborhood_identity_anchor.jpeg",
+    "sha256": "66fb95fb08063e5cd454576eab10d43f8698e649372d4f25de3065f05d8f27b1"
+  },
+  "environment:environment_assets/ENV-004_apartment_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-004_apartment_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-004_apartment_identity_anchor.jpeg",
+    "sha256": "6b864a45cb21618e801a3f64a37de60137d68ed0e2bf486365b387cb58f1fac7"
+  },
+  "environment:environment_assets/ENV-005_gated_community_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-005_gated_community_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-005_gated_community_identity_anchor.jpeg",
+    "sha256": "21b9140057bda54fa6ab62a5cdc5252e5edc8aa50fa85f6922ced60fcf2a3ba5"
+  },
+  "environment:environment_assets/ENV-006_loft_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-006_loft_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-006_loft_identity_anchor.jpeg",
+    "sha256": "5cdac7f84123bb464f437772fb3c69097ee8d95d5ffa292d1db792560ccb036c"
+  },
+  "environment:environment_assets/ENV-007_cafe_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-007_cafe_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-007_cafe_identity_anchor.jpeg",
+    "sha256": "784a7b082c03b6f28f5128bf962aa9967bfc73ff6461a1849bacae54788a7629"
+  },
+  "environment:environment_assets/ENV-008_office_identity_anchor.jpeg": {
+    "path": "environment_assets/ENV-008_office_identity_anchor.jpeg",
+    "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+    "sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a"
+  }
+}

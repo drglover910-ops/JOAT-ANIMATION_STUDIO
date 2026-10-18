@@ -1,0 +1,54 @@
+{
+  "schema": "joat.production_lesson.v1",
+  "file_version": "1.0.0",
+  "id": "style001-locked-story",
+  "status": "approved",
+  "roles": [
+    "browser",
+    "hugging_face",
+    "narration",
+    "character",
+    "environment",
+    "director",
+    "shot_camera",
+    "performance_action",
+    "generation_supervisor",
+    "generation_worker",
+    "quality_control",
+    "post_production",
+    "editorial",
+    "sound",
+    "music",
+    "compositing_vfx",
+    "color_finish",
+    "titles_graphics",
+    "voice_dialogue",
+    "delivery_archive",
+    "main",
+    "executive"
+  ],
+  "scope": {
+    "project_id": "PROJECT-OTU-STYLE001-90S-001",
+    "style_id": "STYLE001"
+  },
+  "title": "Approved Style001 story and casting",
+  "guidance": "Preserve the approved 90-second, 18-shot original script word for word. Founder CHAR-001 is the consultant/product presenter, Cristu CHAR-004 is the business owner, Kiana CHAR-002 is the customer. Shots 11, 12 and 15 are six seconds; shots 10, 16 and 18 are four seconds; the remaining shots are five seconds. Reuse approved references. Earlier 60-second alternatives and narration-only openings must not replace this story. This note does not approve remaining GPU spending or final film QC.",
+  "review": {
+    "reviewer": "Codex under owner-approved audit implementation",
+    "approval_basis": "Owner approved the read-only audit recommendations on 2026-10-18; guidance preserves existing authorities, not creative or spending grants."
+  },
+  "evidence": [
+    {
+      "source": "OWNER_PROMPT_v1.0.0.txt",
+      "sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b"
+    },
+    {
+      "source": "docs/JOAT_STUDIO_AUDIT_v1.0.0.md",
+      "sha256": "ba11d3ed7565faf23edfebef6b56837b2f718a4e493bfc515fbc2db5705b502f"
+    }
+  ],
+  "valid_from": "2026-10-18T00:00:00Z",
+  "expires_at": "2027-01-18T00:00:00Z",
+  "versions": {},
+  "supersedes": []
+}

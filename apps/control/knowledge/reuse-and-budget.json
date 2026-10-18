@@ -1,0 +1,50 @@
+{
+  "schema": "joat.production_lesson.v1",
+  "file_version": "1.0.0",
+  "id": "reuse-and-budget",
+  "status": "approved",
+  "roles": [
+    "browser",
+    "hugging_face",
+    "narration",
+    "character",
+    "environment",
+    "director",
+    "shot_camera",
+    "performance_action",
+    "generation_supervisor",
+    "generation_worker",
+    "quality_control",
+    "post_production",
+    "editorial",
+    "sound",
+    "music",
+    "compositing_vfx",
+    "color_finish",
+    "titles_graphics",
+    "voice_dialogue",
+    "delivery_archive",
+    "main",
+    "executive"
+  ],
+  "scope": {
+    "project_id": null,
+    "style_id": null
+  },
+  "title": "Reuse existing work and preserve budget controls",
+  "guidance": "Reuse approved assets and completed media. Generate only truly missing footage or views. Preserve GPU hold, exact plan grants and checkpoint idempotency; an unknown submitted outcome must be recovered rather than retried. Included quota and credit spending are separate from story approval. No training, paid hardware or automatic model switch is required to finish the current studio.",
+  "review": {
+    "reviewer": "Codex under owner-approved audit implementation",
+    "approval_basis": "Owner approved the read-only audit recommendations on 2026-10-18; guidance preserves existing authorities, not creative or spending grants."
+  },
+  "evidence": [
+    {
+      "source": "docs/JOAT_STUDIO_AUDIT_v1.0.0.md",
+      "sha256": "ba11d3ed7565faf23edfebef6b56837b2f718a4e493bfc515fbc2db5705b502f"
+    }
+  ],
+  "valid_from": "2026-10-18T00:00:00Z",
+  "expires_at": "2027-01-18T00:00:00Z",
+  "versions": {},
+  "supersedes": []
+}
