@@ -1,0 +1,37 @@
+{
+  "schema": "joat.provider_quota_access_check.v1",
+  "file_version": "1.0.1",
+  "check_id": "22e2c0ec4a01429985c5171eee80d2bf",
+  "probes": [
+    {
+      "binding": "JOAT_SPECIALIST_TOKEN",
+      "observation": {
+        "schema": "joat.provider_quota_observation.v1",
+        "file_version": "1.0.1",
+        "observation_id": "bbdfdff6688349c8834acfd3ab5ef3eb",
+        "owner": "Dezz-9-10",
+        "observed_at": "2026-10-18T23:58:08.632247+00:00",
+        "endpoint": "https://huggingface.co/api/spaces/zero-gpu/quota",
+        "provider_live_balance": true,
+        "gpu_called": false,
+        "credits_spending_authorized_usd": 0,
+        "auth_scope": {
+          "token_label": "JOAT-Main-Assistant",
+          "token_role": "fineGrained",
+          "billing_read_permission": true
+        },
+        "http_status": 200,
+        "status": "provider_quota_verified",
+        "remaining_seconds": 2400,
+        "total_seconds": 2400,
+        "reset_at": null,
+        "overquota_used_seconds": 0,
+        "credits_balance_usd": null
+      }
+    }
+  ],
+  "gpu_called": false,
+  "automatic_retry": false,
+  "status": "live_quota_available",
+  "record_fingerprint": "432f4754def7f5119bc2ff902c81f442add1ecc3135c7a16584618437b16fba3"
+}

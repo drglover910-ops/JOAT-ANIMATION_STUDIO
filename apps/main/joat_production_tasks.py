@@ -1,7 +1,7 @@
-"""Private owner-staged production preflight, assets and voice. File version1.0.21.
+"""Private owner-staged production preflight, assets and voice. File version1.0.23.
 No canonical/creative QC approval is invented. Candidate generation is separate from registration.
 """
-FILE_VERSION='1.0.21'
+FILE_VERSION='1.0.23'
 import base64,hashlib,json,os,re,tempfile,threading,time,uuid,wave,zlib
 from pathlib import Path
 from gradio_client import Client
@@ -51,7 +51,7 @@ def run(name,raw):
  try:
   if not re.fullmatch('[a-f0-9]{32}',identifier) or len(raw.encode())>131072:raise ValueError('Invalid bounded task envelope.')
   v=json.loads(raw)
-  if set(v)!={'schema','file_version','request_id','project_id','operation','mission_fingerprint','payload'} or v['schema']!='joat.production_task.v1' or v['request_id']!=identifier or v['operation'] not in ('stage_mission','reference','voices','approve_location','frames','drafts','approve_frame','graphics','opening_prepare','speech_prepare','film_prepare','cancel_project','sources','first_plan','opening_grant'):raise ValueError('Unsupported production task.')
+  if set(v)!={'schema','file_version','request_id','project_id','operation','mission_fingerprint','payload'} or v['schema']!='joat.production_task.v1' or v['request_id']!=identifier or v['operation'] not in ('stage_mission','reference','voices','approve_location','frames','drafts','approve_frame','graphics','opening_prepare','speech_prepare','film_prepare','cancel_project','sources','first_plan','opening_grant','release_pre_gpu_reference'):raise ValueError('Unsupported production task.')
   stage='verify_studio_mount';m.mount_check('main');token=os.environ.get('JOAT_SPECIALIST_TOKEN','')
   stage='verify_owner_service'
   if not token or m.HfApi(token=token).whoami().get('name')!=m.OWNER:raise ValueError('Verified owner service credential required.')
@@ -72,6 +72,14 @@ def run(name,raw):
   if v['operation']=='stage_mission':
    m.write_once(root(project)/'missions'/(given+'.json'),mission)
    result=dict(status='mission_saved',gpu_called=False,shots=len(mission['shots']),target_duration_seconds=mission['target_duration_seconds'])
+  elif v['operation']=='release_pre_gpu_reference':
+   stage='verify_private_reference_storage'
+   c=client('reference',token,Path(tempfile.mkdtemp(prefix='joat-reference-storage-check-')))
+   check=c.submit(api_name='/check_project_storage').result(timeout=90)
+   if not isinstance(check,dict) or check.get('status')!='private_mount_verified' or check.get('gpu_called') is not False or check.get('files_written') is not False:raise ValueError('Private reference storage check did not pass; retain reservation.')
+   stage='reconcile_proven_pre_gpu_failure'
+   from joat_reference_recovery import release
+   result=release(project,v['payload'])
   elif v['operation']=='approve_location':
    from joat_project_environments import load,validate
    manifest=v['payload']['manifest'];core=dict(manifest);given=core.pop('manifest_fingerprint',None)

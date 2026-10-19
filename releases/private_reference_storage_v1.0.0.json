@@ -1,0 +1,33 @@
+{
+  "schema": "joat.private_reference_storage_release.v1",
+  "file_version": "1.0.2",
+  "releases": [
+    {
+      "space": "Dezz-9-10/joat-reference-lab",
+      "previous_revision": "8ce0f763e9c9db18950dc35726e3ee851ebf5412",
+      "revision": "57430fd7604514c858a5e04054dd400cf0d03c3f",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "69d24794300db1fc6e5a4d219cacfa409607fce48bb6ce4011dfb43361359a3b",
+        "joat_job_assets.py": "c4f4ae89069ea67131cd6eb1ac1dbe639a841e46e06c59acad655831ecb8a952",
+        "joat_project_reference.py": "e0e6a8b7ee2be187b12675153179540227f835621ae993e62d48e92070563ad1"
+      }
+    },
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "previous_revision": "72328a27cfc8a64f8173111f3e3a5faf79756d83",
+      "revision": "8f39f2fd26090763f5d9fa5b5db8f6107f06e8ce",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "a9c31bf2c32a12f614cc82fe97b5fbdaa98820c8a7a56315c6a39e9f557d9dd9",
+        "joat_production_tasks.py": "719271a8813cc6e3d9c86f21312c2b95df1cbb659136349cf6b61d8495e583c3",
+        "joat_reference_recovery.py": "409ccdd98ec8922c9744d0c99870caad56196d13700e402191f8d01f002fdc16"
+      }
+    }
+  ],
+  "gpu_called_by_deployment": false,
+  "main_preflight_revision": "2ceb8d903dee5faff7cba25f4b8b0df09be631e4",
+  "main_app_version": "2.1.105",
+  "reference_verified_caller_revision": "e44555512c9f9f1d7aabdd32da07238f63469d49",
+  "reference_app_version": "2.18"
+}

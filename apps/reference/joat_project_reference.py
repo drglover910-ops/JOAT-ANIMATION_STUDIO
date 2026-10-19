@@ -1,7 +1,7 @@
-"""Owner-authorized project reference candidates. File version1.0.3.
+"""Owner-authorized project reference candidates. File version1.0.5.
 Uses the existing qualified Qwen generator unchanged. Never registers canonical assets.
 """
-FILE_VERSION='1.0.3'
+FILE_VERSION='1.0.5'
 import hashlib,json,os,re,tempfile,threading,time,urllib.request
 from pathlib import Path
 from typing import Optional
@@ -18,6 +18,7 @@ def owner(oauth,request):
   h=request.headers.get('x-hf-authorization','') or request.headers.get('authorization','')
   if h.lower().startswith('bearer '):token=h[7:]
  if not token or HfApi(token=token).whoami().get('name')!='Dezz-9-10':raise ValueError('Verified studio owner required.')
+ return token
 def validate(v):
  keys={'schema','file_version','request_id','project_id','asset_key','kind','sources','prompt','gpu_ceiling_seconds','generation_authorized','authorization_basis','canonical_registration'}
  if not isinstance(v,dict) or not keys<=set(v) or set(v)-keys-{'aspect_ratio'} or v['schema']!='joat.project_reference_request.v1':raise ValueError('Exact project reference request required.')
@@ -89,12 +90,16 @@ def run(v,generate,root=None,require_mount=assets.require_bucket):
 
 def add_project_reference_api(generate):
  def execute(payload:str,oauth:Optional[gr.OAuthToken],request:gr.Request):
-  owner(oauth,request)
+  token=owner(oauth,request)
   if len(payload.encode())>65536:raise gr.Error('Oversized project reference request.')
-  value,image,report=run(json.loads(payload),generate)
+  value,image,report=run(json.loads(payload),generate,require_mount=lambda:assets.require_bucket(token=token))
   # Export only verified copies to Gradio's normal temp cache, never /studio.
   import shutil
   export=Path(tempfile.mkdtemp(prefix='joat-project-candidate-'));shutil.copyfile(image,export/'candidate.png');shutil.copyfile(report,export/'candidate_review.json')
   return value,str(export/'candidate.png'),str(export/'candidate_review.json')
+ def check_storage(oauth:Optional[gr.OAuthToken],request:gr.Request):
+  token=owner(oauth,request);assets.require_bucket(token=token)
+  return dict(schema='joat.reference_storage_check.v1',file_version=FILE_VERSION,status='private_mount_verified',gpu_called=False,files_written=False)
+ gr.Button(visible=False).click(check_storage,[],[gr.JSON(visible=False)],api_name='check_project_storage',api_visibility='public')
  payload=gr.Textbox(visible=False)
  gr.Button(visible=False).click(execute,[payload],[gr.JSON(visible=False),gr.File(visible=False),gr.File(visible=False)],api_name='project_reference_candidate',api_visibility='public',concurrency_limit=1)

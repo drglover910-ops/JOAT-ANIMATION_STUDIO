@@ -1,7 +1,7 @@
-# app.py — FILE VERSION: 2.15
+# app.py — FILE VERSION: 2.18
 # Space: Dezz-9-10/joat-reference-lab
-# Application release: 2.15-project-reference-candidates
-FILE_VERSION = "2.16"
+# Application release: 2.18-private-storage-check
+FILE_VERSION = "2.18"
 
 from joat_private_frame_transfer import run_private_frame_transfers
 run_private_frame_transfers()
@@ -39,7 +39,7 @@ from diffusers import QwenImageEditPlusPipeline
 # JOAT CONFIG
 # ─────────────────────────────────────────────────────────────────────────────
 
-APP_VERSION = "2.16-project-reference-portrait-candidates"
+APP_VERSION = "2.18-private-storage-check"
 
 GHL_API_KEY = os.environ.get("GHL_API_KEY", "")
 LOCATION_ID = "HToMVzOESQwtaLswBvcz"

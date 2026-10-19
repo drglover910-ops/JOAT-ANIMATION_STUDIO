@@ -1,10 +1,10 @@
-# joat_job_assets.py — FILE VERSION: 1.0.1
+# joat_job_assets.py — FILE VERSION: 1.0.3
 """Owner-approved, job-scoped images in the existing Hugging Face bucket.
 
 No inference, GHL dependency, canonical registration or production QC approval.
 One writer Space; commit manifest last, validate exact bytes on every read.
 """
-FILE_VERSION = "1.0.1"
+FILE_VERSION = "1.0.3"
 DESCRIPTOR_VERSION = "1.0.0"  # Stable data format: upgrades must preserve approved asset IDs.
 
 import hashlib
@@ -81,16 +81,21 @@ def identity_binding(character_id, references):
             "biometric_identity_verified": False}
 
 
-def require_mount(bucket, mount_path, write_required):
+def require_mount(bucket, mount_path, write_required, token=None):
     """Require platform evidence, not an ordinary /data folder or temp fallback."""
     space = os.environ.get("SPACE_ID")
     if space != WRITER_SPACE:
         raise ValueError("Approved asset writer must run in " + WRITER_SPACE + ".")
     try:
-        with urllib.request.urlopen("https://huggingface.co/api/spaces/" + space,
-                                    timeout=15) as response:
+        token = token or os.environ.get("HF_TOKEN") or os.environ.get("JOAT_SPECIALIST_TOKEN")
+        if not token:
+            raise ValueError("Existing service authentication required for private Space metadata.")
+        request = urllib.request.Request("https://huggingface.co/api/spaces/" + space,
+                                         headers={"Authorization": "Bearer " + token})
+        with urllib.request.urlopen(request, timeout=15) as response:
             info = json.load(response)
-    except Exception:
+    except Exception as exc:
+        print("JOAT_PRIVATE_MOUNT_CHECK " + json.dumps({"error_type": type(exc).__name__, "http_status": getattr(exc, "code", None), "gpu_called": False}), flush=True)
         raise ValueError("Cannot verify the configured Hugging Face bucket mount; nothing was saved.") from None
     mounts = info.get("runtime", {}).get("volumes") or []
     if not any(v.get("type") == "bucket" and v.get("source") == bucket
@@ -99,8 +104,8 @@ def require_mount(bucket, mount_path, write_required):
         raise ValueError("Mount " + bucket + " at " + mount_path + (" read/write" if write_required else "") + " first.")
 
 
-def require_bucket():
-    return require_mount(BUCKET, "/studio", True)
+def require_bucket(token=None):
+    return require_mount(BUCKET, "/studio", True, token=token)
 
 
 def require_old_bucket():
