@@ -1,7 +1,7 @@
 """Reconcile only a terminal reference failure proven to precede GPU work.
-File version: 1.0.0. Preserve original failure and archived reservation evidence.
+File version: 1.0.2. Preserve original failure and archived reservation evidence.
 """
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.2'
 import json,re
 from pathlib import Path
 import joat_managed_generation as m
@@ -15,13 +15,17 @@ def release(project,payload):
  if len(entries)!=1 or registry()['project_id']!=project:raise ValueError('Recovery must match an exact supplemental reference.')
  request=entries[0]['request'];root=m.safe_path(m.ROOT/'production-projects'/project)
  receipt=m.read_json(root/'tasks'/payload['failed_task_id']/'receipt.json')
- if receipt.get('request_id')!=payload['failed_task_id'] or receipt.get('status')!='failed_or_unknown' or receipt.get('stage')!='frame_'+request['asset_key'] or receipt.get('error_type')!='AppError':raise ValueError('An explicit terminal upstream failure is required.')
+ pre_mount=(receipt.get('stage')=='frame_'+request['asset_key'] and receipt.get('error_type')=='AppError')
+ pre_dispatch=(receipt.get('stage')=='reference_api_connection' and receipt.get('error_type')=='ValueError' and receipt.get('safe_error_message')=='Different quota record already retained.')
+ if receipt.get('request_id')!=payload['failed_task_id'] or receipt.get('status')!='failed_or_unknown' or not (pre_mount or pre_dispatch):raise ValueError('An explicit terminal pre-GPU failure is required.')
  # The Reference Lab persists its reservation before source loading or GPU allocation.
  # A terminal response plus absence of that reservation proves this call never reached GPU work.
  remote=m.safe_path(root/'references'/request['asset_key']/request['request_id'])
  if remote.exists():raise ValueError('Reference-side execution evidence exists; cannot release or retry.')
  from joat_gpu_quota_panel import ROOT,read,write_once,seal
  folder=m.safe_path(ROOT/'live-reference-reservations'/request['request_id']);archive=folder/'pre_gpu_failure_reconciliation.json';source=folder/'reservation.json'
+ if archive.exists() and read(archive).get('failed_task_id')!=payload['failed_task_id']:
+  archive=folder/'pre_gpu_failures'/(payload['failed_task_id']+'.json')
  if archive.exists():
   stored=read(archive)
   if stored.get('failed_task_id')!=payload['failed_task_id']:raise ValueError('Recovery differs from original terminal failure.')
@@ -33,4 +37,4 @@ def release(project,payload):
  write_once(archive,evidence)
  if read(archive)!=evidence or read(source)!=reservation or remote.exists():raise ValueError('Recovery evidence changed; keep the reservation.')
  source.unlink()
- return dict(status='pre_gpu_failure_reconciled',gpu_called=False,original_failure_retained=True,reservation_archived=True,automatic_retry=False)
+ return dict(status='pre_gpu_failure_reconciled',gpu_called=False,original_failure_retained=True,reservation_archived=True)

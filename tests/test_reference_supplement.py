@@ -1,8 +1,8 @@
-"""Exact supplemental scope and live zero-credit admission. File version: 1.0.0."""
+"""Exact supplemental scope and live zero-credit admission. File version: 1.0.3."""
 import copy,importlib.util,json,os,sys,tempfile,types,unittest
 from pathlib import Path
 from unittest.mock import patch
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.3'
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'apps/main'))
 import joat_reference_supplement as s
@@ -60,5 +60,29 @@ class ReferenceSupplementTests(unittest.TestCase):
                 s.settle(self.request,{'sha256':'a'*64})
                 s.reserve(another,self.payload)
                 self.assertEqual(len(list((root/'quota').rglob('reservation.json'))),2)
+
+    def test_only_archived_proven_pre_gpu_folder_can_be_reserved_again(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);managed=types.ModuleType('joat_managed_generation');managed.ROOT=root/'studio'
+            folder=root/'quota'/'live-reference-reservations'/self.request['request_id'];folder.mkdir(parents=True)
+            with patch.object(quota,'ROOT',root/'quota'),patch.object(provider,'read_quota',return_value={'provider_live_balance':True,'remaining_seconds':1200}),patch.dict(sys.modules,{'joat_managed_generation':managed}):
+                with self.assertRaises((ValueError,FileNotFoundError)):s.reserve(self.request,self.payload)
+                self.assertFalse((folder/'reservation.json').exists())
+                archive=quota.seal({'schema':'joat.pre_gpu_failure_reconciliation.v1','reference_request_id':self.request['request_id'],'reference_side_directory_absent':True,'gpu_called':False,'original_reservation':{'request_id':self.request['request_id'],'request_fingerprint':s.digest(self.request)}})
+                quota.write_once(folder/'pre_gpu_failure_reconciliation.json',archive)
+                s.reserve(self.request,self.payload)
+                self.assertTrue((folder/'reservation.json').exists())
+                self.assertEqual(quota.read(folder/'pre_gpu_failure_reconciliation.json'),archive)
+                with self.assertRaises(ValueError):s.reserve(self.request,self.payload)
+
+    def test_existing_immutable_scope_survives_code_version_changes(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);managed=types.ModuleType('joat_managed_generation');managed.ROOT=root/'studio'
+            scope=managed.ROOT/'production-projects'/self.request['project_id']/'reference-supplements'/s.REGISTRY_SHA256/'scope.json'
+            original=quota.seal({'schema':'joat.applied_reference_supplement.v1','file_version':'1.0.0','registry_sha256':s.REGISTRY_SHA256,'scope':self.payload['additional_reference_scope'],'original_mission_changed':False,'canonical_registration':False,'production_qc_approved':False})
+            quota.write_once(scope,original)
+            with patch.object(quota,'ROOT',root/'quota'),patch.object(provider,'read_quota',return_value={'provider_live_balance':True,'remaining_seconds':1200}),patch.dict(sys.modules,{'joat_managed_generation':managed}):
+                s.reserve(self.request,self.payload)
+                self.assertEqual(quota.read(scope),original)
 
 if __name__=='__main__':unittest.main()

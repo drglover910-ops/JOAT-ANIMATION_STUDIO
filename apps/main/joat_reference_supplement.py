@@ -1,7 +1,7 @@
 """Exact append-only scene dependencies under live included-quota checks.
-File version: 1.0.0. Original one-reference mission remains immutable.
+File version: 1.0.2. Original one-reference mission remains immutable.
 """
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.2'
 import hashlib,json,os,threading,uuid
 from pathlib import Path
 from datetime import datetime,timezone
@@ -51,12 +51,17 @@ def reserve(request,payload):
             if not settled:pending+=reservation['ceiling_seconds']
         if quota['remaining_seconds']-pending<720:raise ValueError('Included quota cannot cover the 600-second ceiling and 120-second headroom; no GPU request sent.')
         folder=root/request['request_id']
-        if folder.exists():raise ValueError('Exact candidate already reserved; inspect its original outcome, no automatic retry.')
+        if (folder/'reservation.json').exists():raise ValueError('Exact candidate already reserved; inspect its original outcome, no automatic retry.')
+        if folder.exists():
+            archive=read(folder/'pre_gpu_failure_reconciliation.json')
+            original=archive.get('original_reservation',{})
+            if (archive.get('schema')!='joat.pre_gpu_failure_reconciliation.v1' or archive.get('reference_request_id')!=request['request_id'] or archive.get('reference_side_directory_absent') is not True or archive.get('gpu_called') is not False or original.get('request_id')!=request['request_id'] or original.get('request_fingerprint')!=digest(request)):
+                raise ValueError('Existing candidate folder has no verified pre-GPU reconciliation; do not retry.')
         value=seal(dict(schema='joat.live_reference_reservation.v1',file_version=FILE_VERSION,request_id=request['request_id'],request_fingerprint=digest(request),ceiling_seconds=600,quota_observation=quota,reserved_at=datetime.now(timezone.utc).isoformat(),paid_spending_authorized_usd=0))
         write_once(folder/'reservation.json',value)
         # Exact supplemental source is an append-only dependency, not a mission rewrite.
         import joat_managed_generation as m
-        write_once(m.ROOT/'production-projects'/request['project_id']/'reference-supplements'/REGISTRY_SHA256/'scope.json',seal({'schema':'joat.applied_reference_supplement.v1','file_version':FILE_VERSION,'registry_sha256':REGISTRY_SHA256,'scope':payload['additional_reference_scope'],'original_mission_changed':False,'canonical_registration':False,'production_qc_approved':False}))
+        write_once(m.ROOT/'production-projects'/request['project_id']/'reference-supplements'/REGISTRY_SHA256/'scope.json',seal({'schema':'joat.applied_reference_supplement.v1','file_version':'1.0.0','registry_sha256':REGISTRY_SHA256,'scope':payload['additional_reference_scope'],'original_mission_changed':False,'canonical_registration':False,'production_qc_approved':False}))
 
 def settle(request,review):
     from joat_gpu_quota_panel import ROOT as quota_root,seal,write_once

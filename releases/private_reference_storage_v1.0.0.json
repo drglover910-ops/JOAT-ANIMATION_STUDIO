@@ -1,6 +1,6 @@
 {
   "schema": "joat.private_reference_storage_release.v1",
-  "file_version": "1.0.2",
+  "file_version": "1.0.6",
   "releases": [
     {
       "space": "Dezz-9-10/joat-reference-lab",
@@ -27,7 +27,29 @@
   ],
   "gpu_called_by_deployment": false,
   "main_preflight_revision": "2ceb8d903dee5faff7cba25f4b8b0df09be631e4",
-  "main_app_version": "2.1.105",
+  "main_app_version": "2.1.108",
   "reference_verified_caller_revision": "e44555512c9f9f1d7aabdd32da07238f63469d49",
-  "reference_app_version": "2.18"
+  "reference_app_version": "2.18",
+  "main_receipt_fix_revision": "d382c4ef56e42ec6d249ba4756ff786d334abc64",
+  "main_reconciled_folder_revision": "6cc2723cd7d63dac9a7f7d97ee6eca5d31e3159c",
+  "tests_passed": 93,
+  "main_immutable_record_fix_revision": "ba93f09b7dcb53fe0a40fa4403b8aec04b6f9bcc",
+  "latest_source_hashes": {
+    "main": {
+      "app.py": "5049c6613e6bfc42cc489b37f10625b0ef4a2ca2753cbbe229341d60fb6bf971",
+      "joat_reference_supplement.py": "594bb0e3a71836120c55e88c60ecd4e48c059490470a80218c620a92bbbeca22",
+      "joat_reference_recovery.py": "385a8a7a752a1689924277f8237eecfb294be00041d5d6830c22db7fdd541806",
+      "joat_production_tasks.py": "39efd58a17bd0fcfcfb5403e215ffa66d3388de9df4271dd561169f899bdcbff"
+    },
+    "reference": {
+      "app.py": "8ac766d739effd7c3d7b76cabd7fb8f82791ed76f9ca40dd20ef63df43c72bfc",
+      "joat_job_assets.py": "be2b6e18d05513c20db74e1817636dc8a1c82bce01dcc81707173e79be19d36c",
+      "joat_project_reference.py": "080293acedb9feb382dacf93483b565d73144b0748b933555f58af7838deb8f2"
+    }
+  },
+  "private_storage_live_check_passed": true,
+  "pre_gpu_failures_reconciled": true,
+  "active_reference_task": "9b73d687f269489fbb333c3f8bf7846c",
+  "reference_reservation_verified": true,
+  "reference_candidate_complete": false
 }
