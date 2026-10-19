@@ -1,7 +1,7 @@
 """One owner-staged original-film shot through the existing signed native chain.
-File version: 1.0.1. Included quota only, no retry, canon change or QC approval.
+File version: 1.0.2. Included quota only, no retry, canon change or QC approval.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.2'
 import os,re,threading,time,uuid,math
 import joat_managed_generation as m
 PROJECT='PROJECT-OTU-STYLE001-90S-001'
@@ -40,21 +40,29 @@ def quota_guard(observation,budget):
  return required
 
 def describe_policy(token):
- from joat_runtime_client import RemoteDepartmentClient
- client=RemoteDepartmentClient('generation_worker',token=token,headers={'Authorization':'Bearer '+token})
- try:return client.view_api().get('runtime_policy',{})
+ # Reuse the proven signed-chain transport and its verified cached API contract.
+ client=m.client_for('executive',token,False)
+ try:
+  value=client.submit('generation_worker',api_name='/cpu_department_describe').result(timeout=30)
+  from joat_studio_capabilities import registry
+  if value.get('studio_capability_registry_fingerprint')!=registry()['registry_fingerprint']:raise ValueError('Worker capability registry differs.')
+  return value.get('runtime_policy',{})
  finally:client.close()
 
 def wait_ready(api,token,expected_hold):
- end=time.monotonic()+90
+ end=time.monotonic()+90;last_error=None;last_policy=None
  while time.monotonic()<end:
   if str(api.space_info(CONTROL).runtime.stage)=='RUNNING':
    try:
-    policy=describe_policy(token)
+    policy=describe_policy(token);last_policy=policy
     if policy.get('gpu_hold') is expected_hold and policy.get('composed_i2v_gpu_ceiling_seconds')=='420':return
-   except Exception:pass  # Read-only readiness probe; never submits GPU work.
+   except Exception as exc:
+    from joat_production_tasks import safe_error
+    detail=dict(error_type=type(exc).__name__,error_message=safe_error(exc))
+    if detail!=last_error:print('JOAT_RUNTIME_POLICY_PROBE '+m.stable(detail),flush=True)
+    last_error=detail  # Read-only probe; no GPU operation submitted.
   time.sleep(3)
- raise ValueError('Studio Control runtime has not confirmed the exact hold and allocation; no execution request sent.')
+ raise ValueError('Studio Control runtime policy unconfirmed; no execution request sent. '+m.stable(dict(last_error=last_error,last_policy=last_policy)))
 
 def execute(mission,payload,directory,token):
  from joat_remote_generation import source_for,signed,save_plan,grant,run,PREFIX

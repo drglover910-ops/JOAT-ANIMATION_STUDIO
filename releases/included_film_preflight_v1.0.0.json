@@ -1,0 +1,24 @@
+{
+  "schema": "joat.included_film_preflight_release.v1",
+  "file_version": "1.0.0",
+  "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+  "previous_revision": "8492dbafaab16f7217b290c38461536abd07a207",
+  "revision": "8c84c81a95d2fac6c3f0127959dd34e18f1973b7",
+  "source_readback_verified": true,
+  "files": {
+    "app.py": "5de33cd6c2ec7a1999195e0678cf8edb531515fe4e0e8d36b491ab6f8bf928ce",
+    "joat_included_film_render.py": "810ef1072ba0ccab9279e013b785475584a08b654f949a0c6433b816d74362d0"
+  },
+  "cpu_tests_passed": 102,
+  "prior_pre_gpu_failure": {
+    "automatic_retry": false,
+    "error_type": "ValueError",
+    "file_version": "1.0.25",
+    "request_id": "afacfaa93f564477966fea8da2f5291a",
+    "safe_error_message": "Studio Control runtime has not confirmed the exact hold and allocation; no execution request sent.",
+    "schema": "joat.production_task_receipt.v1",
+    "stage": "exact_included_film_render",
+    "status": "failed_or_unknown"
+  },
+  "gpu_called": false
+}
