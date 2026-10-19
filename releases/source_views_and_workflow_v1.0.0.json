@@ -1,0 +1,50 @@
+{
+  "schema": "joat.source_views_and_workflow_release.v1",
+  "file_version": "1.0.0",
+  "deployments": [
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "previous_revision": "1161eb36496532dcc64d21c56c1e7c8d2a3d7364",
+      "revision": "c8bf8b9300fa5c8f38c293eb4b15ce818418df54",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "4f083992e9f147a69767be5d216119b5f696e90e90d518d77ac7b62479235914",
+        "consolidated_manifest.json": "1ea2bbca140c1d4fee2970ea06417fade2322b2af39bcc8372e8e7180b1c31d9",
+        "departments/titles_graphics/app.py": "b55f2a49d211fef2b74ae8dacf6bbcfe777d1dd7c25d473c0b7aafd217a46e9b",
+        "departments/titles_graphics/joat_authored_graphics.py": "c535ba5765192f08772901e0de80136524ae26a7ae46e8b3997a60f7d42e76aa",
+        "departments/titles_graphics/joat_style001_workflow_graphics.py": "c36726ed5ae26ba6aa33bcef909c0b4cbb8b9952d8ef6a569a1f5ff9a4b306a3"
+      }
+    },
+    {
+      "space": "Dezz-9-10/joat-reference-lab",
+      "previous_revision": "e44555512c9f9f1d7aabdd32da07238f63469d49",
+      "revision": "70b1a703ece44977e2e771977357cf1a2889faab",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "fa1217ff53f482e004f48ba305107bb172c6593c152469759a22f70bd4b0eb15",
+        "joat_project_reference.py": "b2f5878ec8233954046ac3bf0331656f3c611bfa72c188ca0e8f188b6e53848b"
+      }
+    },
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "previous_revision": "be2716b85c20e60f72c5de7c199083a0c3b13c97",
+      "revision": "7263a33de3b1c963f6b15f519dd1f7b423f131ee",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "1a1309ffd9ee32f86d6a1ae4cae5a7cd22b152c0dab99ffecedb3ab789a58a60",
+        "joat_authored_graphics.py": "c535ba5765192f08772901e0de80136524ae26a7ae46e8b3997a60f7d42e76aa",
+        "joat_style001_workflow_graphics.py": "c36726ed5ae26ba6aa33bcef909c0b4cbb8b9952d8ef6a569a1f5ff9a4b306a3",
+        "joat_production_tasks.py": "178155708660204f4b0fd9bf6348e2d0b966e3fa069792e35cd0ddaf8ae5a18c",
+        "joat_reference_supplement.py": "6a7bf6e2b60a11a7736ee7fa107a9bc61d4339eedac86475b225ee19199199ac",
+        "joat_style001_reference_supplement.json": "a9cfd31ff46d6488b8f615bf8defe95b369126f81ceab378af8943793a5c5854",
+        "joat_control_contract.py": "b2b0a2adb33c44c547285a1ab16b43ef4f7be7f1fcdc1374843b30a5d7261056"
+      }
+    }
+  ],
+  "unit_tests_passed": 98,
+  "local_native_titles_render_passed": true,
+  "live_rendering_method_qualified": false,
+  "new_gpu_calls_by_deployment": 0,
+  "control_gpu_hold_preserved": true,
+  "paid_authority_usd": 0
+}

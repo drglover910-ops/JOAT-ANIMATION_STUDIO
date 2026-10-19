@@ -1,0 +1,19 @@
+{
+  "schema": "joat.scene_correction_release.v1",
+  "file_version": "1.0.0",
+  "main_app_version": "2.1.109",
+  "main_revision": "be2716b85c20e60f72c5de7c199083a0c3b13c97",
+  "source_hashes": {
+    "app.py": "42e07011ccc14e23320e52f0352d5eff5f2b9408efb50db2f14a6f2bf2a79fea",
+    "joat_reference_supplement.py": "212b34dcb6ad3d450e8d9d141dd2893c105415e9ee6dc674db05731d4e6e8ee8",
+    "joat_style001_reference_supplement.json": "94541210e582e8e8f7d2d2ab381706d75ea5b0036cd8af971256b497f4d08b98"
+  },
+  "source_readback_verified": true,
+  "reason": "Original candidate failed locked office continuity; delegated review rejected it.",
+  "rejected_request_id": "bf043272e8884bfeb4c809926a0b9330",
+  "correction_request_id": "7bededb64c224efb8e52b5a4683d5527",
+  "task_id": "17081ee979ef4b1abcba8c340a8a0f4d",
+  "original_mission_changed": false,
+  "paid_authority_usd": 0,
+  "tests_passed": 93
+}

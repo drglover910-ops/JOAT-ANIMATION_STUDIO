@@ -1,12 +1,12 @@
 """Exact append-only scene dependencies under live included-quota checks.
-File version: 1.0.2. Original one-reference mission remains immutable.
+File version: 1.0.4. Original one-reference mission remains immutable.
 """
-FILE_VERSION='1.0.2'
+FILE_VERSION='1.0.4'
 import hashlib,json,os,threading,uuid
 from pathlib import Path
 from datetime import datetime,timezone
 ROOT=Path(__file__).parent
-REGISTRY_SHA256='41d1f2adcc514443d411d8efa9d523e7798bfc4aef8a9a9ea9cfffbe6635f2ba'
+REGISTRY_SHA256='a9cfd31ff46d6488b8f615bf8defe95b369126f81ceab378af8943793a5c5854'
 LOCK=threading.Lock()
 
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()

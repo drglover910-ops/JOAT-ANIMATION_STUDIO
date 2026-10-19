@@ -1,7 +1,7 @@
-"""Private owner-staged production preflight, assets and voice. File version1.0.23.
+"""Private owner-staged production preflight, assets and voice. File version1.0.25.
 No canonical/creative QC approval is invented. Candidate generation is separate from registration.
 """
-FILE_VERSION='1.0.23'
+FILE_VERSION='1.0.25'
 import base64,hashlib,json,os,re,tempfile,threading,time,uuid,wave,zlib
 from pathlib import Path
 from gradio_client import Client
@@ -51,7 +51,7 @@ def run(name,raw):
  try:
   if not re.fullmatch('[a-f0-9]{32}',identifier) or len(raw.encode())>131072:raise ValueError('Invalid bounded task envelope.')
   v=json.loads(raw)
-  if set(v)!={'schema','file_version','request_id','project_id','operation','mission_fingerprint','payload'} or v['schema']!='joat.production_task.v1' or v['request_id']!=identifier or v['operation'] not in ('stage_mission','reference','voices','approve_location','frames','drafts','approve_frame','graphics','opening_prepare','speech_prepare','film_prepare','cancel_project','sources','first_plan','opening_grant','release_pre_gpu_reference'):raise ValueError('Unsupported production task.')
+  if set(v)!={'schema','file_version','request_id','project_id','operation','mission_fingerprint','payload'} or v['schema']!='joat.production_task.v1' or v['request_id']!=identifier or v['operation'] not in ('stage_mission','reference','voices','approve_location','frames','drafts','approve_frame','graphics','opening_prepare','speech_prepare','film_prepare','cancel_project','sources','first_plan','opening_grant','release_pre_gpu_reference','included_render'):raise ValueError('Unsupported production task.')
   stage='verify_studio_mount';m.mount_check('main');token=os.environ.get('JOAT_SPECIALIST_TOKEN','')
   stage='verify_owner_service'
   if not token or m.HfApi(token=token).whoami().get('name')!=m.OWNER:raise ValueError('Verified owner service credential required.')
@@ -72,6 +72,10 @@ def run(name,raw):
   if v['operation']=='stage_mission':
    m.write_once(root(project)/'missions'/(given+'.json'),mission)
    result=dict(status='mission_saved',gpu_called=False,shots=len(mission['shots']),target_duration_seconds=mission['target_duration_seconds'])
+  elif v['operation']=='included_render':
+   stage='exact_included_film_render'
+   from joat_included_film_render import execute
+   result=execute(mission,v['payload'],directory,token)
   elif v['operation']=='release_pre_gpu_reference':
    stage='verify_private_reference_storage'
    c=client('reference',token,Path(tempfile.mkdtemp(prefix='joat-reference-storage-check-')))
@@ -183,6 +187,10 @@ def run(name,raw):
    if any(q.get('project_id')!=project or q.get('kind')!='shot_start_frame' for q in requests):raise ValueError('Only this project opening frames are allowed.')
    stage='reference_api_connection';c=client('reference',token,Path(tempfile.mkdtemp(prefix='joat-production-frames-')));files=[]
    for payload in requests:
+    if payload.get('model_image_order') is not None:
+     stage='reference_source_preflight';proof=c.submit(m.stable(payload),api_name='/check_project_reference_inputs').result(timeout=90)
+     if proof.get('status')!='verified' or proof.get('gpu_called') is not False or proof.get('bucket_files_written') is not False or proof.get('plan_fingerprint')!=fp(payload) or proof.get('model_image_order')!=payload['model_image_order'] or len(proof.get('model_image_sources',[]))!=len(payload['sources']) or proof['model_image_sources'][0].get('role')!='environment':raise ValueError('Native reference source preflight failed; no GPU request sent.')
+     m.write_once(directory/'reference_input_preflight.json',proof)
     if mission.get('reference_preparation',{}).get('mode')=='existing_canonical_sources':
      from joat_canonical_project_references import authorize
      authorize(mission,v['payload'])

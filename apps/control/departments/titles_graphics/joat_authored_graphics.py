@@ -1,8 +1,8 @@
-"""CPU-authored illustrative booking animations. Embedded file version1.0.0.
+"""CPU-authored illustrative booking animations. Embedded file version1.0.1.
 Produces real candidate MP4s, never a QC PASS or a claim of live booking integration.
 Native worker integration and owner review remain separate.
 """
-FILE_VERSION='1.0.0'
+FILE_VERSION='1.0.1'
 import hashlib,json,math,re,subprocess,tempfile
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageFont
@@ -16,17 +16,21 @@ def ease(v):v=max(0,min(1,v));return 1-(1-v)**3
 
 def validate(plan):
  if not isinstance(plan,dict) or set(plan)!={'schema','file_version','project_id','shot_id','mission_fingerprint','duration_seconds','title','subtitle','rows','mode','illustrative','plan_fingerprint'}:raise ValueError('Exact authored graphics plan required.')
- if plan['schema']!='joat.authored_graphics_plan.v1' or plan['file_version']!=FILE_VERSION or plan['illustrative'] is not True:raise ValueError('Illustrative source plan required.')
+ if plan['schema']!='joat.authored_graphics_plan.v1' or plan['file_version'] not in ('1.0.0',FILE_VERSION) or plan['illustrative'] is not True:raise ValueError('Illustrative source plan required.')
  if not re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,95}',plan['project_id']) or not re.fullmatch('SHOT-[0-9]{3}',plan['shot_id']) or not re.fullmatch('[a-f0-9]{64}',plan['mission_fingerprint']):raise ValueError('Invalid source context.')
  if plan['plan_fingerprint']!=digest({k:v for k,v in plan.items() if k!='plan_fingerprint'}):raise ValueError('Graphics source fingerprint mismatch.')
  duration=plan['duration_seconds']
  if isinstance(duration,bool) or not isinstance(duration,(int,float)) or not math.isfinite(duration) or not 1<=duration<=20 or abs(duration*FPS-round(duration*FPS))>0.0001:raise ValueError('Use1–20 seconds aligned to24fps.')
- if plan['mode'] not in ('messages','setup','booking','confirmation','link','reminders','exceptions','afterhours','cta'):raise ValueError('Unsupported authored scene.')
+ if plan['mode'] not in ('messages','setup','booking','confirmation','link','reminders','exceptions','afterhours','cta','style001_workflow'):raise ValueError('Unsupported authored scene.')
  for key,limit in [('title',70),('subtitle',100)]:
   if not isinstance(plan[key],str) or not 1<=len(plan[key])<=limit:raise ValueError('Invalid graphics '+key)
  if not isinstance(plan['rows'],list) or not 1<=len(plan['rows'])<=3:raise ValueError('Use1–3 short screen rows.')
  for row in plan['rows']:
   if not isinstance(row,list) or len(row)!=3 or not isinstance(row[2],bool) or any(not isinstance(s,str) or not 1<=len(s)<=100 for s in row[:2]):raise ValueError('Invalid authored row.')
+ if plan['mode']=='style001_workflow':
+  expected={'title':'A simpler way to get booked.','subtitle':'Customer, calendar, confirmation and business workflow','rows':[['Appointments confirmed','Customer receives confirmation',True],['Reminders sent','Appointment reminder scheduled',True],['Customers informed','Business dashboard updated',True]]}
+  if any(plan[k]!=value for k,value in expected.items()):raise ValueError('Use the exact reviewed workflow text; no ignored custom labels.')
+  if (plan['file_version']!=FILE_VERSION or plan['project_id']!='PROJECT-OTU-STYLE001-90S-001' or plan['shot_id']!='SHOT-012' or plan['mission_fingerprint']!='2a881aa9651cd9058fd3f9ddaf199f1c2cbfc849b82caf511b1bcd661921868d' or duration!=6):raise ValueError('Use the exact approved portrait workflow shot and timing.')
  return plan
 
 def textfit(draw,xy,text,max_width,size=24,fill=INK,bold=False):
@@ -70,7 +74,14 @@ def frame(plan,t):
  return im
 
 def render(plan,directory=None):
- validate(plan);out=Path(directory or tempfile.mkdtemp(prefix='joat-authored-graphics-'));out.mkdir(parents=True,exist_ok=True);target=out/(plan['shot_id']+'.mp4')
+ validate(plan)
+ if plan['mode']=='style001_workflow':
+  from joat_style001_workflow_graphics import render as workflow_render
+  evidence,output,original_report=workflow_render(directory or tempfile.mkdtemp(prefix='joat-style001-graphics-'))
+  media={key:evidence[key] for key in ('sha256','size_bytes','width','height','fps','decoded_frames','duration_seconds','audio_present')};media['video_fully_decoded']=True
+  result=dict(schema='joat.authored_graphics_candidate.v1',file_version=FILE_VERSION,project_id=plan['project_id'],shot_id=plan['shot_id'],source_kind='authored_motion_graphics',source_plan=plan,media_evidence=media,status='awaiting_independent_review',illustrative=True,gpu_called=False,production_qc_approved=False,delivery_authorized=False,native_preset='style001_workflow_v1',source_prompt_sha256=evidence['source_prompt_sha256'])
+  result['candidate_fingerprint']=digest(result);report=Path(output).parent/'native_candidate_review.json';report.write_text(json.dumps(result,indent=2));return result,output,str(report)
+ out=Path(directory or tempfile.mkdtemp(prefix='joat-authored-graphics-'));out.mkdir(parents=True,exist_ok=True);target=out/(plan['shot_id']+'.mp4')
  if target.exists():raise ValueError('Authored output already exists; preserve existing candidate.')
  frames=round(plan['duration_seconds']*FPS)
  cmd=['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pixel_format','rgb24','-video_size',f'{W}x{H}','-framerate',str(FPS),'-i','pipe:0','-an','-c:v','libx264','-preset','fast','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',str(target)]

@@ -1,6 +1,6 @@
 {
   "schema": "joat.exact_reference_supplement.v1",
-  "file_version": "1.0.0",
+  "file_version": "1.0.2",
   "project_id": "PROJECT-OTU-STYLE001-90S-001",
   "mission_fingerprint": "2a881aa9651cd9058fd3f9ddaf199f1c2cbfc849b82caf511b1bcd661921868d",
   "source_prompt_sha256": "1aee010f5c991fd25ed48245b7fbbd9271232c8dc4e9ebd90616db245aa2329b",
@@ -348,6 +348,142 @@
         "canonical_registration": false
       },
       "multi_character_registration_qualification_required": true
+    },
+    {
+      "asset_key": "CRISTU-KIANA-CUSTOMER-DAY-CORRECTED",
+      "request_file": "CRISTU-KIANA-CUSTOMER-DAY-CORRECTED_request_v1.0.0.json",
+      "request_fingerprint": "86bdbf5d30172e6958657368b70b15d44243e1234c0357b63dc4c9914ad48b53",
+      "shot_ids": [
+        "SHOT-003",
+        "SHOT-004",
+        "SHOT-014"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004",
+        "CHAR-002"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "CHAR-002": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.4",
+        "request_id": "7bededb64c224efb8e52b5a4683d5527",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "CRISTU-KIANA-CUSTOMER-DAY-CORRECTED",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A07.jpeg",
+            "source_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "prepared_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Create ONE portrait 576x1024 production frame, no collage. Image1 supplies ONLY Cristu's identity and navy suit, white shirt and light striped tie. Image2 supplies ONLY Kiana's identity, long highlighted locks, gold hoops, navy blazer and striped top. Image3 is the FIXED APPROVED OFFICE: use that room as the setting, preserving its dark charcoal feature wall, warm wood built-in shelves, executive desk and full-height windows on the LEFT. Do not replace that room with a generic office. Do not use the gray backgrounds from the character portraits as the setting.\nShow exactly Cristu and Kiana greeting each other naturally as business owner and customer. Medium WAIST-UP two-person framing: both complete heads, faces, upper bodies and natural greeting hands visible, no legs, no full-body view, NO CEILING IN FRAME. Keep the original warm wood and dark-wall office recognizable behind them. A warm attentive expression on Cristu and a friendly composed expression on Kiana, premium stylized3D matching the original portraits. Keep their identities distinct; preserve facial proportions, skin tones, hair, beard, jewelry and wardrobe. No extra people or duplicated faces. No suspended ceiling tiles, white corporate room, redesigned windows, new office layout, text, labels, grids, split panels, borders, merged anatomy or hallucinated screens.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved original18shotStyle001 story, cast and exact corrected timing, reaffirmed2026-10-18. Necessary job-specific scene-candidate preparation only; paid execution requires its separate bounded spending/quota scope. No canonical identity replacement or finished-film approval. Necessary correction of rejected candidate bf043272e8884bfeb4c809926a0b9330: restore the already approved office and medium framing; unchanged story, cast and wardrobe.",
+        "canonical_registration": false
+      },
+      "multi_character_registration_qualification_required": true,
+      "supersedes_rejected_request_id": "bf043272e8884bfeb4c809926a0b9330",
+      "correction_reason": "Delegated review rejected invented office architecture and full-body framing. No original asset or source packet is replaced."
+    },
+    {
+      "asset_key": "CRISTU-KIANA-CUSTOMER-DAY-SINGLE-VIEW",
+      "request_file": "CRISTU-KIANA-CUSTOMER-DAY-SINGLE-VIEW_request_v1.0.0.json",
+      "request_fingerprint": "64ddbc22521e64be94894778c7109e70f8515065a3e0388a55a632022b7bf504",
+      "shot_ids": [
+        "SHOT-003",
+        "SHOT-004",
+        "SHOT-014"
+      ],
+      "all_visible_character_ids": [
+        "CHAR-004",
+        "CHAR-002"
+      ],
+      "canonical_source_hashes": {
+        "CHAR-004": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+        "CHAR-002": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964"
+      },
+      "request": {
+        "schema": "joat.project_reference_request.v1",
+        "file_version": "1.0.5",
+        "request_id": "d372f9ca42d6404084d17c244f8b28a1",
+        "project_id": "PROJECT-OTU-STYLE001-90S-001",
+        "asset_key": "CRISTU-KIANA-CUSTOMER-DAY-SINGLE-VIEW",
+        "kind": "shot_start_frame",
+        "aspect_ratio": "9:16",
+        "sources": [
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-004/CHAR-004-Cristu-01.jpeg",
+            "source_sha256": "fd27d3bf68dfa6daaf12dbc6421a84c67fedb6656f492672f6f78a0a867f1c1f",
+            "prepared_sha256": "8d6b3eec1ed13ddb3db2b07f05ddde964910b371b781e6c4fbc2bd32b6a5d0bc",
+            "crop_bounds_pixels": [
+              512,
+              0,
+              1402,
+              1122
+            ]
+          },
+          {
+            "role": "identity",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Character-Asset-Master/resolve/0a5a5f4895c2fa9ea613c32b77c338ad81e14bc2/assets/CHAR-002/CHAR-002-A07.jpeg",
+            "source_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "prepared_sha256": "9bb3c494d0be0094e55644e16c8bcf39ff20df2ee222451ca6673443c9d3a964",
+            "crop_bounds_pixels": null
+          },
+          {
+            "role": "environment",
+            "url": "https://huggingface.co/spaces/Dezz-9-10/J.O.A.T.-Scene-Environment-Master/resolve/a1648497d22ccef7e1dfdfb65294842c6d303005/environment_assets/ENV-008_office_identity_anchor.jpeg",
+            "source_sha256": "905c6358a14db2a3d52e6e3996581982bbe47618ff5c12e167e024314da4e96a",
+            "crop_bounds_pixels": [
+              2,
+              2,
+              905,
+              416
+            ],
+            "prepared_sha256": "21e3f1241af74913801c9ff697153a1ed1f5906503fc101c4ea240b6c4469e65"
+          }
+        ],
+        "prompt": "Edit Picture 1, the existing warm executive office. Keep its room, dark charcoal wall, wooden shelves, wooden desk and left windows. Add exactly two people in its foreground: Cristu from Picture 2 on the left and Kiana from Picture 3 on the right, greeting each other warmly as business owner and customer. Use their exact facial identities, hairstyles, skin tones and outfits. Cristu wears his navy suit, white shirt and striped light-gold tie; Kiana wears her navy blazer, striped top and gold jewelry. Medium waist-up composition, both complete heads and natural greeting hands visible. Crop the office view for portrait framing. Keep the office background from Picture 1; the gray portrait backgrounds of Pictures 2 and 3 must not appear. Same premium stylized3D visual style. One office scene, exactly two people, no text, no contact sheet, no repeated character views, no legs or full-body framing.",
+        "gpu_ceiling_seconds": 600,
+        "generation_authorized": true,
+        "authorization_basis": "Owner approved the original18shot Style001 story, roles and exact timings and delegated current-project still review. Two earlier candidates failed locked office continuity. This exact source-handling correction uses a reviewed single-face crop of the unchanged canonical Cristu card and explicit environment-first model input; no identity redesign, paid authority, canon registration or final QC approval.",
+        "canonical_registration": false,
+        "model_image_order": [
+          2,
+          0,
+          1
+        ]
+      },
+      "multi_character_registration_qualification_required": true,
+      "supersedes_rejected_request_id": "7bededb64c224efb8e52b5a4683d5527",
+      "correction_reason": "Source audit confirms all images arrive. Isolate one canonical identity view and explicitly condition the model on the office first; native CPU input proof is mandatory."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "schema": "joat.consolidated_cpu_manifest.v1",
-  "file_version": "1.0.18",
+  "file_version": "1.0.20",
   "source_revisions": {
     "character": {
       "repo": "Dezz-9-10/J.O.A.T.-Character-Asset-Master",
@@ -87,7 +87,7 @@
     },
     {
       "path": "app.py",
-      "sha256": "f1e3019d2e4a51cb4efaa50bc2f9eafd4e292afdb0649e9fe7569f0f0663b893",
+      "sha256": "465a3b570b04cbbd729cdddf17d42b57f8e86bcd00b0d05b636e55f92f975d1a",
       "size_bytes": 63245
     },
     {
@@ -1092,13 +1092,13 @@
     },
     {
       "path": "departments/titles_graphics/app.py",
-      "sha256": "86300d6aa5f6177737c7507248a939373eabf381f9d77c6098e4852a786c0544",
+      "sha256": "b55f2a49d211fef2b74ae8dacf6bbcfe777d1dd7c25d473c0b7aafd217a46e9b",
       "size_bytes": 36211
     },
     {
       "path": "departments/titles_graphics/joat_authored_graphics.py",
-      "sha256": "aa131dc3dc9561934fc912fb29f1593879af03f1cc28680dc2cee91f274e0ee6",
-      "size_bytes": 7654
+      "sha256": "c535ba5765192f08772901e0de80136524ae26a7ae46e8b3997a60f7d42e76aa",
+      "size_bytes": 9518
     },
     {
       "path": "departments/titles_graphics/joat_authored_graphics_ui.py",
@@ -1124,6 +1124,11 @@
       "path": "departments/titles_graphics/joat_production_ui.py",
       "sha256": "32c983278c9de2c8ffe6029702ebf6727a72a5328dbf214a96726367e39e85fe",
       "size_bytes": 17666
+    },
+    {
+      "path": "departments/titles_graphics/joat_style001_workflow_graphics.py",
+      "sha256": "c36726ed5ae26ba6aa33bcef909c0b4cbb8b9952d8ef6a569a1f5ff9a4b306a3",
+      "size_bytes": 5233
     },
     {
       "path": "departments/titles_graphics/requirements.txt",
@@ -1177,8 +1182,8 @@
     },
     {
       "path": "joat_cpu_child.py",
-      "sha256": "43a12361d906bbd4d47c91e742be9bc869951944666c387ce8a0f81c321468f3",
-      "size_bytes": 6628
+      "sha256": "846705ed70db1db448f154f9c0316fbc922227c042c7fedb98c6cce74a4f6882",
+      "size_bytes": 6815
     },
     {
       "path": "joat_cpu_control_ui.py",
@@ -1524,11 +1529,11 @@
       "file": "joat_render_bridge.py",
       "from_version": "1.0.19",
       "to_version": "1.0.20",
-      "reason": "Explicit owner-configured45–600second composed-I2V allocation; fresh exact plan and grant remain mandatory; no inference quality or source changes.",
+      "reason": "Explicit owner-configured45\u2013600second composed-I2V allocation; fresh exact plan and grant remain mandatory; no inference quality or source changes.",
       "sha256": "df6c4080cc32f8a86a9cb3daa6d8e6e46437b8e6d288800fecba646366910d99"
     }
   ],
   "gpu_workers_moved": false,
   "existing_approvals_preserved": true,
-  "manifest_fingerprint": "699b79c3188d536f9819780644ca13da8c8e8e36939bcb40da96c76096391419"
+  "manifest_fingerprint": "8249ff89b9e8cb008818012a37f698a43defac02bd16454c18e91d8c73b164a0"
 }

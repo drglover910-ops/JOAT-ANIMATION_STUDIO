@@ -1,5 +1,5 @@
 """
-J.O.A.T. Titles/Graphics Worker Bot v1.0.1
+J.O.A.T. Titles/Graphics Worker Bot v1.0.4
 Roadmap Stage #15
 
 Purpose:
@@ -22,7 +22,7 @@ from typing import Any
 import gradio as gr
 
 
-APP_VERSION = "1.0.3"
+APP_VERSION = "1.0.4"
 
 BOT_NAME = "J.O.A.T. Titles/Graphics Worker Bot"
 BOT_TYPE = "titles_graphics_worker_bot"

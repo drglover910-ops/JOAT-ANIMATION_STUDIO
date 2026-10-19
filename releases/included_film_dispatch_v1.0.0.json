@@ -1,0 +1,32 @@
+{
+  "schema": "joat.included_film_dispatch_release.v1",
+  "file_version": "1.0.0",
+  "gpu_called": false,
+  "deployments": [
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "previous_revision": "c8bf8b9300fa5c8f38c293eb4b15ce818418df54",
+      "revision": "5f3871682c1a6765d5004fb7c0583a07b80ac530",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "465a3b570b04cbbd729cdddf17d42b57f8e86bcd00b0d05b636e55f92f975d1a",
+        "joat_cpu_child.py": "846705ed70db1db448f154f9c0316fbc922227c042c7fedb98c6cce74a4f6882",
+        "consolidated_manifest.json": "51b5804562bf6c3ae6a444966b0993a83e53b8264a6443dafa4da7f56e747999"
+      }
+    },
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "previous_revision": "7263a33de3b1c963f6b15f519dd1f7b423f131ee",
+      "revision": "8492dbafaab16f7217b290c38461536abd07a207",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "2b964acd98990318db7f1d366098c4cb733e61dfb85bebb3aa6f053f6c43e6fc",
+        "joat_control_contract.py": "d83d58d06a3d83b57af07f2a062f2731744aadf2444e0088b1eba8229ce5922f",
+        "joat_included_film_render.py": "094eed01691a0d2070efe91197c2de5fc1b5069ce2fa7f905efd36c2d3028e8b",
+        "joat_production_tasks.py": "8fd9a038c3209e51169253bb212e14f5f36d3fd5f24bb3b0edff2e1d095fb31e"
+      }
+    }
+  ],
+  "cpu_tests_passed": 102,
+  "native_worker_policy_check_passed": true
+}

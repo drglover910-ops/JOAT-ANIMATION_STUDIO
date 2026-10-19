@@ -1,5 +1,5 @@
 """
-J.O.A.T. Executive Producer Bot v1.2.22
+J.O.A.T. Executive Producer Bot v1.2.24
 Roadmap Stage #17
 
 LIVE EXECUTION + STUDIO CONNECTIVITY UPGRADE
@@ -42,8 +42,8 @@ from huggingface_hub import HfApi
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "1.2.22"
-FILE_VERSION = "1.2.22"
+APP_VERSION = "1.2.24"
+FILE_VERSION = "1.2.24"
 ACCEPTANCE_TEST_VERSION = "1.2.0"
 
 BOT_NAME = "J.O.A.T. Executive Producer Bot"
