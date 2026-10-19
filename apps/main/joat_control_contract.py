@@ -1,7 +1,7 @@
-"""Pinned API discovery for the fixed Studio Control service. File version 1.0.18.
+"""Pinned API discovery for the fixed Studio Control service. File version 1.0.20.
 Caches public metadata only. Live API authentication, HMAC and rate limits remain enforced.
 """
-FILE_VERSION='1.0.18'
+FILE_VERSION='1.0.20'
 import copy,json,hashlib
 from pathlib import Path
 from huggingface_hub import HfApi
@@ -9,7 +9,7 @@ from gradio_client import Client
 ROOT=Path(__file__).parent
 REPO='Dezz-9-10/J.O.A.T.-Executive-Producer-Bot'
 HOST='https://dezz-9-10-j-o-a-t-executive-producer-bot.hf.space'
-REVISION='5f3871682c1a6765d5004fb7c0583a07b80ac530'
+REVISION='1e555450e8193f53957a2f547da6ec0ac1bd7eaf'
 HASHES={'control_config_v1.0.0.json': '6f2826c891eb02fcf0b9638047ab8f09509e3c6d1413bfa158cf9f6707afb419', 'control_api_v1.0.0.json': '531298ede4dd591a0c0c035c125db9ac060342d2963e893878e84b07936b4ceb'}
 
 def read_contract(name):

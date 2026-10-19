@@ -1,0 +1,35 @@
+{
+  "schema": "joat.saved_shot_viewer_release.v1",
+  "file_version": "1.0.1",
+  "deployments": [
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "previous_revision": "262d2739c28d0c19ce6e7ffcba48a88ceea6e573",
+      "revision": "1e555450e8193f53957a2f547da6ec0ac1bd7eaf",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "e6a75b8ae9b63ea260f249875e608528704bde6ab6b4918fdf68e42a2d6a48fa",
+        "consolidated_manifest.json": "ac4a303d046bd823a0391503c1d7d3511451fbbb686078953ee7708a8bc486f8",
+        "joat_film_asset_viewer.py": "ff01614f9e4f38d6a4e2cb7242489f47cd2f87be94aa1eb5e3b237f36785b56b"
+      }
+    },
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "previous_revision": "5d2b1339cb09637ac2f76cecd26ca976ab745f83",
+      "revision": "387691cda3093310049165bd018d18df77096894",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "9d54abfeec865b12bf00c1994adbda8192a26dd2b59563b6d0ab81528f1df638",
+        "joat_film_asset_viewer.py": "ff01614f9e4f38d6a4e2cb7242489f47cd2f87be94aa1eb5e3b237f36785b56b",
+        "joat_control_contract.py": "4de18cbb567ecbbd8f79f62671a0f62b335ad2b1282b46c5d2e1771aa303e272"
+      }
+    }
+  ],
+  "unit_tests_passed": 106,
+  "actual_owner_verified_exports_checked": [
+    "SHOT-010",
+    "SHOT-012"
+  ],
+  "gpu_called_by_release": false,
+  "latest_saved_candidate_selected_by_default": true
+}

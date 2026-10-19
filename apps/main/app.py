@@ -1,5 +1,5 @@
 """
-J.O.A.T. Main Assistant Bot v2.1.112
+J.O.A.T. Main Assistant Bot v2.1.114
 
 LIVE SPECIALIST EXECUTION
 
@@ -73,7 +73,7 @@ from huggingface_hub import InferenceClient
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "2.1.112"
+APP_VERSION = "2.1.114"
 ACCEPTANCE_TEST_VERSION = "2.1.0"
 
 BOT_NAME = os.environ.get(
@@ -4515,8 +4515,8 @@ def tests_ui():
 
     try:
         add(
-            "1. App version is 2.1.112",
-            APP_VERSION == "2.1.112",
+            "1. App version is 2.1.114",
+            APP_VERSION == "2.1.114",
         )
 
         add(
@@ -6297,6 +6297,8 @@ J.O.A.T. Main Assistant Bot
         add_studio_capability_ui()
         from joat_reference_connection_check import add_reference_connection_ui
         add_reference_connection_ui()
+        from joat_film_asset_viewer import add_saved_shots_ui
+        add_saved_shots_ui()
 
     return app
 

@@ -1,5 +1,5 @@
 """
-J.O.A.T. Executive Producer Bot v1.2.24
+J.O.A.T. Executive Producer Bot v1.2.26
 Roadmap Stage #17
 
 LIVE EXECUTION + STUDIO CONNECTIVITY UPGRADE
@@ -42,8 +42,8 @@ from huggingface_hub import HfApi
 # CONFIG
 # =============================================================================
 
-APP_VERSION = "1.2.24"
-FILE_VERSION = "1.2.24"
+APP_VERSION = "1.2.26"
+FILE_VERSION = "1.2.26"
 ACCEPTANCE_TEST_VERSION = "1.2.0"
 
 BOT_NAME = "J.O.A.T. Executive Producer Bot"
@@ -1908,6 +1908,8 @@ jobs and do not prove downstream work execution.
         add_cpu_control_ui()
         from joat_studio_capability_ui import add_studio_capability_ui
         add_studio_capability_ui()
+        from joat_film_asset_viewer import add_saved_shots_ui
+        add_saved_shots_ui()
 
     return app
 

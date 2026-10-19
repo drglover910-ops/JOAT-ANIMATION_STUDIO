@@ -1,0 +1,26 @@
+{
+  "schema": "joat.saved_shot_viewer_release.v1",
+  "file_version": "1.0.0",
+  "deployments": [
+    {
+      "space": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "previous_revision": "5f3871682c1a6765d5004fb7c0583a07b80ac530",
+      "revision": "262d2739c28d0c19ce6e7ffcba48a88ceea6e573",
+      "source_readback_verified": true,
+      "files": {
+        "app.py": "0add11194ca937a2c061fc650fe3ae19f09bb9371294bebb0957056f4ef51404",
+        "consolidated_manifest.json": "838b193b57275585f22191c0d028e2621c8185bc41257f968630094bcbbe08eb",
+        "joat_film_asset_viewer.py": "0db1df56ce8b0e346511025a014056c462736ee724121296c89496a5d3eb5f55"
+      }
+    }
+  ],
+  "unit_tests_passed": 106,
+  "main_ui_build_passed": true,
+  "control_ui_build_passed": true,
+  "control_existing_routing_ids_preserved": true,
+  "actual_owner_verified_exports_checked": [
+    "SHOT-010",
+    "SHOT-012"
+  ],
+  "gpu_called": false
+}

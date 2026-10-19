@@ -1,6 +1,6 @@
 {
   "schema": "joat.consolidated_cpu_manifest.v1",
-  "file_version": "1.0.20",
+  "file_version": "1.0.22",
   "source_revisions": {
     "character": {
       "repo": "Dezz-9-10/J.O.A.T.-Character-Asset-Master",
@@ -87,8 +87,8 @@
     },
     {
       "path": "app.py",
-      "sha256": "465a3b570b04cbbd729cdddf17d42b57f8e86bcd00b0d05b636e55f92f975d1a",
-      "size_bytes": 63245
+      "sha256": "e6a75b8ae9b63ea260f249875e608528704bde6ab6b4918fdf68e42a2d6a48fa",
+      "size_bytes": 63336
     },
     {
       "path": "approved_knowledge_index.json",
@@ -1196,6 +1196,11 @@
       "size_bytes": 3235
     },
     {
+      "path": "joat_film_asset_viewer.py",
+      "sha256": "ff01614f9e4f38d6a4e2cb7242489f47cd2f87be94aa1eb5e3b237f36785b56b",
+      "size_bytes": 6549
+    },
+    {
       "path": "joat_local_context.py",
       "sha256": "6c676984b6e521da8aba2dd4f2e6ee8cbc4bd52d0d62a464b0a0bc595e562028",
       "size_bytes": 1454
@@ -1535,5 +1540,5 @@
   ],
   "gpu_workers_moved": false,
   "existing_approvals_preserved": true,
-  "manifest_fingerprint": "8249ff89b9e8cb008818012a37f698a43defac02bd16454c18e91d8c73b164a0"
+  "manifest_fingerprint": "df98f935c4e77a6b99b29b11ea0555cc4f99231433774781121b678a4ae9b1c5"
 }

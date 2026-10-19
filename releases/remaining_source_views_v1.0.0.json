@@ -1,0 +1,17 @@
+{
+  "schema": "joat.remaining_source_views_release.v1",
+  "file_version": "1.0.0",
+  "space": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+  "previous_revision": "8c84c81a95d2fac6c3f0127959dd34e18f1973b7",
+  "revision": "5d2b1339cb09637ac2f76cecd26ca976ab745f83",
+  "source_readback_verified": true,
+  "files": {
+    "app.py": "72524dbd4dbd1f5d3d863093ee6436970727dc897a770922b42c8951cc732223",
+    "joat_reference_supplement.py": "6e4664fcf0cd3778ea8955ca8cb228af152a17591956c4b7fd85ddc1f5d1d4f3",
+    "joat_style001_reference_supplement.json": "e3552f0f7db009423ea10ba6a96dfa5794fdefc55b7565b5774b07aa01b5fc81"
+  },
+  "cpu_tests_passed": 102,
+  "additional_requests_cpu_validated": 5,
+  "gpu_called": false,
+  "prior_source_mission_changed": false
+}
