@@ -1,4 +1,4 @@
-"""Bounded, reviewed production guidance. File version: 1.0.0.
+"""Bounded, reviewed production guidance. File version: 1.0.1.
 
 Read-only retrieval; never learns from raw transcripts or approves execution.
 The deployed index pins every record's bytes. A bucket writer cannot promote a
@@ -12,7 +12,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-FILE_VERSION = '1.0.0'
+FILE_VERSION = '1.0.1'
 ROOT = Path(__file__).resolve().parent
 ROLES = ('browser', 'hugging_face', 'narration', 'character', 'environment',
          'director', 'shot_camera', 'performance_action', 'generation_supervisor',
@@ -22,7 +22,7 @@ ROLES = ('browser', 'hugging_face', 'narration', 'character', 'environment',
 VALID_ROLES = frozenset((*ROLES, 'main', 'executive'))
 ID = re.compile(r'[A-Za-z0-9][A-Za-z0-9_-]{0,127}\Z')
 SHA = re.compile(r'[a-f0-9]{64}\Z')
-INDEX_SHA256 = 'faf9eca67bf1b92fe85441f17f4afce8eaa3baea7921e5a18e5da21106550b15'
+INDEX_SHA256 = '32dd0ff58ea249c50931c78f435f281e6cbeb086e34da2ec5d494ba53b26a370'
 
 
 def _read(path: Path, base: Path, maximum: int = 256 * 1024) -> bytes:

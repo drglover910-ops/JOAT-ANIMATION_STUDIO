@@ -1,0 +1,50 @@
+{
+  "schema": "joat.production_lesson.v1",
+  "file_version": "1.0.0",
+  "id": "studio-interface-ownership",
+  "status": "approved",
+  "roles": [
+    "browser",
+    "hugging_face",
+    "narration",
+    "character",
+    "environment",
+    "director",
+    "shot_camera",
+    "performance_action",
+    "generation_supervisor",
+    "generation_worker",
+    "quality_control",
+    "post_production",
+    "editorial",
+    "sound",
+    "music",
+    "compositing_vfx",
+    "color_finish",
+    "titles_graphics",
+    "voice_dialogue",
+    "delivery_archive",
+    "main",
+    "executive"
+  ],
+  "scope": {
+    "project_id": null,
+    "style_id": null
+  },
+  "title": "Director owns the complete Studio workflow",
+  "guidance": "Main Assistant is the company-wide coordinator and can submit signed Studio requests. Executive/Studio Control hosts the Director and all twenty distinct departments; the Director owns the Studio interface and creative workflow. Studio must expose the same relevant production knowledge, project locks, asset reuse, scoped approvals, saved candidates, independent QC, post, timeline and delivery controls. Keep Main operational without turning it into the sole Studio interface. Preserve existing shared Studio storage and Main personal storage; no GoHighLevel dependency. This knowledge transfer does not claim the final polished Studio UI is complete.",
+  "review": {
+    "reviewer": "Codex under owner-requested Studio information transfer",
+    "approval_basis": "Owner requested on 2026-10-19 that Studio Control receive established production and budget guidance. Information transfer only; no new spending, GPU execution, final QC or infrastructure migration authorized."
+  },
+  "evidence": [
+    {
+      "source": "docs/JOAT_GPU_DECISION_REPORT_v1.0.0.md",
+      "sha256": "10233403a10c8b24f7e9e8342eed3f6151b302c0e6e073d61a4fe5b6fc6499fa"
+    }
+  ],
+  "valid_from": "2026-10-19T00:00:00Z",
+  "expires_at": "2027-01-19T00:00:00Z",
+  "versions": {},
+  "supersedes": []
+}

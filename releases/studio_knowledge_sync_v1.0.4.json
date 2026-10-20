@@ -1,0 +1,94 @@
+{
+  "file_version": "1.0.4",
+  "gpu_called": false,
+  "spending_authorized_usd": 0,
+  "components": {
+    "control": {
+      "repo": "Dezz-9-10/J.O.A.T.-Executive-Producer-Bot",
+      "revision": "8b427ff762dd8be9c82d0fe64bb9def3393eee46",
+      "parent_revision": "1e555450e8193f53957a2f547da6ec0ac1bd7eaf",
+      "files": [
+        "app.py",
+        "approved_knowledge_index.json",
+        "consolidated_manifest.json",
+        "joat_cpu_control_ui.py",
+        "joat_production_knowledge.py",
+        "joat_production_knowledge_ui.py",
+        "knowledge/gpu-accounting-and-routing.json",
+        "knowledge/studio-interface-ownership.json",
+        "knowledge/style001-finish-checkpoint.json"
+      ],
+      "source_verified": true,
+      "knowledge_revision": "9add588f5577be98bdd2b7cc1247ea711a8fab2b",
+      "current_source_sha256": {
+        "app.py": "2697cb3564d05b0ed52239832c1c7af202c065e751681863f56ecc80a7c29025",
+        "approved_knowledge_index.json": "32dd0ff58ea249c50931c78f435f281e6cbeb086e34da2ec5d494ba53b26a370",
+        "consolidated_manifest.json": "4a4624e44df5ab09535c0477f0b207e43d311aebdaaa4d456e6008d2f37c7c40",
+        "joat_cpu_control_ui.py": "f199d1ac4141f5b8ce08faa4c6cb4accd893b15cc779312151486c147df4eea4",
+        "joat_production_knowledge.py": "d418e5f777fe3b991c3a1de760c7611a7ba53b46c1f9456cbc8a8f638277277a",
+        "joat_production_knowledge_ui.py": "ac8d0b569f66f60745a43a590bb1f6f96ca291dccb6abedd256eccef5f90d532",
+        "knowledge/gpu-accounting-and-routing.json": "81083f0477d9884f75ad5b78dfd50bc071d6767c4859ba6c919140393d184d3a",
+        "knowledge/studio-interface-ownership.json": "d19fcf2493b7bf2b35652e6d3d3cf005ff2b0413bd0c6061b883d8b88d0e35b2",
+        "knowledge/style001-finish-checkpoint.json": "83788f8f32774c8e76d9b51a92aae511b2d7b2810242bb6567b0d9957a5442ed"
+      }
+    },
+    "main": {
+      "repo": "Dezz-9-10/J.O.A.T.-Main-Assistant-Bot",
+      "revision": "8ed07fc495229fe7d126f6e9c396938ddbc1c6f9",
+      "parent_revision": "387691cda3093310049165bd018d18df77096894",
+      "files": [
+        "app.py",
+        "approved_knowledge_index.json",
+        "control_api_v1.0.1.json",
+        "control_config_v1.0.1.json",
+        "joat_capability_check.py",
+        "joat_control_contract.py",
+        "joat_production_knowledge.py",
+        "joat_production_knowledge_ui.py",
+        "knowledge/gpu-accounting-and-routing.json",
+        "knowledge/studio-interface-ownership.json",
+        "knowledge/style001-finish-checkpoint.json"
+      ],
+      "source_verified": true,
+      "knowledge_revision": "d8545aff9ccba5f8a388ea1a80e3e64248f81375",
+      "current_source_sha256": {
+        "app.py": "9c25b64889d64ac886609a6be6a340e3b6798f679baf4271e58c7f1027f683e7",
+        "approved_knowledge_index.json": "32dd0ff58ea249c50931c78f435f281e6cbeb086e34da2ec5d494ba53b26a370",
+        "control_api_v1.0.1.json": "e0ebe4c1c9a7d044e58626c364347590aa322209f7ae715839c9a2607ce79d1c",
+        "control_config_v1.0.1.json": "38ade4f4d4bf205142835cb11966b33dd4ccc0c91ceee4b8d849a3c2ff2c59e3",
+        "joat_capability_check.py": "44917ca191222cb58cb738dd3a970f455dc4367589b0a464d7ecbe67c3ca233e",
+        "joat_control_contract.py": "d4dead7563a2aec3186a144842e9b8d30125af3e4472b1122b9f5ca1e96d9e27",
+        "joat_production_knowledge.py": "d418e5f777fe3b991c3a1de760c7611a7ba53b46c1f9456cbc8a8f638277277a",
+        "joat_production_knowledge_ui.py": "ac8d0b569f66f60745a43a590bb1f6f96ca291dccb6abedd256eccef5f90d532",
+        "knowledge/gpu-accounting-and-routing.json": "81083f0477d9884f75ad5b78dfd50bc071d6767c4859ba6c919140393d184d3a",
+        "knowledge/studio-interface-ownership.json": "d19fcf2493b7bf2b35652e6d3d3cf005ff2b0413bd0c6061b883d8b88d0e35b2",
+        "knowledge/style001-finish-checkpoint.json": "83788f8f32774c8e76d9b51a92aae511b2d7b2810242bb6567b0d9957a5442ed"
+      }
+    }
+  },
+  "direct_runtime_access": "404 outside native Spaces; use existing CPU qualification",
+  "native_check": {
+    "id": "bba145f00e6b499495478a75d6d0ea88",
+    "variable": "JOAT_CAPABILITY_CHECK_bba145f00e6b499495478a75d6d0ea88",
+    "bucket": "Dezz-9-10/J.O.A.T.-Studio-storage",
+    "path": "joat-studio/migrations/capabilities/bba145f00e6b499495478a75d6d0ea88/receipt.json"
+  },
+  "status": "native_cpu_qualification_passed",
+  "previous_native_check": {
+    "id": "9d2588c322394bb08924e32a7ce88312",
+    "variable": "JOAT_CAPABILITY_CHECK_9d2588c322394bb08924e32a7ce88312",
+    "bucket": "Dezz-9-10/J.O.A.T.-Studio-storage",
+    "path": "joat-studio/migrations/capabilities/9d2588c322394bb08924e32a7ce88312/receipt.json"
+  },
+  "prior_serving_replica_check": {
+    "id": "1f5bba913e604e8c957f9537b67fb2af",
+    "variable": "JOAT_CAPABILITY_CHECK_1f5bba913e604e8c957f9537b67fb2af",
+    "bucket": "Dezz-9-10/J.O.A.T.-Studio-storage",
+    "path": "joat-studio/migrations/capabilities/1f5bba913e604e8c957f9537b67fb2af/receipt.json"
+  },
+  "native_receipt_fingerprint": "e94534ae89e3e894d5cbed18b0fa0ef020b091d6643b00161acf7a76b9d0a809",
+  "local_test_count": 107,
+  "shared_source_consistency": "passed",
+  "provider_inference_called": false,
+  "paid_authority_usd": 0
+}

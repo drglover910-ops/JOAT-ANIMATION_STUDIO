@@ -1,0 +1,50 @@
+{
+  "schema": "joat.production_lesson.v1",
+  "file_version": "1.0.0",
+  "id": "style001-finish-checkpoint",
+  "status": "approved",
+  "roles": [
+    "browser",
+    "hugging_face",
+    "narration",
+    "character",
+    "environment",
+    "director",
+    "shot_camera",
+    "performance_action",
+    "generation_supervisor",
+    "generation_worker",
+    "quality_control",
+    "post_production",
+    "editorial",
+    "sound",
+    "music",
+    "compositing_vfx",
+    "color_finish",
+    "titles_graphics",
+    "voice_dialogue",
+    "delivery_archive",
+    "main",
+    "executive"
+  ],
+  "scope": {
+    "project_id": "PROJECT-OTU-STYLE001-90S-001",
+    "style_id": "STYLE001"
+  },
+  "title": "Current film checkpoint and finish criteria",
+  "guidance": "The approved film remains the exact 18-shot 90-second Style001 story. Founder CHAR-001 delivers the product, Cristu CHAR-004 is the business owner and Kiana CHAR-002 the customer. A discussed 30-second alternative has not replaced it. Corrected opening shot001 and speaking shot010 are saved candidates, not final film QC. Shot010 says exactly: Without me answering every message? Shot012 has a saved six-second CPU graphic; narrator WAVs and UI graphics exist. Reuse suitable approved media before generating missing scenes. Medium customer reference is scoped to shots003/014, not wide004; the standing Founder relief composition was rejected. Actor dialogue needs visible speaking and lip-sync review; narration cannot substitute for a speaking performance. Remaining work includes qualified references, remaining performances, voice/continuity checks, edit, music/SFX as required, captions, final master QC and durable delivery/readback. GPU estimate80–130 additional normalized minutes ($8–$13 entirely paid) is a conditional planning range, not a guarantee or authorization. Included time can reduce cash cost. A $10 cap and possible $5 extension were recommendations only, not approved grants. Preserve exact words, timing, source hashes and approvals; no new final approval follows from owner confidence.",
+  "review": {
+    "reviewer": "Codex under owner-requested Studio information transfer",
+    "approval_basis": "Owner requested on 2026-10-19 that Studio Control receive established production and budget guidance. Information transfer only; no new spending, GPU execution, final QC or infrastructure migration authorized."
+  },
+  "evidence": [
+    {
+      "source": "docs/JOAT_GPU_DECISION_REPORT_v1.0.0.md",
+      "sha256": "10233403a10c8b24f7e9e8342eed3f6151b302c0e6e073d61a4fe5b6fc6499fa"
+    }
+  ],
+  "valid_from": "2026-10-19T00:00:00Z",
+  "expires_at": "2027-01-19T00:00:00Z",
+  "versions": {},
+  "supersedes": []
+}

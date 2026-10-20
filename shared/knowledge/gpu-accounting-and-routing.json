@@ -1,0 +1,50 @@
+{
+  "schema": "joat.production_lesson.v1",
+  "file_version": "1.0.0",
+  "id": "gpu-accounting-and-routing",
+  "status": "approved",
+  "roles": [
+    "browser",
+    "hugging_face",
+    "narration",
+    "character",
+    "environment",
+    "director",
+    "shot_camera",
+    "performance_action",
+    "generation_supervisor",
+    "generation_worker",
+    "quality_control",
+    "post_production",
+    "editorial",
+    "sound",
+    "music",
+    "compositing_vfx",
+    "color_finish",
+    "titles_graphics",
+    "voice_dialogue",
+    "delivery_archive",
+    "main",
+    "executive"
+  ],
+  "scope": {
+    "project_id": null,
+    "style_id": null
+  },
+  "title": "GPU costs, quota visibility and spending boundaries",
+  "guidance": "Current researched HF PRO list price is $9/month with 40 included ZeroGPU minutes per reset period. Published large allocation is 48GB at 1x quota, xlarge 96GB at 2x; overage is $1 per 10 normalized minutes using credits. Recheck provider rules before financial decisions. Allocation ceilings are not actual usage; measure receipts. Another public ZeroGPU Space still uses caller allowance. Inference API billing and hardware hosting are separate categories; a spending allowance is not available credits. Current Main and Control use free CPU Basic. Fresh balance may be unavailable; never present historical $3.68 or old quota as live. Credit-top-up discussion is not purchase or spending permission. Existing paid authority remains $0 until a specific grant. GPU hold and exact-plan gates remain authoritative. Keep existing architecture; shared budget ledger and compute router are proposed, not implemented. Never silently change models or retry an uncertain submitted task. Prioritize current film before rental benchmarking or hardware ownership.",
+  "review": {
+    "reviewer": "Codex under owner-requested Studio information transfer",
+    "approval_basis": "Owner requested on 2026-10-19 that Studio Control receive established production and budget guidance. Information transfer only; no new spending, GPU execution, final QC or infrastructure migration authorized."
+  },
+  "evidence": [
+    {
+      "source": "docs/JOAT_GPU_DECISION_REPORT_v1.0.0.md",
+      "sha256": "10233403a10c8b24f7e9e8342eed3f6151b302c0e6e073d61a4fe5b6fc6499fa"
+    }
+  ],
+  "valid_from": "2026-10-19T00:00:00Z",
+  "expires_at": "2027-01-19T00:00:00Z",
+  "versions": {},
+  "supersedes": []
+}

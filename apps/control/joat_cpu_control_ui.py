@@ -1,7 +1,7 @@
-"""Owner-authenticated consolidated department gateway. Embedded file version1.0.1.
+"""Owner-authenticated consolidated department gateway. Embedded file version1.0.2.
 Only fixed snapshotted departments, staged inputs and selected outputs are exposed.
 """
-FILE_VERSION='1.0.1'
+FILE_VERSION='1.0.2'
 import hashlib,json,os,shutil,tempfile
 from pathlib import Path
 from typing import Optional
@@ -51,7 +51,14 @@ def describe(role:str,profile:Optional[gr.OAuthProfile],oauth:Optional[gr.OAuthT
  owner(profile,oauth,request)
  if role not in ROLES:raise gr.Error('Unknown native department.')
  try:return POOL.request(role,'describe',timeout=120)['result']
- except Exception:raise gr.Error('Native department contract loading failed; no operation submitted.') from None
+ except Exception as exc:
+  import re
+  detail=str(exc)
+  for key,value in os.environ.items():
+   if re.search('token|secret|password|_key',key,re.I) and len(value)>7:detail=detail.replace(value,'[REDACTED]')
+  detail=re.sub(r'hf_[A-Za-z0-9]+|(?i:Bearer)\s+[^\s\"\']+','[REDACTED]',detail)
+  print('JOAT_CPU_DESCRIBE_FAILURE '+json.dumps(dict(role=role,error_type=type(exc).__name__,safe_error_message=detail[:1200],gpu_called=False)),flush=True)
+  raise gr.Error('Native department contract loading failed; no operation submitted.') from None
 
 def validate_file_inputs(args,kwargs,contract):
  def staged(v):

@@ -1,6 +1,6 @@
 {
   "schema": "joat.approved_knowledge_index.v1",
-  "file_version": "1.0.0",
+  "file_version": "1.0.1",
   "records": [
     {
       "id": "authority-boundaries",
@@ -157,6 +157,24 @@
       "storage": "package",
       "path": "knowledge/style001-locked-story.json",
       "sha256": "7ca8c7b67cab128a039cd846ac75758ddae3e578b1d8ea53bf304463fe53232f"
+    },
+    {
+      "id": "studio-interface-ownership",
+      "storage": "package",
+      "path": "knowledge/studio-interface-ownership.json",
+      "sha256": "d19fcf2493b7bf2b35652e6d3d3cf005ff2b0413bd0c6061b883d8b88d0e35b2"
+    },
+    {
+      "id": "gpu-accounting-and-routing",
+      "storage": "package",
+      "path": "knowledge/gpu-accounting-and-routing.json",
+      "sha256": "81083f0477d9884f75ad5b78dfd50bc071d6767c4859ba6c919140393d184d3a"
+    },
+    {
+      "id": "style001-finish-checkpoint",
+      "storage": "package",
+      "path": "knowledge/style001-finish-checkpoint.json",
+      "sha256": "83788f8f32774c8e76d9b51a92aae511b2d7b2810242bb6567b0d9957a5442ed"
     }
   ]
 }

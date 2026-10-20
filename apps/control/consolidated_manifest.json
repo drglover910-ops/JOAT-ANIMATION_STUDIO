@@ -1,6 +1,6 @@
 {
   "schema": "joat.consolidated_cpu_manifest.v1",
-  "file_version": "1.0.22",
+  "file_version": "1.0.24",
   "source_revisions": {
     "character": {
       "repo": "Dezz-9-10/J.O.A.T.-Character-Asset-Master",
@@ -87,13 +87,13 @@
     },
     {
       "path": "app.py",
-      "sha256": "e6a75b8ae9b63ea260f249875e608528704bde6ab6b4918fdf68e42a2d6a48fa",
+      "sha256": "2697cb3564d05b0ed52239832c1c7af202c065e751681863f56ecc80a7c29025",
       "size_bytes": 63336
     },
     {
       "path": "approved_knowledge_index.json",
-      "sha256": "faf9eca67bf1b92fe85441f17f4afce8eaa3baea7921e5a18e5da21106550b15",
-      "size_bytes": 5485
+      "sha256": "32dd0ff58ea249c50931c78f435f281e6cbeb086e34da2ec5d494ba53b26a370",
+      "size_bytes": 6160
     },
     {
       "path": "departments/browser/README.md",
@@ -1187,8 +1187,8 @@
     },
     {
       "path": "joat_cpu_control_ui.py",
-      "sha256": "310ae633859d2c2d6c624efd254db5684bf913ea7f1082675bfdc8b01d22077f",
-      "size_bytes": 6914
+      "sha256": "f199d1ac4141f5b8ce08faa4c6cb4accd893b15cc779312151486c147df4eea4",
+      "size_bytes": 7345
     },
     {
       "path": "joat_cpu_department_client.py",
@@ -1217,13 +1217,13 @@
     },
     {
       "path": "joat_production_knowledge.py",
-      "sha256": "9b6f67ea366245488217ed2ba6186b17347536e7bc22bfc3b5154b891b4e37b3",
+      "sha256": "d418e5f777fe3b991c3a1de760c7611a7ba53b46c1f9456cbc8a8f638277277a",
       "size_bytes": 9254
     },
     {
       "path": "joat_production_knowledge_ui.py",
-      "sha256": "d10e5c1ed8470ce0c8be25e59056fa4a69723121409b419c41b543e11258c940",
-      "size_bytes": 1826
+      "sha256": "ac8d0b569f66f60745a43a590bb1f6f96ca291dccb6abedd256eccef5f90d532",
+      "size_bytes": 1918
     },
     {
       "path": "joat_runtime_client.py",
@@ -1264,6 +1264,11 @@
       "path": "knowledge/evidence-and-approval.json",
       "sha256": "9f27e0da940f7f605b386103b57b32589c9ffd3488d0b054e1da239967febe55",
       "size_bytes": 1559
+    },
+    {
+      "path": "knowledge/gpu-accounting-and-routing.json",
+      "sha256": "81083f0477d9884f75ad5b78dfd50bc071d6767c4859ba6c919140393d184d3a",
+      "size_bytes": 2404
     },
     {
       "path": "knowledge/reuse-and-budget.json",
@@ -1379,6 +1384,16 @@
       "path": "knowledge/role-voice_dialogue.json",
       "sha256": "2d73ad14d96cab010b6a014a67dc1146a8f5bc3871a19b243f39d0593b3f732c",
       "size_bytes": 1036
+    },
+    {
+      "path": "knowledge/studio-interface-ownership.json",
+      "sha256": "d19fcf2493b7bf2b35652e6d3d3cf005ff2b0413bd0c6061b883d8b88d0e35b2",
+      "size_bytes": 1995
+    },
+    {
+      "path": "knowledge/style001-finish-checkpoint.json",
+      "sha256": "83788f8f32774c8e76d9b51a92aae511b2d7b2810242bb6567b0d9957a5442ed",
+      "size_bytes": 2691
     },
     {
       "path": "knowledge/style001-locked-story.json",
@@ -1540,5 +1555,5 @@
   ],
   "gpu_workers_moved": false,
   "existing_approvals_preserved": true,
-  "manifest_fingerprint": "df98f935c4e77a6b99b29b11ea0555cc4f99231433774781121b678a4ae9b1c5"
+  "manifest_fingerprint": "7d9c2ee9ad602d98d8e70310f39695a8ae363ae3df9e0f181251993eb0fba5d8"
 }
